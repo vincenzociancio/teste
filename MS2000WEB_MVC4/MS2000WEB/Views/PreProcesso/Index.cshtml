@@ -1,0 +1,148 @@
+﻿@*@model IEnumerable<MS2000WEB.Models.Pre_Processos>*@
+@model IEnumerable<dynamic>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Pré Processo</a> <span class="divider">></span></li>
+    <li class="active">Index</li>
+</ul>
+
+<h4>Pré Processo</h4>
+
+<form class="form-stacked">
+    <div>
+        <fieldset>
+            <legend>Pesquisar por</legend>
+            <div class="row">
+                <div class="span*">
+                    <div class="clearfix">
+                        @Html.Label("Pré Processo")
+                        <div class="input">
+                            @Html.TextBox("txtpreprocesso", null, new { @class = "input-xlarge search-query" })
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Invoice")
+                        <div class="input">
+                            @Html.TextBox("txtinvoice", null, new { @class = "input-xlarge search-query" })
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Referência do Cliente")
+                        <div class="input">
+                            @Html.TextBox("txtrefcliente", null, new { @class = "input-xlarge search-query" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.Label("Importador")
+                        <div class="input">
+                            @Html.DropDownList("fk_importador", "Selecione")
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Tipo Processo")
+                        <div class="input">
+                            @Html.DropDownList("fk_tipoprocesso", "Selecione")
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Tipo Declaração")
+                        <div class="input">
+                            @Html.DropDownList("fk_tipodeclaracao", "Selecione")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        @*Data: @Html.TextBox("txtdata", null, new { @class = "input-xlarge search-query" }) *@
+        <br />
+        <br />
+    </div>
+    <div class="form-actions">
+        <input type="submit" class="btn btn-inverse" value="Pesquisar" />
+        @Html.ActionLink("Novo Pré-Processo", "Create", null, new { @class = "btn btn-inverse" })
+        <input type="button" class="btn btn-inverse" id="LimparPesquisa" value="Limpar Pesquisa" />
+    </div>
+</form>
+
+<br />
+<div style="overflow-y: auto;">
+    @{    
+        if (true)
+        {
+            WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10, canSort: false, ajaxUpdateContainerId: "grid");
+        @grid.GetHtml(htmlAttributes: new { id = "grid" },
+                                tableStyle: "grade",
+                                headerStyle: "header",
+                                alternatingRowStyle: "alt",
+                                selectedRowStyle: "selected",
+                                columns: grid.Columns(
+                                     grid.Column("", "Ações", style: "gridacao1", format: @<text>
+        <ul class="nav pull-center" style="list-style-type: none; padding: 0px; margin: 0px;">
+            <li class="dropdown" style="line-height: 0px!important;">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="icon-list"></i><b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Editar", "Edit", new { Id = item.pk_codigo })</li>
+                    <li class="divider"></li>
+                    <li>@Html.ActionLink("Follow", "Index", "PreFollowup", new { Id = item.pk_codigo }, null)</li>
+                    <li>@Html.ActionLink("Upload", "Index", "PreDocumentos", new { Id = item.pk_codigo }, null)</li>
+                    <li>@Html.ActionLink("Classificação", "Index", "PreClassificacao", new { id = item.pk_codigo, statusClassificacao = item.status_classificacao, fk_importador = item.fk_importador }, null)</li>
+                    <li>@Html.ActionLink("Visualizar", "VisualizaPreProcesso", "PreProcesso", new { Id = item.pk_codigo }, null)</li>
+                    <li> @Html.ActionLink("Email Vinculado", "Index", "PreProcessosEmails", new {Id = item.pk_codigo}, null)</li>
+                    <li>@Html.ActionLink("Gerar Processo", "GerarProcesso", "PreProcesso", new { Id = item.pk_codigo }, null)</li>
+                </ul>
+            </li>
+        </ul></text>),
+                                grid.Column("codigo", header: "N° Pré-Processo"),
+                                grid.Column("Importador", header: "Importador"),
+                                grid.Column("TipoProcesso", header: "Tipo Processo"),
+                                grid.Column("TipoDeclaracao", header: "Tipo Declaração"),
+                                grid.Column("Status", header: "Status")
+                           ));
+        }
+        else
+        {    
+        <div class="alert">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            @* <h4>Aviso!</h4>*@
+            Não existe registro para o parametro especificado!
+        </div>    
+        }
+    }
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#txtpreprocesso").mask("99999/99");
+    });
+
+    $("#LimparPesquisa").click(function () {
+        $("#txtpreprocesso").val("");
+        $("#txtinvoice").val("");
+        $("#txtrefcliente").val("");
+        $("#fk_importador").val("Selecione");
+        $("#fk_tipoprocesso").val("Selecione");
+        $("#fk_tipodeclaracao").val("Selecione");
+    });
+
+</script>
+
+@*
+
+        @Html.ActionLink("Editar", "Edit", new { Id = item.pk_codigo })  &nbsp;|&nbsp;                             
+                                @Html.ActionLink("Follow", "Index", "PreFollowup", new { Id = item.pk_codigo }, null)&nbsp; |&nbsp 
+                                @Html.ActionLink("Upload", "Index", "PreDocumentos", new { Id = item.pk_codigo }, null)&nbsp; |&nbsp;                                
+        @Html.ActionLink("Classificação", "Index", "PreClassificacao", new { id = item.pk_codigo, statusClassificacao = item.status_classificacao, fk_importador = item.fk_importador }, null)&nbsp;|&nbsp; 
+                                
+    @Html.ActionLink("Visualizar", "VisualizaPreProcesso", "PreProcesso", new { Id = item.pk_codigo }, null)*@

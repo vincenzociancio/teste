@@ -1,0 +1,478 @@
+﻿@model MS2000WEB.Models.Processo
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider"></span></li>
+    <li><a href="#">Processos</a> <span class="divider"></span></li>
+    <li><a href="#">Abertura</a> <span class="divider"></span></li>
+    <li class="active">Index</li>
+</ul>
+
+<script type="text/javascript">
+
+  @*  var idImportador;
+    var idContrato;
+
+    function BuscaContrato() {
+        var Importador2 = $("#ddlImportador").val();
+        alert(Importador2);
+        $.getJSON("@Url.Action("GetContratoDropDownList", "Processos")", { id: idImportador2 },
+           function () {
+          });
+    }*@
+
+    $("#ddlTipoProcesso").change(function () {
+        var codigo = $(this).val();
+        var Us = '@(ViewBag.Usu)';
+        //  alert(codigo);
+        // alert(Usu);
+        // alert(idImportador);
+        //if ((Us == "FSILVA") | (Us == "NATASHA") | (Us == "LFERRAZ") | (Us == "ODILMA") | (Us == "FERREIRA") | (Us == "ANDRE")) {
+        //    $("#ddlTipoDeclaracao").removeAttr('disabled');
+        //}
+        //else
+
+        $("#ddlTipoDeclaracao").removeAttr('disabled');
+
+        if (($(this).val() == "IN") | ($(this).val() == "0") | ($(this).val() == "") | ($(this).val() == "8") | ($(this).val() == "BT")) {
+            $("#ddlTipoDeclaracao").val("0");
+            $("#ddlTipoDeclaracao").attr('disabled', 'disabled');
+        }
+        else if (($(this).val() == "AD")) {
+
+            $.getJSON("@Url.Action("PopulateContratoDropDownList", "Processos")", { id: idImportador },
+            function (contratoData) {
+                var select = $("#ddlContrato");
+                select.empty();
+                select.append($('<option/>', {
+                    value: 0,
+                    text: "Selecione"
+                }));
+                $.each(contratoData, function (index, itemData) {
+                    select.append($('<option/>', {
+                        value: itemData.Value,
+                        text: itemData.Text
+                    }));
+                });
+
+            });
+
+            };
+
+        if (($(this).val() == "0")) {
+            $("#chkVincProcesso").prop("checked", false);
+            $("#chkVincProcesso").attr('disabled', 'disabled');
+            //$("#txtProcessoVinculado").val(0);
+            $("#txtProcessoVinculado").attr('disabled', 'disabled');
+        }
+        else {
+            $("#chkVincProcesso").removeAttr('disabled');
+            $("#txtProcessoVinculado").removeAttr('disabled');
+
+        };
+
+    });
+
+
+
+
+    $("#ddlTipoDeclaracao").change(function () {
+        var codigo = $(this).val();
+        //alert(codigo);
+        //var teste = $("#chkPag").val();
+        //alert(teste);
+        if (($(this).val() == "12")) {
+            $("#chkPag").removeAttr('disabled');
+            //$("#chkPag").prop("checked", true);
+        }
+        else {
+            $("#chkPag").attr('disabled', 'disabled');
+            $("#chkPag").prop("checked", false);
+        }
+    });
+
+
+
+
+
+
+    $("#ddlContrato").change(function () {
+        idContrato = $(this).val();
+        $.getJSON("@Url.Action("PopulateLocalDropDownList", "Processos")", { id: idImportador, contrato: idContrato },
+          function (LocalData) {
+              var select = $("#ddlLocal");
+              select.empty();
+              select.append($('<option/>', {
+                  value: 0,
+                  text: "Selecione"
+              }));
+              $.each(LocalData, function (index, itemData) {
+                  select.append($('<option/>', {
+                      value: itemData.Value,
+                      text: itemData.Text
+                  }));
+              });
+          });
+
+        });
+
+
+        $("#chkProcessoUrgente").click(function () {
+            if (this.checked) {
+                $("#ddlTipoUrgencia").removeAttr('disabled');
+            }
+            else {
+                $("#ddlTipoUrgencia").val("0");
+                $("#ddlTipoUrgencia").attr('disabled', 'disabled');
+            };
+        });
+
+
+        $(document).ready(function () {
+
+            $("#ddlImportador").change(function () {
+
+                idImportador = $(this).val();
+                idContrato = $("#dllContrato").val();
+                alert(idImportador);
+                $("#ddlTipoProcesso").removeAttr('disabled');
+                $.getJSON("@Url.Action("PopulateContratoDropDownList", "Processos")", { imp: idImportador },
+                function (contratoData) {
+                var select = $("#ddlContrato");
+                    select.empty();
+                    select.append($('<option/>', {
+                                    value: 0,
+                                    text: "Selecione"
+                                  }));
+                    $.each(contratoData, function (index, itemData) {
+                    select.append($('<option/>', {
+                                    value: itemData.Value,
+                                    text: itemData.Text
+                                  }));
+                               });
+                        });
+            });
+
+
+            $("#txtprocesso").keyup(function () {
+                var Proc = $(this).val();
+
+                if ($(this).val().length == 5) {
+                    $("#txtprocesso").val($(this).val() + "/");
+                }
+                //alert(Proc.replace("/","",).replace("",""));
+                if ($(this).val().length >= 8) {
+
+            $.getJSON("@Url.Action("PopulateContratoDropDownList", "Processos")", { processo: Proc },
+           function (contratoData) {
+               var select = $("#ddlContrato");
+               select.empty();
+               select.append($('<option/>', {
+                   value: 0,
+                   text: "Selecione"
+               }));
+               $.each(contratoData, function (index, itemData) {
+                   select.append($('<option/>', {
+                       value: itemData.Value,
+                       text: itemData.Text
+                   }));
+               });
+               $.getJSON("@Url.Action("VerificarProcessos", "Processos")", { Processo: Proc },
+                     function (data) {
+
+                         alert(data.contrato);
+                         $("#Centro_Custo").val(data.centro_custo);
+                         $("#ddlImportador").val(data.importador);
+                         $("#ddlTipoProcesso").val(data.tipo);
+                         $("#Numero_RTC").val(data.numero_rtc);
+                         $("#Material_Usado").val(data.material_usado);
+                         $("#ddlTipoDeclaracao").val(data.tipo_declaracao);
+                         $("#chkPag").val(data.pag_proporcional);
+                         $("#ddlContrato").val(data.contrato);
+                         $("#ddlLocal").val(data.local_inventario);
+                         $("#msgErro").empty().prepend(data.msg);
+                         ////  var teste = (data.coord).val();
+                         ////  alert(data.redirectTo);
+                         ////  if (data.redirectTo != "") {
+                         ////     window.location.href = data.redirectTo;
+                         ////  }
+                         //if (data.imp != "") {
+                         //    $("#lblCliente").css('visibility', 'visible');
+                         //    $("#lblCNPJ").css('visibility', 'visible');
+                         //    $("#txtCliente").css('visibility', 'visible');
+                         //    $("#txtCNPJ").css('visibility', 'visible');
+                         //    $("#txtCliente").val(data.imp);
+                         //    $("#txtCNPJ").val(data.cnpj);
+                         //    // window.location.href = data.redirectTo;
+                         // }
+                     });
+
+           });
+                    $.getJSON("@Url.Action("PopulateLocalDropDownList", "Processos")", { Processo: Proc },
+            function (LocalData) {
+                var select = $("#ddlLocal");
+                select.empty();
+                select.append($('<option/>', {
+                    value: 0,
+                    text: "Selecione"
+                }));
+                $.each(LocalData, function (index, itemData) {
+                    select.append($('<option/>', {
+                        value: itemData.Value,
+                        text: itemData.Text
+                    }));
+                });
+            });
+
+                 
+                }
+            });
+
+
+            $("#ver_referencia").click(function (e) {
+                var ncm = $("#txtNCM");
+                var descricao = $("#txtDescricao");
+                var coTa = $("#txtCoTa");
+
+                if (coTa.val().toLowerCase().trim() != "co" && coTa.val().toLowerCase().trim() != "ta" && coTa.val().toLowerCase().trim() != "") {
+                    $("#msgErro").empty().prepend("<p><b>Dados inválidos:</b></p><ul><li>Entre com 'CO' ou 'TA' no campo " + coTa.prop("name") + ".</li></ul>");
+                    return false;
+                }
+                else
+                    if (descricao.val().trim() == "" || ncm.val().trim() == "") {
+                        $("#msgErro").empty().prepend("<p><b>Campos obrigatórios:</b></p><ul><li>" + descricao.prop("name") + "</li><li>" + ncm.prop("name") + "</li></ul>");
+                        return false;
+                    }
+                    else {
+                        return true;
+                    }
+            });
+
+            $("#ddlContrato").change(function () {
+                idContrato = $(this).val();
+                $.getJSON("@Url.Action("PopulateLocalDropDownList", "Processos")", { imp: idImportador, contrato: idContrato },
+                function (LocalData) {
+                var select = $("#ddlLocal");
+                select.empty();
+                select.append($('<option/>', {
+                   value: 0,
+                   text: "Selecione"
+                }));
+              $.each(LocalData, function (index, itemData) {
+                  select.append($('<option/>', {
+                      value: itemData.Value,
+                      text: itemData.Text
+                  }));
+              });
+          });
+
+              });
+
+
+        });
+</script>
+
+<h4>Processo</h4>
+
+
+@using (Html.BeginForm("SalvarProcesso", "Processos", FormMethod.Post, new { @class = "form-stacked" }))
+{ 
+@*@Html.ValidationSummary(false, "Ocorreram erros no formulário. Por favor, corrija os erros e tente novamente.")*@
+    @Html.AntiForgeryToken();
+
+    <div class="editor-field">
+        <div class="clearfix">
+            @Html.Label("Processo")
+            @Html.TextBox("txtprocesso", null, new { @class = "span2" })
+        </div>
+    </div>
+    
+    <div>
+        <div class="row">
+            <div class="span*">
+                <div class="clearfix">
+                    @Html.Label("Data ")
+                    @* @Html.TextBox("",string.Format("{0:dd/MM/yyyy}", DateTime.Now), new { @disabled = "disabled" })   *@
+                    @Html.TextBox("DATAATUAL", string.Format("{0:dd/MM/yyyy}", DateTime.Now), new { @class = "span2", @disabled = "disabled" })
+                    <div class="input">
+                        @Html.HiddenFor(model => model.Data)
+                    </div>
+                </div>
+            </div>
+
+            <div class="span* offset*">
+                <div class="clearfix">
+                    @Html.Label("Centro de Custo ")
+                    <div class="input">
+                        @Html.DropDownList("Centro_Custo", null, string.Empty, new { @class = "span3" })
+                        @*@Html.DropDownList("Centro_Custo", "Selecione")*@
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="span*">
+                <div class="clearfix">
+                    @Html.Label("Cliente ")
+                    <div class="input">
+                        @Html.DropDownList("Importador", null, "Selecione", new { id = "ddlImportador", @class = "span5", data_bind = "value: BuscaContrato" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span*">
+                <div class="clearfix">
+                    @Html.Label("Tipo de Processo ")
+                    <div class="input">
+                        @Html.DropDownList("Tipo", null, "Selecione", new { id = "ddlTipoProcesso", @disabled = "disabled", @class = "span5" })
+                        @*@Html.DropDownListFor(Model => Model.Tipo, new SelectList(ViewBag.fk_evento as System.Collections.IEnumerable, "Codigo", "Descricao"),
+        "Selecione", new { id = "ddlTipoProcesso", style = "width: 400px;" })*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*<div class="row">
+            <div class="span*">
+                <div class="clearfix">   
+                    <br />                 
+                    @Html.CheckBox("vinc_processo", false , new { id = "chkVincProcesso", @disabled = "disabled" })
+                    <span><b>Vincula Processo Ref. MS</b></span>
+                </div>
+            </div>
+
+            <div class="span* offset*">
+                <div class="clearfix">                   
+                    <div class="input">
+                        @Html.TextBoxFor(model => model.proc_vinc, new { @class = "span2", id = "txtProcessoVinculado", @disabled = "disabled" })
+                         &nbsp&nbsp&nbsp<input class="btn btn-inverse" type="button" data-bind="click: ver" value="V" />
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+        <div class="row">
+            <div class="span*">
+                <div class="clearfix">
+                    <br />
+                    <br />
+                    @Html.CheckBox("Urgente", false, new { id = "chkProcessoUrgente" })
+                    <span><b>Urgente</b></span>
+
+                </div>
+            </div>
+
+            <div class="span* offset*">
+                @*                @Html.Label("___________")*@
+                <br />
+                <br />
+                <div class="clearfix">
+                    <div class="input">
+                        @Html.DropDownList("FK_Processos_Tipo_Urgencia", null, "Selecione", new { id = "ddlTipoUrgencia", @disabled = "disabled", style = "width: 75px;" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="span* offset*">
+                <div class="clearfix">
+                    @Html.Label("Número RTC ")
+                    <div class="input">
+                        @Html.EditorFor(model => model.Numero_RTC, new { @class = "span3" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="span*">
+                <div class="clearfix">
+                    @Html.Label("Utiliza Material Usado ")
+                    <div class="input">
+                        @Html.RadioButtonFor(model => model.Material_Usado, 0) Não
+                        @Html.RadioButtonFor(model => model.Material_Usado, 1) Sim
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*<div class="row">
+            <div class="span*">
+                <div class="clearfix">
+                    @Html.Label("Referência Cliente ")
+                    <div class="input">
+                        @Html.EditorFor(model => model.Codigo_Cliente)  @Html.ActionLink("Verificar", "Index", null, new { @class = "btn btn-inverse" })
+                        <input class="btn btn-inverse" type="button" data-bind="click: ver_referencia" value="Verificar Referência" />
+                        <button type="button" class="btn btn-inverse" id="ver_referencia">Verificar Referência</button>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+
+        <div class="row">
+            <div class="span2">
+                <div class="clearfix">
+                    @Html.Label("Tipo Declaração ")
+                    <div class="input">
+                        @Html.DropDownList("Tipo_Declaracao", null, "Selecione", new { id = "ddlTipoDeclaracao", @disabled = "disabled", @class = "span5" })
+                    </div>
+                </div>
+            </div>
+            <div class="span* offset*">
+                @Html.CheckBox("Pag_proporcional", false, new { id = "chkPag", @disabled = "disabled" })
+                <span><b>Pagamento Proporcional</b></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span*">
+                <div class="clearfix">
+                    @Html.Label("Contrato ")
+                    <div class="input">
+                        @* @Html.DropDownList("fk_tipodeclaracao", null, "Selecione", new { id ="ddlContrato", style = "width: 400px;" })*@
+                   @*     @Html.DropDownList("Contrato", null, "Selecione", new { id = "ddlContrato", @class = "span5" })*@
+                         @Html.DropDownListFor(Model => Model.Contrato, new SelectList(Enumerable.Empty<SelectListItem>(), "Contrato1", "Descricao"), "Selecione", new { id = "ddlContrato", @class = "span5" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span*">
+                <div class="clearfix">
+                    @Html.Label("Local de Inventário ")
+                    <div class="input">
+                        @*@Html.DropDownList("fk_tipodeclaracao", null, "Selecione", new { style = "width: 400px;" })*@
+                        @Html.DropDownListFor(Model => Model.Local_Inventario, new SelectList(Enumerable.Empty<SelectListItem>(), "Local", "Descricao"), "Selecione", new { id = "ddlLocal", @class = "span5" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="form-actions">
+        <div class="row">
+            <div class="span3">
+                @Html.ActionLink("Novo", "Index", null, new { @class = "btn btn-inverse" })
+                @Html.ActionLink("Alterar", "Index", null, new { @class = "btn btn-inverse" })
+            </div>
+            <div class="span* offset*">
+                <button type="submit" class="btn btn-inverse">Salvar</button>
+                @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+            </div>
+        </div>
+    </div>             
+}
+
+
+
+

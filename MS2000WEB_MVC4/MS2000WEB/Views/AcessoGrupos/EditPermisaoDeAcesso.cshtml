@@ -1,0 +1,118 @@
+﻿@model MS2000WEB.ViewModels.AcessoGruposViewModel
+
+@{
+    ViewBag.Title = "Permissões de acesso";
+}
+
+<style>
+    .acessa.acessa {
+        width: 54px;
+        text-align: center;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $("tr.alt td.acessa :checkbox").click(function (e) {
+            var id = $(this).attr('id');
+            var name = $(this).attr('name');
+            var check = $(this).is(':checked')
+            if (!check) {
+                $('input[type=checkbox][id="' + id + '"]:not(input[type=checkbox][name="' + name + '"])').attr('checked', false);
+                $('input[type=checkbox][id="' + id + '"]:not(input[type=checkbox][name="' + name + '"])').prop({ disabled: true });
+            }
+            else {
+                $('input[type=checkbox][id="' + id + '"]:not(input[type=checkbox][name="' + name + '"])').prop({ disabled: false });
+            }
+        });
+    });
+</script>
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Sistema</a> <span class="divider">></span></li>
+    <li><a href="#">Grupos de Acesso</a> <span class="divider">></span></li>
+    <li class="active">Permissões de Acesso</li>
+</ul>
+<h4>Grupos de Acesso do Sistema</h4>
+@using (Html.BeginForm("EditPermisaoDeAcesso", "AcessoGrupos", FormMethod.Post, new { @class = "form-stacked" }))
+{   <h4>GRUPO: @Html.DisplayFor(m => m.NomeGrupo)</h4>
+    <table class="grade" id="gridTop" data-swhgajax="true" data-swhgcontainer="grid" data-swhgcallback="">
+        <thead>
+            <tr class="header">
+                <th scope="col" style="width: 40px;">Acessa?
+                </th>
+                <th scope="col" colspan="2">Descrição das permissões de página</th>
+            </tr>
+        </thead>
+    </table>
+    
+    <div style="overflow-y: auto; height: 390px;">
+        <table class="grade" id="grid" data-swhgajax="true" data-swhgcontainer="grid" data-swhgcallback="">
+            @*<thead>
+            <tr class="header">
+                <th scope="col">Acessa?
+                </th>
+                <th scope="col" colspan="2">Descrição das permissões de página</th>
+            </tr>
+            </thead>*@
+            <tbody>
+                @Html.HiddenFor(Model => Model.GrupoID)
+                @for (int i = 0; i < Model.PaginaList.Count; i++)
+                {
+                    <tr class="alt">
+                        <td class="acessa">
+                            @*<input type="checkbox" name="checkbox" value="@pagina.acessa" checked="@pagina.acessa" style="border:none;" />*@
+                            @*@Html.EditorFor(m => m.PaginaList[i].acessa, new { id = i })*@
+                            @Html.CheckBoxFor(m => m.PaginaList[i].acessa, new { id = i })
+                        </td>
+                        <td colspan="2">
+                            @*@pagina.descricao*@
+                            @Html.HiddenFor(m => m.PaginaList[i].id)
+                            @Html.HiddenFor(m => m.PaginaList[i].descricao)
+                            @Html.DisplayFor(m => m.PaginaList[i].descricao)
+                        </td>
+                    </tr>                
+                    var _headervisivel = true;
+                    for (int j = 0; j < Model.PaginaList[i].Acoes.Count; j++)
+                    {
+                        if (_headervisivel)
+                        {
+                    <tr class="header" style="background-color: #7a7878">
+                        <th style="border-bottom: none!important; border-top: none!important; background-color: white!important;"></th>
+                        <th scope="col">Descrição das permissões de ação</th>
+                        <th scope="col" class="acessa">Acessa?
+                        </th>
+                    </tr>
+                        }
+                        _headervisivel = false;
+                    <tr>
+                        <td style="border-bottom: none!important; border-top: none!important;"></td>
+                        <td>
+                            @*@acao.descricao*@
+                            @Html.HiddenFor(m => m.PaginaList[i].Acoes[j].id)
+                            @Html.HiddenFor(m => m.PaginaList[i].Acoes[j].descricao)
+                            @Html.DisplayFor(m => m.PaginaList[i].Acoes[j].descricao)
+                        </td>
+                        <td style="" class="acessa">
+                            @*<input type="checkbox" name="checkbox" value="@acao.acessa" checked="@acao.acessa" style="border:none!important;" />*@
+                            @*@Html.EditorFor(m => m.PaginaList[i].Acoes[j].acessa, new { id = i})*@                            
+                            @if (Model.PaginaList[i].acessa == true)
+	                        {
+                                @Html.CheckBoxFor(m => m.PaginaList[i].Acoes[j].acessa, new { id = i, enabled = "enabled" })                            
+	                        }
+                            else{
+                                @Html.CheckBoxFor(m => m.PaginaList[i].Acoes[j].acessa, new { id = i, disabled = "disabled" })                            
+                            }
+                        </td>
+                    </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="form-actions">
+        <input type="submit" class="btn btn-inverse" value="Salvar alterações" />
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>   
+}

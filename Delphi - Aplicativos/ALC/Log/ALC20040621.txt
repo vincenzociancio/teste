@@ -1,0 +1,16 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 21/06/2004 | 16:16:10 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 21/06/2004 | 16:16:15 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 21/06/2004 | 16:16:15 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 21/06/2004 | 16:16:15 | Verificando Processo: 01696/04
+ 21/06/2004 | 16:16:16 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 21/06/2004 | 16:16:16 | Gravando e-Mail automático...
+ 21/06/2004 | 16:16:16 | CLIENTE: (122) SHEA WILLIAN HALLIGAN
+ 21/06/2004 | 16:16:16 | Verificando Processo: 01817/04
+ 21/06/2004 | 16:16:16 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 21/06/2004 | 16:16:16 | Gravando e-Mail automático...
+ 21/06/2004 | 16:16:16 | CLIENTE: (2) TRANSOCEAN BRASIL LTDA
+ 21/06/2004 | 16:16:16 | Verificando Processo: 01814/04
+ 21/06/2004 | 16:16:17 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 21/06/2004 | 16:16:17 | Gravando e-Mail automático...
+ 21/06/2004 | 16:16:17 | >>> FINALIZANDO O PROCESSAMENTO DO ALC

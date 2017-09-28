@@ -1,0 +1,965 @@
+unit u_ALC;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  Db, DBTables, Grids, DBGrids, StdCtrls, ComCtrls, ExtCtrls, FileCtrl, ActnList;
+  
+type
+  TfrmALC = class(TForm)
+    DB_MSCOMEX: TDatabase;
+    qrALC: TQuery;
+    qrItens: TQuery;
+    qrFaturas: TQuery;
+    alALC: TActionList;
+    acInicializa: TAction;
+    acGeraEmail: TAction;
+    acProcessa: TAction;
+    acEnviaEmail: TAction;
+    acFinaliza: TAction;
+    pnlTop: TPanel;
+    pnlLog: TPanel;
+    reProcessa: TRichEdit;
+    qrParametros: TQuery;
+    qrParametrosEmpresa: TStringField;
+    qrParametrosFilial: TStringField;
+    tbEmailAuto: TTable;
+    qrUsuarios: TQuery;
+    qrUsuariosEmail: TStringField;
+    qrUsuariosnome_completo: TStringField;
+    qrEmailAviso: TQuery;
+    qrParametrosPATH_SERVER: TStringField;
+    qrItensPO: TStringField;
+    qrFabric: TQuery;
+    qrAtuALC: TQuery;
+    StringField1: TStringField;
+    StringField2: TStringField;
+    tmIniciar: TTimer;
+    tbEmailAutoCodigo: TAutoIncField;
+    tbEmailAutoPrograma: TStringField;
+    tbEmailAutoAssunto: TStringField;
+    tbEmailAutoTitulo: TStringField;
+    tbEmailAutoDe: TStringField;
+    tbEmailAutoPara: TStringField;
+    tbEmailAutoCC: TStringField;
+    tbEmailAutoCCO: TStringField;
+    tbEmailAutoBody: TMemoField;
+    tbEmailAutoAnexo: TStringField;
+    tbEmailAutoHTML: TIntegerField;
+    tbEmailAutoData: TDateTimeField;
+    tbEmailAutoHora: TDateTimeField;
+    qrEmailAvisoEmail: TStringField;
+    qrEmailAvisoNome_completo: TStringField;
+    qrEmailAvisoParametros: TStringField;
+    qrEmailAvisoHTML: TIntegerField;
+    qrALCData: TDateTimeField;
+    qrALCCodigo: TStringField;
+    qrALCCodigo_Cliente: TStringField;
+    qrALCImportador: TStringField;
+    qrALCImport: TStringField;
+    qrALCData_liberacao: TDateTimeField;
+    qrALCEnviou: TIntegerField;
+    qrALCTransportador: TStringField;
+    qrALCRazao_Social: TStringField;
+    qrALCDescricao_mercadoria: TStringField;
+    qrALCNumerodoccarga: TStringField;
+    qrALCData_Chegada_URF_Cheg: TDateTimeField;
+    qrALCResponsavel_Empresa: TStringField;
+    qrALCNome_Completo: TStringField;
+    qrALCEmail: TStringField;
+    qrALCNomeSupervisor: TStringField;
+    qrALCEmailSupervisor: TStringField;
+    qrALCDI: TStringField;
+    qrFaturasCodigo: TStringField;
+    qrFabricFabricante: TStringField;
+    qrFabricRazao_Social: TStringField;
+    qrALCCGC_CPF: TStringField;
+    qrEmailAviso_Plataforma: TQuery;
+    qrEmailAviso_PlataformaEmail: TStringField;
+    qrEmailAviso_PlataformaNome_completo: TStringField;
+    qrEmailAviso_PlataformaParametros: TStringField;
+    qrEmailAviso_PlataformaHTML: TIntegerField;
+    qrEmailAviso_PlataformaPlataforma: TStringField;
+    qrPlataforma: TQuery;
+    qrPlataformaPlataforma: TStringField;
+    qrALCNumero_RTC: TStringField;
+    qrEmailsAvisosGeral: TQuery;
+    qrEmailsAvisosGeralEmpresa: TStringField;
+    qrEmailsAvisosGeralFilial: TStringField;
+    qrEmailsAvisosGeralImportador: TStringField;
+    qrEmailsAvisosGeralTipo: TStringField;
+    qrEmailsAvisosGeralEmail: TStringField;
+    qrEmailsAvisosGeralNome_completo: TStringField;
+    qrEmailsAvisosGeralParametros: TStringField;
+    qrEmailsAvisosGeralHTML: TIntegerField;
+    qrEmailsAvisosGeralPlataforma: TStringField;
+    qrEmailsAvisosGeralCnpj_Importador: TStringField;
+    qrEmailsAvisosGeralPara: TBooleanField;
+    qrEmailsAvisosGeralCc: TBooleanField;
+    qrEmailsAvisosGeralCCo: TBooleanField;
+    qrEmailsAvisosGeralAtivo: TBooleanField;
+    qrEmailAvisoImportadores: TQuery;
+    qrEmailAvisoImportadoresEmpresa: TStringField;
+    qrEmailAvisoImportadoresFilial: TStringField;
+    qrEmailAvisoImportadoresImportador: TStringField;
+    qrEmailAvisoImportadoresTipo: TStringField;
+    qrEmailAvisoImportadoresEmail: TStringField;
+    qrEmailAvisoImportadoresNome_completo: TStringField;
+    qrEmailAvisoImportadoresParametros: TStringField;
+    qrEmailAvisoImportadoresHTML: TIntegerField;
+    qrEmailAvisoImportadoresPlataforma: TStringField;
+    qrEmailAvisoImportadoresCnpj_Importador: TStringField;
+    qrEmailAvisoImportadoresPara: TBooleanField;
+    qrEmailAvisoImportadoresCc: TBooleanField;
+    qrEmailAvisoImportadoresCCo: TBooleanField;
+    qrEmailAvisoImportadoresAtivo: TBooleanField;
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure acInicializaExecute(Sender: TObject);
+    procedure acGeraEmailExecute(Sender: TObject);
+    procedure acProcessaExecute(Sender: TObject);
+    procedure acEnviaEmailExecute(Sender: TObject);
+    procedure acFinalizaExecute(Sender: TObject);
+    procedure reProcessaChange(Sender: TObject);
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+    procedure FormShow(Sender: TObject);
+    procedure tmIniciarTimer(Sender: TObject);
+  private
+    function UsuarioAtivo(Email: String): Boolean;
+    
+    procedure AdicionaDestinatarios;
+    
+    procedure AdicionaDestinatariosImportadores;    
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+const
+  vCodAPL = 'ALC';
+
+var
+  frmALC : TfrmALC;
+  arqDir, arqNome, Linha : String;
+  arqLog : TextFile;
+  vEmp, vFil : String;
+  vImp, vProc : String;
+  vImpNome : String;
+  vInfoPor, vInfoIng : String;
+
+  dirApl : String;
+
+  vDe, vPara, vCC, vCCO : String;
+  vAssunto, vAssuntoAnterior : String;
+  vTitulo : String;
+  vBody : String;
+  vHTML : integer = 1;
+  vAnexo : String = '';
+
+implementation
+
+{$R *.DFM}
+
+{ FUNÇÃO PARA FORMATAR O VALOR COM ESPAÇOS ANTES DO VALOR }
+procedure TfrmALC.FormCreate(Sender: TObject);
+begin
+  try
+    with DB_MSCOMEX do
+     begin
+       Params.Values['USER NAME'] := 'ALC';
+       Params.Values['PASSWORD']  := 'lasbrug30@';
+
+       Connected := True;
+     end;
+  except
+    on E:Exception do
+     begin
+       MessageDlg('Erro de Conexão com o Banco de Dados! Verifique sua conexão de rede.'+#13#10+#13#10+'ERRO: '+E.message, mtError,[mbOk], 0);
+       Close;
+       Application.Terminate;
+       Exit;
+     end;
+  end;
+
+  qrParametros.Open;
+  vEmp := qrParametrosEmpresa.AsString;
+  vFil := qrParametrosFilial.AsString;
+  qrParametros.Close;
+
+  with qrUsuarios do
+   begin
+     Params[0].AsString := vEmp;
+     Params[1].AsString := vFil;
+   end;
+
+  with qrEmailAviso do
+   begin
+     Params[0].AsString := vEmp;
+     Params[1].AsString := vFil;
+     Params[2].AsString := vCodAPL;
+   end;
+
+  with qrEmailsAvisosGeral do
+   begin
+     Params[0].AsString := vEmp;
+     Params[1].AsString := vFil;
+     Params[2].AsString := vCodAPL;
+   end;
+
+  with qrEmailAvisoImportadores do
+   begin
+     Params[0].AsString := vEmp;
+     Params[1].AsString := vFil;
+     Params[2].AsString := vCodAPL;
+   end;   
+
+  with qrALC do
+   begin
+     Params[0].AsString := vEmp;
+     Params[1].AsString := vFil;
+   end;
+
+  with qrFabric do
+   begin
+     Params[0].AsString := vEmp;
+     Params[1].AsString := vFil;
+   end;
+
+  with qrFaturas do
+   begin
+     Params[0].AsString := vEmp;
+     Params[1].AsString := vFil;
+   end;
+
+  with qrItens do
+   begin
+     Params[0].AsString := vEmp;
+     Params[1].AsString := vFil;
+   end;
+
+  with qrAtuALC do
+   begin
+     Params[0].AsString := vEmp;
+     Params[1].AsString := vFil;
+   end;
+end;
+
+procedure TfrmALC.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  try
+    DB_MSCOMEX.Connected := False;
+    CloseFile(arqLog);
+  except
+  end;
+
+  frmALC := nil;
+  Action := caFree;
+end;
+
+procedure TfrmALC.acInicializaExecute(Sender: TObject);
+begin
+  dirApl := ExtractFilePath(Application.ExeName);
+
+  arqDir := dirApl+'Log\';
+  arqNome := vCodAPL+FormatDateTime('yyyymmdd',Now)+'.txt';
+  AssignFile(arqLog,arqDir+arqNome);
+
+  if not DirectoryExists(arqDir)
+   then CreateDir(arqDir);
+
+  if FileExists(arqDir+arqNome)
+   then AppEnd(arqLog)
+   else begin
+     ReWrite(arqLog);
+     Linha := '    DATA    |   HORA   | DESCRIÇÃO ';
+     Writeln(arqLog, Linha);  Flush(arqLog);
+   end;
+
+  Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                        + '>>> INICIANDO O PROCESSAMENTO DO ALC';
+  Writeln(arqLog, Linha);  Flush(arqLog);
+  reProcessa.Lines.Append(Linha);
+
+  { GERA E-MAIL COM A RELAÇÃO DAS DI'S REGISTRADAS }
+  acGeraEmail.Execute;
+
+  qrEmailAviso.Close;
+  qrALC.Close;
+
+  if acFinaliza.Checked
+   then Exit;
+
+  { FINALIZA APLICAÇÃO }
+  acFinaliza.Execute;
+end;
+
+procedure TfrmALC.acGeraEmailExecute(Sender: TObject);
+var
+  vContatos: String;
+  vIdioma: Integer;
+label
+  emailBR, emailEN, outroIdioma, emailBR1, emailEN1, outroIdioma1;
+begin
+  Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                        + 'GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS';
+  Writeln(arqLog, Linha);  Flush(arqLog);
+  reProcessa.Lines.Append(Linha);
+
+  vTitulo := Caption;
+  vDe := 'ALC - MS2000<auditoria@logistic-ms.com.br>';
+
+  vImp := '';
+  vImpNome := '';
+
+  qrALC.Open;
+
+  while not qrALC.Eof do
+   begin
+     Application.ProcessMessages;
+
+     if acFinaliza.Checked
+      then Exit;
+
+     qrPlataforma.Close;
+     qrPlataforma.Params[0].AsString := qrALCCodigo.AsString;
+     qrPlataforma.Open;
+
+     if vImp <> qrALCImportador.AsString
+      then begin
+        vImp     := qrALCImportador.AsString;
+        vImpNome := qrALCImport.AsString;
+
+        Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                              + 'CLIENTE: ('+ vImp +') '+ vImpNome;
+        Writeln(arqLog, Linha);  Flush(arqLog);
+        reProcessa.Lines.Append(Linha);
+
+        qrEmailAviso.Close;
+        qrEmailAviso.Params[3].AsString := vImp;
+        qrEmailAviso.Open;
+
+        qrEmailAviso_Plataforma.Close;
+        qrEmailAviso_Plataforma.Params[0].AsString := vCodAPL;
+        qrEmailAviso_Plataforma.Params[1].AsString := qrPlataformaPlataforma.AsString;
+        qrEmailAviso_Plataforma.Params[2].AsString := vImp;
+        qrEmailAviso_Plataforma.Open;
+      end;
+
+     vPara := '';
+     vCC   := '';
+     vCCO  := '';
+
+     vProc := qrALCCOdigo.AsString;
+
+     Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                           + 'Verificando Processo: '+ vProc;
+     Writeln(arqLog, Linha);  Flush(arqLog);
+     reProcessa.Lines.Append(Linha);
+
+     { PROCESSA VERIFICAÇÃO DE LIBERAÇÃO DE CARGA }
+     acProcessa.Execute;
+
+     if acFinaliza.Checked
+      then Exit;
+
+     { EM CASO DE ERRO, ENVIA E-MAIL DE AVISO PARA SUPERVISOR OPERACIONAL E RESPONSÁVEL }
+     if (qrALCTransportador.AsString = '') Or (qrALCDescricao_mercadoria.AsString = '')
+      then begin
+        Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                              + 'Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados';
+        Writeln(arqLog, Linha);  Flush(arqLog);
+        reProcessa.Lines.Append(Linha);
+
+        vBody := '<BR>'
+               + 'Prezados,<BR><BR>'
+               + 'Informamos que a carga acima citada foi liberada em <B>'+ qrALCData_liberacao.AsString +'</B>, '
+               + 'mas a Transportadora e/ou a Descrição da Mercadoria não foram informadas! Sendo assim, o aviso '
+               + 'de Liberação da Carga não foi enviado ao contato da empresa.<BR><BR>'
+               + 'Por favor, note os detalhes da carga: <BR>'
+               + vInfoPor; // INFORMAÇÕES DA CARGA
+
+        vAssunto := 'ALC - ERRO NO AVISO DE LIBERAÇÃO DE CARGA - '+ qrALCCodigo_Cliente.AsString;
+
+        vPara := '';
+
+        if Trim(qrALCEmail.AsString) <> ''
+         then if UsuarioAtivo(qrALCEmail.AsString)
+               then vPara := qrALCNome_Completo.AsString +'<'+ qrALCEmail.AsString +'>';
+
+        if Trim(qrALCEmailSupervisor.AsString) <> ''
+         then if UsuarioAtivo(qrALCEmailSupervisor.AsString)
+               then if (vPara = '')
+                     then vPara := qrALCNomeSupervisor.AsString +'<'+ qrALCEmailSupervisor.AsString +'>'
+                     else vPara := vPara + '; ' + qrALCNomeSupervisor.AsString +'<'+ qrALCEmailSupervisor.AsString +'>';
+
+        vHTML := 1;
+
+        if (vAssunto <> vAssuntoAnterior)
+         then begin
+           vAssuntoAnterior := vAssunto;
+
+           AdicionaDestinatarios;
+
+           AdicionaDestinatariosImportadores;
+         end;
+
+        { ENVIA E-MAIL }
+        acEnviaEmail.Execute;
+
+        if acFinaliza.Checked
+         then Exit;
+
+        qrALC.Next;
+        Continue;
+      end;
+
+     vContatos := '';
+
+     { ENVIA E-MAIL PARA CONTATOS DA EMPRESA }
+     if qrEmailAviso_Plataforma.RecordCount > 0 then begin
+
+       qrEmailAviso_Plataforma.First;
+       while not qrEmailAviso_Plataforma.Eof do
+        begin
+          Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                                + 'CONTATO: '+ qrEmailAviso_PlataformaNome_completo.AsString;
+          Writeln(arqLog, Linha);  Flush(arqLog);
+          reProcessa.Lines.Append(Linha);
+
+          { RELAÇÃO DE CONTATOS DA EMPRESA }
+          vContatos := vContatos + '<LI>'
+                                 + qrEmailAviso_PlataformaNome_completo.AsString +' ('+ qrEmailAviso_PlataformaEmail.AsString +')';
+
+          vIdioma := qrEmailAviso_PlataformaParametros.AsInteger;
+
+          case vIdioma of
+            { E-MAIL EM INGLÊS }
+            1: begin
+                 { BLOCO DE CHAMADA DO GOTO }
+                 emailEN:
+                 vAssunto := 'ALC - CARGO DELIVERED - '+ qrALCCodigo_Cliente.AsString;
+
+                 vBody := '<BR>'
+                        + 'All,<BR> <BR>'
+                        + 'The above mentioned cargo was released on <B>'+ qrALCData_liberacao.AsString +'</B>. '
+                        + 'Transp. <B>'+ qrALCRazao_Social.AsString +'</B> (landcarrier) is loading the cargo.<BR> <BR>'
+                        + 'Please note details the cargo: <BR>'
+                        + vInfoIng // INFORMAÇÕES DA CARGA
+                        + 'This e-mail is automatic and doesn''t need answer.<BR>'
+                        + 'If any doubts remain kindly contact us.<BR> <BR> <BR>'
+                        + 'Regards,<BR> <BR>'
+                        + qrALCNome_Completo.AsString +'<BR>'
+                        + qrALCEmail.AsString
+                        + '<BR><BR>';
+               end;
+
+            { E-MAIL EM PORTUGUÊS }
+            else begin
+                 { BLOCO DE CHAMADA DO GOTO }
+                 emailBR:
+                 vAssunto := 'ALC - AVISO DE LIBERAÇÃO DE CARGA - '+ qrALCCodigo_Cliente.AsString;
+
+                 vBody := '<BR>'
+                        + 'Prezados,<BR> <BR>'
+                        + 'A carga acima citada foi liberada em <B>'+ qrALCData_liberacao.AsString +'</B>. '
+                        + 'A Transp. <B>'+ qrALCRazao_Social.AsString +'</B> (landcarrier) está carregando a carga.<BR> <BR>'
+                        + 'Por favor, note os detalhes da carga: <BR>'
+                        + vInfoPor // INFORMAÇÕES DA CARGA
+                        + 'Este e-mail é automático e não necessita de resposta.<BR>'
+                        + 'Qualquer dúvida favor nos contactar.<BR> <BR> <BR>'
+                        + 'Atenciosamente,<BR> <BR>'
+                        + qrALCNome_Completo.AsString +'<BR>'
+                        + qrALCEmail.AsString
+                        + '<BR><BR>';
+               end;
+
+            { E-MAIL EM PORTUGUÊS E INGLÊS }
+            else
+              goto emailBR;
+              { BLOCO DE CHAMADO DO GOTO }
+              outroIdioma:
+              goto emailEN;
+            end;
+
+          vHTML := qrEmailAviso_PlataformaHTML.Asinteger;
+          
+          if not vHTML = 1
+           then begin
+             vBody := StringReplace(vBody, '<BR><BR>', '<BR>', [rfReplaceAll]);
+             vBody := StringReplace(vBody, '<B>', '', [rfReplaceAll]);
+             vBody := StringReplace(vBody, '</B>', '', [rfReplaceAll]);
+             vBody := StringReplace(vBody, '<LI>', #13#10#9#45, [rfReplaceAll]);
+           end;
+
+          vPara := '';
+
+          if Trim(qrEmailAviso_PlataformaEmail.AsString) <> ''
+           then vPara := qrEmailAviso_PlataformaNome_completo.AsString +'<'+ qrEmailAviso_PlataformaEmail.AsString +'>';
+
+          if (vAssunto <> vAssuntoAnterior)
+           then begin
+             vAssuntoAnterior := vAssunto;
+
+             AdicionaDestinatarios;
+
+             AdicionaDestinatariosImportadores; 
+           end;
+          //FIM -----------------------------------------------------
+
+          { ENVIA E-MAIL }
+          acEnviaEmail.Execute;
+
+          if acFinaliza.Checked
+           then Exit;
+
+          if vIdioma = 2
+           then begin
+             vIdioma := 3;
+             goto outroIdioma;
+           end;
+
+          qrEmailAviso_Plataforma.Next;
+        end;
+     end
+     Else begin
+     qrEmailAviso.First;
+     while not qrEmailAviso.Eof do
+      begin
+        Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                              + 'CONTATO: '+ qrEmailAvisoNome_completo.AsString;
+        Writeln(arqLog, Linha);  Flush(arqLog);
+        reProcessa.Lines.Append(Linha);
+
+        { RELAÇÃO DE CONTATOS DA EMPRESA }
+        vContatos := vContatos + '<LI>'
+                               + qrEmailAvisoNome_completo.AsString +' ('+ qrEmailAvisoEmail.AsString +')';
+
+        vIdioma := qrEmailAvisoParametros.AsInteger;
+
+        case vIdioma of
+          { E-MAIL EM PORTUGUÊS }
+          0: begin
+               { BLOCO DE CHAMADA DO GOTO }
+               emailBR1:
+               vAssunto := 'ALC - AVISO DE LIBERAÇÃO DE CARGA - '+ qrALCCodigo_Cliente.AsString;
+
+               vBody := '<BR>'
+                      + 'Prezados,<BR> <BR>'
+                      + 'A carga acima citada foi liberada em <B>'+ qrALCData_liberacao.AsString +'</B>. '
+                      + 'A Transp. <B>'+ qrALCRazao_Social.AsString +'</B> (landcarrier) está carregando a carga.<BR> <BR>'
+                      + 'Por favor, note os detalhes da carga: <BR>'
+                      + vInfoPor // INFORMAÇÕES DA CARGA
+                      + 'Este e-mail é automático e não necessita de resposta.<BR>'
+                      + 'Qualquer dúvida favor nos contactar.<BR> <BR> <BR>'
+                      + 'Atenciosamente,<BR> <BR>'
+                      + qrALCNome_Completo.AsString +'<BR>'
+                      + qrALCEmail.AsString
+                      + '<BR><BR>';
+             end;
+
+          { E-MAIL EM INGLÊS }
+          1: begin
+               { BLOCO DE CHAMADA DO GOTO }
+               emailEN1:
+               vAssunto := 'ALC - CARGO DELIVERED - '+ qrALCCodigo_Cliente.AsString;
+
+               vBody := '<BR>'
+                      + 'All,<BR> <BR>'
+                      + 'The above mentioned cargo was released on <B>'+ qrALCData_liberacao.AsString +'</B>. '
+                      + 'Transp. <B>'+ qrALCRazao_Social.AsString +'</B> (landcarrier) is loading the cargo.<BR> <BR>'
+                      + 'Please note details the cargo: <BR>'
+                      + vInfoIng // INFORMAÇÕES DA CARGA
+                      + 'This e-mail is automatic and doesn''t need answer.<BR>'
+                      + 'If any doubts remain kindly contact us.<BR> <BR> <BR>'
+                      + 'Regards,<BR> <BR>'
+                      + qrALCNome_Completo.AsString +'<BR>'
+                      + qrALCEmail.AsString
+                      + '<BR><BR>';
+             end;
+
+          { E-MAIL EM PORTUGUÊS E INGLÊS }
+          else
+            goto emailBR1;
+            { BLOCO DE CHAMADO DO GOTO }
+            outroIdioma1:
+            goto emailEN1;
+          end;
+
+        vHTML := qrEmailAvisoHTML.Asinteger;
+
+        if not vHTML = 1
+         then begin
+           vBody := StringReplace(vBody, '<BR><BR>', '<BR>', [rfReplaceAll]);
+           vBody := StringReplace(vBody, '<B>', '', [rfReplaceAll]);
+           vBody := StringReplace(vBody, '</B>', '', [rfReplaceAll]);
+           vBody := StringReplace(vBody, '<LI>', #13#10#9#45, [rfReplaceAll]);
+         end;
+
+        vPara := '';
+
+        if Trim(qrEmailAvisoEmail.AsString) <> ''
+         then vPara := qrEmailAvisoNome_completo.AsString +'<'+ qrEmailAvisoEmail.AsString +'>';
+
+         //Leonardo.alabarce - 28/10/2011 - ticket 855
+        if (vAssunto <> vAssuntoAnterior)
+         then begin
+           vAssuntoAnterior := vAssunto;
+
+           AdicionaDestinatarios;
+
+           AdicionaDestinatariosImportadores;
+         end;
+          //FIM -----------------------------------------------------
+
+        { ENVIA E-MAIL }
+       acEnviaEmail.Execute;
+
+        if acFinaliza.Checked
+         then Exit;
+
+        if vIdioma = 2
+         then begin
+           vIdioma := 3;
+           goto outroIdioma1;
+         end;
+
+        qrEmailAviso.Next;
+      end;
+     end;
+
+     { ENVIA E-MAIL PARA SUPERVISORES OPERACIONAL E RESPONSÁVEL }
+     if qrEmailAviso.RecordCount = 0
+      then begin
+        { AVISO CASO NÃO TENHA CONTATO DA EMPRESA }
+        Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                              + 'Não foram encontrados contatos da empresa.';
+        Writeln(arqLog, Linha);  Flush(arqLog);
+        reProcessa.Lines.Append(Linha);
+        vContatos := '<FONT COLOR="#DD0000">Empresa sem contato para informar a Liberação da Carga.</FONT>'
+      end;
+
+     vBody := '<BR>'
+            + 'Prezados,<BR><BR>'
+            + 'A carga acima citada foi liberada em <B>'+ qrALCData_liberacao.AsString +'</B>. '
+            + 'A Transp. <B>'+ qrALCRazao_Social.AsString +'</B> (landcarrier) está carregando a carga.<BR> <BR>'
+            + 'Por favor, note os detalhes da carga: <BR>'
+            + vInfoPor // INFORMAÇÕES DA CARGA
+            + 'Segue abaixo a lista de contatos da empresa:<BR>'
+            + vContatos // CONTATOS DA EMPRESA
+            + '<BR><BR>';
+
+     vAssunto := 'ALC - AVISO DE LIBERAÇÃO DE CARGA - '+ qrALCCodigo_Cliente.AsString;
+
+     vPara := '';
+
+     if Trim(qrALCEmail.AsString) <> ''
+      then if UsuarioAtivo(qrALCEmail.AsString)
+            then vPara := qrALCNome_Completo.AsString +'<'+ qrALCEmail.AsString +'>';
+
+     if Trim(qrALCEmailSupervisor.AsString) <> ''
+      then if UsuarioAtivo(qrALCEmailSupervisor.AsString)
+            then if vPara = ''
+                  then vPara := qrALCNomeSupervisor.AsString +'<'+ qrALCEmailSupervisor.AsString +'>'
+                  else vPara := vPara + '; ' + qrALCNomeSupervisor.AsString +'<'+ qrALCEmailSupervisor.AsString +'>';
+
+     vHTML := 1;
+
+     if (vAssunto <> vAssuntoAnterior)
+      then begin
+        vAssuntoAnterior := vAssunto;
+
+        AdicionaDestinatarios;
+
+        AdicionaDestinatariosImportadores;
+      end;
+
+     { ENVIA E-MAIL }
+     acEnviaEmail.Execute;
+     if acFinaliza.Checked
+      then Exit;
+
+     { GRAVANDO ENVIO DO ALC }
+     qrAtuALC.Params[2].AsString := vProc;
+     qrAtuALC.ExecSQL;
+
+     qrALC.Next;
+   end;
+
+end;
+
+procedure TfrmALC.acProcessaExecute(Sender: TObject);
+var
+  vFabric, vFat, vPO: String;
+begin
+  { RELAÇÃO DOS FABRICANTES DOS ITENS DAS FATURAS DO PROCESSO }
+  with qrFabric do
+   begin
+     Params[2].AsString := vProc;
+     Open;
+
+     while not Eof do
+      begin
+        vFabric := vFabric + '<LI>'+ qrFabricRazao_Social.AsString;
+        Next;
+      end;
+
+     Close;
+   end;
+
+  { RELAÇÃO DAS FATURAS DO PROCESSO }
+  with qrFaturas do
+   begin
+     Params[2].AsString := vProc;
+     Open;
+
+     while not Eof do
+      begin
+        if vFat <> ''
+         then vFat := vFat +', ';
+
+        vFat := vFat + qrFaturasCodigo.AsString;
+
+        Next;
+      end;
+
+     Close;
+   end;
+
+  { RELAÇÃO DAS PO'S DOS ITENS DAS FATURAS DO PROCESSO }
+  with qrItens do
+   begin
+     Params[2].AsString := vProc;
+     Open;
+
+     while not Eof do
+      begin
+        if vPO <> ''
+         then vPO := vPO +', ';
+
+        vPO := vPO + qrItensPO.AsString;
+        Next;
+      end;
+
+     Close;
+   end;
+
+  { INFORMAÇÕES EM PORTUGUÊS }
+  vInfoPor := '<B>Cliente:</B> ('+ vImp +') '+ vImpNome +'<BR>'
+            + '<B>Referência MS:</B> '+ vProc +'<BR>'
+            + '<B>Fabricante:</B> '+ vFabric +'<BR>'
+            + '<B>Referência Cliente:</B> '+ qrALCCodigo_Cliente.AsString +'<BR>'
+            + '<B>Fatura:</B> '+ vFat +'<BR>'
+            + '<B>Número de PO:</B> '+ vPO +'<BR>'
+            + '<B>Descrição:</B> '+ qrALCDescricao_mercadoria.AsString +'<BR>'
+            + '<B>AWB:</B> '+ qrALCNumerodoccarga.AsString
+            + '<B>chegada em</B> '+ qrALCData_Chegada_URF_Cheg.AsString +'<BR>'
+            + '<B>DI:</B> '+ qrALCDI.AsString+'<BR>'
+            + '<B>RTC:</B> '+ qrALCNumero_RTC.AsString+'<BR> <BR>';
+
+  { INFORMAÇÕES EM INGLÊS }
+  vInfoIng := '<B>Company:</B> ('+ vImp +') '+ vImpNome +'<BR>'
+            + '<B>Refer. MS:</B> '+ vProc +'<BR>'
+            + '<B>Supplier:</B> '+ vFabric +'<BR>'
+            + '<B>MMT:</B> '+ qrALCCodigo_Cliente.AsString +'<BR>'
+            + '<B>Invoice:</B> '+ vFat +'<BR>'
+            + '<B>PO Number:</B> '+ vPO +'<BR>'
+            + '<B>Description:</B> '+ qrALCDescricao_mercadoria.AsString +'<BR>'
+            + '<B>AWB:</B> '+ qrALCNumerodoccarga.AsString
+            + '<B>arrived on</B> '+ qrALCData_Chegada_URF_Cheg.AsString +'<BR>'
+            + '<B>DI:</B> '+ qrALCDI.AsString+'<BR>'
+            + '<B>RTC:</B> '+ qrALCNumero_RTC.AsString+'<BR> <BR>';
+end;
+
+procedure TfrmALC.acEnviaEmailExecute(Sender: TObject);
+begin
+  Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                        + 'Gravando e-Mail automático...';
+  Writeln(arqLog, Linha);  Flush(arqLog);
+  reProcessa.Lines.Append(Linha);
+
+  if (vPara + vCC + vCCO) = ''
+   then begin
+     Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                           + '<*> ERRO! Não há e-Mail para envio.';
+     Writeln(arqLog, Linha);  Flush(arqLog);
+     reProcessa.Lines.Append(Linha);
+     Exit;
+   end;
+
+  try
+    tbEmailAuto.Open;
+    tbEmailAuto.Append;
+    tbEmailAutoPrograma.AsString := vCodAPL;
+    tbEmailAutoTitulo.AsString   := vTitulo;
+    tbEmailAutoAssunto.AsString  := vAssunto;
+    tbEmailAutoAnexo.AsString    := vAnexo;
+    tbEmailAutoHTML.Asinteger    := vHTML;
+    tbEmailAutoDe.AsString       := vDe;
+    tbEmailAutoPara.AsString     := vPara;
+    tbEmailAutoCC.AsString       := vCC;
+    tbEmailAutoCCO.AsString      := vCCO;
+    tbEmailAutoBody.AsString     := vBody;
+    tbEmailAutoData.AsDateTime   := Date();
+    tbEmailAutoHora.AsDateTime   := Now();
+    tbEmailAuto.Post;
+    tbEmailAuto.Close;
+
+    vPara := '';
+    vCC   := '';
+    vCCO  := '';
+  except
+    on E:Exception do
+     begin
+       Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                             + '<*> ERRO! e-Mail não gravado. MSG: '+ StringReplace(E.Message, #13#10, ' ', [rfReplaceAll]);
+       Writeln(arqLog, Linha);  Flush(arqLog);
+       reProcessa.Lines.Append(Linha);
+     end;
+  end;
+end;
+
+procedure TfrmALC.acFinalizaExecute(Sender: TObject);
+begin
+  Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+        + '>>> FINALIZANDO O PROCESSAMENTO DO ALC';
+  Writeln(arqLog, Linha);  Flush(arqLog);
+  reProcessa.Lines.Append(Linha);
+  acFinaliza.Checked := True;
+  CloseFile(arqLog);
+  Close;
+end;
+
+procedure TfrmALC.reProcessaChange(Sender: TObject);
+begin
+  pnlTop.Refresh;
+  pnlLog.Refresh;
+end;
+
+procedure TfrmALC.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+begin
+  if acFinaliza.Checked
+   then CanClose := True
+   else begin
+     CanClose := False;
+     acFinaliza.Execute;
+   end;
+end;
+
+procedure TfrmALC.FormShow(Sender: TObject);
+begin
+  tmIniciar.Enabled := True;
+end;
+
+procedure TfrmALC.tmIniciarTimer(Sender: TObject);
+begin
+  tmIniciar.Enabled := False;
+
+  acInicializa.Execute;
+end;
+
+function TfrmALC.UsuarioAtivo(Email: String): Boolean;
+var
+  QryAux : TQuery;
+begin
+  try
+    QryAux := TQuery.Create(nil);
+    QryAux.DatabaseName := 'DBNMSCOMEX';
+
+    QryAux.Sql.Add(' SELECT USUARIO FROM Usuarios WHERE Ativo = 1 AND Email = :Email ');
+    QryAux.ParamByName('Email').AsString := Email;
+    QryAux.Open;
+
+    if QryAux.RecordCount > 0
+     then Result := True
+     else Result := False;
+  finally
+    QryAux.Free;
+  end;
+end;
+
+procedure TfrmALC.AdicionaDestinatarios;
+begin
+  qrEmailsAvisosGeral.Close;
+  qrEmailsAvisosGeral.Open;
+
+  while not qrEmailsAvisosGeral.Eof do
+   begin
+     if qrEmailsAvisosGeralPara.AsBoolean
+      then begin
+        if (Pos(qrEmailsAvisosGeralEmail.Value, vPara) = 0) and
+           (Pos(qrEmailsAvisosGeralEmail.Value, vCC)   = 0) and
+           (Pos(qrEmailsAvisosGeralEmail.Value, vCCO)  = 0)
+         then begin
+           if vPara = ''
+            then vPara := qrEmailsAvisosGeralEmail.Value
+            else vPara := vPara + '; ' + qrEmailsAvisosGeralEmail.Value;
+         end;
+      end;
+
+     if qrEmailsAvisosGeralCc.AsBoolean
+      then begin
+        if (Pos(qrEmailsAvisosGeralEmail.Value, vPara) = 0) and
+           (Pos(qrEmailsAvisosGeralEmail.Value, vCC)   = 0) and
+           (Pos(qrEmailsAvisosGeralEmail.Value, vCCO)  = 0)
+         then begin
+           if vCC  = ''
+            then vCC := qrEmailsAvisosGeralEmail.Value
+            else vCC := vCC + '; ' + qrEmailsAvisosGeralEmail.Value;
+         end;
+      end;
+
+     if qrEmailsAvisosGeralCCo.AsBoolean
+      then begin
+        if (Pos(qrEmailsAvisosGeralEmail.Value, vPara) = 0) and
+           (Pos(qrEmailsAvisosGeralEmail.Value, vCC)   = 0) and
+           (Pos(qrEmailsAvisosGeralEmail.Value, vCCO)  = 0)
+         then begin
+           if vCCo = ''
+            then vCCo := qrEmailsAvisosGeralEmail.Value
+            else vCCo := vCCO + '; ' + qrEmailsAvisosGeralEmail.Value;
+         end;
+      end;
+
+     qrEmailsAvisosGeral.Next;
+   end;
+
+  qrEmailsAvisosGeral.Close;
+end;
+
+procedure TfrmALC.AdicionaDestinatariosImportadores;
+begin
+  qrEmailAvisoImportadores.Close;
+  qrEmailAvisoImportadores.Params[3].AsString := qrALCCGC_CPF.AsString;
+  qrEmailAvisoImportadores.Open;
+
+  while not qrEmailAvisoImportadores.Eof do
+   begin
+     if qrEmailAvisoImportadoresPara.AsBoolean
+      then begin
+        if vPara = ''
+         then vPara := qrEmailAvisoImportadoresEmail.Value
+         else vPara := vPara + '; ' + qrEmailAvisoImportadoresEmail.Value;
+      end;
+
+     if qrEmailAvisoImportadoresCc.AsBoolean
+      then begin
+        if vCC = ''
+         then vCC := qrEmailAvisoImportadoresEmail.Value
+         else vCC := vCC + '; ' + qrEmailAvisoImportadoresEmail.Value;
+      end;
+
+     if qrEmailAvisoImportadoresCCo.AsBoolean
+      then begin
+        if vCCO = ''
+         then vCCO := qrEmailAvisoImportadoresEmail.Value
+         else vCCO := vCCO + '; ' + qrEmailAvisoImportadoresEmail.Value;
+      end;
+
+     qrEmailAvisoImportadores.Next;
+   end;
+
+  qrEmailAvisoImportadores.Close;
+end;
+
+end.

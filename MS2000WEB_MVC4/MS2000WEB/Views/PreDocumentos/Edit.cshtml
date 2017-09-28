@@ -1,0 +1,145 @@
+﻿@model MS2000WEB.Models.Pre_Documentos
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Pré-Processo</a> <span class="divider">></span></li>
+    <li><a href="#">Upload</a> <span class="divider">></span></li>
+    <li class="active">Edição</li>
+</ul>
+
+<h4>Upload de Arquivos</h4>
+
+@using (Html.BeginForm("Edit", "PreDocumentos",
+                    FormMethod.Post, new { @class = "form-stacked" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)    
+                   
+    
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.pk_codigo)
+        @Html.ValidationMessageFor(model => model.pk_codigo)
+    </div>    
+            
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.fk_preprocesso)
+        @Html.ValidationMessageFor(model => model.fk_preprocesso)
+    </div>     
+            
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.numero_doc)
+        @Html.ValidationMessageFor(model => model.numero_doc)
+    </div>    
+            
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.pagina)
+        @Html.ValidationMessageFor(model => model.pagina)
+    </div>
+    
+            
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.codigo)
+        @Html.ValidationMessageFor(model => model.codigo)
+    </div>    
+            
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.arquivo)
+        @Html.ValidationMessageFor(model => model.arquivo)
+    </div>
+                
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.ftp)
+        @Html.ValidationMessageFor(model => model.ftp)
+    </div>
+                
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.data_inclusao)
+        @Html.ValidationMessageFor(model => model.data_inclusao)
+    </div>    
+            
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.data_envio)
+        @Html.ValidationMessageFor(model => model.data_envio)
+    </div>
+                
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.tipo_arquivo)
+        @Html.ValidationMessageFor(model => model.tipo_arquivo)
+    </div>    
+            
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.descricao_arquivo)
+        @Html.ValidationMessageFor(model => model.descricao_arquivo)
+    </div>
+                 
+       
+         
+    <div class="clearfix">
+        @Html.Label("Tipo de Documento ")
+        <div class="input">
+            @Html.DropDownList("fk_tipodocumento", null, string.Empty, new { id = "ddlTipoDocumento", style = "width: 400px;"  })
+        </div>
+    </div>          
+                        
+    <div class="clearfix">
+        @Html.Label("Sub-Tipo de Documento")
+        <div class="input">
+            @Html.DropDownList("fk_subtipodocumento", null, string.Empty, new { style = "width: 400px;"  })
+        </div>
+    </div>
+                       
+    <div class="clearfix">
+        @Html.Label("Observação ")
+        <div class="input">
+            @Html.TextAreaFor(model => model.observacao, new { @class = "span4"})
+            @Html.ValidationMessageFor(model => model.observacao)
+        </div>
+    </div>  
+
+    <div class="form-actions">
+        @*<input id="submit" type="submit" class="btn btn-inverse" value="Salvar" />*@
+        @*@Html.ActionLink("Salvar Alterações", "Edit", null, new { @class = "btn btn-inverse" })*@
+        <button type="submit" class="btn btn-inverse">Salvar alterações</button>
+        @Html.ActionLink("Cancelar", "Index", new { id = Model.fk_preprocesso }, new { @class = "btn" })
+    </div> 
+        
+}
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#ddlTipoDocumento").change(function () {
+            var idsubtipodocumento = $(this).val();
+            GetSubTipoDocumento(idsubtipodocumento);
+        });
+
+        function GetSubTipoDocumento(param) {
+            //$.getJSON("/PreDocumentos/PopulateSubTipoDropDownList", { id: param },
+            $.getJSON("@Url.Action("PopulateSubTipoDropDownList","PreDocumentos")", { id: param },
+            function (subtipoData) {
+                var select = $("#fk_subtipodocumento");
+                select.empty();
+                select.append($('<option/>', {
+                    value: 0,
+                    text: "Selecione"
+                }));
+                $.each(subtipoData, function (index, itemData) {
+
+                    select.append($('<option/>', {
+                        value: itemData.Value,
+                        text: itemData.Text
+                    }));
+                });
+            });
+        }
+    });
+
+
+
+
+</script>

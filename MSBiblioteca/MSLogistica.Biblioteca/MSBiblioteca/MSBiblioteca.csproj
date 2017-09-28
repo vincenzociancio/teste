@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{555D3184-7E07-4A58-BC4A-B54EDD6C20C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSBiblioteca</RootNamespace>
+    <AssemblyName>MSBiblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\AcessoAcaoEspecifica.cs" />
+    <Compile Include="BLL\AcessoAcaoEspecificaGrupo.cs" />
+    <Compile Include="BLL\AcessoGrupo.cs" />
+    <Compile Include="BLL\AcessoGrupoUsuario.cs" />
+    <Compile Include="BLL\AcessoPaginaGrupo.cs" />
+    <Compile Include="BLL\AcessoPagina.cs" />
+    <Compile Include="BLL\AcrescimosFatura.cs" />
+    <Compile Include="BLL\Armazem.cs" />
+    <Compile Include="BLL\Cae.cs" />
+    <Compile Include="BLL\Canal.cs" />
+    <Compile Include="BLL\CentroDeCusto.cs" />
+    <Compile Include="BLL\Conhecimento.cs" />
+    <Compile Include="BLL\Contrato.cs" />
+    <Compile Include="BLL\ControleAta.cs" />
+    <Compile Include="BLL\ControleAtaArquivo.cs" />
+    <Compile Include="BLL\ControleAtaParticipante.cs" />
+    <Compile Include="BLL\ControleDePasta.cs" />
+    <Compile Include="BLL\EmailAuto.cs" />
+    <Compile Include="BLL\EnscoGrafico.cs" />
+    <Compile Include="BLL\ExportacaoSeadrill.cs" />
+    <Compile Include="BLL\SeadrillExportacao\Cabecalho.cs" />
+    <Compile Include="BLL\Exportador.cs" />
+    <Compile Include="BLL\Fatura.cs" />
+    <Compile Include="BLL\FollowUp.cs" />
+    <Compile Include="BLL\FollowUpCheckCliente.cs" />
+    <Compile Include="BLL\FollowUpCheckTipoProcesso.cs" />
+    <Compile Include="BLL\Importador.cs" />
+    <Compile Include="BLL\ItensFatura.cs" />
+    <Compile Include="BLL\ItensFaturaRateio.cs" />
+    <Compile Include="BLL\LocalInventario.cs" />
+    <Compile Include="BLL\Menu.cs" />
+    <Compile Include="BLL\ParametroFaturamento.cs" />
+    <Compile Include="BLL\Plataforma.cs" />
+    <Compile Include="BLL\ProcessoImposto.cs" />
+    <Compile Include="BLL\ProcessoTipoUrgencia.cs" />
+    <Compile Include="BLL\ProcessoVisaoGeral.cs" />
+    <Compile Include="BLL\RMBR.cs" />
+    <Compile Include="BLL\SeadrillExportacao\Linha.cs" />
+    <Compile Include="BLL\Setor.cs" />
+    <Compile Include="BLL\SiscomexExportacao.cs" />
+    <Compile Include="BLL\TipoNumerarioObrigatorio.cs" />
+    <Compile Include="BLL\TiposReducoesFaturas.cs" />
+    <Compile Include="BLL\TributacaoItemFatura.cs" />
+    <Compile Include="DAL\ConhecimentoDAL.cs" />
+    <Compile Include="DAL\ControleDePastaDAL.cs" />
+    <Compile Include="DAL\EnscoGraficoDAL.cs" />
+    <Compile Include="DAL\SeadrillExportacao\CabecalhoDAL.cs" />
+    <Compile Include="DAL\FollowUpDAL.cs" />
+    <Compile Include="DAL\ParametroFaturamentoDAL.cs" />
+    <Compile Include="DAL\ProcessoImpostoDAL.cs" />
+    <Compile Include="DAL\ProcessoTipoUrgenciaDAL.cs" />
+    <Compile Include="DAL\ProcessoVisaoGeralDAL.cs" />
+    <Compile Include="DAL\SeadrillExportacao\LinhaDAL.cs" />
+    <Compile Include="DAL\TipoNumerarioObrigatorioDAL.cs" />
+    <Compile Include="DAL\TiposReducoesFaturasDAL.cs" />
+    <Compile Include="DAL\TributacaoItemFaturaDAL.cs" />
+    <Compile Include="DTO\ConhecimentoDTO.cs" />
+    <Compile Include="DTO\ControleDePastaDTO.cs" />
+    <Compile Include="DTO\EnscoGraficoDTO.cs" />
+    <Compile Include="DTO\SeadrillExportacao\CabecalhoDTO.cs" />
+    <Compile Include="DTO\FollowUpDTO.cs" />
+    <Compile Include="DTO\ParametroFaturamentoDTO.cs" />
+    <Compile Include="DTO\ProcessoImpostoDTO.cs" />
+    <Compile Include="DTO\ProcessoTipoUrgenciaDTO.cs" />
+    <Compile Include="DTO\ProcessoVisaoGeralDTO.cs" />
+    <Compile Include="DTO\SeadrillExportacao\LinhaDTO.cs" />
+    <Compile Include="DTO\SiscomexExpotacao\enquadramento.cs" />
+    <Compile Include="DTO\SiscomexExpotacao\fabricante.cs" />
+    <Compile Include="DTO\SiscomexExpotacao\instrumento_comercial.cs" />
+    <Compile Include="DTO\SiscomexExpotacao\item_mercadoria.cs" />
+    <Compile Include="DTO\SiscomexExpotacao\lote.cs" />
+    <Compile Include="DTO\SiscomexExpotacao\registro_exportacao.cs" />
+    <Compile Include="DTO\SiscomexExpotacao\re_base.cs" />
+    <Compile Include="BLL\SiscomexIncoterm.cs" />
+    <Compile Include="BLL\SiscomexMoeda.cs" />
+    <Compile Include="BLL\Processo.cs" />
+    <Compile Include="BLL\Procurador.cs" />
+    <Compile Include="BLL\Produto.cs" />
+    <Compile Include="BLL\RcrObsEspecifica.cs" />
+    <Compile Include="BLL\SiscomexPais.cs" />
+    <Compile Include="BLL\SiscomexTipoDeclaracao.cs" />
+    <Compile Include="BLL\SiscomexUF.cs" />
+    <Compile Include="BLL\SiscomexUnidadeMedida.cs" />
+    <Compile Include="BLL\Supervisor.cs" />
+    <Compile Include="BLL\TipoDeCarga.cs" />
+    <Compile Include="BLL\TipoDeProcesso.cs" />
+    <Compile Include="BLL\TiposStatusProcessos.cs" />
+    <Compile Include="BLL\Tipos_Acrescimos_Fatura.cs" />
+    <Compile Include="BLL\TipoVinculacao.cs" />
+    <Compile Include="BLL\Transportador.cs" />
+    <Compile Include="BLL\TratamentoTributarioICMS.cs" />
+    <Compile Include="BLL\Usuario.cs" />
+    <Compile Include="BLL\UsuarioFollowLiberado.cs" />
+    <Compile Include="BLL\UsuarioLog.cs" />
+    <Compile Include="BLL\UsuarioMenu.cs" />
+    <Compile Include="BLL\UsuarioNet.cs" />
+    <Compile Include="BLL\UsuarioBeneficioRepetro.cs" />
+    <Compile Include="BLL\UsuarioCliente.cs" />
+    <Compile Include="DAL\AcessoAcaoEspecificaDAL.cs" />
+    <Compile Include="DAL\AcessoAcaoEspecificaGrupoDAL.cs" />
+    <Compile Include="DAL\AcessoGrupoDAL.cs" />
+    <Compile Include="DAL\AcessoGrupoUsuarioDAL.cs" />
+    <Compile Include="DAL\AcessoPaginaGrupoDAL.cs" />
+    <Compile Include="DAL\AcessoPaginaDAL.cs" />
+    <Compile Include="DAL\AcrescimosFaturaDAL.cs" />
+    <Compile Include="DAL\ArmazemDAL.cs" />
+    <Compile Include="DAL\BancoDados.cs" />
+    <Compile Include="DAL\CaeDAL.cs" />
+    <Compile Include="DAL\CanalDAL.cs" />
+    <Compile Include="DAL\CentroDeCustoDAL.cs" />
+    <Compile Include="DAL\ContratoDAL.cs" />
+    <Compile Include="DAL\ControleAtaArquivoDAL.cs" />
+    <Compile Include="DAL\ControleAtaDAL.cs" />
+    <Compile Include="DAL\ControleAtaParticipanteDAL.cs" />
+    <Compile Include="DAL\EmailAutoDAL.cs" />
+    <Compile Include="DAL\ExportadorDAL.cs" />
+    <Compile Include="DAL\FabricanteProdutorDAL.cs" />
+    <Compile Include="DAL\FaturaDAL.cs" />
+    <Compile Include="DAL\FollowUpCheckClienteDAL.cs" />
+    <Compile Include="DAL\FollowUpCheckTipoProcessoDAL.cs" />
+    <Compile Include="DAL\ImportadorDAL.cs" />
+    <Compile Include="DAL\ItensFaturaDAL.cs" />
+    <Compile Include="DAL\ItensFaturaRateioDAL.cs" />
+    <Compile Include="DAL\LocalInventarioDAL.cs" />
+    <Compile Include="DAL\MenuDAL.cs" />
+    <Compile Include="DAL\PlataformaDAL.cs" />
+    <Compile Include="DAL\RMBR_DAL.cs" />
+    <Compile Include="DAL\SetorDAL.cs" />
+    <Compile Include="DAL\SiscomexExportacaoDAL.cs" />
+    <Compile Include="DAL\SiscomexIncotermDAL.cs" />
+    <Compile Include="DAL\SiscomexMoedaDAL.cs" />
+    <Compile Include="DAL\ProcessoDAL.cs" />
+    <Compile Include="DAL\ProcuradorDAL.cs" />
+    <Compile Include="DAL\ProdutoDAL.cs" />
+    <Compile Include="DAL\RcrObsEspecificaDAL.cs" />
+    <Compile Include="DAL\SiscomexPaisDAL.cs" />
+    <Compile Include="DAL\SiscomexTipoDeclaracaoDAL.cs" />
+    <Compile Include="DAL\SiscomexUFDAL.cs" />
+    <Compile Include="DAL\SiscomexUnidadeMedidaDAL.cs" />
+    <Compile Include="DAL\SupervisorDAL.cs" />
+    <Compile Include="DAL\TipoDeCargaDAL.cs" />
+    <Compile Include="DAL\TipoDeProcessoDAL.cs" />
+    <Compile Include="DAL\TiposStatusProcessosDAL.cs" />
+    <Compile Include="DAL\TiposAcrescimosFaturaDAL.cs" />
+    <Compile Include="DAL\TipoVinculacaoDAL.cs" />
+    <Compile Include="DAL\TransportadorDAL.cs" />
+    <Compile Include="DAL\TratamentoTributarioIcmsDAL.cs" />
+    <Compile Include="DAL\UsuarioDAL.cs" />
+    <Compile Include="DAL\UsuarioFollowLiberadoDAL.cs" />
+    <Compile Include="DAL\UsuarioLogDAL.cs" />
+    <Compile Include="DAL\UsuarioMenuDAL.cs" />
+    <Compile Include="DAL\UsuarioNetDAL.cs" />
+    <Compile Include="DAL\UsuarioBeneficioRepetroDAL.cs" />
+    <Compile Include="DAL\UsuarioClienteDAL.cs" />
+    <Compile Include="DTO\AcessoAcaoEspecificaDTO.cs" />
+    <Compile Include="DTO\AcessoAcaoEspecificaGrupoDTO.cs" />
+    <Compile Include="DTO\AcessoGrupoDTO.cs" />
+    <Compile Include="DTO\AcessoGrupoUsuarioDTO.cs" />
+    <Compile Include="DTO\AcessoPaginaDTO.cs" />
+    <Compile Include="DTO\AcessoPaginaGrupoDTO.cs" />
+    <Compile Include="DTO\AcrescimosFaturaDTO.cs" />
+    <Compile Include="DTO\ArmazemDTO.cs" />
+    <Compile Include="DTO\CaeDTO.cs" />
+    <Compile Include="DTO\CanalDTO.cs" />
+    <Compile Include="DTO\CentroDeCustoDTO.cs" />
+    <Compile Include="DTO\ContratoDTO.cs" />
+    <Compile Include="DTO\FabricanteProdutorDTO.cs" />
+    <Compile Include="DTO\FaturaDTO.cs" />
+    <Compile Include="DTO\FollowUpCheckClienteDTO.cs" />
+    <Compile Include="DTO\FollowUpCheckTipoProcessoDTO.cs" />
+    <Compile Include="DTO\ItensFaturaDTO.cs" />
+    <Compile Include="DTO\ItensFaturaRateioDTO.cs" />
+    <Compile Include="DTO\LocalInventarioDTO.cs" />
+    <Compile Include="DTO\RMBR_DTO.cs" />
+    <Compile Include="DTO\SetorDTO.cs" />
+    <Compile Include="DTO\SiscomexExportacaoDTO.cs" />
+    <Compile Include="DTO\SiscomexIncotermDTO.cs" />
+    <Compile Include="DTO\SiscomexMoedaDTO.cs" />
+    <Compile Include="DTO\NCMDTO.cs" />
+    <Compile Include="DTO\ControleAtaArquivoDTO.cs" />
+    <Compile Include="DTO\ControleAtaDTO.cs" />
+    <Compile Include="DTO\ControleAtaParticipanteDTO.cs" />
+    <Compile Include="DTO\EmailAutoDTO.cs" />
+    <Compile Include="DTO\ExportadorDTO.cs" />
+    <Compile Include="DTO\ImportadorDTO.cs" />
+    <Compile Include="DTO\MenuDTO.cs" />
+    <Compile Include="DTO\ParametroDTO.cs" />
+    <Compile Include="DTO\PlataformaDTO.cs" />
+    <Compile Include="DTO\ProcessoDTO.cs" />
+    <Compile Include="DTO\ProcuradorDTO.cs" />
+    <Compile Include="DTO\ProdutoDTO.cs" />
+    <Compile Include="DTO\RcrObsEspecificaDTO.cs" />
+    <Compile Include="DTO\SiscomexPaisDTO.cs" />
+    <Compile Include="DTO\SiscomexTipoDeclaracaoDTO.cs" />
+    <Compile Include="DTO\SiscomexTipoImportadorDTO.cs" />
+    <Compile Include="DTO\SiscomexUFDTO.cs" />
+    <Compile Include="DTO\SiscomexUnidadeMedidaDTO.cs" />
+    <Compile Include="DTO\SupervisorDTO.cs" />
+    <Compile Include="DTO\TipoDeCargaDTO.cs" />
+    <Compile Include="DTO\TipoDeProcessoDTO.cs" />
+    <Compile Include="DTO\TipoNumerarioObrigatorioDTO.cs" />
+    <Compile Include="DTO\TiposReducoesFaturasDTO .cs" />
+    <Compile Include="DTO\TiposStatusProcessosDTO.cs" />
+    <Compile Include="DTO\Tipos_Acrescimos_FaturaDTO.cs" />
+    <Compile Include="DTO\TipoVinculacaoDTO.cs" />
+    <Compile Include="DTO\TransportadorDTO.cs" />
+    <Compile Include="DTO\TratamentoTributarioIcmsDTO.cs" />
+    <Compile Include="DTO\TributacaoItemFaturaDTO.cs" />
+    <Compile Include="DTO\Unidade_MedidaDTO.cs" />
+    <Compile Include="DTO\UsuarioDTO.cs" />
+    <Compile Include="DTO\UsuarioFollowLiberadoDTO.cs" />
+    <Compile Include="DTO\UsuarioLogDTO.cs" />
+    <Compile Include="DTO\UsuarioMenu.cs" />
+    <Compile Include="DTO\UsuarioBeneficioRepetroDTO.cs" />
+    <Compile Include="DTO\UsuarioClienteDTO.cs" />
+    <Compile Include="DTO\UsuarioNetDTO.cs" />
+    <Compile Include="Interfaces\ICrudBasico.cs" />
+    <Compile Include="MSUtil\MSFuncoes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Constante\Constante.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

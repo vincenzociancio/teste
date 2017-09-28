@@ -1,0 +1,118 @@
+﻿@*@model MS2000WEB.Models.Pre_Processos_Emails*@
+@model IEnumerable<dynamic>
+
+@{
+    ViewBag.Title = "Pre_Processos_Emails";
+}
+
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Pré Processo</a> <span class="divider">></span></li>
+    <li><a href="#">Editar</a> <span class="divider">></span></li>
+    <li><a href="#">Email Vinculado</a> <span class="divider">></span></li>
+    <li class="active">Detalhes do Email</li>
+</ul>
+
+<h4>Email Vinculado</h4>
+<hr />
+
+@using (Html.BeginForm("MostraDetalhe", "PreProcessosEmails", FormMethod.Post, new { @class = "form-stacked" }))
+{           
+    @Html.ValidationSummary(true)    
+    @Html.Hidden("id", (int)ViewBag.PK_ID)
+        
+    @Html.AntiForgeryToken();   
+    
+    <div style="overflow-y:auto; height: 150px;">
+    <table class="grade" id="grid3" data-swhgajax="true" data-swhgcontainer="grid" data-swhgcallback="" style="width: 5px" >
+    <tr class="header" style="background-color: #7a7878">                       
+        <th scope="col" style="width: auto;">Enviado em:</th>        
+        <td class="alt" style="width: auto" >@Html.Raw(ViewBag.DT_Email)</td> 
+    </tr>
+    <tr class="header" style="background-color: #7a7878">                       
+        <th scope="col" style="width: auto;">De:</th>        
+        <td class="alt" style="width: auto;">@Html.Raw(ViewBag.Email_De)</td> 
+    </tr>
+    <tr class="header" style="background-color: #7a7878">                       
+        <th scope="col" style="width: auto;">Para:</th>        
+        <td class="alt" style="width: auto;"> @Html.Raw(ViewBag.Email_Para)</td> 
+    </tr>
+    <tr class="header" style="background-color: #7a7878">                       
+        <th scope="col" style="width: auto;">Cc:</th>        
+        <td class="alt" style="width: auto;">@Html.Raw(ViewBag.Email_CC)</td> 
+    </tr>
+    <tr class="header" style="background-color: #7a7878">                       
+        <th scope="col" style="width: auto;">Assunto:</th>        
+        <td class="alt" style="width: auto;">@Html.Raw(ViewBag.Email_Assunto)</td> 
+    </tr>
+        
+    </table>       
+   </div> 
+    
+    <br />    
+    
+    if (Model.Count() > 0)
+    {
+        WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10, canSort: false, ajaxUpdateContainerId: "grid");
+        @grid.GetHtml(htmlAttributes: new { id = "grid" },
+                                    tableStyle: "grade",
+                                    headerStyle: "header",
+                                    alternatingRowStyle: "alt",
+                                    selectedRowStyle: "selected",
+                                    columns: grid.Columns(
+                                    grid.Column("Descricao", header: "Anexos", canSort: true),
+                                    grid.Column("", "Ações", style: "text-center", format: @<text>
+                                    @Html.ActionLink("Download", "GetFile", new { id = item.PK_Anexos })</text> 
+                                                                )));
+    }    
+    
+    @:<legend>Mensagem</legend>    
+    <br />    
+    
+    <div style="overflow-y:auto; height: 250px;">
+    @Html.Raw(ViewBag.Email_BodyHTML)
+    </div>   
+              
+    <div class="form-actions">
+         @Html.Label("E-mail (Caso seja mais de um, separá-los com ',' ou ';')")   
+         @Html.TextBox("txtEmail", null, new { @class = "span6" })   
+          
+        <button id="btnSalvar" type="submit" class="btn btn-inverse" onclick="enc_email()">Encaminhar Email</button>         
+         @*@Html.ActionLink("Encaminhar Email", "EncaminharEmail", null, new { id = (int)ViewBag.PK_ID, txtEmail =  txt_Email }, new { @class = "btn btn-inverse" })    *@
+        @Html.ActionLink("Voltar", "Index", new { id = ViewBag.fk_preprocessos }, new { @class = "btn" })          
+        <div class="clearfix" id="msgErro" style="color: red; font-size: 12px;"></div>
+    </div> 
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script type="text/javascript">    
+    function enc_email() {       
+        var ID = $('#id').val();
+       // alert(ID)
+        var param = $("#txtEmail").val();        
+        $.ajax({
+            type: "POST",
+            contentType: "application/json charset=utf-8", 
+            url: '@Url.Action("EncaminharEmail")',
+            data: JSON.stringify({ id: ID, txtEmail: param }),
+            traditional: true,
+            async: false,
+            cache: true,
+            dataType: "json",
+            sucess: function (data) {
+                if (data.result == true) {
+                    $("#msgErro").empty().prepend("<p><b>Email enviado com sucesso!!!</b></p>");
+                    location.reload(true);
+                } else {
+                    $("#msgErro").empty().prepend("<p><b>Email inválido!!!</b></p>");
+                }}
+        });
+
+    };    
+</script>

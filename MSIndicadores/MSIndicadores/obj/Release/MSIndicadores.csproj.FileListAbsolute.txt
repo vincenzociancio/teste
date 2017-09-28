@@ -1,0 +1,9 @@
+C:\VStudio\MSIndicadores\MSIndicadores\bin\MSIndicadores.dll.config
+C:\VStudio\MSIndicadores\MSIndicadores\bin\MSIndicadores.dll
+C:\VStudio\MSIndicadores\MSIndicadores\bin\MSIndicadores.pdb
+C:\VStudio\MSIndicadores\MSIndicadores\bin\en-US\MSIndicadores.resources.dll
+C:\VStudio\MSIndicadores\MSIndicadores\obj\Release\MSIndicadores.Idiomas.res.en-US.resources
+C:\VStudio\MSIndicadores\MSIndicadores\obj\Release\MSIndicadores.csproj.GenerateResource.Cache
+C:\VStudio\MSIndicadores\MSIndicadores\obj\Release\en-US\MSIndicadores.resources.dll
+C:\VStudio\MSIndicadores\MSIndicadores\obj\Release\MSIndicadores.dll
+C:\VStudio\MSIndicadores\MSIndicadores\obj\Release\MSIndicadores.pdb

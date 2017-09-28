@@ -1,0 +1,48 @@
+﻿@model MS2000WEB.Models.Controle_Atas_Arquivos
+
+@{
+    ViewBag.Title = "Novo";
+}
+
+
+@*<script type="text/javascript">
+    $(function () {
+        $('#pdffile').change(function () {
+            $('#subfile').val($(this).val());
+        });
+    });
+</script>*@
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">ISO</a> <span class="divider">></span></li>
+    <li><a href="#">Controle de Atas de Reunião</a> <span class="divider">></span></li>
+     <li><a href="#">Arquivos</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+
+<h4>Controle de Atas de Reunião - Upload</h4>
+
+@using (Html.BeginForm("FileUpload", "ControleDeAtasDeReuniaoArquivo",
+                    FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-stacked" }))
+{   
+    <input type="file" name="file" style="display: none;" id="file" class="span4"/>@*
+    <div class="input-append">
+        <input type="text" name="subfile" id="subfile" class="input-xxlarge" disabled required>
+        <a class="btn" onclick="$('#pdffile').click();">Procurar...</a>
+    </div>*@
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Enviar</button>        
+          @Html.ActionLink("Voltar", "Index", new { id = (int)ViewBag.fk_ata }, new { @class = "btn" }) 
+    </div>          
+    
+}
+<div>
+    @*    <input id="Index" type="submit" class="btn" value="Voltar" />
+    @Html.ActionLink("Voltar","Index","ControleDeAtasDeReuniaoArquivo", null, new { @class = "btn" })*@
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

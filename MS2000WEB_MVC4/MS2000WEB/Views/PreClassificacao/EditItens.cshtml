@@ -1,0 +1,118 @@
+﻿@model System.Data.DataTable
+
+@{
+    ViewBag.Title = "EditItens";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    $(function () {
+        //$("#txtLI").prop("readonly", true);
+        $("#txtNCM").keyup(function () {
+            var numeroNCM = $(this).val();
+            //var IDIMPORTADOR = $('#idimportador').val();
+            $("#txtLI").val("");
+            if (numeroNCM.length >= 5) {
+                $.getJSON("@Url.Action("VerificarNCMComLI", "PreClassificacao")", { ncm: numeroNCM },
+                function (data) {
+                    if (data.result == true)  {
+                            $("#txtLI").val("Required IL");                       
+                        
+                    } else {
+                        $("#txtLI").val("Not Required");
+                    }
+                });
+            }
+        });
+
+        $("#salvar").click(function (e) {
+            var ncm = $("#txtNCM");
+            var descricao = $("#txtDescricao");
+            var coTa = $("#txtCoTa");
+
+            if (coTa.val().toLowerCase().trim() != "co" && coTa.val().toLowerCase().trim() != "ta" && coTa.val().toLowerCase().trim() != "")
+            {
+                $("#msgErro").empty().prepend("<p><b>Dados inválidos:</b></p><ul><li>Entre com 'CO' ou 'TA' no campo " + coTa.prop("name") + ".</li></ul>");
+                return false;
+            }
+            else
+            if (descricao.val().trim() == "" || ncm.val().trim() == "") {
+                $("#msgErro").empty().prepend("<p><b>Campos obrigatórios:</b></p><ul><li>" + descricao.prop("name") + "</li><li>" + ncm.prop("name") + "</li></ul>");
+                return false;
+            }
+            else {
+                return true;
+            }
+        });
+    });
+</script>
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Pré-Processo</a> <span class="divider">></span></li>    
+    <li><a href="#">Classificação</a> <span class="divider">></span></li>
+    <li class="active">Edição</li>
+</ul>
+
+<h4>Pré Classificação</h4>
+<hr />
+
+@using (Html.BeginForm("EditItens", "PreClassificacao",
+                    FormMethod.Post, new { @class = "form-stacked" }))
+{
+    <div class="clearfix" id="msgErro" style="color: red; font-size: 12px;"></div>
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    @Html.Hidden("statusclassificacao", (int)ViewBag.status_classificacao)
+    @Html.Hidden("id", (int)ViewBag.id_preprocesso) 
+  //  @Html.Hidden("idimportador", (string)ViewBag.id_importador)
+
+    for (int i = 0; i < Model.Rows.Count; i++)
+    {
+        for (int j = 0; j < Model.Columns.Count; j++)
+        {
+    <div class="clearfix">
+        <label>
+            @if (Model.Columns[j].ColumnName.ToLower().ToString() != "linha")
+            {   
+                @Model.Columns[j].ColumnName.Remove(0, 1)           
+            }
+        </label>
+        <div class="input">
+            @if (Model.Columns[j].ColumnName.ToLower().ToString() == "linha")
+            {
+                @Html.Hidden(@Model.Columns[j].ColumnName.ToString(), Model.Rows[0].ItemArray.GetValue(j).ToString())
+            }
+            else if (Convert.ToInt32(Model.Columns[j].ColumnName.Substring(0, 1).ToString()) == 1)
+            {
+                @Html.TextArea(@Model.Columns[j].ColumnName.ToString().Remove(0, 1), Model.Rows[0].ItemArray.GetValue(j).ToString(), new { @class = "span9" })
+            }
+            else if (Convert.ToInt32(Model.Columns[j].ColumnName.Substring(0, 1).ToString()) == 2)
+            {
+                @Html.TextArea(@Model.Columns[j].ColumnName.ToString().Remove(0, 1), Model.Rows[0].ItemArray.GetValue(j).ToString(), new { @class = "span9", @disabled = "disabled",  @id = "txtDescricao" })
+            }
+            else if (Convert.ToInt32(Model.Columns[j].ColumnName.Substring(0, 1).ToString()) == 3)
+            {
+                @Html.TextBox(@Model.Columns[j].ColumnName.ToString().Remove(0, 1), Model.Rows[0].ItemArray.GetValue(j).ToString(), new { @class = "span2", @id = "txtCoTa" })
+            }
+            else if (Convert.ToInt32(Model.Columns[j].ColumnName.Substring(0, 1).ToString()) == 4)
+            {
+                @Html.TextBox(@Model.Columns[j].ColumnName.ToString().Remove(0, 1), Model.Rows[0].ItemArray.GetValue(j).ToString(), new { @class = "span2", @id = "txtNCM" })
+            }
+            else if (Convert.ToInt32(Model.Columns[j].ColumnName.Substring(0, 1).ToString()) == 5)
+            {
+                @Html.TextBox(@Model.Columns[j].ColumnName.ToString().Remove(0, 1), Model.Rows[0].ItemArray.GetValue(j).ToString(), new { @class = "span2", @id = "txtLI" })
+            }
+        </div>
+    </div> 
+        }
+    }    
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse" id="salvar">Salvar alterações</button>
+        @Html.ActionLink("Cancelar", "IndexItens", new { id = (int)ViewBag.id_preprocesso, statusclassificacao = (int)ViewBag.status_classificacao }, new { @class = "btn" })
+    </div>
+}
+
+
+

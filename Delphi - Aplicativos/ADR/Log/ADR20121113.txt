@@ -1,0 +1,184 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 13/11/2012 | 10:16:03 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 13/11/2012 | 10:16:03 | Arrumando Tributação...
+ 13/11/2012 | 10:16:03 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 13/11/2012 | 10:17:19 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 13/11/2012 | 10:17:19 | Arrumando Tributação...
+ 13/11/2012 | 10:17:20 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 13/11/2012 | 10:17:47 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 13/11/2012 | 10:17:48 | Arrumando Tributação...
+ 13/11/2012 | 10:17:48 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 13/11/2012 | 10:17:57 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 13/11/2012 | 10:18:02 | Verificando Processo: 00125/08
+ 13/11/2012 | 10:35:55 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 13/11/2012 | 10:35:55 | Arrumando Tributação...
+ 13/11/2012 | 10:35:56 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 13/11/2012 | 10:35:58 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 13/11/2012 | 10:35:58 | Verificando Processo: 00125/08
+ 13/11/2012 | 10:35:58 | CLIENTE: (148) AKER KVAERNER OIL & GAS DO BRASIL LTDA
+ 13/11/2012 | 10:35:58 | Verificando Processo: 04135/07
+ 13/11/2012 | 10:35:58 | CLIENTE: (46) ANDAIMES JIRAU LTDA
+ 13/11/2012 | 10:35:58 | Verificando Processo: 00118/09
+ 13/11/2012 | 10:35:58 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 13/11/2012 | 10:35:58 | Verificando Processo: 02481/04
+ 13/11/2012 | 10:35:58 | CLIENTE: (187) BP ENERGY DO BRASIL LTDA.
+ 13/11/2012 | 10:35:58 | Verificando Processo: 00032/08
+ 13/11/2012 | 10:35:58 | Verificando Processo: 03098/08
+ 13/11/2012 | 10:35:58 | Verificando Processo: 03577/08
+ 13/11/2012 | 10:35:58 | Verificando Processo: 03581/08
+ 13/11/2012 | 10:35:58 | Verificando Processo: 04647/08
+ 13/11/2012 | 10:35:58 | CLIENTE: (238) BW OFFSHORE DO BRASIL LTDA
+ 13/11/2012 | 10:35:58 | Verificando Processo: 03532/09
+ 13/11/2012 | 10:35:58 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 13/11/2012 | 10:35:58 | Verificando Processo: 00906/09
+ 13/11/2012 | 10:35:58 | Verificando Processo: 01844/06
+ 13/11/2012 | 10:35:58 | Verificando Processo: 01958/05
+ 13/11/2012 | 10:35:59 | Verificando Processo: 02078/09
+ 13/11/2012 | 10:35:59 | Verificando Processo: 02260/06
+ 13/11/2012 | 10:35:59 | CLIENTE: (7) CGG DO BRASIL PARTICIPAÇÕES LTDA
+ 13/11/2012 | 10:35:59 | Verificando Processo: 01402/07
+ 13/11/2012 | 10:35:59 | Verificando Processo: 02180/07
+ 13/11/2012 | 10:35:59 | Verificando Processo: 02807/09
+ 13/11/2012 | 10:35:59 | Verificando Processo: 03612/08
+ 13/11/2012 | 10:35:59 | Verificando Processo: 04601/09
+ 13/11/2012 | 10:35:59 | Verificando Processo: 05927/09
+ 13/11/2012 | 10:35:59 | CLIENTE: (179) CHEVRON BRASIL LTDA.
+ 13/11/2012 | 10:35:59 | Verificando Processo: 03051/08
+ 13/11/2012 | 10:35:59 | CLIENTE: (234) CHEVRON BRASIL UPSTREAM FRADE LTDA
+ 13/11/2012 | 10:35:59 | Verificando Processo: 00145/09
+ 13/11/2012 | 10:35:59 | Verificando Processo: 01661/09
+ 13/11/2012 | 10:35:59 | Verificando Processo: 01697/09
+ 13/11/2012 | 10:36:00 | Verificando Processo: 01752/09
+ 13/11/2012 | 10:36:00 | Verificando Processo: 01778/09
+ 13/11/2012 | 10:36:00 | Verificando Processo: 01788/09
+ 13/11/2012 | 10:36:00 | Verificando Processo: 01792/09
+ 13/11/2012 | 10:36:00 | Verificando Processo: 01815/09
+ 13/11/2012 | 10:36:01 | Verificando Processo: 04876/08
+ 13/11/2012 | 10:36:01 | Verificando Processo: 06215/08
+ 13/11/2012 | 10:36:01 | CLIENTE: (216) CONSTRUTORA NORBERTO ODEBRECHT S/A
+ 13/11/2012 | 10:36:01 | Verificando Processo: 00455/09
+ 13/11/2012 | 10:36:01 | CLIENTE: (344) ENSCO BRAZIL-SERVIÇOS DE PETROLEO LTDA
+ 13/11/2012 | 10:36:01 | Verificando Processo: 12297/12
+ 13/11/2012 | 10:36:02 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12297_DI_1221164629.txt
+ 13/11/2012 | 10:36:02 | ERRO! Enviando Erro no Processo: 12297/12; Responsável: Adriana Monteiro
+ 13/11/2012 | 10:36:02 | Gravando e-Mail automático...
+ 13/11/2012 | 10:36:02 | CLIENTE: (94) FRANKS INTERNATIONAL BRASIL LTDA
+ 13/11/2012 | 10:36:02 | Verificando Processo: 00002/06
+ 13/11/2012 | 10:36:02 | Verificando Processo: 02416/08
+ 13/11/2012 | 10:36:02 | CLIENTE: (96) FRANKS INTERNATIONAL BRASIL LTDA
+ 13/11/2012 | 10:36:02 | Verificando Processo: 02558/08
+ 13/11/2012 | 10:36:02 | CLIENTE: (94) FRANKS INTERNATIONAL BRASIL LTDA
+ 13/11/2012 | 10:36:02 | Verificando Processo: 03599/07
+ 13/11/2012 | 10:36:02 | CLIENTE: (43) FUGRO BRASIL - SERVIÇOS SUBMARINOS E LEVANTAMENTOS LTDA
+ 13/11/2012 | 10:36:02 | Verificando Processo: 03859/07
+ 13/11/2012 | 10:36:02 | Verificando Processo: 05164/08
+ 13/11/2012 | 10:36:02 | Verificando Processo: 05295/08
+ 13/11/2012 | 10:36:02 | Verificando Processo: 05557/08
+ 13/11/2012 | 10:36:02 | CLIENTE: (110) FUGRO DO BRASIL LTDA
+ 13/11/2012 | 10:36:02 | Verificando Processo: 00796/08
+ 13/11/2012 | 10:36:03 | CLIENTE: (99) FUGRO GEOSOLUTIONS DO (BRASIL)  SERV DE LEVANTAMENTO LTDA
+ 13/11/2012 | 10:36:03 | Verificando Processo: 01213/07
+ 13/11/2012 | 10:36:03 | Verificando Processo: 01369/07
+ 13/11/2012 | 10:36:03 | CLIENTE: (31) HALLIBURTON PRODUTOS LTDA.
+ 13/11/2012 | 10:36:03 | Verificando Processo: 00809/04
+ 13/11/2012 | 10:36:03 | Verificando Processo: 01098/04
+ 13/11/2012 | 10:36:03 | Verificando Processo: 01100/04
+ 13/11/2012 | 10:36:03 | Verificando Processo: 01102/04
+ 13/11/2012 | 10:36:03 | Verificando Processo: 01104/04
+ 13/11/2012 | 10:36:03 | Verificando Processo: 01136/04
+ 13/11/2012 | 10:36:04 | Verificando Processo: 01162/04
+ 13/11/2012 | 10:36:04 | Verificando Processo: 01177/04
+ 13/11/2012 | 10:36:04 | Verificando Processo: 01248/04
+ 13/11/2012 | 10:36:05 | Verificando Processo: 01328/04
+ 13/11/2012 | 10:36:05 | Verificando Processo: 01331/04
+ 13/11/2012 | 10:36:05 | Verificando Processo: 01338/04
+ 13/11/2012 | 10:36:05 | Verificando Processo: 01339/04
+ 13/11/2012 | 10:36:05 | Verificando Processo: 01385/04
+ 13/11/2012 | 10:36:05 | Verificando Processo: 01389/04
+ 13/11/2012 | 10:36:05 | Verificando Processo: 01417/04
+ 13/11/2012 | 10:36:05 | Verificando Processo: 01419/04
+ 13/11/2012 | 10:36:06 | Verificando Processo: 01453/04
+ 13/11/2012 | 10:36:06 | Verificando Processo: 01514/04
+ 13/11/2012 | 10:36:06 | Verificando Processo: 01526/04
+ 13/11/2012 | 10:36:06 | Verificando Processo: 01537/04
+ 13/11/2012 | 10:36:06 | Verificando Processo: 01539/04
+ 13/11/2012 | 10:36:06 | Verificando Processo: 01602/04
+ 13/11/2012 | 10:36:06 | Verificando Processo: 01604/04
+ 13/11/2012 | 10:36:06 | Verificando Processo: 01611/04
+ 13/11/2012 | 10:36:06 | Verificando Processo: 01617/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01634/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01640/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01642/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01717/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01720/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01730/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01731/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01744/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01771/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01806/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01815/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01816/04
+ 13/11/2012 | 10:36:07 | Verificando Processo: 01821/04
+ 13/11/2012 | 10:36:08 | Verificando Processo: 01856/04
+ 13/11/2012 | 10:36:08 | Verificando Processo: 02040/04
+ 13/11/2012 | 10:36:08 | Verificando Processo: 02680/03
+ 13/11/2012 | 10:36:08 | CLIENTE: (6) J LOW BEER LTDA.
+ 13/11/2012 | 10:36:08 | Verificando Processo: 01068/03
+ 13/11/2012 | 10:36:08 | CLIENTE: (100) MARÉ ALTA DO BRASIL NAVEGAÇÃO LTDA
+ 13/11/2012 | 10:36:08 | Verificando Processo: 00198/06
+ 13/11/2012 | 10:36:08 | Verificando Processo: 02644/08
+ 13/11/2012 | 10:36:08 | Verificando Processo: 04364/09
+ 13/11/2012 | 10:36:08 | CLIENTE: (152) MODEC SERVIÇOS DE PETROLEO DO BRASIL LTDA
+ 13/11/2012 | 10:36:08 | Verificando Processo: 04123/08
+ 13/11/2012 | 10:36:14 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 13/11/2012 | 10:36:14 | Arrumando Tributação...
+ 13/11/2012 | 10:36:14 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 13/11/2012 | 10:36:28 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 13/11/2012 | 10:36:28 | Verificando Processo: 00125/08
+ 13/11/2012 | 10:36:29 | CLIENTE: (148) AKER KVAERNER OIL & GAS DO BRASIL LTDA
+ 13/11/2012 | 10:36:29 | Verificando Processo: 04135/07
+ 13/11/2012 | 10:36:30 | CLIENTE: (46) ANDAIMES JIRAU LTDA
+ 13/11/2012 | 10:36:30 | Verificando Processo: 00118/09
+ 13/11/2012 | 10:36:30 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 13/11/2012 | 10:36:30 | Verificando Processo: 02481/04
+ 13/11/2012 | 10:36:31 | CLIENTE: (187) BP ENERGY DO BRASIL LTDA.
+ 13/11/2012 | 10:36:31 | Verificando Processo: 00032/08
+ 13/11/2012 | 10:36:32 | Verificando Processo: 03098/08
+ 13/11/2012 | 10:36:32 | Verificando Processo: 03577/08
+ 13/11/2012 | 10:36:33 | Verificando Processo: 03581/08
+ 13/11/2012 | 10:36:33 | Verificando Processo: 04647/08
+ 13/11/2012 | 10:36:34 | CLIENTE: (238) BW OFFSHORE DO BRASIL LTDA
+ 13/11/2012 | 10:36:34 | Verificando Processo: 03532/09
+ 13/11/2012 | 10:36:34 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 13/11/2012 | 10:36:34 | Verificando Processo: 00906/09
+ 13/11/2012 | 10:36:35 | Verificando Processo: 01844/06
+ 13/11/2012 | 10:36:35 | Verificando Processo: 01958/05
+ 13/11/2012 | 10:36:36 | Verificando Processo: 02078/09
+ 13/11/2012 | 10:36:36 | Verificando Processo: 02260/06
+ 13/11/2012 | 10:36:37 | CLIENTE: (7) CGG DO BRASIL PARTICIPAÇÕES LTDA
+ 13/11/2012 | 10:36:37 | Verificando Processo: 01402/07
+ 13/11/2012 | 10:36:37 | Verificando Processo: 02180/07
+ 13/11/2012 | 10:36:37 | Verificando Processo: 02807/09
+ 13/11/2012 | 10:36:38 | Verificando Processo: 03612/08
+ 13/11/2012 | 10:36:38 | Verificando Processo: 04601/09
+ 13/11/2012 | 10:36:39 | Verificando Processo: 05927/09
+ 13/11/2012 | 10:36:40 | CLIENTE: (179) CHEVRON BRASIL LTDA.
+ 13/11/2012 | 10:36:40 | Verificando Processo: 03051/08
+ 13/11/2012 | 10:36:41 | CLIENTE: (234) CHEVRON BRASIL UPSTREAM FRADE LTDA
+ 13/11/2012 | 10:36:41 | Verificando Processo: 00145/09
+ 13/11/2012 | 10:36:41 | Verificando Processo: 01661/09
+ 13/11/2012 | 10:36:42 | Verificando Processo: 01697/09
+ 13/11/2012 | 10:36:42 | Verificando Processo: 01752/09
+ 13/11/2012 | 10:36:43 | Verificando Processo: 01778/09
+ 13/11/2012 | 10:36:43 | Verificando Processo: 01788/09
+ 13/11/2012 | 10:36:44 | Verificando Processo: 01792/09
+ 13/11/2012 | 10:36:44 | Verificando Processo: 01815/09
+ 13/11/2012 | 10:36:45 | Verificando Processo: 04876/08
+ 13/11/2012 | 10:36:45 | Verificando Processo: 06215/08
+ 13/11/2012 | 10:36:46 | CLIENTE: (216) CONSTRUTORA NORBERTO ODEBRECHT S/A
+ 13/11/2012 | 10:36:46 | Verificando Processo: 00455/09
+ 13/11/2012 | 10:37:26 | CLIENTE: (344) ENSCO BRAZIL-SERVIÇOS DE PETROLEO LTDA
+ 13/11/2012 | 10:37:31 | Verificando Processo: 12297/12
+ 13/11/2012 | 10:37:47 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12297_DI_1221164629.txt
+ 13/11/2012 | 10:38:16 | ERRO! Enviando Erro no Processo: 12297/12; Responsável: Adriana Monteiro
+ 13/11/2012 | 10:38:16 | Gravando e-Mail automático...

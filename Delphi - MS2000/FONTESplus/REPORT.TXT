@@ -1,0 +1,53 @@
+            ESTADO DO RIO DE JANEIRO                  11 - VENCIMENTO
+            SECRETARIA DE ESTADO DE FAZENDA                                    DARJ
+            DOCUMENTO DE ARRECADAÇÃO                               /     /  2010
+   12 - NOME, FIRMA OU RAZÃO SOCIAL                                     01 - INSCRIÇÃO ESTADUAL
+    TRANSOCEAN BRASIL LTDA                                                         84.662.895
+   13 - ENDEREÇO COMPLETO                                               02 - CÓDIGO DA RECEITA
+    AV. PREFEITO ARISTEU FERREIRA DA SILVA, 2500 - . - NOVO CAVALEIROS             024-8
+   14 - MUNICÍPIO                           15 - UF  16 - CEP           03 - CGC / CNPJ / CPF
+    MACAE                                       RJ            27930-070            40.278.681/0001-79
+   17 - RECEITA                                                         04 - Nº DOCUMENTO DE ORIGEM
+    ICMS IMPORTAÇÃO                                                                06/0711252-7
+   18 - INFORMAÇÕES COMPLEMENTARICMS(%)13           CIF : R$   4462,96  05 - PER. REF./PARCELA
+                               Ref. MS:01216/06   II    : R$    654,80             1º DECÊNDIO  - 10/2010
+    * VALORES EM R$                                IPI  : R$    652,27  06 - VALOR PRINCIPAL
+    OU BANCO DO BRASILNO ITAÚ       DI:06/0711252-7 AD  : R$     66,00
+    * NÃO RECEBER APÓS VENCIMENTO             PIS/PASEP : R$     98,22                 965,43
+                                                 COFINS : R$    452,42  07 - ATUALIZAÇÃO MONETÁRIA
+    RESOLUÇÃO SEF N.º 2957/98                       BC  : R$   7426,37                   0,00
+    O Contribuinte é responsável pelas informações contidas neste formulário e por comunicar qualquer
+    alteração nos seus dados cadastrais junto à Secretaria da Fazenda. Qualquer informação que esteja
+    desatualizada deverá ser corrigida na Inspetoria de sua Área.                        0,00
+   19 - AUTENTICAÇÃO BANCÁRIA                                           09 - MULTA
+                                                                                         0,00
+                                                                        10 - TOTAL A RECOLHER
+                                                                                       965,43
+    12345678901 1  12345678901 2  12345678901 3  12345678901 4              Via CONTRIBUINTE
+            ESTADO DO RIO DE JANEIRO                  11 - VENCIMENTO          DARJ
+            SECRETARIA DE ESTADO DE FAZENDA                        /     /  2010
+            DOCUMENTO DE ARRECADAÇÃO
+   12 - NOME, FIRMA OU RAZÃO SOCIAL                                     01 - INSCRIÇÃO ESTADUAL
+    TRANSOCEAN BRASIL LTDA                                                         84.662.895
+   13 - ENDEREÇO COMPLETO                                               02 - CÓDIGO DA RECEITA
+    AV. PREFEITO ARISTEU FERREIRA DA SILVA, 2500 - . - NOVO CAVALEIROS             024-8
+   14 - MUNICÍPIO                           15 - UF  16 - CEP           03 - CGC / CNPJ / CPF
+    MACAE                                       RJ            27930-070            40.278.681/0001-79
+   17 - RECEITA                                                         04 - Nº DOCUMENTO DE ORIGEM
+    ICMS IMPORTAÇÃO                                                                06/0711252-7
+   18 - INFORMAÇÕES COMPLEMENTARES                                      05 - PER. REF./PARCELA
+                                ICMS(%)13           CIF : R$   4462,96             1º DECÊNDIO  - 10/2010
+    * VALORES EM R$            Ref. MS:01216/06   IIPI  : R$    652,27
+    * PAGÁVEL SOMENTE NO ITAÚ       DI:06/0711252-7 AD  : R$     66,00  06 - VALOR PRINCIPAL
+    OU BANCO DO BRASIL                        PIS/PASEP : R$     98,22                 965,43
+    * NÃO RECEBER APÓS VENCIMENTO                COFINS : R$    452,42
+    RESOLUÇÃO SEF N.º 2957/98                       BC  : R$   7426,37  07 - ATUALIZAÇÃO MONETÁRIA
+                                                                                         0,00
+    O Contribuinte é responsável pelas informações contidas neste formulário e por comunicar qualquer
+    alteração nos seus dados cadastrais junto à Secretaria da Fazenda. Qualquer informação que esteja
+    desatualizada deverá ser corrigida na Inspetoria de sua Área.
+   19 - AUTENTICAÇÃO BANCÁRIA                                           09 - MULTA
+                                                                                         0,00
+                                                                        10 - TOTAL A RECOLHER
+                                                                                       965,43
+    12345678901 1  12345678901 2  12345678901 3  12345678901 4                 Via BANCO

@@ -1,0 +1,13 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 26/06/2013 | 17:53:30 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 26/06/2013 | 17:53:30 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 26/06/2013 | 17:53:31 | CLIENTE: (425) LUBRIZOL DO BRASIL ADITIVOS LTDA
+ 26/06/2013 | 17:53:31 | Verificando Processo: 02615/13
+ 26/06/2013 | 17:53:31 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 26/06/2013 | 17:53:31 | Gravando e-Mail automático...
+ 26/06/2013 | 17:53:32 | CLIENTE: (351) SPECTRUM GEO DO BRASIL SERVIÇOS GEOFISICOS LTDA
+ 26/06/2013 | 17:53:32 | Verificando Processo: 04393/13
+ 26/06/2013 | 17:53:32 | Não foram encontrados contatos da empresa.
+ 26/06/2013 | 17:53:32 | Gravando e-Mail automático...
+ 26/06/2013 | 17:53:32 | CLIENTE: (296) ODEBRECHT OLEO E GAS S/A
+ 26/06/2013 | 17:53:32 | Verificando Processo: 07115/13

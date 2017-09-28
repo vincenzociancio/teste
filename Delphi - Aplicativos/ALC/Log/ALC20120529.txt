@@ -1,0 +1,54 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 29/05/2012 | 12:24:29 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:24:29 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 29/05/2012 | 12:24:34 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:25:07 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:25:07 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 29/05/2012 | 12:25:13 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:25:34 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:25:34 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 29/05/2012 | 12:25:36 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:25:58 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:25:58 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 29/05/2012 | 12:26:17 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:28:31 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:28:31 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 29/05/2012 | 12:29:03 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:29:03 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 29/05/2012 | 12:29:05 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:30:50 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:30:50 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 29/05/2012 | 12:30:53 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:31:20 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 29/05/2012 | 12:31:20 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 29/05/2012 | 12:31:28 | CLIENTE: (2) TRANSOCEAN BRASIL LTDA
+ 29/05/2012 | 12:31:37 | Verificando Processo: 01722/12
+ 29/05/2012 | 12:31:38 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 29/05/2012 | 12:31:53 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:16 | CLIENTE: (299) SCORPION SERVIÇOS OFFSHORE LTDA
+ 29/05/2012 | 12:32:24 | Verificando Processo: 02465/12
+ 29/05/2012 | 12:32:24 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 29/05/2012 | 12:32:24 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:34 | CLIENTE: (2) TRANSOCEAN BRASIL LTDA
+ 29/05/2012 | 12:32:41 | Verificando Processo: 03331/12
+ 29/05/2012 | 12:32:41 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 29/05/2012 | 12:32:41 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:43 | Verificando Processo: 03814/12
+ 29/05/2012 | 12:32:43 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 29/05/2012 | 12:32:43 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:46 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 29/05/2012 | 12:32:48 | Verificando Processo: 04037/12
+ 29/05/2012 | 12:32:48 | CONTATO: Customs Inhouse
+ 29/05/2012 | 12:32:48 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:48 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:48 | CONTATO: Esmeralda Silva
+ 29/05/2012 | 12:32:48 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:48 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:48 | CONTATO: João Barbosa
+ 29/05/2012 | 12:32:48 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:48 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:48 | Gravando e-Mail automático...
+ 29/05/2012 | 12:32:51 | CLIENTE: (303) SEADRILL SERVIÇOS DE PETROLEO LTDA
+ 29/05/2012 | 12:33:17 | Verificando Processo: 04488/12
+ 29/05/2012 | 12:33:19 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 29/05/2012 | 12:33:28 | Gravando e-Mail automático...

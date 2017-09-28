@@ -1,0 +1,37 @@
+﻿@model MS2000WEB.Models.Documentos_Relatorios_parametrizacao
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+<h2>Documentos Parametrizado</h2>
+
+<div class="alert alert-block">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <h4>Aviso!</h4>
+    Tem certeza de que deseja excluir?
+</div>
+
+<fieldset>
+    <legend>Deletar</legend>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Titulo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+</fieldset>
+@using (Html.BeginForm())
+{
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Confirmar</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>
+}

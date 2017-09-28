@@ -1,0 +1,46 @@
+﻿@model MS2000WEB.Models.Contratos_Fornecedores_Cadastrados_Upload
+
+@{
+    ViewBag.Title = "Create";
+}
+
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Financeiro</a> <span class="divider">></span></li>
+    <li><a href="#">Cadastro</a> <span class="divider">></span></li>
+    <li><a href="#">Contratos Fornecedores</a> <span class="divider">></span></li>
+    <li><a href="#">Arquivos</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+
+<h4>Arquivos</h4>
+
+@using (Html.BeginForm("Create", "ContratosFornecedoresFinanceiroUpload", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-stacked" }))
+{        
+    @Html.Hidden("fk_contrato", (int)ViewBag.fk_contratos) 
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)    
+            
+    <h4>@ViewBag.Razao</h4>
+    <div class="clearfix">
+        @Html.Label("Titulo ")
+        <div class="input">
+            @Html.EditorFor(model => model.Titulo, new { @class = "span4"})
+            @Html.ValidationMessageFor(model => model.Titulo)
+        </div>
+    </div>
+       
+    <div class="clearfix">
+        <input type="file" name="file" id="file" class="span4" />
+    </div>
+      
+    <div class="form-actions">       
+        <button type="submit" class="btn btn-inverse">Salvar</button>
+        @Html.ActionLink("Cancelar", "Index", new { id = (int)ViewBag.fk_contratos,  Razao = (string)ViewBag.razao }, new { @class = "btn" })
+    </div>    
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

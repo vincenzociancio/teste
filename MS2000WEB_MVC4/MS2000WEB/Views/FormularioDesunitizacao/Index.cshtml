@@ -1,0 +1,128 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Formulário de Desunitização </a> <span class="divider">></span></li>
+    <li class="active">Index</li>
+</ul>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input[type='text']").val("");
+        $("#txtprocesso").val("");
+        $("#txtprocesso").mask("99999/99");       
+        $("#Download").click(function () {           
+            if ($("#txtprocesso").val() == "") {              
+                $("#msgErro").empty().prepend("<p><b>Campos obrigatórios:</b></p><ul><li> Processo </li></ul>");
+                return false;
+            }
+            else {               
+                //$("#txtprocesso").val('');
+                //$("#txtterminal").val() = "";
+                //$("#txtenderecoterminal").val() = "";
+                //$("#txtinformacao").val() = "";
+                //$("#file").val() = "";
+                //$("#txtconteiner1").val() = "";
+                //$("#txtconteiner2").val() = "";
+                //$("#txtconteiner3").val() = "";
+                //$("#txtconteiner4").val() = "";
+                //$("#txtbl1").val() = "";
+                //$("#txtbl2").val() = "";
+                //$("#txtbl3").val() = "";
+                //$("#txtbl4").val() = "";
+                //$("#txtporigem1").val() = "";
+                //$("#txtporigem2").val() = "";
+                //$("#txtporigem3").val() = "";
+                //$("#txtporigem4").val() = "";
+
+                return true;
+            }
+        });
+    });
+</script>
+
+<h4>Formulário de Desunitização </h4>
+
+@* <div class="editor-field">
+       @Html.DropDownList("ImportadorCgcCpf", "Selecione")      
+  </div>*@
+@using (Html.BeginForm("PrintReport", "FormularioDesunitizacao",
+                    FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-stacked" }))
+{   
+    <div class="clearfix" id="msgErro" style="color: red; font-size: 12px;"></div>
+    <div class="row">
+        <div class="span*">
+            <div class="clearfix">
+                @Html.Label("Processo")
+                @Html.TextBox("txtprocesso", null, new { @class = "span4" })
+                @* <input type="submit" class="btn btn-inverse" value="Pesquisar" />*@
+            </div>
+            <div class="clearfix">
+                @Html.Label("Terminal")
+                @Html.TextBox("txtterminal", null, new { @class = "span4" })
+            </div>
+            <div class="clearfix">
+                @Html.Label("Endereço Terminal")
+                @Html.TextBox("txtenderecoterminal", null, new { @class = "span4" })
+            </div>
+            <div class="clearfix">
+                @Html.Label("Informações Complementares")
+                @Html.TextArea("txtinformacao", null, new { @class = "span4 xxlarge" })
+            </div>
+            <div class="clearfix">
+                @Html.Label("Logo")
+                <input type="file" name="file" id="file" class="span4" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="span4">
+            <table id="grid" class="grade">
+                <thead>
+                    <tr>
+                        <td>
+                            @Html.Label("Contêineres")
+                        </td>
+                        <td>
+                            @Html.Label("B/L")
+                        </td>
+                        <td>
+                            @Html.Label("Porto de Origem")
+                        </td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        @Html.TextBox("txtconteiner1", null, new { @class = "span2" })
+                        @Html.TextBox("txtconteiner2", null, new { @class = "span2" })
+                        @Html.TextBox("txtconteiner3", null, new { @class = "span2" })
+                        @Html.TextBox("txtconteiner4", null, new { @class = "span2" })
+                    </td>
+                    <td>
+                        @Html.TextBox("txtbl1", null, new { @class = "span2" })
+                        @Html.TextBox("txtbl2", null, new { @class = "span2" })
+                        @Html.TextBox("txtbl3", null, new { @class = "span2" })
+                        @Html.TextBox("txtbl4", null, new { @class = "span2" })
+                    </td>
+                    <td>
+                        @Html.TextBox("txtporigem1", null, new { @class = "span2" })
+                        @Html.TextBox("txtporigem2", null, new { @class = "span2" })
+                        @Html.TextBox("txtporigem3", null, new { @class = "span2" })
+                        @Html.TextBox("txtporigem4", null, new { @class = "span2" })
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br />
+
+    <div class="form-actions">
+        <input type="submit" name="confirmar" id="Download" value="Download" class="btn  btn-inverse" />
+    </div>
+}

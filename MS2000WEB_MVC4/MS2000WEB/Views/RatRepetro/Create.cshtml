@@ -1,0 +1,317 @@
+﻿@model MS2000WEB.Models.RAT_Repetro
+
+@{
+    ViewBag.Title = "Novo";
+}
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Emissão de RAT</a> <span class="divider">></span></li>
+    <li><a href="#">Repetro</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+<h4>Requerimento de Admissão Temporária(RAT) - Repetro</h4>
+
+@using (Html.BeginForm("Create", "RatRepetro", FormMethod.Post, new { @class = "form-stacked" }))
+{
+
+    <div class="row">
+        <div class="span6">
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(false, "Campos Obrigatórios:")
+        </div>
+    </div>   
+
+
+    <fieldset>
+        <legend>DADOS DO PROCESSO(OBRIGATÓRIO)</legend>
+        <div class="row">
+            <div class="span3">
+                @Html.Label("Entre co número do processo")
+                @Html.TextBoxFor(model => model.FK_Processo, new { @class = "span2" })
+                @*@Html.ActionLink("Buscar dados", null, null, new { @class = "btn btn-inverse", id = "btnBuscar" })*@
+
+                @*<button type="button" id="btnBuscar" class="btn btn-inverse">Buscar dados</button>*@
+            </div>
+            <div class="span4">
+                @Html.Label("Entre com a moeda negociada(exemplo: R$)")
+                @Html.TextBoxFor(model => model.Moeda, new { @class = "span2" })
+            </div>
+        </div>
+    </fieldset>
+    <br />
+
+    <fieldset>
+        <legend>2. DADOS DO CONTRATO DE AFRETAMENTO, ARRENDAMENTO OPERACIONAL, ALUGUEL OU EMPRÉSTIMO</legend>
+        <div class="row">
+            <div class="span4">
+                @Html.Label("Nome da empresa estrangeira proprietária do bem")
+                @Html.TextBox("Nome_Empresa_Estrangeira", null, new { @class = "span4", maxlength = "150", @style = "text-transform: uppercase" })
+            </div>
+            <div class="span5">
+                @Html.Label("Endereço completo da empresa estrangeira")
+                @Html.TextBox("Endereco_Empresa_Estrangeira", null, new { @class = "span5", maxlength = "150", @style = "text-transform: uppercase" })
+            </div>
+        </div>
+    </fieldset>
+    
+    <br />
+    <fieldset>
+        <legend>3. ENQUADRAMENTO DO PEDIDO</legend>
+        <div class="row">
+            <div class="span4 ">
+                @Html.Label("Enquadramentoda utilização econômica")
+                <br />
+                <div class="span1">
+                    @Html.RadioButton("Enquadramento_Pedido", "1", true /*new { disabled = "disabled" }*/) 1. Repetro
+                </div>
+                <div class="span2">
+                    @Html.RadioButton("Enquadramento_Pedido", "2", false) 2. Pagamento Proporcional
+                </div>
+            </div>
+
+            <div class="span2">
+                @Html.Label("Prazo solicitado")
+                <input data-val="true" class = "span2" data-val-date="" data-val-required="Prazo solicitado" id="Enquadramento_Prazo_Solicitado" name="Enquadramento_Prazo_Solicitado" type="date" value="@string.Format("{0:yyyy-MM-dd}", (Model == null ? null : Model.Enquadramento_Prazo_Solicitado))">
+            </div>
+            <div class="span3">
+                @Html.Label("Indicação do dispositivo normativo do pedido")
+                @Html.DropDownList("FK_Fundamentacao", null, string.Empty, new { @class = "span3" })
+            </div>
+        </div>
+    </fieldset>
+    <br />
+    
+    <fieldset>
+        <legend>4. FINALIDADE DO REQUERIMENTO (SELECIONE UMA DAS OPÇÕES ABAIXO E PREENCHA OS CAMPOS EM BRANCO DA RESPECTIVA LINHA)</legend>
+        <div class="row">
+            <div class="span9">
+                <table class="grade">
+                    <thead>
+                        <tr class="header">
+                            <th class="span4">Finalidade</th>
+                            <th class="span2">Nº do processo do bem principal</th>
+                            <th class="span2">Nº da DI do bem principal</th>
+                            <th class="span2">Nº da DI do bem Acessório</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@Html.RadioButton("Finalidade", "1") 1. Concessão inicial de bem principal</td>
+                            <td>@Html.TextBox("Num_Processo_1", null, new { @class = "span2", maxlength = "50", disabled = "disabled" })</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>@Html.RadioButton("Finalidade", "2") 2. Concessão inicial de bem acessório</td>
+                            <td>@Html.TextBox("Num_Processo_2", null, new { @class = "span2", maxlength = "50", disabled = "disabled" })</td>
+                            <td>@Html.TextBox("Num_DI_Bem_Principal_2", null, new { @class = "span2", maxlength = "50", disabled = "disabled" })</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>@Html.RadioButton("Finalidade", "3") 3. Prorrogação de prazo de bem principal</td>
+                            <td>@Html.TextBox("Num_Processo_3", null, new { @class = "span2", maxlength = "50", disabled = "disabled" })</td>
+                            <td>@Html.TextBox("Num_DI_Bem_Principal_3", null, new { @class = "span2", maxlength = "50", disabled = "disabled" })</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>@Html.RadioButton("Finalidade", "4") 4. Nova admissão no regime(art. 27)</td>
+                            <td>@Html.TextBox("Num_Processo_4", null, new { @class = "span2", maxlength = "50", disabled = "disabled" })</td>
+                            <td>@Html.TextBox("Num_DI_Bem_Principal_4", null, new { @class = "span2", maxlength = "50", disabled = "disabled" })</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>@Html.RadioButton("Finalidade", "5") 5. Outra:
+                                @Html.TextBoxFor(model => model.Finalidade_Outra, new { @class = "span2", maxlength = "30", disabled = "disabled", placeholder = "especificar" })
+                            </td>
+                            <td>@Html.TextBox("Num_Processo_5", null, new { @class = "span2", maxlength = "50", disabled = "disabled" })</td>
+                            <td>@Html.TextBox("Num_DI_Bem_Principal_5", null, new { @class = "span2", maxlength = "50", disabled = "disabled" })</td>
+                            <td>@Html.TextBox("Num_DI_Bem_Acessorio_5", null, new { @class = "span2", maxlength = "50", disabled = "disabled" })</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </fieldset>
+        
+    <br />
+    <fieldset>
+        <legend>5. LOCALIZAÇÃO FÍSICA DOS BENS</legend>
+        <div class="row">
+            <div class="span6">
+                @Html.Label("Nome do Campo/ Bloco - Coordenadas, Endereço completo ou Recinto Alfandegado")
+                @Html.TextBox("Localizacao_Fisica_Bem", null, new { @class = "span6", maxlength = "300", @style = "text-transform: uppercase" })
+            </div>
+
+            <div class="span3">
+                @Html.Label("Unidade jurisdicionante")
+                @Html.TextBox("Unidade_Jurisdicionante", null, new { @class = "span3", maxlength = "100", @style = "text-transform: uppercase" })
+            </div>
+        </div>
+    </fieldset>
+    
+    <br />
+    <fieldset>
+        <legend>7. IDENTIFICAÇÃO DO REPRENSENTANTE/ PROCURADOR DO REQUERENTE</legend>
+        <div class="row">
+            <div class="span9">
+                <table class="grade">
+                    <thead>
+                        <tr class="header">
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                @Html.TextBox("Representante_Nome", null, new { @class = "span3", maxlength = "100", @style = "text-transform: uppercase" })
+                            </td>
+                            <td>
+                                @Html.TextBox("Representante_CPF", null, new { @class = "span2", maxlength = "100" })
+                            </td>
+                            <td>
+                                @Html.TextBox("Representante_Email", null, new { @class = "span2", maxlength = "100", @style = "text-transform: lowercase" })
+                            </td>
+                            <td>
+                                @Html.TextBox("Representante_Telefone", null, new { @class = "span2", maxlength = "30" })
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </fieldset>
+        
+@*<div id="divPartialView">
+      @if (Request.HttpMethod == "POST")
+        {
+            if (!Request.IsAjaxRequest())
+            {
+                @Html.Action("GetDadosProcesso", "RatRepetro", new { codigoProcesso = ViewBag.FK_Processo})
+            }
+        }
+    </div>*@
+    
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Salvar</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>
+}
+
+
+<script type="text/javascript">
+
+    function habilitar(param) {
+        switch (param) {
+            case '1':
+                $('#Num_Processo_1').prop({ disabled: false });
+
+                $('#Num_Processo_2').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_2').val('').prop({ disabled: true });
+
+                $('#Num_Processo_3').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_3').val('').prop({ disabled: true });
+
+                $('#Num_Processo_4').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_4').val('').prop({ disabled: true });
+
+                $('#Num_Processo_5').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_5').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Acessorio_5').val('').prop({ disabled: true });
+                $('#Finalidade_Outra').val('').prop({ disabled: true });
+                break;
+            case '2':
+                $('#Num_Processo_1').val('').prop({ disabled: true });
+
+                $('#Num_Processo_2').prop({ disabled: false });
+                $('#Num_DI_Bem_Principal_2').prop({ disabled: false });
+
+                $('#Num_Processo_3').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_3').val('').prop({ disabled: true });
+
+                $('#Num_Processo_4').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_4').val('').prop({ disabled: true });
+
+                $('#Num_Processo_5').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_5').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Acessorio_5').val('').prop({ disabled: true });
+                $('#Finalidade_Outra').val('').prop({ disabled: true });
+                break;
+            case '3':
+                $('#Num_Processo_1').val('').prop({ disabled: true });
+
+                $('#Num_Processo_2').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_2').val('').prop({ disabled: true });
+
+                $('#Num_Processo_3').prop({ disabled: false });
+                $('#Num_DI_Bem_Principal_3').prop({ disabled: false });
+
+                $('#Num_Processo_4').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_4').val('').prop({ disabled: true });
+
+                $('#Num_Processo_5').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_5').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Acessorio_5').val('').prop({ disabled: true });
+                $('#Finalidade_Outra').val('').prop({ disabled: true });
+                break;
+            case '4':
+                $('#Num_Processo_1').val('').prop({ disabled: true });
+
+                $('#Num_Processo_2').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_2').val('').prop({ disabled: true });
+
+                $('#Num_Processo_3').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_3').val('').prop({ disabled: true });
+
+                $('#Num_Processo_4').prop({ disabled: false });
+                $('#Num_DI_Bem_Principal_4').prop({ disabled: false });
+
+                $('#Num_Processo_5').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_5').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Acessorio_5').val('').prop({ disabled: true });
+                $('#Finalidade_Outra').val('').prop({ disabled: true });
+                break;
+            default:
+                $('#Num_Processo_1').val('').prop({ disabled: true });
+
+                $('#Num_Processo_2').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_2').val('').prop({ disabled: true });
+
+                $('#Num_Processo_3').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_3').val('').prop({ disabled: true });
+
+                $('#Num_Processo_4').val('').prop({ disabled: true });
+                $('#Num_DI_Bem_Principal_4').val('').prop({ disabled: true });
+
+                $('#Num_Processo_5').prop({ disabled: false });
+                $('#Num_DI_Bem_Principal_5').prop({ disabled: false });
+                $('#Num_DI_Bem_Acessorio_5').prop({ disabled: false });
+                $('#Finalidade_Outra').val('').prop({ disabled: false });
+                break;
+        }
+    }
+
+    $(document).ready(function () {
+        $("#FK_Processo").mask("99999/99");
+        $('#Num_Processo_1').mask("99999.999999/99-99");
+        $('#Num_Processo_2').mask("99999.999999/99-99");
+        $('#Num_Processo_3').mask("99999.999999/99-99");
+        $('#Num_Processo_4').mask("99999.999999/99-99");
+        $('#Num_Processo_5').mask("99999.999999/99-99");
+
+        $("input:radio[name=Finalidade]").click(function () {
+            if ($(this).is(':checked')) {
+                habilitar($(this).val());
+            }
+        });
+    });
+
+    if (navigator.appName == 'Microsoft Internet Explorer') {
+        $(document).ready(function () {
+            $("#Enquadramento_Prazo_Solicitado").mask("99/99/9999");
+        });
+    }
+</script>

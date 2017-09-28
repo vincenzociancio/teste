@@ -1,0 +1,12 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 24/11/2009 | 15:40:22 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 24/11/2009 | 15:40:22 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 24/11/2009 | 15:46:38 | EMAIL: Antonio Cesar Bibas
+ 24/11/2009 | 15:46:38 | EMAIL: Maria Eduarda
+ 24/11/2009 | 15:46:38 | EMAIL: Fabiano Souza
+ 24/11/2009 | 15:46:38 | EMAIL: Francisco Monteiro
+ 24/11/2009 | 15:46:38 | EMAIL: Juan Rodrigues
+ 24/11/2009 | 15:46:38 | EMAIL: Tereza Moraes
+ 24/11/2009 | 15:46:38 | EMAIL: Welison Martins da Silva
+ 24/11/2009 | 15:46:38 | Gravando e-Mails automáticos...
+ 24/11/2009 | 15:46:38 | >>> FINALIZANDO O PROCESSAMENTO DO AFAT

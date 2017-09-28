@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSOutlookAddIn", "MSOutlookAddIn\MSOutlookAddIn.csproj", "{C6A589B1-121B-4BFF-8F35-8DFCDCEFA663}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "InstallMsOutlook", "InstallMsOutlook\InstallMsOutlook.vdproj", "{A210BDEB-7503-4BE4-8928-3AB20810BF08}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://mssql00:8080/tfs/tfs_defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = InstallMsOutlook\\InstallMsOutlook.vdproj
+		SccProjectName1 = InstallMsOutlook
+		SccLocalPath1 = InstallMsOutlook
+		SccProjectUniqueName2 = MSOutlookAddIn\\MSOutlookAddIn.csproj
+		SccProjectName2 = MSOutlookAddIn
+		SccLocalPath2 = MSOutlookAddIn
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6A589B1-121B-4BFF-8F35-8DFCDCEFA663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A589B1-121B-4BFF-8F35-8DFCDCEFA663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A589B1-121B-4BFF-8F35-8DFCDCEFA663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A589B1-121B-4BFF-8F35-8DFCDCEFA663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A210BDEB-7503-4BE4-8928-3AB20810BF08}.Debug|Any CPU.ActiveCfg = Debug
+		{A210BDEB-7503-4BE4-8928-3AB20810BF08}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

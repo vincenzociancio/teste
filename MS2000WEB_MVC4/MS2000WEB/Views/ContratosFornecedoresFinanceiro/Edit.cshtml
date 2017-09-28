@@ -1,0 +1,343 @@
+﻿@model MS2000WEB.Models.Contratos_Fornecedores_Cadastrados_Financeiro
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<script type="text/javascript">
+
+   
+    $(document).ready(function () {
+        $("#ddlFornecedor").change(function () {
+            $("#Cod_Fornecedor").val($(this).val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Cod_Fornecedor").keyup(function () {
+            $("#ddlFornecedor").val($("#Cod_Fornecedor").val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#data_aprovacao").mask("99/99/9999");
+    });
+
+    $(document).ready(function () {
+        $("#data_vigencia_inicial").mask("99/99/9999");
+    });
+
+    $(document).ready(function () {
+        $("#data_vigencia_final").mask("99/99/9999");
+    });
+
+
+</script>
+
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Financeiro</a> <span class="divider">></span></li>
+    <li><a href="#">Cadastro</a> <span class="divider">></span></li>
+    <li><a href="#">Contratos Fornecedores</a> <span class="divider">></span></li>
+    <li class="active">Edição</li>
+</ul>
+
+
+<h4>Contratos Fornecedores</h4>
+<hr />
+
+@using (Html.BeginForm("Edit", "ContratosFornecedoresFinanceiro", FormMethod.Post, new { @class = "form-stacked" }))
+{
+    @Html.ValidationSummary(false, "Ocorreram erros no Cadastro. Por favor, corrija os erros e tente novamente.")
+    @Html.AntiForgeryToken();                
+
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.id)
+        @Html.ValidationMessageFor(model => model.id)
+
+        @Html.HiddenFor(model => model.numero_contrato)
+        @Html.ValidationMessageFor(model => model.numero_contrato)
+
+        @Html.HiddenFor(model => model.data)
+        @Html.ValidationMessageFor(model => model.data)
+        
+    </div> 
+            <div class="row">
+                <div class="span*">
+                    <div class="clearfix">                
+                        @Html.Label("Número Contrato")  
+                        <div class="input">                            
+                            @Html.TextBoxFor(model => model.numero_contrato, new { @disabled = "disabled" , style = "width: 85px;" }) 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span* offset*">                
+                    <div class="clearfix">                
+                        @Html.Label("Data ")             
+                        <div class="input">
+                            @Html.TextBoxFor(model => model.data, new { @disabled = "disabled", style = "width: 55px;" }) 
+                        </div>
+                    </div>
+                </div>
+             </div>
+       
+   
+               <div class="row">
+                <div class="span*">  
+                    <div class="clearfix">
+                        @Html.Label("Fornecedor ")
+                        <div class="input">  
+                            @*@Html.DropDownListFor(model => model.fk_fornecedor,  (SelectList)ViewBag.fk_fornecedor)       *@                    
+                            @Html.DropDownList("fk_fornecedor", null, string.Empty, new { style = "width: 660px;" })
+                                                      
+                            @*@Html.DropDownList("fk_fornecedor", null, string.Empty, new { style = "width: 200px;" })*@
+                           @*@Html.DropDownListFor(model => model.fk_fornecedor, "fk_fornecedor")*@
+                          @*@Html.DropDownListFor(model => model.fk_fornecedor, "fk_fornecedor")*@                          
+                           @* @Html.DropDownListFor(m => m.fk_fornecedor, new SelectList(Model.fk_fornecedor))*@
+                            @*@Html.DropDownList("fk_fornecedor", DirectCast(ViewBag.CidadeLista, IEnumerable(Of SelectListItem)))*@
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span* offset*">                
+                    <div class="clearfix">
+                        @Html.Label("Responsável pelo Preenchimento ")
+                        <div class="input">
+                            @Html.EditorFor(model => model.responsavel_preenchimento)
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            
+            <div class="row">
+                <div class="span*">
+                    <div class="clearfix">                
+                        @Html.Label("Solicitante ")
+                        <div class="input">                            
+                            @Html.DropDownList("fk_usuario_solicitante", null, string.Empty, new { style = "width: 200px;" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span* offset*">                
+                    <div class="clearfix">                
+                        @Html.Label("Responsável ")
+                        <div class="input">
+                            @Html.DropDownList("fk_usuario_responsavel", null, string.Empty, new { style = "width: 200px;" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span* offset*">
+                    <div class="clearfix">                
+                        @Html.Label("Setor ")
+                        <div class="input">
+                            @Html.DropDownList("fk_setor", null, string.Empty, new { style = "width: 200px;" })
+                        </div>
+                    </div>
+                 </div>
+
+                <div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.Label("Utilização ")
+                        <div class="input">
+                            @Html.EditorFor(model => model.utilizacao)
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    
+    
+            <div class="row">
+                <div class="span*">
+                    <div class="clearfix">
+                        @Html.Label("Uso ")
+                        <div class="input">
+                            @Html.DropDownList("uso", new[]{
+                            new SelectListItem{Text = "CONTINUO" ,Value = "CONTINUO"},
+                            new SelectListItem{Text = "UNICO" ,Value = "UNICO"},
+                            new SelectListItem{Text = "ESPORADICO" ,Value = "ESPORADICO"}
+                            }, "Selecione", new { style = "width: 200px;" })
+                            @Html.ValidationMessageFor(model => model.uso)
+                        </div>
+                     </div>
+                </div>    
+
+                @*<div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.Label("Atende aos requisitos da Empresa? ")                                                
+                           <div class="input">
+                                @Html.RadioButtonFor(model => model.atende_requisito, "SIM", true) Sim 
+                                @Html.RadioButtonFor(model => model.atende_requisito, "NAO", false) Não
+                            </div>                        
+                    </div>  
+                </div>     *@                                 
+
+            </div>
+                    
+            <br />
+            <br />            
+    
+            <div class="clearfix">
+                <fieldset>
+                    <legend>DADOS DO CONTRATO</legend>            
+                </fieldset>
+            </div>
+                
+        <div class="row">
+            <div class="span*">                                      
+                <div class="clearfix">
+                    @Html.Label("Aprovação")
+                        <div class="input">
+                            @Html.EditorFor(model => model.data_aprovacao)
+                        </div>
+                </div>
+             </div>
+
+             <div class="span* offset*">
+                 <div class="clearfix">
+                     @Html.Label("Vigência Inicial")
+                        <div class="input">
+                            @Html.EditorFor(model => model.data_vigencia_inicial)
+                        </div>
+                 </div>
+             </div>
+                    
+             <div class="span* offset*">
+                <div class="clearfix">
+                    @Html.Label("Vigência Final")
+                        <div class="input">
+                            @Html.EditorFor(model => model.data_vigencia_final)
+                        </div>
+                </div>
+             </div>
+
+             <div class="span* offset*">
+                <div class="clearfix">
+                    @Html.Label("Prazo Cancelamento(em dias) ")
+                        <div class="input">
+                            @Html.DropDownList("prazo_cancelamento", new[]{
+                            new SelectListItem{Text = "0" ,Value = "0"},
+                            new SelectListItem{Text = "10" ,Value = "10"},
+                            new SelectListItem{Text = "15" ,Value = "15"},
+                            new SelectListItem{Text = "20" ,Value = "20"},
+                            new SelectListItem{Text = "30" ,Value = "30"},
+                            new SelectListItem{Text = "60" ,Value = "60"},
+                            new SelectListItem{Text = "90" ,Value = "90"},
+                            }, "Selecione", new { style = "width: 80px;" })
+                            @Html.ValidationMessageFor(model => model.prazo_cancelamento)
+                        </div>
+                </div>
+
+
+             </div>
+
+            <div class="span* offset*">  
+                 <div class="clearfix">
+                    @Html.CheckBox("ind_contrato", Model.ind_contrato)
+                    <span><b>Contrato</b></span>
+                </div>
+            </div>
+
+            <div class="span* offset*">  
+                 <div class="clearfix">
+                    @Html.CheckBox("ind_contrato_social", Model.ind_contrato_social)
+                    <span><b>Contrato Social</b></span>
+                </div>
+            </div>
+
+            <div class="span* offset*">  
+                 <div class="clearfix">
+                    @Html.CheckBox("ind_cnpj", Model.ind_cnpj)
+                    <span><b>CNPJ</b></span>
+                </div>
+            </div>
+
+            <div class="span* offset*">  
+                 <div class="clearfix">
+                    @Html.CheckBox("ind_certidao_receita", Model.ind_certidao_receita)
+                    <span><b>Certidão Receita</b></span>
+                </div>
+            </div>
+
+            
+
+            <div class="span* offset*">  
+                 <div class="clearfix">
+                    @Html.CheckBox("ind_certidao_fgts", Model.ind_certidao_fgts)
+                    <span><b>Certidão FGTS</b></span>
+                </div>
+            </div>
+
+            <div class="span* offset*">  
+                 <div class="clearfix">
+                    @Html.CheckBox("ind_certidao_inss", Model.ind_certidao_inss)
+                    <span><b>Certidão INSS</b></span>
+                </div>
+            </div>
+
+            <div class="span* offset*">  
+                 <div class="clearfix">
+                    @Html.CheckBox("ind_titularidade_bancaria", Model.ind_titularidade_bancaria)
+                    <span><b>Titularidade Bancária</b></span>
+                </div>
+            </div>
+
+            <div class="span* offset*">  
+                 <div class="clearfix">
+                    @Html.CheckBox("ind_politica_anticorrupcao", Model.ind_politica_anticorrupcao)
+                    <span><b>Política Anticorrupção</b></span>
+                </div>
+            </div>
+
+            <div class="span* offset*">  
+                 <div class="clearfix">
+                    @Html.CheckBox("ind_outros_01", Model.ind_outros_01)
+                    <span><b>Outros 01</b></span>
+                </div>
+            </div>
+
+           <div class="span* offset*">  
+                <div class="clearfix">                    
+                        <div class="input">
+                             @Html.EditorFor(model => model.outros_01)
+                        </div>
+                 </div>
+            </div>
+
+            <div class="span* offset*">  
+                 <div class="clearfix">
+                    @Html.CheckBox("ind_outros_02", Model.ind_outros_02)
+                    <span><b>Outros 02</b></span>
+                </div>
+            </div>
+
+            <div class="span* offset*">  
+                <div class="clearfix">                    
+                        <div class="input">
+                             @Html.EditorFor(model => model.outros_02)
+                        </div>
+                 </div>
+            </div>                   
+             
+        </div>
+    
+        <div class="clearfix">
+            @Html.Label("Observação ")
+            <div class="input">
+                @Html.TextAreaFor(model => model.observacao, new { @class = "span9" })
+                @Html.ValidationMessageFor(model => model.observacao)
+            </div>
+        </div>
+            
+        <div class="form-actions">        
+            <button type="submit" class="btn btn-inverse">Salvar</button> 
+             @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+        </div>    
+    
+}

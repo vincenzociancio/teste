@@ -1,0 +1,51 @@
+﻿@model MS2000WEB.Models.Documentos_Relatorios_parametrizacao
+
+@{
+    ViewBag.Title = "Detalhe";
+}
+
+<h2>Detalhe</h2>
+
+<fieldset>
+    <legend>Documentos Parametrizado</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Titulo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titulo)
+    </div> 
+    
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Importador)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImportadorCgcCpf)
+    </div>   
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Vencimento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Vencimento)
+    </div>
+
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Vencimento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Vencimento)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.DocID }) |
+    @Html.ActionLink("Voltar à lista", "Index")
+</p>

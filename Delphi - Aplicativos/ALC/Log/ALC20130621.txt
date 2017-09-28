@@ -1,0 +1,34 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 21/06/2013 | 12:14:27 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 21/06/2013 | 12:14:27 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 21/06/2013 | 12:14:54 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 21/06/2013 | 12:14:54 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 21/06/2013 | 12:15:10 | CLIENTE: (424) LUBRIZOL DO BRASIL ADITIVOS LTDA
+ 21/06/2013 | 12:15:44 | Verificando Processo: 17081/12
+ 21/06/2013 | 12:15:48 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 21/06/2013 | 12:18:29 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 21/06/2013 | 12:18:29 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 21/06/2013 | 12:18:30 | CLIENTE: (424) LUBRIZOL DO BRASIL ADITIVOS LTDA
+ 21/06/2013 | 12:18:30 | Verificando Processo: 17081/12
+ 21/06/2013 | 12:18:30 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 21/06/2013 | 12:18:30 | Gravando e-Mail automático...
+ 21/06/2013 | 12:18:30 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 21/06/2013 | 12:18:40 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 21/06/2013 | 12:18:40 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 21/06/2013 | 12:18:40 | CLIENTE: (424) LUBRIZOL DO BRASIL ADITIVOS LTDA
+ 21/06/2013 | 12:18:40 | Verificando Processo: 17081/12
+ 21/06/2013 | 12:18:40 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 21/06/2013 | 12:18:40 | Gravando e-Mail automático...
+ 21/06/2013 | 12:18:41 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 21/06/2013 | 12:19:06 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 21/06/2013 | 12:19:06 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 21/06/2013 | 12:19:10 | CLIENTE: (424) LUBRIZOL DO BRASIL ADITIVOS LTDA
+ 21/06/2013 | 12:19:14 | Verificando Processo: 17081/12
+ 21/06/2013 | 12:19:16 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 21/06/2013 | 12:19:51 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 21/06/2013 | 12:19:51 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 21/06/2013 | 12:19:56 | CLIENTE: (424) LUBRIZOL DO BRASIL ADITIVOS LTDA
+ 21/06/2013 | 12:19:58 | Verificando Processo: 17081/12
+ 21/06/2013 | 12:20:00 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 21/06/2013 | 12:20:17 | Gravando e-Mail automático...
+ 21/06/2013 | 12:20:42 | >>> FINALIZANDO O PROCESSAMENTO DO ALC

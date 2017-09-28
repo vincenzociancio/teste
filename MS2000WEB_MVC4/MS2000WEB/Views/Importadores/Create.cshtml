@@ -1,0 +1,237 @@
+﻿@model MS2000WEB.Models.Importadore
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@using (Html.BeginForm("Create", "Importadores", FormMethod.Post, new { @class = "form-stacked" }))
+{    
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <div class="row">
+        <div class="span1">
+            <div class="clearfix">
+                @Html.Label("Código ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Codigo, new { @class = "span1" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("Razão Social ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Razao_Social, new { @class = "span5" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("CGC/CPF ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.CNPJ_CPF_COMPLETO, new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="span*">
+            <div class="clearfix">
+                @Html.Label("Endereço ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Endereco, new { @class = "span5" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("Número ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Numero, new { @class = "span1" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("Bairro ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Bairro, new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="span*">
+            <div class="clearfix">
+                @Html.Label("Cidade ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Cidade, new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("CEP ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.CEP, new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("UF ")
+                <div class="input">
+                    @Html.DropDownList("UF", null, "Selecione", new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="span*">
+            <div class="clearfix">
+                @Html.Label("Estado ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Estado, new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("País ")
+                <div class="input">
+                    @Html.DropDownList("Paises", null, "Selecione", new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("Inscrição Estadual ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Inscricao_Estadual, new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="row">
+        <div class="span*">
+            <div class="clearfix">
+                @Html.Label("Tipo Importador ")
+                <div class="input">
+                    @Html.DropDownList("TipoImportador", null, "Selecione", new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("Inscrição Municipal ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Inscricao_Municipal, new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("Telefone ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Telefone, new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="span*">
+            <div class="clearfix">
+                @Html.Label("Email para NF Serviços ")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.EMAIL, new { @class = "span6" })
+                </div>
+            </div>
+        </div>
+
+        <div class="span* offset*">
+            <div class="clearfix">
+                @Html.Label("Código de Atividade Econômica ")
+                <div class="input">
+                    @Html.DropDownList("CAEs", null, "Selecione", new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="row">
+        <div class="span*">
+            <div class="clearfix">
+                <fieldset>
+                    <legend>Siscomex DI/DSI</legend>
+                    <div class="clearfix">
+                        @Html.CheckBox("Exporta_Para_Siscomex", false)
+                        <span>Exporta para Siscomex?</span>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="span* offset*">
+            <fieldset>
+                <legend>Acessos</legend>
+                <div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.CheckBox("Acesso_WEB_MS", false)
+                        <span>Acesso WEB MS</span>
+                    </div>
+                </div>
+                <div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.CheckBox("Acesso_WEB_CLI", false)
+                        <span>Acesso WEB Cliente</span>
+                    </div>
+                </div>
+                <div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.CheckBox("Acesso_WEB_REC", false)
+                        <span>Acesso WEB Receita</span>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="span* offset*">
+            <fieldset>
+                <legend>Ativar Importador</legend>
+                <div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.CheckBox("Ativo", false)
+                        <span>Ativo?</span>
+                    </div>
+                </div>               
+            </fieldset>
+        </div>
+    </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Salvar</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>             
+
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

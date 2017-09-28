@@ -1,0 +1,221 @@
+﻿@model MS2000WEB.Models.RAT_Repetro
+
+@{
+    <fieldset>
+        <legend>1. IDENTIFICAÇÃO DA PESSOA JURÍDICA REQUERENTE</legend>
+        <div class="row">
+            <div class="span6">
+                @Html.Label("Razão Social")
+                @Html.TextBox("RazaoSocial", null, new { @class = "span6", maxlength = "250", @disabled = "disabled" })
+            </div>
+            <div class="span3">
+                @Html.Label("CNPJ")
+                @Html.TextBox("CNPJ", null, new { @class = "span3", maxlength = "18", @disabled = "disabled" })
+            </div>
+        </div>
+    </fieldset>
+    <br />
+    <fieldset>
+        <legend>2. DADOS DO CONTRATO DE AFRETAMENTO, ARRENDAMENTO OPERACIONAL, ALUGUEL OU EMPRÉSTIMO</legend>
+        <div class="row">
+            <div class="span3">
+                @Html.Label("Nº do contrato / ativo")
+                @Html.TextBox("NumContrato", null, new { @class = "span3", maxlength = "50", @disabled = "disabled" })
+            </div>
+
+            <div class="span4">
+                @Html.Label("Nome da empresa estrangeira proprietária do bem")
+                @Html.TextBox("Nome_Empresa_Estrangeira", null, new { @class = "span4", maxlength = "150" })
+            </div>
+            <div class="span2">
+                @Html.Label("Data de inicio do contrato")
+                @Html.TextBox("DataInicioContrato", null, new { @class = "span2", maxlength = "8", @disabled = "disabled" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="span2">
+                @Html.Label("Nº de término do contrato")
+                @Html.TextBox("DataTerminoContrato", null, new { @class = "span2", maxlength = "8", @disabled = "disabled" })
+            </div>
+
+            <div class="span7">
+                @Html.Label("Endereço completo da empresa estrangeira")
+                @Html.TextBox("Endereco_Empresa_Estrangeira", null, new { @class = "span7", maxlength = "8" })
+            </div>
+        </div>
+    </fieldset>
+
+    <br />
+    <fieldset>
+        <legend>3. ENQUADRAMENTO DO PEDIDO</legend>
+        <div class="row">
+            <div class="span4 ">
+                @Html.Label("Enquadramentoda utilização econômica")
+                <br />
+                <div class="span1">
+                    @Html.RadioButton("Pedido", "1", true, new { disabled = "disabled" }) 1. Repetro
+                </div>
+                <div class="span2">
+                    @Html.RadioButton("Pedido", "2", false, new { disabled = "disabled" }) 2. Pagamento Proporcional
+                </div>
+            </div>
+            @if (Request.HttpMethod == "POST")
+            {
+                <div class="span2">
+                    @Html.Label("Prazo solicitado")
+                    <input data-val="true" class = "span2" data-val-date="" data-val-required="Prazo solicitado" id="Enquadramento_Prazo_Solicitado" name="Enquadramento_Prazo_Solicitado" type="date" value="@string.Format("{0:yyyy-MM-dd}", (Model == null ? null : Model.Enquadramento_Prazo_Solicitado))">
+                </div>
+                <div class="span3">
+                    @Html.Label("Indicação do dispositivo normativo do pedido")
+                    @Html.DropDownList("FK_Fundamentacao", null, string.Empty, new { @class = "span3" })
+                </div>
+            }
+        </div>
+    </fieldset>
+    <br />
+    <fieldset>
+        <legend>4. FINALIDADE DO REQUERIMENTO (SELECIONE UMA DAS OPÇÕES ABAIXO E PREENCHA OS CAMPOS EM BRANCO DA RESPECTIVA LINHA)</legend>
+        <div class="row">
+            <div class="span9">
+                <table class="grade">
+                    <thead>
+                        <tr class="header">
+                            <th class="span4">Finalidade</th>
+                            <th class="span2">Nº do processo do bem principal</th>
+                            <th class="span2">Nº da DI do bem principal</th>
+                            <th class="span2">Nº da DI do bem Acessório</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@Html.RadioButton("Finalidade", "1") 1. Concessão inicial de bem principal</td>
+                            <td>@Html.TextBox("Num_Processo_1", null, new { @class = "span2", maxlength = "50" })</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>@Html.RadioButton("Finalidade", "2") 2. Concessão inicial de bem acessório</td>
+                            <td>@Html.TextBox("Num_Processo_2", null, new { @class = "span2", maxlength = "50" })</td>
+                            <td>@Html.TextBox("Num_DI_Bem_Principal_2", null, new { @class = "span2", maxlength = "50" })</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>@Html.RadioButton("Finalidade", "3") 3. Prorrogação de prazo de bem principal</td>
+                            <td>@Html.TextBox("Num_Processo_3", null, new { @class = "span2", maxlength = "50" })</td>
+                            <td>@Html.TextBox("Num_DI_Bem_Principal_3", null, new { @class = "span2", maxlength = "50" })</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>@Html.RadioButton("Finalidade", "4") 4. Nova admissão no regime(art. 27)</td>
+                            <td>@Html.TextBox("Num_Processo_4", null, new { @class = "span2", maxlength = "50" })</td>
+                            <td>@Html.TextBox("Num_DI_Bem_Principal_4", null, new { @class = "span2", maxlength = "50" })</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>@Html.RadioButton("Finalidade", "5") 5. Outra:</td>
+                            <td>@Html.TextBox("Num_Processo_5", null, new { @class = "span2", maxlength = "50" })</td>
+                            <td>@Html.TextBox("Num_DI_Bem_Principal_5", null, new { @class = "span2", maxlength = "50" })</td>
+                            <td>@Html.TextBox("Num_DI_Bem_Acessorio_5", null, new { @class = "span2", maxlength = "50" })</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </fieldset>
+
+    <br />
+    <fieldset>
+        <legend>5. LOCALIZAÇÃO FÍSICA DOS BENS</legend>
+        <div class="row">
+            <div class="span6">
+                @Html.Label("Nome do Campo/ Bloco - Coordenadas, Endereço completo ou Recinto Alfandegado")
+                @Html.TextBox("Localizacao_Fisica_Bem", null, new { @class = "span6", maxlength = "300" })
+            </div>
+
+            <div class="span3">
+                @Html.Label("Unidade jurisdicionante")
+                @Html.TextBox("Unidade_Jurisdicionante", null, new { @class = "span3", maxlength = "100" })
+            </div>
+        </div>
+    </fieldset>
+
+
+    <br />
+    <fieldset>
+        <legend>6. RELAÇÃO DE BENS</legend>
+        <div class="row">
+            <div class="span9">
+                <table class="grade">
+                    <thead>
+                        <tr class="header">
+                            <th class="span1">Nº Seq.</th>
+                            <th class="span4">Descrição dos bens</th>
+                            <th class="span1">Qtde</th>
+                            <th class="span1">Unidade</th>
+                            <th class="span1">VMLE moeda negociada</th>
+                        </tr>
+                    </thead>
+                    @if (ViewBag.itensFaturas != null)
+                    {
+                        <tbody>
+                            @{var seq = 0;}
+                            @foreach (var item in (List<MS2000WEB.ViewModels.ItensFaturaViewModel>)ViewBag.itensFaturas)
+                            {
+                                seq++;
+                                <tr>
+                                    <td>@seq</td>
+                                    <td>@item.Descricao_Produto</td>
+                                    <td>@item.Quantidade</td>
+                                    <td>@item.Unidade</td>
+                                    <td>@string.Format("{0:N}", item.VMLE)</td>
+                                </tr>
+                            }
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">TOTAL ACUMULADO</td>
+                                <td>@ViewBag.TotalAcumulado</td>
+                            </tr>
+                        </tfoot>
+                    }
+                </table>
+            </div>
+        </div>
+    </fieldset>
+
+    <br />
+    <fieldset>
+        <legend>7. IDENTIFICAÇÃO DO REPRENSENTANTE/ PROCURADOR DO REQUERENTE</legend>
+        <div class="row">
+            <div class="span9">
+                <table class="grade">
+                    <thead>
+                        <tr class="header">
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                @Html.TextBox("Representante_Nome", null, new { @class = "span3", maxlength = "100" })
+                            </td>
+                            <td>
+                                @Html.TextBox("Representante_CPF", null, new { @class = "span2", maxlength = "100" })
+                            </td>
+                            <td>
+                                @Html.TextBox("Representante_Email", null, new { @class = "span2", maxlength = "100" })
+                            </td>
+                            <td>
+                                @Html.TextBox("Representante_Telefone", null, new { @class = "span2", maxlength = "30" })
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </fieldset>
+}

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+  <siteMapNode url="~/MenuPrincipal.aspx" title="Home"  description="Página inicial do sistema">
+    <siteMapNode url="" title="$resources:resxIdioma,cadastros"  description="Menu de Cadastro">
+      <siteMapNode url="~/Menu/Cadastros/frmProcuradores.aspx" title="$resources:resxIdioma,procuradores"  description="Tela de Procuradores"/>
+      <siteMapNode url="~/Menu/Cadastros/frmArmazens.aspx" title="$resources:resxIdioma,Armazens"  description="Tela de Armazens"/>
+      <siteMapNode url="~/Menu/Cadastros/frmCAE.aspx" title="CAE"  description="Tela de CAE"/>
+      <siteMapNode url="~/Menu/Cadastros/frmProdutos.aspx" title="$resources:resxIdioma,Produtos"  description="Tela de Produtos"/>
+    </siteMapNode>
+    <siteMapNode url="" title="$resources:resxIdioma,processos"  description="Menu de Processos">
+      <siteMapNode url="~/Menu/Processos/frmAbertura.aspx" title="$resources:resxIdioma,Abertura"  description="Tela de Abertura" />
+      <siteMapNode url="~/Menu/Processos/frmFatura.aspx" title="$resources:resxIdioma,Fatura"  description="Tela de Fatura" />
+      <siteMapNode url="~/Menu/Processos/frmAMB.aspx" title="AMB"  description="Tela de AMB" />
+      <siteMapNode url="~/Menu/Processos/frmRMBR.aspx" title="RMBR"  description="Tela de RMBR" />
+    </siteMapNode>
+    <siteMapNode url="" title="$resources:resxIdioma,consultas"  description="Menu de Consultas"></siteMapNode>
+    <siteMapNode url="" title="$resources:resxIdioma,Relatorio"  description="Menu de Relatorio">
+      <siteMapNode url="~/Menu/Relatorios/KPIensco.aspx" title="KPI Ensco"  description="Tela KPI Ensco" />
+    </siteMapNode>
+    <siteMapNode url="" title="$resources:resxIdioma,controles"  description="Menu de Controles">
+    </siteMapNode>
+    <siteMapNode url="" title="$resources:resxIdioma,exportacao"  description="Menu Exportação">
+      <siteMapNode url="~/Menu/Exportacao/frmExportacaoSeadrill.aspx" title="Seadrill" />
+      <siteMapNode url="~/Menu/Exportacao/frmSiscomexExportacao.aspx" title="Siscomex"  description="Tela de Siscomex Exportação" />
+    </siteMapNode>
+    <siteMapNode url="" title="$resources:resxIdioma,financeiro"  description="Menu Financeiro"></siteMapNode>
+    <siteMapNode url="" title="ISO"  description="Menu ISO">
+      <siteMapNode url="~/Menu/ISO/frmAtas_de_Reuniao.aspx" title="$resources:resxIdioma,atas_de_reuniao"  description="Tela de Atas de Reunião"/>
+    </siteMapNode>
+    <siteMapNode url="" title="$resources:resxIdioma,rh"  description="Menu RH"></siteMapNode>
+    <siteMapNode url="" title="$resources:resxIdioma,sistema"  description="Menu Sistema">
+      <siteMapNode url="~/Menu/Sistema/frmUsuarios.aspx" title="$resources:resxIdioma,usuarios"  description="Tela de Usuarios"/>
+      <siteMapNode url="~/Menu/Sistema/frmGrupos.aspx" title="$resources:resxIdioma,grupos"  description="Tela de Grupos" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

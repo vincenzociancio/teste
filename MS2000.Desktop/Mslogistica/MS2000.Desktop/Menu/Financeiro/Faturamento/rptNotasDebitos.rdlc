@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Image Name="LogoMS">
+        <Source>Embedded</Source>
+        <Value>logotipo</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.39688cm</Top>
+        <Left>0.43011cm</Left>
+        <Height>1.69333cm</Height>
+        <Width>6.93209cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>MS LOGÍSTICA ADUANEIRA LTDA</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Rua Conselheiro Saraiva, 28, salas 1101, 1102, e 1103 - Centro - Rio de Janeiro - RJ - Cep 20091-030</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>CNPJ.: 30.875.884/0001-99</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Insc. Municipal 00.346.080</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>2.66912cm</Top>
+        <Left>0.42016cm</Left>
+        <Height>2.92833cm</Height>
+        <Width>15.94083cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <TopBorder>
+            <Style>Solid</Style>
+          </TopBorder>
+          <LeftBorder>
+            <Style>Solid</Style>
+          </LeftBorder>
+          <RightBorder>
+            <Style>Solid</Style>
+          </RightBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Nota">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Nota.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Nota</rd:DefaultName>
+        <Top>1.49021cm</Top>
+        <Left>14.93584cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.41521cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>NOTA DE DÉBITO Nº:   </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!Nota.Value</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox4</rd:DefaultName>
+        <Top>6.87599cm</Top>
+        <Left>0.42016cm</Left>
+        <Height>0.6cm</Height>
+        <Width>15.94083cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>A/C:</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!Importador.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox5</rd:DefaultName>
+        <Top>7.80733cm</Top>
+        <Left>0.42016cm</Left>
+        <Height>0.6cm</Height>
+        <Width>15.94083cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox6">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DATA DA EMISSÃO:   </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!DataEmissao.Value</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">                                                   </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>VENCIMENTO:   </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!Vencimento.Value</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>8.72808cm</Top>
+        <Left>0.42016cm</Left>
+        <Height>0.6cm</Height>
+        <Width>15.94083cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>VALOR:   </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!Valor.Value</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <Format>'R$' 0.00;('R$' 0.00)</Format>
+                  <rd:FormatSymbolCulture>pt-BR</rd:FormatSymbolCulture>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>9.64353cm</Top>
+        <Left>0.42016cm</Left>
+        <Height>0.6cm</Height>
+        <Width>15.94083cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>NOME DO SACADO:   </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!NomeSacado.Value</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ENDEREÇO:   </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!Endereco.Value</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>CNPJ:   </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!CNPJ.Value</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>INSC. ESTADUAL / MUNICIPAL:   </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!InscricaoEstadual.Value</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>10.58016cm</Top>
+        <Left>0.41022cm</Left>
+        <Height>3.21938cm</Height>
+        <Width>15.94083cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DESCRIÇÃO DOS SERVIÇOS:</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!Descricao.Value</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox8</rd:DefaultName>
+        <Top>14.15733cm</Top>
+        <Left>0.42016cm</Left>
+        <Height>1.47312cm</Height>
+        <Width>15.93089cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>VALOR POR EXTENSO:   </Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!ValorExtenso.Value</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox8</rd:DefaultName>
+        <Top>15.96658cm</Top>
+        <Left>0.4301cm</Left>
+        <Height>0.6635cm</Height>
+        <Width>15.93089cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>RECONHEÇO(EMOS) A EXATIDÃO DESTA DUPLICATA DE PRESTAÇÃO DE SERVIÇOS, NA IMPORTÂNCIA ACIMA QUE PAGAREI(EMOS) À MS LOGÍSTICA ADUANEIRA LTDA.</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>18.78224cm</Top>
+        <Left>0.43011cm</Left>
+        <Height>0.9175cm</Height>
+        <Width>15.92094cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>8.6875in</Height>
+    <Style />
+  </Body>
+  <Width>6.60417in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <ReportParameters>
+    <ReportParameter Name="Nota">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Importador">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DataEmissao">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vencimento">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Valor">
+      <DataType>Float</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NomeSacado">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Endereco">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CNPJ">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="InscricaoEstadual">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Descricao">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ValorExtenso">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logotipo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>0f468376-2e24-45c9-aaa2-f8c6c1969be0</rd:ReportID>
+</Report>

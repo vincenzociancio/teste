@@ -1,0 +1,119 @@
+﻿body
+{
+    margin: 0px;
+    padding: 0px;
+    /*font: 76% "Lucida Sans Unicode" , verdana, helvetica, sans-serif;*/
+    background-image: url('../Content/images/login_fundo.jpg')!important;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: #ffffff; 
+
+}
+
+/* Página de Acesso */
+/*.campos input, select {
+    background: url("../Content/images/fdo_input.gif") repeat-x;
+    border: 1px solid #e7e7e7;
+    color: #607a92;
+    width: 227px;
+}*/
+
+/*.lb {
+    width: 60px;
+    color: gray;
+    font-size: 13px;
+}*/
+
+label {
+    width:38px!important;
+}
+
+.site_erro {
+    color: Red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form_acesso {
+    position: absolute;
+    width: 330px;
+    height: 240px;
+    top: 0px;
+    left: -168px;
+    margin: 100px 0 0 50%; /*border: 1px solid #e7e7e7;*/
+    color: #607a92;
+    background-image: url("../Content/images/fnd_acesso.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 15px;
+}
+
+.titulo_acesso {
+    text-align: center;
+    font-size: 17px;
+    color: #2F9BDB;
+    padding-bottom:20px;
+    font-weight:bold;
+}
+
+
+.botao_acesso {
+    padding-right:42px!important;
+    text-align: right!important;
+}
+
+/*.entrar {
+    margin: 0px 29px 0px 0px;
+    padding: 3px 4px 3px 4px;
+    width: 70px;    
+}*/
+
+.msg_erro {
+    font-size: 12px;
+    font-weight: normal!important;
+}
+
+.tb_acesso {
+    width: 100%;
+    margin: 50px 0 0 0;
+}
+
+.logo {
+    width: 330px;
+    top: 0px;
+    left: -168px;
+    margin: 60px 0 0 50%;
+    text-align: left;
+    position: absolute;
+}
+
+.usuario {
+    text-transform: uppercase;
+}
+
+
+/*---------------------------------------------------*/
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}

@@ -1,0 +1,84 @@
+﻿@model MS2000WEB.Models.Controle_Atas_Arquivos
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Controle_Atas_Arquivos</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.pk_atas_arquivos)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.pk_atas_arquivos)
+            @Html.ValidationMessageFor(model => model.pk_atas_arquivos)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.fk_atas, "Controle_Atas")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("fk_atas", String.Empty)
+            @Html.ValidationMessageFor(model => model.fk_atas)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.caminho)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.caminho)
+            @Html.ValidationMessageFor(model => model.caminho)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.tipo_arquivo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.tipo_arquivo)
+            @Html.ValidationMessageFor(model => model.tipo_arquivo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.data)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.data)
+            @Html.ValidationMessageFor(model => model.data)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.lixo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.lixo)
+            @Html.ValidationMessageFor(model => model.lixo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.descricao_arquivo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.descricao_arquivo)
+            @Html.ValidationMessageFor(model => model.descricao_arquivo)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

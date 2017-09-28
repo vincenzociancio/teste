@@ -1,0 +1,118 @@
+﻿@model MS2000WEB.Models.RAT
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#Fund_Pedido").change(function () {
+            $("#CodFundamento").val($("#Fund_Pedido").val())
+        });
+        $("#Data_Entrada").mask("99/99/9999");
+        $("#Data_Aprovacao").mask("99/99/9999");
+    });
+
+    $(document).ready(function () {
+        $("#CodFundamento").keyup(function () {
+            $("#Fund_Pedido").val($("#CodFundamento").val())
+        });
+    });
+    $(document).ready(function () {
+        $("#Numero_Rat").mask("99999.999999/99-99");
+    });
+</script>
+
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Emissão de RAT</a> <span class="divider">></span></li>
+    <li class="active">Edição</li>
+</ul>
+<h4>Requerimento de Solicitação do Regime de Admissão Temporária</h4>
+
+@using (Html.BeginForm("Edit", "Rat", FormMethod.Post, new { @class = "form-stacked" }))
+{
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(model => model.ID)
+    @Html.HiddenFor(model => model.Fk_Importador)
+    @Html.HiddenFor(model => model.Fk_Processo)
+    @Html.HiddenFor(model => model.Data_Criacao)
+    @Html.HiddenFor(model => model.Prazo_Requerido)   
+    @Html.HiddenFor(model => model.Inst_Ped_Procuracao)
+    @Html.HiddenFor(model => model.Inst_Ped_Outros)
+    @Html.HiddenFor(model => model.Inst_Ped_Fatura)
+    @Html.HiddenFor(model => model.Cod_Fatura)
+    @Html.HiddenFor(model => model.Inf_Adicionais)   
+    @Html.HiddenFor(model => model.Data_Inicial)
+
+        
+    <div>
+        @Html.Label("Número RAT")
+        @Html.TextBoxFor(model => model.Numero_Rat)
+        @Html.ValidationMessageFor(model => model.Numero_Rat)
+    </div>
+    <br />
+    <div>
+        @Html.Label("Data Entrada")
+        @Html.TextBoxFor(model => model.Data_Entrada)
+        @Html.ValidationMessageFor(model => model.Data_Entrada)
+    </div>
+    <br />
+    <div>
+        @Html.Label("Data Aprovação")
+        @Html.TextBoxFor(model => model.Data_Aprovacao)
+        @Html.ValidationMessageFor(model => model.Data_Aprovacao)
+    </div>
+    <br />   
+     
+    <fieldset>
+        <legend>FUNDAMENTAÇÃO DO PEDIDO</legend>
+        <div>
+            @Html.TextBox("CodFundamento", null, new { @class = "span1" })
+            @Html.DropDownList("Fund_Pedido", "Selecione")
+            @Html.ValidationMessageFor(model => model.Fund_Pedido)
+            @* @Html.DropDownList("FundamentacaoPedidos", (SelectList)ViewData["FundamentacaoPedido"], "Selecione",new { @class = "span4" })*@
+        </div>
+    </fieldset>    
+    <br>
+    <fieldset>
+        <legend>OPÇÃO PELO DOMICÍLIO TRIBUTÁRIO ELETRÔNICO</legend>
+        <div>
+            @Html.RadioButtonFor(model => model.Opcao_Tributario, true) Sim 
+            @Html.RadioButtonFor(model => model.Opcao_Tributario, false) Não
+        </div>
+    </fieldset>     
+
+    <br />
+    <fieldset>
+        <legend>INSTRUÇÃO DO PEDIDO</legend>
+        <div class="clearfix">
+            @Html.CheckBox("Inst_Ped_Contrato", Model.Inst_Ped_Contrato)
+            <span>Contrato de prestação de serviços</span>
+        </div>
+        <div class="clearfix">
+            @Html.CheckBox("Inst_Ped_Contrato_arrendamento", Model.Inst_Ped_Contrato_arrendamento)
+            <span>Contrato de arrendamento operacional, de aluguel ou de empréstimo</span>
+        </div>
+        <div class="clearfix">
+            @Html.Label("Informações Complementares")
+            @Html.TextAreaFor(model => model.Inf_Complementares, new { @class = "span4 xxlarge" })
+            @Html.ValidationMessageFor(model => model.Inf_Complementares)
+        </div>
+    </fieldset>     
+    
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Salvar alterações</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>  
+   
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

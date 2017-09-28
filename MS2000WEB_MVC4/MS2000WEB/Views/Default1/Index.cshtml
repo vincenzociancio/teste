@@ -1,0 +1,135 @@
+﻿@model IEnumerable<MS2000WEB.Models.RAT>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Fk_Importador)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fk_Processo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fund_Pedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data_Criacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prazo_Requerido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Opcao_Tributario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Inst_Ped_Contrato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Inst_Ped_Procuracao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Inst_Ped_Outros)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Inst_Ped_Contrato_arrendamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Inst_Ped_Fatura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cod_Fatura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Inf_Adicionais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Inf_Complementares)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data_Inicial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Numero_Rat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data_Entrada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data_Aprovacao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fk_Importador)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fk_Processo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fund_Pedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data_Criacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prazo_Requerido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Opcao_Tributario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Inst_Ped_Contrato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Inst_Ped_Procuracao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Inst_Ped_Outros)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Inst_Ped_Contrato_arrendamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Inst_Ped_Fatura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cod_Fatura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Inf_Adicionais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Inf_Complementares)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data_Inicial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Numero_Rat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data_Entrada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data_Aprovacao)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

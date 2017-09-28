@@ -1,0 +1,54 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "ExportacaoSeadrill";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+<script type="text/javascript">
+
+    $(document).ready(function () {      
+      
+        $("#processo").mask("99999/99");
+    });
+
+    //$(function () {
+    //   // $('a#btnDownload').hide();
+    //    $('#processo').change(function () {
+    //        alert("teste");
+    //        if ($(this).val() != '') {
+    //            $('a#btnDownload').show();               
+    //        }
+    //        else {
+    //            $('a#btnDownload').hide();              
+    //        }
+    //    });
+    //});
+</script>
+
+
+<style>
+    #teste {
+        height: 150px;
+        overflow-y: scroll;
+    }
+</style>
+
+
+<h3>Exportação Seadrill</h3>
+
+@using (Html.BeginForm("Index", "ExportacaoSeadrill",
+                    FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label class="control-label" for="CampoData">Digite o Processo:</label>@Html.TextBox("processo", null, new { @class = "input-medium search-query" })
+    <button id="Processar" type="submit" class="btn btn-inverse">Processar</button>
+   
+    @Html.ActionLink("Download", "CreateFile", "ExportacaoSeadrill", new { @id = "btnDownload", @class = "btn" })
+}
+<div class="span8 rows5">
+    @{        
+        if (Session["DadosTXT"] != null)
+        { 
+        @Html.ListBox("ExportarTXT", (MultiSelectList)Session["DadosTXT"], new { @style = "width:100%" })
+        }    
+    }
+</div>

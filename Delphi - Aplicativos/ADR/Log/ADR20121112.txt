@@ -1,0 +1,308 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 12/11/2012 | 10:17:40 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 12/11/2012 | 10:17:41 | Arrumando Tributação...
+ 12/11/2012 | 10:17:42 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 12/11/2012 | 10:17:48 | CLIENTE: (223) ACAMIN NAVEGAÇÃO E SERVIÇOS MARÍTIMOS LTDA
+ 12/11/2012 | 10:17:48 | Verificando Processo: 09638/12
+ 12/11/2012 | 10:17:48 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS09638_DI_1221129912.txt
+ 12/11/2012 | 10:17:48 | ERRO! Não houve envios.
+ 12/11/2012 | 10:17:48 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:17:48 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:50 | Verificando Processo: 12883/12
+ 12/11/2012 | 10:17:51 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12883_DI_1221128070.txt
+ 12/11/2012 | 10:17:51 | ERRO! Não houve envios.
+ 12/11/2012 | 10:17:51 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:17:51 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:51 | Verificando Processo: 13329/12
+ 12/11/2012 | 10:17:51 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13329_DI_1221128860.txt
+ 12/11/2012 | 10:17:51 | ERRO! Não houve envios.
+ 12/11/2012 | 10:17:51 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:17:51 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:51 | Verificando Processo: 13520/12
+ 12/11/2012 | 10:17:51 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13520_DI_1221128843.txt
+ 12/11/2012 | 10:17:51 | ERRO! Não houve envios.
+ 12/11/2012 | 10:17:51 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:17:51 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:51 | Verificando Processo: 14060/12
+ 12/11/2012 | 10:17:51 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14060_DI_1221089953.txt
+ 12/11/2012 | 10:17:51 | Enviando confirmação do registro da DI do Processo: 14060/12; Responsável: Jocinei Mata
+ 12/11/2012 | 10:17:51 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:52 | Não foram encontrados contatos da empresa.
+ 12/11/2012 | 10:17:52 | Enviando e-mail de aviso para o setor Operacional...
+ 12/11/2012 | 10:17:52 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:52 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 12/11/2012 | 10:17:52 | Verificando Processo: 00125/08
+ 12/11/2012 | 10:17:52 | CLIENTE: (148) AKER KVAERNER OIL & GAS DO BRASIL LTDA
+ 12/11/2012 | 10:17:52 | Verificando Processo: 04135/07
+ 12/11/2012 | 10:17:52 | CLIENTE: (46) ANDAIMES JIRAU LTDA
+ 12/11/2012 | 10:17:52 | Verificando Processo: 00118/09
+ 12/11/2012 | 10:17:52 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 12/11/2012 | 10:17:52 | Verificando Processo: 02481/04
+ 12/11/2012 | 10:17:52 | Verificando Processo: 09557/09
+ 12/11/2012 | 10:17:52 | CLIENTE: (168) BCH ENERGY DO BRASIL SERVIÇOS DE PETRÓLEO LTDA.
+ 12/11/2012 | 10:17:53 | Verificando Processo: 14264/12
+ 12/11/2012 | 10:17:53 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14264_DI_1221099746.txt
+ 12/11/2012 | 10:17:53 | Enviando confirmação do registro da DI do Processo: 14264/12; Responsável: Leonardo Camargo
+ 12/11/2012 | 10:17:53 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:53 | Não foram encontrados contatos da empresa.
+ 12/11/2012 | 10:17:53 | Enviando e-mail de aviso para o setor Operacional...
+ 12/11/2012 | 10:17:53 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:53 | CLIENTE: (187) BP ENERGY DO BRASIL LTDA.
+ 12/11/2012 | 10:17:53 | Verificando Processo: 00032/08
+ 12/11/2012 | 10:17:53 | Verificando Processo: 03098/08
+ 12/11/2012 | 10:17:53 | Verificando Processo: 03577/08
+ 12/11/2012 | 10:17:53 | Verificando Processo: 03581/08
+ 12/11/2012 | 10:17:53 | Verificando Processo: 04647/08
+ 12/11/2012 | 10:17:54 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 12/11/2012 | 10:17:54 | Verificando Processo: 00054/11
+ 12/11/2012 | 10:17:54 | CLIENTE: (238) BW OFFSHORE DO BRASIL LTDA
+ 12/11/2012 | 10:17:54 | Verificando Processo: 03532/09
+ 12/11/2012 | 10:17:54 | Verificando Processo: 10516/12
+ 12/11/2012 | 10:17:54 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS10516_DI_1221119950.txt
+ 12/11/2012 | 10:17:54 | Enviando confirmação do registro da DI do Processo: 10516/12; Responsável: Thiago Gomes
+ 12/11/2012 | 10:17:54 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:54 | Enviando e-mails para contatos das empresas...
+ 12/11/2012 | 10:17:54 | CONTATO: Angelita martins
+ 12/11/2012 | 10:17:54 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:54 | CONTATO: Franklin bezerra
+ 12/11/2012 | 10:17:54 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:54 | CONTATO: Heysa marques
+ 12/11/2012 | 10:17:54 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:54 | CONTATO: Rodrigo fahham
+ 12/11/2012 | 10:17:54 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:54 | CONTATO: suellen santos
+ 12/11/2012 | 10:17:54 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:54 | Verificando Processo: 12513/12
+ 12/11/2012 | 10:17:55 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12513_DI_1221072066.txt
+ 12/11/2012 | 10:17:55 | Enviando confirmação do registro da DI do Processo: 12513/12; Responsável: Diego Aguiar
+ 12/11/2012 | 10:17:55 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:55 | Enviando e-mails para contatos das empresas...
+ 12/11/2012 | 10:17:55 | CONTATO: Angelita martins
+ 12/11/2012 | 10:17:55 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:55 | CONTATO: Franklin bezerra
+ 12/11/2012 | 10:17:55 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:55 | CONTATO: Heysa marques
+ 12/11/2012 | 10:17:55 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:55 | CONTATO: Rodrigo fahham
+ 12/11/2012 | 10:17:55 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:55 | CONTATO: suellen santos
+ 12/11/2012 | 10:17:55 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:55 | Verificando Processo: 13468/12
+ 12/11/2012 | 10:17:55 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13468_DI_1221072864.txt
+ 12/11/2012 | 10:17:55 | Enviando confirmação do registro da DI do Processo: 13468/12; Responsável: Thiago Gomes
+ 12/11/2012 | 10:17:55 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:55 | Enviando e-mails para contatos das empresas...
+ 12/11/2012 | 10:17:55 | CONTATO: Angelita martins
+ 12/11/2012 | 10:17:55 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:56 | CONTATO: Franklin bezerra
+ 12/11/2012 | 10:17:56 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:56 | CONTATO: Heysa marques
+ 12/11/2012 | 10:17:56 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:56 | CONTATO: Rodrigo fahham
+ 12/11/2012 | 10:17:56 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:56 | CONTATO: suellen santos
+ 12/11/2012 | 10:17:56 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:56 | Verificando Processo: 14447/12
+ 12/11/2012 | 10:17:56 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14447_DI_1221115539.txt
+ 12/11/2012 | 10:17:56 | Enviando confirmação do registro da DI do Processo: 14447/12; Responsável: Thiago Gomes
+ 12/11/2012 | 10:17:56 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:56 | Enviando e-mails para contatos das empresas...
+ 12/11/2012 | 10:17:56 | CONTATO: Angelita martins
+ 12/11/2012 | 10:17:56 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:56 | CONTATO: Franklin bezerra
+ 12/11/2012 | 10:17:56 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:56 | CONTATO: Heysa marques
+ 12/11/2012 | 10:17:56 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:56 | CONTATO: Rodrigo fahham
+ 12/11/2012 | 10:17:56 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:56 | CONTATO: suellen santos
+ 12/11/2012 | 10:17:56 | Gravando e-Mail automático...
+ 12/11/2012 | 10:17:57 | Verificando Processo: 16549/11
+ 12/11/2012 | 10:17:57 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 12/11/2012 | 10:17:57 | Verificando Processo: 00906/09
+ 12/11/2012 | 10:17:57 | Verificando Processo: 01844/06
+ 12/11/2012 | 10:17:57 | Verificando Processo: 01958/05
+ 12/11/2012 | 10:17:57 | Verificando Processo: 02078/09
+ 12/11/2012 | 10:17:57 | Verificando Processo: 02260/06
+ 12/11/2012 | 10:17:57 | Verificando Processo: 14704/12
+ 12/11/2012 | 10:17:58 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14704_DI_1221152922.txt
+ 12/11/2012 | 10:17:58 | ERRO! Não houve envios.
+ 12/11/2012 | 10:17:58 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:17:58 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:02 | CLIENTE: (7) CGG DO BRASIL PARTICIPAÇÕES LTDA
+ 12/11/2012 | 10:18:02 | Verificando Processo: 01402/07
+ 12/11/2012 | 10:18:03 | Verificando Processo: 02180/07
+ 12/11/2012 | 10:18:03 | Verificando Processo: 02807/09
+ 12/11/2012 | 10:18:03 | Verificando Processo: 03612/08
+ 12/11/2012 | 10:18:03 | Verificando Processo: 04601/09
+ 12/11/2012 | 10:18:03 | Verificando Processo: 05927/09
+ 12/11/2012 | 10:18:03 | CLIENTE: (179) CHEVRON BRASIL LTDA.
+ 12/11/2012 | 10:18:03 | Verificando Processo: 03051/08
+ 12/11/2012 | 10:18:03 | CLIENTE: (234) CHEVRON BRASIL UPSTREAM FRADE LTDA
+ 12/11/2012 | 10:18:04 | Verificando Processo: 00145/09
+ 12/11/2012 | 10:18:04 | Verificando Processo: 01661/09
+ 12/11/2012 | 10:18:04 | Verificando Processo: 01697/09
+ 12/11/2012 | 10:18:04 | Verificando Processo: 01752/09
+ 12/11/2012 | 10:18:04 | Verificando Processo: 01778/09
+ 12/11/2012 | 10:18:04 | Verificando Processo: 01788/09
+ 12/11/2012 | 10:18:04 | Verificando Processo: 01792/09
+ 12/11/2012 | 10:18:05 | Verificando Processo: 01815/09
+ 12/11/2012 | 10:18:05 | Verificando Processo: 04876/08
+ 12/11/2012 | 10:18:05 | Verificando Processo: 06215/08
+ 12/11/2012 | 10:18:05 | CLIENTE: (216) CONSTRUTORA NORBERTO ODEBRECHT S/A
+ 12/11/2012 | 10:18:05 | Verificando Processo: 00455/09
+ 12/11/2012 | 10:18:05 | CLIENTE: (94) FRANKS INTERNATIONAL BRASIL LTDA
+ 12/11/2012 | 10:18:05 | Verificando Processo: 00002/06
+ 12/11/2012 | 10:18:05 | Verificando Processo: 02416/08
+ 12/11/2012 | 10:18:06 | CLIENTE: (96) FRANKS INTERNATIONAL BRASIL LTDA
+ 12/11/2012 | 10:18:06 | Verificando Processo: 02558/08
+ 12/11/2012 | 10:18:06 | CLIENTE: (94) FRANKS INTERNATIONAL BRASIL LTDA
+ 12/11/2012 | 10:18:06 | Verificando Processo: 03599/07
+ 12/11/2012 | 10:18:06 | CLIENTE: (43) FUGRO BRASIL - SERVIÇOS SUBMARINOS E LEVANTAMENTOS LTDA
+ 12/11/2012 | 10:18:06 | Verificando Processo: 03859/07
+ 12/11/2012 | 10:18:06 | Verificando Processo: 05164/08
+ 12/11/2012 | 10:18:06 | Verificando Processo: 05295/08
+ 12/11/2012 | 10:18:07 | Verificando Processo: 05557/08
+ 12/11/2012 | 10:18:07 | CLIENTE: (110) FUGRO DO BRASIL LTDA
+ 12/11/2012 | 10:18:07 | Verificando Processo: 00796/08
+ 12/11/2012 | 10:18:07 | CLIENTE: (99) FUGRO GEOSOLUTIONS DO (BRASIL)  SERV DE LEVANTAMENTO LTDA
+ 12/11/2012 | 10:18:07 | Verificando Processo: 01213/07
+ 12/11/2012 | 10:18:07 | Verificando Processo: 01369/07
+ 12/11/2012 | 10:18:07 | CLIENTE: (237) GEORXT TECNOLOGIA DE EXPLORAÇÃO DE RESERVATORIOS DO BRASIL S.A.
+ 12/11/2012 | 10:18:07 | Verificando Processo: 14553/12
+ 12/11/2012 | 10:18:07 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14553_DI_1221116500.txt
+ 12/11/2012 | 10:18:07 | ERRO! Não houve envios.
+ 12/11/2012 | 10:18:07 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:18:07 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:08 | CLIENTE: (31) HALLIBURTON PRODUTOS LTDA.
+ 12/11/2012 | 10:18:08 | Verificando Processo: 00809/04
+ 12/11/2012 | 10:18:08 | Verificando Processo: 01098/04
+ 12/11/2012 | 10:18:08 | Verificando Processo: 01100/04
+ 12/11/2012 | 10:18:08 | Verificando Processo: 01102/04
+ 12/11/2012 | 10:18:08 | Verificando Processo: 01104/04
+ 12/11/2012 | 10:18:08 | Verificando Processo: 01136/04
+ 12/11/2012 | 10:18:08 | Verificando Processo: 01162/04
+ 12/11/2012 | 10:18:09 | Verificando Processo: 01177/04
+ 12/11/2012 | 10:18:09 | Verificando Processo: 01248/04
+ 12/11/2012 | 10:18:09 | Verificando Processo: 01328/04
+ 12/11/2012 | 10:18:09 | Verificando Processo: 01331/04
+ 12/11/2012 | 10:18:09 | Verificando Processo: 01338/04
+ 12/11/2012 | 10:18:09 | Verificando Processo: 01339/04
+ 12/11/2012 | 10:18:10 | Verificando Processo: 01385/04
+ 12/11/2012 | 10:18:10 | Verificando Processo: 01389/04
+ 12/11/2012 | 10:18:10 | Verificando Processo: 01417/04
+ 12/11/2012 | 10:18:10 | Verificando Processo: 01419/04
+ 12/11/2012 | 10:18:10 | Verificando Processo: 01453/04
+ 12/11/2012 | 10:18:10 | Verificando Processo: 01514/04
+ 12/11/2012 | 10:18:11 | Verificando Processo: 01526/04
+ 12/11/2012 | 10:18:11 | Verificando Processo: 01537/04
+ 12/11/2012 | 10:18:11 | Verificando Processo: 01539/04
+ 12/11/2012 | 10:18:11 | Verificando Processo: 01602/04
+ 12/11/2012 | 10:18:12 | Verificando Processo: 01604/04
+ 12/11/2012 | 10:18:12 | Verificando Processo: 01611/04
+ 12/11/2012 | 10:18:12 | Verificando Processo: 01617/04
+ 12/11/2012 | 10:18:12 | Verificando Processo: 01634/04
+ 12/11/2012 | 10:18:12 | Verificando Processo: 01640/04
+ 12/11/2012 | 10:18:12 | Verificando Processo: 01642/04
+ 12/11/2012 | 10:18:12 | Verificando Processo: 01717/04
+ 12/11/2012 | 10:18:12 | Verificando Processo: 01720/04
+ 12/11/2012 | 10:18:13 | Verificando Processo: 01730/04
+ 12/11/2012 | 10:18:13 | Verificando Processo: 01731/04
+ 12/11/2012 | 10:18:13 | Verificando Processo: 01744/04
+ 12/11/2012 | 10:18:13 | Verificando Processo: 01771/04
+ 12/11/2012 | 10:18:13 | Verificando Processo: 01806/04
+ 12/11/2012 | 10:18:13 | Verificando Processo: 01815/04
+ 12/11/2012 | 10:18:14 | Verificando Processo: 01816/04
+ 12/11/2012 | 10:18:14 | Verificando Processo: 01821/04
+ 12/11/2012 | 10:18:14 | Verificando Processo: 01856/04
+ 12/11/2012 | 10:18:14 | Verificando Processo: 02040/04
+ 12/11/2012 | 10:18:14 | Verificando Processo: 02680/03
+ 12/11/2012 | 10:18:14 | CLIENTE: (6) J LOW BEER LTDA.
+ 12/11/2012 | 10:18:14 | Verificando Processo: 01068/03
+ 12/11/2012 | 10:18:15 | CLIENTE: (100) MARÉ ALTA DO BRASIL NAVEGAÇÃO LTDA
+ 12/11/2012 | 10:18:15 | Verificando Processo: 00198/06
+ 12/11/2012 | 10:18:15 | Verificando Processo: 02644/08
+ 12/11/2012 | 10:18:15 | Verificando Processo: 04364/09
+ 12/11/2012 | 10:18:15 | Verificando Processo: 12669/12
+ 12/11/2012 | 10:18:15 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12669_DI_1221074506.txt
+ 12/11/2012 | 10:18:15 | ERRO! Não houve envios.
+ 12/11/2012 | 10:18:15 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:18:15 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:16 | CLIENTE: (152) MODEC SERVIÇOS DE PETROLEO DO BRASIL LTDA
+ 12/11/2012 | 10:18:16 | Verificando Processo: 04123/08
+ 12/11/2012 | 10:18:16 | Verificando Processo: 11968/12
+ 12/11/2012 | 10:18:16 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS11968_DI_1220912613.txt
+ 12/11/2012 | 10:18:16 | ERRO! Não houve envios.
+ 12/11/2012 | 10:18:16 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:18:16 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:16 | Verificando Processo: 13301/12
+ 12/11/2012 | 10:18:16 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13301_DI_1220912958.txt
+ 12/11/2012 | 10:18:16 | ERRO! Não houve envios.
+ 12/11/2012 | 10:18:16 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:18:16 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:17 | Verificando Processo: 13412/12
+ 12/11/2012 | 10:18:17 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13412_DI_1221008252.txt
+ 12/11/2012 | 10:18:17 | ERRO! Não houve envios.
+ 12/11/2012 | 10:18:17 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:18:17 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:17 | Verificando Processo: 14018/12
+ 12/11/2012 | 10:18:17 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14018_DI_1221113803.txt
+ 12/11/2012 | 10:18:17 | ERRO! Não houve envios.
+ 12/11/2012 | 10:18:17 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:18:17 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:17 | Verificando Processo: 14298/12
+ 12/11/2012 | 10:18:17 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14298_DI_1221114770.txt
+ 12/11/2012 | 10:18:17 | ERRO! Não houve envios.
+ 12/11/2012 | 10:18:17 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:18:17 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:18 | Verificando Processo: 14550/12
+ 12/11/2012 | 10:18:18 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14550_DI_1221114575.txt
+ 12/11/2012 | 10:18:18 | ERRO! Não houve envios.
+ 12/11/2012 | 10:18:18 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 12/11/2012 | 10:18:18 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:18 | CLIENTE: (30) NOBLE DO BRASIL S/C LTDA
+ 12/11/2012 | 10:18:18 | Verificando Processo: 01073/03
+ 12/11/2012 | 10:18:18 | Verificando Processo: 01074/03
+ 12/11/2012 | 10:18:18 | Verificando Processo: 02950/03
+ 12/11/2012 | 10:18:19 | CLIENTE: (358) OCEAN RIG DO BRASIL SERVIÇOS DE PETROLEO LTDA
+ 12/11/2012 | 10:18:19 | Verificando Processo: 13958/12
+ 12/11/2012 | 10:18:19 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13958_DI_1221082452.txt
+ 12/11/2012 | 10:18:19 | Enviando confirmação do registro da DI do Processo: 13958/12; Responsável: Orlando Junior
+ 12/11/2012 | 10:18:19 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:19 | Enviando e-mails para contatos das empresas...
+ 12/11/2012 | 10:18:19 | CONTATO: Caroline Mozer
+ 12/11/2012 | 10:18:19 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:19 | Verificando Processo: 14355/12
+ 12/11/2012 | 10:18:19 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14355_DI_1221100868.txt
+ 12/11/2012 | 10:18:19 | Enviando confirmação do registro da DI do Processo: 14355/12; Responsável: Isabella Souza
+ 12/11/2012 | 10:18:19 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:20 | Enviando e-mails para contatos das empresas...
+ 12/11/2012 | 10:18:20 | CONTATO: Caroline Mozer
+ 12/11/2012 | 10:18:20 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:20 | CLIENTE: (296) ODEBRECHT OLEO E GAS S/A
+ 12/11/2012 | 10:18:20 | Verificando Processo: 07306/12
+ 12/11/2012 | 10:18:20 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS07306_DI_1221105657.txt
+ 12/11/2012 | 10:18:20 | Enviando confirmação do registro da DI do Processo: 07306/12; Responsável: Leonardo Araujo
+ 12/11/2012 | 10:18:20 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:23 | Enviando e-mails para contatos das empresas...
+ 12/11/2012 | 10:18:23 | CONTATO: flavio ferreira
+ 12/11/2012 | 10:18:23 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:23 | Verificando Processo: 11971/12
+ 12/11/2012 | 10:18:23 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS11971_DI_1221116330.txt
+ 12/11/2012 | 10:18:24 | Enviando confirmação do registro da DI do Processo: 11971/12; Responsável: Leonardo Araujo
+ 12/11/2012 | 10:18:24 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:24 | Enviando e-mails para contatos das empresas...
+ 12/11/2012 | 10:18:24 | CONTATO: flavio ferreira
+ 12/11/2012 | 10:18:24 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:24 | Verificando Processo: 13528/12
+ 12/11/2012 | 10:18:24 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13528_DI_1220926258.txt
+ 12/11/2012 | 10:18:24 | ERRO! Enviando Erro no Processo: 13528/12; Responsável: Kenon Pessanha
+ 12/11/2012 | 10:18:24 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:25 | Verificando Processo: 13724/12
+ 12/11/2012 | 10:18:25 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13724_DI_1221112050.txt
+ 12/11/2012 | 10:18:25 | Enviando confirmação do registro da DI do Processo: 13724/12; Responsável: Leonardo Araujo
+ 12/11/2012 | 10:18:26 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:26 | Enviando e-mails para contatos das empresas...
+ 12/11/2012 | 10:18:26 | CONTATO: flavio ferreira
+ 12/11/2012 | 10:18:26 | Gravando e-Mail automático...
+ 12/11/2012 | 10:18:26 | >>> FINALIZANDO O PROCESSAMENTO DO ADR

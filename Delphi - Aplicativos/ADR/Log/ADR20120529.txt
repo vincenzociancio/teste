@@ -1,0 +1,36 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 29/05/2012 | 15:26:15 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 29/05/2012 | 15:26:15 | Arrumando Tributação...
+ 29/05/2012 | 15:26:16 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 29/05/2012 | 15:26:16 | CLIENTE: (296) ODEBRECHT OLEO E GAS S/A
+ 29/05/2012 | 15:26:16 | Verificando Processo: 06736/12
+ 29/05/2012 | 15:26:16 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS06736_DI_1209782881.txt
+ 29/05/2012 | 15:26:16 | Enviando confirmação do registro da DI do Processo: 06736/12; Responsável: Roberta Santos
+ 29/05/2012 | 15:26:16 | Gravando e-Mail automático...
+ 29/05/2012 | 15:27:01 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 29/05/2012 | 15:27:02 | Arrumando Tributação...
+ 29/05/2012 | 15:27:02 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 29/05/2012 | 15:27:02 | CLIENTE: (296) ODEBRECHT OLEO E GAS S/A
+ 29/05/2012 | 15:27:02 | Verificando Processo: 06736/12
+ 29/05/2012 | 15:27:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS06736_DI_1209782881.txt
+ 29/05/2012 | 15:27:03 | Enviando confirmação do registro da DI do Processo: 06736/12; Responsável: Roberta Santos
+ 29/05/2012 | 15:27:03 | Gravando e-Mail automático...
+ 29/05/2012 | 15:27:03 | Enviando e-mails para contatos das empresas...
+ 29/05/2012 | 15:29:07 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 29/05/2012 | 15:29:08 | Arrumando Tributação...
+ 29/05/2012 | 15:29:08 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 29/05/2012 | 15:32:48 | CLIENTE: (296) ODEBRECHT OLEO E GAS S/A
+ 29/05/2012 | 15:32:54 | Verificando Processo: 06736/12
+ 29/05/2012 | 15:33:02 | >>> FINALIZANDO O PROCESSAMENTO DO ADR
+ 29/05/2012 | 15:33:33 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 29/05/2012 | 15:33:33 | Arrumando Tributação...
+ 29/05/2012 | 15:33:33 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 29/05/2012 | 15:33:41 | CLIENTE: (296) ODEBRECHT OLEO E GAS S/A
+ 29/05/2012 | 15:33:44 | Verificando Processo: 06736/12
+ 29/05/2012 | 15:33:44 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS06736_DI_1209782881.txt
+ 29/05/2012 | 15:33:44 | Enviando confirmação do registro da DI do Processo: 06736/12; Responsável: Roberta Santos
+ 29/05/2012 | 15:33:44 | Gravando e-Mail automático...
+ 29/05/2012 | 15:34:00 | Enviando e-mails para contatos das empresas...
+ 29/05/2012 | 15:34:12 | CONTATO: Leonardo Alabarce
+ 29/05/2012 | 15:34:30 | Gravando e-Mail automático...
+ 29/05/2012 | 15:34:38 | >>> FINALIZANDO O PROCESSAMENTO DO ADR

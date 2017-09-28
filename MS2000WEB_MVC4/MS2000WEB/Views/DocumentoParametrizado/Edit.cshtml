@@ -1,0 +1,218 @@
+﻿@model MS2000WEB.Models.Documentos_Relatorios_parametrizacao
+@{
+    ViewBag.Title = "Documentos Parametrizados";      
+}
+
+<div class="row">
+    <div class="span10">
+        <h3>@ViewBag.Title</h3>
+    </div>
+    
+        @using (Html.BeginForm("Edit", "DocumentoParametrizado", FormMethod.Post, new { @class = "form-stacked" }))
+        {
+
+            @Html.HiddenFor(m => m.DocID, new { @id = "DocID" })
+            <legend>Editar</legend>
+           
+                <div class="control-group">
+                    <label class="control-label" for="CampoTitulo">Título</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(m => m.Titulo, new { @class = "span3" })
+                        @Html.ValidationMessageFor(model => model.Titulo)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="CampoImportador">Importador</label>
+                    <div class="controls">
+                        @Html.DropDownList("ImportadorCgcCpf", string.Empty)
+                        @Html.ValidationMessageFor(model => model.ImportadorCgcCpf)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="CampoVencimento">Vencimento</label>
+                    <div class="controls">
+                        @Html.DropDownList("Vencimento", new[] { new SelectListItem{Text = "1 à 10 - Diário" ,Value = "1"},
+                                                                 new SelectListItem{Text = "11 à 30 - Semanal" ,Value = "2"},
+                                                                 new SelectListItem{Text = "31 à 180 - Mensal" ,Value = "3"}}, new { @class = "span3" })
+                        @Html.ValidationMessageFor(model => model.Vencimento)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="CampoEmail">E-mail</label>
+                    <div class="controls">
+                        @Html.TextBoxFor(model => model.Email, new { @class = "span3" })
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </div>
+                </div>
+           
+@* -------------Status---------- *@
+            <div class="row">
+                <div class="span3">
+                    <legend>Status</legend>
+                    @{                        
+            List<MS2000WEB.ViewModels.DocumentoParametrizadoStatusViewModel> status = ViewBag.Status;
+            foreach (var item in status)
+            {                             
+                        <input type="checkbox" 
+                                   name="selectedStatus" 
+                                   class="checkbox"
+                                   value="@item.StatusID" 
+                                    @(Html.Raw(item.Ativo ? "checked=\"checked\"" : "")) />
+                        @item.DescricaoStatus
+                        <br />
+            }
+                    }
+                </div>
+
+                @*----------------Tipo Documentos-----------------*@
+
+                <div class="span4">
+                    <legend>Selecione os documetos</legend>
+                    <label class="control-label" for="CampoTipoDocumento">Tipos de Documentos</label>
+                    <div class="controls">
+                        @Html.DropDownList("TiposDocumentos", (SelectList)ViewData["TiposDocumentos"], "Selecione", new { data_bind = "value: Tipo" })
+                    </div>
+                    <br />
+                    <label class="control-label" for="CampoTipoDocumento">Sub-Tipo de Documento</label>
+                    <div class="controls">
+                        <select id="ddSubtipo" name="ddSubtipo" data-bind=" value: SubTipo"></select>
+                    </div>
+                    <br />
+                    <div class="controls">
+                        <input class="btn btn-inverse" type="button" data-bind="click: adicionarDocumento" value="Incluir" />
+                    </div>
+                    <br />
+                    <div>
+                        <label style="color: black"><strong>Descrição</strong></label>
+                        <div id="divDocumentos">
+                            <table style="border: 1px solid black">
+                                <tbody data-bind='foreach: Documentos'>
+                                    <tr style="border: 1px solid black">
+                                        <td style="border: 1px solid black">
+                                            <input style="border-width: 0; border-color: transparent; width: 400px" disabled="disabled" data-bind="value: Descricao" />
+                                        </td>
+                                        <td style="border: 1px solid black">
+                                            <a href='#' data-bind='click: MeuModelo.removerDocumento'>Deletar</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                </div>
+            </div>               
+            <div class="form-actions">
+                <button id="btnSalvar" type="submit" class="btn btn-inverse" onclick="SubTipo()">Salvar</button>
+                @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+            </div>
+        }
+ 
+</div>
+
+
+<script type="text/javascript">
+    function getSubtipo(param) {
+        //$.getJSON("/MS2000MVC/DocumentoParametrizado/PopulateSubTipoDropDownList",
+        //    { tipoID: param },
+        //    function (data) {
+        //        var items = "<option value=''>Selecione</option>";
+        //        $.each(data, function (i, item) {
+        //            items += "<option  value=\"" + item.Value + "\">" + item.Text + "</option>";
+        //        });
+        //        $("#ddSubtipo").html(items).val(0);
+        //    }
+        //);
+        $.get("@Url.Action("PopulateSubTipoDropDownList")",
+             { tipoID: param },
+             function (data) {
+                 var items = "<option value=''>Selecione</option>";
+                 $.each(data, function (i, item) {
+                     items += "<option  value=\"" + item.Value + "\">" + item.Text + "</option>";
+                 });
+                 $("#ddSubtipo").html(items).val(0);
+             }
+            );
+    }
+
+    $(document).ready(function () {
+        $("#TiposDocumentos").change(function () {
+            var param = $("#TiposDocumentos").val();
+            getSubtipo(param);
+        });
+
+    });
+
+
+    var MeuModelo = {
+        Tipo: ko.observable(),
+        SubTipo: ko.observable(),
+        Descricao: ko.observable(),
+        Documentos: ko.observableArray([]),
+
+        adicionarDocumento: function () {
+            var Desc = $("#ddSubtipo option:selected").html();
+
+            this.Documentos.push({ Tipo_Doc: this.Tipo(), Sub_Tipo_Doc: this.SubTipo(), Descricao: Desc })
+            this.Tipo("");
+            this.SubTipo("");
+            this.Descricao("");
+
+            $("#ddSubtipo").empty();
+           
+        }
+        , removerDocumento: function (documentos) {
+            MeuModelo.Documentos.remove(documentos);
+        }
+    };
+
+    GetDocumentos($('#DocID').val());
+    ko.applyBindings(MeuModelo);
+
+    function SubTipo() {
+        var dados = ko.toJS(MeuModelo.Documentos);
+        var ID = $('#DocID').val();
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: '@Url.Action("SalvarSubtipo")',
+            data: JSON.stringify({ documentos: dados, id: ID }),
+            traditional: true
+        });
+        GetDocumentos($('#DocID').val());
+    }
+
+
+    //Function to Read All Employees   
+@*    function GetDocumentos(p) {
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            //url: "~/DocumentoParametrizado/PopulateSubTipoDocumentosTable",
+            @Url.Action("DocumentoParametrizado","PopulateSubTipoDocumentosTable"),
+            data: JSON.stringify({ id: p }),
+            traditional: true,            
+            success: function (data) {
+                    self.MeuModelo.Documentos(data); //Put the response in ObservableArray                
+            },
+            error: function (error) {
+
+                 alert(error.status + "<--and--> " + error.statusText + '--' + error );
+            }
+        });
+        //Ends Here
+    }*@
+
+    function GetDocumentos(p) {
+        $.post("@Url.Action("PopulateSubTipoDocumentosTable")",
+            { id: p },
+            function (data) {
+                self.MeuModelo.Documentos(data); //Put the response in ObservableArray                
+            }
+        );
+    }
+
+    //);
+    //}
+</script>

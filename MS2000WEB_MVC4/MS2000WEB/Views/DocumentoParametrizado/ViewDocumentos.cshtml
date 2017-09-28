@@ -1,0 +1,17 @@
+﻿@model MS2000WEB.ViewModels.DocumentosParametrizadoViewModel
+@{ 
+    if (Model != null)
+    {
+        WebGrid grid = new WebGrid(source: Model.ListaDeDocumentos, rowsPerPage: 50, canSort: false, ajaxUpdateContainerId: "grid");    
+        @grid.GetHtml(htmlAttributes: new { id = "grid" },
+                                    tableStyle: "grade",
+                                    headerStyle: "header",
+                                    alternatingRowStyle: "alt",
+                                    selectedRowStyle: "selected",                                    
+                                    columns: grid.Columns(
+                                    grid.Column("Descricao", header: "Titulo"),
+                                    grid.Column(format: (item) => Ajax.ActionLink("Delete", "DeleteDocumento", new { id = item.ID, doc = item.DocID }, new AjaxOptions() { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "divDocumentos" }))
+        //grid.Column(format: (item) => Ajax.ActionLink("Delete", "DeleteDocumento", new { id = item.ID, doc = item.DocID }, new AjaxOptions { InsertionMode = InsertionMode.Replace, HttpMethod = "POST", UpdateTargetId = "divDocumentos" }))
+        ));
+    }
+}

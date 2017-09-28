@@ -1,0 +1,41 @@
+﻿@model MS2000WEB.Models.RH_Formularios
+
+@{
+    ViewBag.Title = "Novo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">RH</a> <span class="divider">></span></li>
+    <li><a href="#">Formulário</a> <span class="divider">></span></li>
+    <li><a href="#">Cadastro</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+
+<h4>Formulario</h4>
+
+
+@using (Html.BeginForm("Create", "RHFormulario", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-stacked" }))
+{           
+    @Html.AntiForgeryToken();    
+    
+    <div class="editor-field">
+        @Html.Label("Título ")
+        @Html.EditorFor(model => model.Titulo)
+        @Html.ValidationMessageFor(model => model.Titulo)
+    </div>
+    <br />
+    
+    <input type="file" name="file" style="display: none;" id="file" class="span4"/>
+    
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Salvar</button>        
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })   
+    </div>           
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,68 @@
+﻿@model MS2000WEB.Models.Controle_de_Tributos
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Controle_de_Tributos</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Natureza)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Natureza)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Codigo_Tributo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Codigo_Tributo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Competencia)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Competencia)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Periodicidade)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Periodicidade)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Data_Pgto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Data_Pgto)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Valor)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Valor)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Referencia)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Referencia)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

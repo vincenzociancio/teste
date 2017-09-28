@@ -1,0 +1,101 @@
+﻿@model MS2000WEB.Models.RAT_Prorrogacao
+
+@{
+    ViewBag.Title = "Criar";
+}
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Emissão de RAT</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+
+<h4>Requerimento de Solicitação do Regime de Admissão Temporária</h4>
+
+@using (Html.BeginForm("Create", "RatProrrogacao", FormMethod.Post, new { @class = "form-stacked" }))
+{
+    <div class="clearfix">
+        @Html.ValidationSummary(true)
+        @Html.Label("Número do MS")
+        <div class="input">
+            @Html.TextBoxFor(model => model.Fk_Processo, new { @class = "span2" })
+            @Html.ValidationMessageFor(model => model.Fk_Processo)
+        </div>
+    </div>       
+   
+@* <legend>FUNDAMENTAÇÃO DO PEDIDO</legend>*@
+    <div class="clearfix">
+        <div class="input">
+            @Html.Label("Fundamentação do Pedido")
+            @Html.TextBox("CodFundamento", null, new { @class = "span1" })
+            @Html.DropDownList("Fund_Pedido", null, "selecione", new { @class = "span3" })
+            @Html.ValidationMessageFor(model => model.Fund_Pedido)
+            @* @Html.DropDownList("FundamentacaoPedidos", (SelectList)ViewData["FundamentacaoPedido"], "Selecione",new { @class = "span4" })*@
+        </div>
+    </div>
+    <div class="clearfix">
+        @Html.ValidationSummary(true)
+        @Html.Label("Número do AITEE")
+        <div class="input">
+            @Html.TextBoxFor(model => model.Numero_AITEE, new { @class = "span4" })
+            @Html.ValidationMessageFor(model => model.Numero_AITEE)
+        </div>
+    </div>    
+    <div class="row">
+        <div class="span2">
+            <div class="clearfix">
+                @Html.ValidationSummary(true)
+                @Html.Label("Data AITEE")
+
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Data_AITEE, new { @class = "span2" })
+                </div>
+            </div>
+        </div>
+        <div class="span*">
+            <div class="clearfix">
+                @Html.ValidationSummary(true)
+                @Html.Label("Data ADE")
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Data_ADE, new { @class = "span2" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix">
+        @Html.Label("Informações Complementares")
+        <div class="input">
+            @Html.TextAreaFor(model => model.Inf_Complementares, new { @class = "span4", style = "height: 200px !important" })
+            @Html.ValidationMessageFor(model => model.Inf_Complementares)
+        </div>
+    </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Salvar</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#Fund_Pedido").change(function () {
+            $("#CodFundamento").val($("#Fund_Pedido").val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#CodFundamento").keyup(function () {
+            $("#Fund_Pedido").val($("#CodFundamento").val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Fk_Processo").mask("99999/99");
+        $("#Data_AITEE").mask("99/99/9999");
+        $("#Data_ADE").mask("99/99/9999");
+    });
+</script>

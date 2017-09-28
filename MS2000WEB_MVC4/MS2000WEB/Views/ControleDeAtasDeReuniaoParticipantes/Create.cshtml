@@ -1,0 +1,38 @@
+﻿@model MS2000WEB.Models.Controle_Atas_Participantes
+
+@{
+    ViewBag.Title = "Novo";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">ISO</a> <span class="divider">></span></li>
+    <li><a href="#">Controle de Atas de Reunião - Participantes</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+
+<h4>Controle de Atas de Reunião</h4>
+<hr />
+
+@Html.Hidden("fk_ata", (int)ViewBag.fk_atas)
+   
+    @using (Html.BeginForm("Create", "ControleDeAtasDeReuniaoParticipantes", FormMethod.Post, new { @class = "form-stacked" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)        
+                        
+            <div class="editor-field">
+             @Html.Label("Participante ")
+             @Html.DropDownList("fk_usuario", "Selecione")
+             @Html.ValidationMessageFor(model => model.fk_usuario)
+            </div>                  
+            
+        <div class="form-actions">
+         @*<input id="submit" type="submit" class="btn btn-inverse" value="Salvar" />*@
+         @*@Html.ActionLink("Salvar", "Create", null, new { @class = "btn btn-inverse" })*@
+         <button type="submit" class="btn btn-inverse">Salvar</button>
+         @Html.ActionLink("Cancelar", "Index", new { id = (int)ViewBag.fk_atas }, new { @class = "btn" })  
+        </div>     
+    }   
+    
+

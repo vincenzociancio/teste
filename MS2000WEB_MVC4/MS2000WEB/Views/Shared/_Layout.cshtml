@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Eduardo Souza" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+        }
+
+        .aligntobottom {
+            bottom: 0;
+            position: absolute;
+        }
+    </style>
+
+    <!-- Le styles -->
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Styles.Render("~/Content/bootstrap")
+    @*@Styles.Render("~/Content/modernizr")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/knockout")
+    <script src="~/Scripts/knockout-2.2.1.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="~/Content/icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/Content/icons/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/Content/icons/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/Content/icons/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="~/Content/icons/apple-touch-icon-57-precomposed.png">
+    <!--[if lt IE 9]>
+        <script src="~/Scripts/respond.js"></script>
+	<![endif]-->
+    <script src="~/Scripts/jquery.blockUI.min.js"></script>
+    <script src="~/Scripts/msscript.js"></script>
+</head>
+<body onload="noBack();">
+    <!--Menu Superior -->
+    @*@RenderPage("_MenuSuperior.cshtml")*@
+    <img id="displayBox" src="~/Content/images/carregando.gif" style="display: none; width: 70px; height: 70px;" />
+    @Html.Action("Menu", "Home")
+    <br />
+    <div class="container">
+        @if (ViewBag.Title == "Home")
+        {
+            @RenderPage("_SystemMessages.cshtml")    
+        }
+        @RenderSection("featured", required: false)
+        <div class="row">
+            <section class="content-wrapper main-content clear-fix">
+                @if (ViewBag.Title != "Home")
+                {
+                    @RenderPage("_SystemMessages.cshtml")    
+                }
+                @RenderBody()
+            </section>
+        </div>
+        @*@RenderPage("_Footer.cshtml")*@
+    </div>
+    <br />
+    <!-- Le javascript================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    @*  @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/modernizr")
+    @Scripts.Render("~/bundles/bootstrap")*@
+    @*@RenderSection("scripts", required: false)*@
+
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")*@
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

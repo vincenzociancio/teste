@@ -1,0 +1,54 @@
+﻿@*@{
+
+  List<MS2000WEB.ViewModels.EnscoGraficoViewModel> x = ViewBag.teste1;
+
+        if (x != null)
+        {
+            if (x.Count() > 0)
+            {
+                var macChart = new Chart(width: 600, height: 400)
+                       .AddTitle("Campeonato Paulista - 2012")
+                       .AddSeries(
+                        name: "CampeonatoPaulista",
+                        xValue: x.Select(y => y.Dia).ToArray(),
+                        yValues: x.Select(y => y.TotalValor).ToArray())
+                    .GetBytes("png");                
+               
+            }
+        }
+    }*@
+<div style="overflow:scroll; height:500px" >
+    <div class="clearfix">
+        <img src="@Url.Action("Grafico1", new { data = (string)ViewBag.Data })" alt="SimpleChart" />       
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <div class="clearfix">
+        <img src="@Url.Action("Grafico2", new { data = (string)ViewBag.Data })" alt="SimpleChart" />       
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+     <div class="clearfix">
+        <img src="@Url.Action("Grafico3", new { data = (string)ViewBag.Data })" alt="SimpleChart" />       
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <div class="clearfix">
+        <img src="@Url.Action("Grafico4", new { data = (string)ViewBag.Data })" alt="SimpleChart" />       
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <div class="clearfix">
+        <img src="@Url.Action("Grafico5", new { data = (string)ViewBag.Data })" alt="SimpleChart" />       
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />    
+</div>
+

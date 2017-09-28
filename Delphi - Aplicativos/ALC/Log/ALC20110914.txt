@@ -1,0 +1,299 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 14/09/2011 | 12:11:54 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:11:54 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 12:11:54 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 12:11:54 | Verificando Processo: 05043/11
+ 14/09/2011 | 12:11:55 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:16:15 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:16:15 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 12:16:16 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 12:16:16 | Verificando Processo: 05043/11
+ 14/09/2011 | 12:16:16 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:17:17 | Gravando e-Mail automático...
+ 14/09/2011 | 12:17:20 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 12:17:20 | Verificando Processo: 05508/11
+ 14/09/2011 | 12:17:20 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:17:30 | Gravando e-Mail automático...
+ 14/09/2011 | 12:17:30 | Verificando Processo: 08469/11
+ 14/09/2011 | 12:17:30 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:17:33 | Gravando e-Mail automático...
+ 14/09/2011 | 12:17:33 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 14/09/2011 | 12:17:33 | Verificando Processo: 09082/11
+ 14/09/2011 | 12:17:33 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:17:42 | Gravando e-Mail automático...
+ 14/09/2011 | 12:17:42 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 12:17:42 | Verificando Processo: 10001/11
+ 14/09/2011 | 12:17:42 | CONTATO: Customs Inhouse
+ 14/09/2011 | 12:17:45 | Gravando e-Mail automático...
+ 14/09/2011 | 12:17:46 | Gravando e-Mail automático...
+ 14/09/2011 | 12:17:46 | CONTATO: Maria Eduarda
+ 14/09/2011 | 12:17:47 | Gravando e-Mail automático...
+ 14/09/2011 | 12:17:48 | Gravando e-Mail automático...
+ 14/09/2011 | 12:17:48 | CONTATO: Esmeralda Silva
+ 14/09/2011 | 12:17:49 | Gravando e-Mail automático...
+ 14/09/2011 | 12:17:50 | Gravando e-Mail automático...
+ 14/09/2011 | 12:17:50 | CONTATO: João Barbosa
+ 14/09/2011 | 12:18:20 | Gravando e-Mail automático...
+ 14/09/2011 | 12:18:21 | Gravando e-Mail automático...
+ 14/09/2011 | 12:18:21 | Gravando e-Mail automático...
+ 14/09/2011 | 12:18:21 | CLIENTE: (223) ACAMIN NAVEGAÇÃO E SERVIÇOS MARÍTIMOS LTDA
+ 14/09/2011 | 12:18:21 | Verificando Processo: 10267/11
+ 14/09/2011 | 12:18:21 | Não foram encontrados contatos da empresa.
+ 14/09/2011 | 12:18:21 | Gravando e-Mail automático...
+ 14/09/2011 | 12:18:21 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 14/09/2011 | 12:18:21 | Verificando Processo: 11029/11
+ 14/09/2011 | 12:18:21 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:18:24 | Gravando e-Mail automático...
+ 14/09/2011 | 12:18:24 | CLIENTE: (223) ACAMIN NAVEGAÇÃO E SERVIÇOS MARÍTIMOS LTDA
+ 14/09/2011 | 12:18:24 | Verificando Processo: 11036/11
+ 14/09/2011 | 12:18:24 | Não foram encontrados contatos da empresa.
+ 14/09/2011 | 12:18:24 | Gravando e-Mail automático...
+ 14/09/2011 | 12:18:24 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:24:18 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:24:18 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 12:24:18 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 12:24:18 | Verificando Processo: 05043/11
+ 14/09/2011 | 12:24:18 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:29:03 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:29:03 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 12:29:03 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 12:29:03 | Verificando Processo: 05043/11
+ 14/09/2011 | 12:29:03 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:30:16 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:30:16 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 12:30:16 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 12:30:16 | Verificando Processo: 05043/11
+ 14/09/2011 | 12:30:16 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:30:18 | Gravando e-Mail automático...
+ 14/09/2011 | 12:30:18 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 12:30:18 | Verificando Processo: 05508/11
+ 14/09/2011 | 12:30:18 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:30:28 | Gravando e-Mail automático...
+ 14/09/2011 | 12:30:28 | Verificando Processo: 08469/11
+ 14/09/2011 | 12:30:28 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:30:53 | Gravando e-Mail automático...
+ 14/09/2011 | 12:30:53 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 14/09/2011 | 12:30:53 | Verificando Processo: 09082/11
+ 14/09/2011 | 12:30:53 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:34:56 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:34:56 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 12:34:56 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 12:34:56 | Verificando Processo: 05043/11
+ 14/09/2011 | 12:34:56 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:35:24 | Gravando e-Mail automático...
+ 14/09/2011 | 12:35:24 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 12:35:24 | Verificando Processo: 05508/11
+ 14/09/2011 | 12:35:24 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:35:31 | Gravando e-Mail automático...
+ 14/09/2011 | 12:35:31 | Verificando Processo: 08469/11
+ 14/09/2011 | 12:35:31 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:35:45 | Gravando e-Mail automático...
+ 14/09/2011 | 12:35:45 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 14/09/2011 | 12:35:45 | Verificando Processo: 09082/11
+ 14/09/2011 | 12:35:45 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:35:48 | Gravando e-Mail automático...
+ 14/09/2011 | 12:35:48 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 14/09/2011 | 12:35:48 | Verificando Processo: 11029/11
+ 14/09/2011 | 12:35:48 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:35:51 | Gravando e-Mail automático...
+ 14/09/2011 | 12:35:51 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:36:26 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:36:26 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 12:36:27 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 12:36:27 | Verificando Processo: 05043/11
+ 14/09/2011 | 12:36:27 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:36:27 | Gravando e-Mail automático...
+ 14/09/2011 | 12:36:27 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 12:36:27 | Verificando Processo: 05508/11
+ 14/09/2011 | 12:36:27 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:36:27 | Gravando e-Mail automático...
+ 14/09/2011 | 12:36:27 | Verificando Processo: 08469/11
+ 14/09/2011 | 12:36:27 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:36:27 | Gravando e-Mail automático...
+ 14/09/2011 | 12:36:27 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 14/09/2011 | 12:36:27 | Verificando Processo: 09082/11
+ 14/09/2011 | 12:36:27 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:36:27 | Gravando e-Mail automático...
+ 14/09/2011 | 12:36:27 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 14/09/2011 | 12:36:27 | Verificando Processo: 11029/11
+ 14/09/2011 | 12:36:27 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:36:27 | Gravando e-Mail automático...
+ 14/09/2011 | 12:36:27 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:43:48 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:43:48 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 12:43:48 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 12:43:48 | Verificando Processo: 05043/11
+ 14/09/2011 | 12:43:48 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:45:04 | Gravando e-Mail automático...
+ 14/09/2011 | 12:45:04 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 12:45:04 | Verificando Processo: 05508/11
+ 14/09/2011 | 12:45:04 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:45:23 | Gravando e-Mail automático...
+ 14/09/2011 | 12:45:23 | Verificando Processo: 08469/11
+ 14/09/2011 | 12:45:23 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:45:28 | Gravando e-Mail automático...
+ 14/09/2011 | 12:45:28 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 14/09/2011 | 12:45:28 | Verificando Processo: 09082/11
+ 14/09/2011 | 12:45:28 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:45:34 | Gravando e-Mail automático...
+ 14/09/2011 | 12:45:34 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 14/09/2011 | 12:45:34 | Verificando Processo: 11029/11
+ 14/09/2011 | 12:45:34 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:45:41 | Gravando e-Mail automático...
+ 14/09/2011 | 12:45:41 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:58:12 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:58:12 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 12:58:12 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 12:58:12 | Verificando Processo: 05043/11
+ 14/09/2011 | 12:58:12 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:58:15 | Gravando e-Mail automático...
+ 14/09/2011 | 12:58:15 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 12:58:15 | Verificando Processo: 05508/11
+ 14/09/2011 | 12:58:15 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:58:15 | Gravando e-Mail automático...
+ 14/09/2011 | 12:58:15 | Verificando Processo: 08469/11
+ 14/09/2011 | 12:58:16 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:58:16 | Gravando e-Mail automático...
+ 14/09/2011 | 12:58:16 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 14/09/2011 | 12:58:16 | Verificando Processo: 09082/11
+ 14/09/2011 | 12:58:16 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:58:16 | Gravando e-Mail automático...
+ 14/09/2011 | 12:58:16 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 14/09/2011 | 12:58:16 | Verificando Processo: 11029/11
+ 14/09/2011 | 12:58:16 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:58:16 | Gravando e-Mail automático...
+ 14/09/2011 | 12:58:16 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:59:02 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 12:59:02 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 12:59:02 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 12:59:02 | Verificando Processo: 05043/11
+ 14/09/2011 | 12:59:03 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:59:17 | Gravando e-Mail automático...
+ 14/09/2011 | 12:59:32 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 12:59:32 | Verificando Processo: 05508/11
+ 14/09/2011 | 12:59:37 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:59:40 | Gravando e-Mail automático...
+ 14/09/2011 | 12:59:43 | Verificando Processo: 08469/11
+ 14/09/2011 | 12:59:44 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:59:44 | Gravando e-Mail automático...
+ 14/09/2011 | 12:59:44 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 14/09/2011 | 12:59:44 | Verificando Processo: 09082/11
+ 14/09/2011 | 12:59:45 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:59:45 | Gravando e-Mail automático...
+ 14/09/2011 | 12:59:45 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 14/09/2011 | 12:59:45 | Verificando Processo: 11029/11
+ 14/09/2011 | 12:59:46 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 12:59:46 | Gravando e-Mail automático...
+ 14/09/2011 | 12:59:46 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:06:54 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:06:54 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 15:06:54 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 15:06:55 | Verificando Processo: 11537/11
+ 14/09/2011 | 15:06:55 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:07:04 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:07:33 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:07:33 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 15:07:33 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 15:07:35 | Verificando Processo: 11537/11
+ 14/09/2011 | 15:07:35 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:07:36 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:08:42 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:08:43 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 15:08:48 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 15:08:53 | Verificando Processo: 11537/11
+ 14/09/2011 | 15:08:56 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:21:50 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:21:50 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 15:21:50 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 15:21:51 | Verificando Processo: 05043/11
+ 14/09/2011 | 15:21:51 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:22:00 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 15:22:00 | Verificando Processo: 05508/11
+ 14/09/2011 | 15:22:00 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:22:02 | Verificando Processo: 08469/11
+ 14/09/2011 | 15:22:02 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:22:03 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 14/09/2011 | 15:22:03 | Verificando Processo: 09082/11
+ 14/09/2011 | 15:22:04 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:22:05 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 14/09/2011 | 15:22:05 | Verificando Processo: 11029/11
+ 14/09/2011 | 15:22:05 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:22:16 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:22:21 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:22:21 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 15:22:21 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 15:22:21 | Verificando Processo: 05043/11
+ 14/09/2011 | 15:22:21 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:22:33 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 15:22:33 | Verificando Processo: 05508/11
+ 14/09/2011 | 15:22:33 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:22:35 | Verificando Processo: 08469/11
+ 14/09/2011 | 15:22:35 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:22:36 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 14/09/2011 | 15:22:36 | Verificando Processo: 09082/11
+ 14/09/2011 | 15:22:36 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:22:37 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 14/09/2011 | 15:22:37 | Verificando Processo: 11029/11
+ 14/09/2011 | 15:22:37 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:22:37 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:23:20 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 15:23:20 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 15:23:21 | CLIENTE: (282) BOURBON OFFSHORE MARITIMA S.A.
+ 14/09/2011 | 15:23:21 | Verificando Processo: 05043/11
+ 14/09/2011 | 15:23:21 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:26:55 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 15:26:55 | Verificando Processo: 05508/11
+ 14/09/2011 | 15:26:55 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:26:57 | Verificando Processo: 08469/11
+ 14/09/2011 | 15:26:57 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:26:59 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 14/09/2011 | 15:26:59 | Verificando Processo: 09082/11
+ 14/09/2011 | 15:26:59 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:27:00 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 14/09/2011 | 15:27:00 | Verificando Processo: 11029/11
+ 14/09/2011 | 15:27:00 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 14/09/2011 | 15:28:47 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 16:46:20 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 16:46:20 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 16:46:23 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 16:46:23 | Verificando Processo: 11102/11
+ 14/09/2011 | 16:46:23 | CONTATO: Customs Inhouse
+ 14/09/2011 | 16:49:20 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 16:49:20 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 16:49:21 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 16:49:21 | Verificando Processo: 11102/11
+ 14/09/2011 | 16:49:21 | CONTATO: Customs Inhouse
+ 14/09/2011 | 16:50:34 | CONTATO: Maria Eduarda
+ 14/09/2011 | 16:50:51 | CONTATO: Esmeralda Silva
+ 14/09/2011 | 16:50:51 | CONTATO: João Barbosa
+ 14/09/2011 | 16:50:53 | Verificando Processo: 11132/11
+ 14/09/2011 | 16:50:53 | CONTATO: Customs Inhouse
+ 14/09/2011 | 16:50:55 | CONTATO: Maria Eduarda
+ 14/09/2011 | 16:50:56 | CONTATO: Esmeralda Silva
+ 14/09/2011 | 16:50:57 | CONTATO: João Barbosa
+ 14/09/2011 | 17:16:44 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 17:16:44 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 17:16:44 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 17:16:44 | Verificando Processo: 11132/11
+ 14/09/2011 | 17:16:44 | CONTATO: Customs Inhouse
+ 14/09/2011 | 17:16:51 | CONTATO: Maria Eduarda
+ 14/09/2011 | 17:16:54 | CONTATO: Esmeralda Silva
+ 14/09/2011 | 17:16:56 | CONTATO: João Barbosa
+ 14/09/2011 | 17:17:48 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 14/09/2011 | 17:17:48 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 14/09/2011 | 17:17:49 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 14/09/2011 | 17:17:49 | Verificando Processo: 11132/11
+ 14/09/2011 | 17:17:49 | CONTATO: Customs Inhouse
+ 14/09/2011 | 17:17:52 | CONTATO: Maria Eduarda
+ 14/09/2011 | 17:17:54 | CONTATO: Esmeralda Silva
+ 14/09/2011 | 17:17:55 | CONTATO: João Barbosa
+ 14/09/2011 | 17:17:58 | Verificando Processo: 11537/11
+ 14/09/2011 | 17:17:58 | CONTATO: Customs Inhouse
+ 14/09/2011 | 17:18:00 | CONTATO: Maria Eduarda
+ 14/09/2011 | 17:18:02 | CONTATO: Esmeralda Silva
+ 14/09/2011 | 17:18:03 | CONTATO: João Barbosa
+ 14/09/2011 | 17:18:07 | Verificando Processo: 12397/11
+ 14/09/2011 | 17:18:07 | CONTATO: Customs Inhouse
+ 14/09/2011 | 17:18:09 | CONTATO: Maria Eduarda
+ 14/09/2011 | 17:18:10 | CONTATO: Esmeralda Silva
+ 14/09/2011 | 17:18:11 | CONTATO: João Barbosa

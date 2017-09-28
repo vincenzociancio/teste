@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS2000.Desktop", "MS2000.Desktop\MS2000.Desktop.csproj", "{7EE1C45A-58CC-4842-92DC-4B1119FBA30F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetro.Web", "Repetro.Web\Repetro.Web.csproj", "{4F1DB0A4-BF00-43D1-9D3E-8EB03E42BB2C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://mssql00:8080/tfs/tfs_defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MS2000.Desktop\\MS2000.Desktop.csproj
+		SccProjectName1 = MS2000.Desktop
+		SccLocalPath1 = MS2000.Desktop
+		SccProjectUniqueName2 = Repetro.Web\\Repetro.Web.csproj
+		SccProjectName2 = Repetro.Web
+		SccLocalPath2 = Repetro.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EE1C45A-58CC-4842-92DC-4B1119FBA30F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE1C45A-58CC-4842-92DC-4B1119FBA30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE1C45A-58CC-4842-92DC-4B1119FBA30F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE1C45A-58CC-4842-92DC-4B1119FBA30F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1DB0A4-BF00-43D1-9D3E-8EB03E42BB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1DB0A4-BF00-43D1-9D3E-8EB03E42BB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1DB0A4-BF00-43D1-9D3E-8EB03E42BB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1DB0A4-BF00-43D1-9D3E-8EB03E42BB2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

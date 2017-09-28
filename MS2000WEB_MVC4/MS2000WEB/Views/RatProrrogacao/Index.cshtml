@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MS2000WEB.ViewModels.RatProrrogacaoViewModel>
+
+@{
+    ViewBag.Title = "RAT Prorrogação";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#Processo").mask("99999/99");
+    });
+</script>
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Emissão de RAT</a> <span class="divider">></span></li>
+    <li><a href="#">Prorrogação</a> <span class="divider">></span></li>
+    <li class="active">Index</li>
+</ul>
+<h4>Requerimento de Solicitação do Regime de Admissão Temporária</h4>
+<hr />
+
+<div class="row">
+    <div class="span3">@Html.ActionLink("Novo RAT Prorrogação", "Create", null, new { @class = "btn btn-inverse" })</div>
+    <div class="span6 offset*">
+        <form class="form-search">
+            <label>Pesquisar por MS:</label>
+            @Html.TextBox("Processo", null, new { @class = "span3 search-query" })
+            <button type="submit" class="btn btn-inverse">Pesquisar</button>
+        </form>
+    </div>
+</div>
+<div style="overflow-y: auto;">
+    @{
+        if (Model != null)
+        {
+            if (Model.Count() > 0)
+            {
+                WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10, canSort: false, ajaxUpdateContainerId: "grid");
+        @grid.GetHtml(htmlAttributes: new { id = "grid" },
+                                tableStyle: "grade",
+                                headerStyle: "header",
+                                alternatingRowStyle: "alt",
+                                selectedRowStyle: "selected",
+                                columns: grid.Columns(            
+                                grid.Column("Fk_Processo", header: "N° Processo"),
+                                grid.Column("Data_Criacao", header: "Data de Inclusão", format: (item) => item.Data_Criacao != null ? item.Data_Criacao.ToString("dd/MM/yy") : "", canSort: true),
+                                grid.Column("Numero_Rat", header: "Número RAT"),
+                                //grid.Column(format: (item) => Html.ActionLink("Editar", "Edit", new { id = item.ID })),
+                                grid.Column(format: (item) => @Html.ActionLink("Download", "PrintReport", new { Id = item.ID }))
+                                                          ));
+            }
+            else
+            {    
+        <div class="alert">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>            
+            Não existe esse Processo!
+        </div>    
+            }
+        }    
+    }
+</div>

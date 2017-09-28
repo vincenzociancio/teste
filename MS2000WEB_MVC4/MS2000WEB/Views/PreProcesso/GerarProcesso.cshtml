@@ -1,0 +1,133 @@
+﻿@model MS2000WEB.Models.Pre_Processos
+
+@{
+    ViewBag.Title = "Pre-Processo";
+}
+
+<!-- Scripts de validação -->
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<!-- Correção de funções de validação específicas para a cultura pt-BR -->
+<script src="@Url.Content("~/Scripts/methods_pt.js")" type="text/javascript"></script>
+<!-- Mais algumas funções para correção de validação específicas para a cultura pt-BR -->
+<script src="@Url.Content("~/Scripts/globalize.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/globalize.culture.pt-BR.js")" type="text/javascript"></script>
+
+<script type="text/javascript">
+    Globalize.cultureSelector = 'pt-BR';
+</script>
+
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Pré Processo</a> <span class="divider">></span></li>
+    <li class="active">Gerar Processo</li>
+</ul>
+
+<h4>Pré-Processo -  Edição</h4>
+
+@using (Html.BeginForm("GerarProcesso", "PreProcesso", FormMethod.Post, new { @class = "form-stacked" }))
+{           
+    @Html.ValidationSummary(false, "Ocorreram erros no formulário. Por favor, corrija os erros e tente novamente.")    
+    @Html.AntiForgeryToken();    
+            
+    @Html.HiddenFor(model => model.pk_codigo, new { @id = "pk_codigo" })           
+
+    @Html.HiddenFor(model => model.status)   
+
+    @Html.HiddenFor(model => model.data)                     
+    
+        <div>
+            <div class="row">
+                <div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.Label("Pré Processo ")
+                        <div class="input">
+                            @Html.TextBoxFor(model => model.codigo, new {@disabled = "disabled" })
+                            @Html.HiddenFor(model => model.codigo)
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Invoice ")
+                        <div class="input">
+                            @Html.EditorFor(model => model.invoice)
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("PO")
+                        <div class="input">
+                            @Html.EditorFor(model => model.pedido_compra)
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Valor ")
+                        <div class="input">
+                            @Html.EditorFor(model => model.valor)
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Tipo de Processo")
+                        <div class="input">
+                            @Html.DropDownList("fk_tipoprocesso", "Selecione")
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Referência do Cliente ")
+                        <div class="input">
+                            @Html.EditorFor(model => model.ref_cliente)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.Label("Data ")
+                        @Html.TextBoxFor(model => model.data, new {@disabled = "disabled" })
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Packing List")
+                        <div class="input">
+                            @Html.EditorFor(model => model.packing_list)
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Importador")
+                        <div class="input">
+                            @Html.DropDownList("fk_importador", "Selecione")
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Tipo de Moeda")
+                        <div class="input">
+                            @Html.DropDownList("fk_tipomoeda", "Selecione")
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Tipo de Declaração")
+                        <div class="input">
+                            @Html.DropDownList("fk_tipodeclaracao", "Selecione")
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("DTA ")
+                        <div class="input">
+                            @Html.EditorFor(model => model.dta)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span* offset*">
+                    @Html.Label("Descrição")
+                    @Html.TextAreaFor(model => model.descricao, new { @class = "span5" })
+                </div>
+            </div>
+        </div>
+    
+        <div class="form-actions">           
+        <button type="submit" class="btn btn-inverse">Gerar Processo</button>
+        @Html.ActionLink("Cancelar", "Index", "PreProcesso", null, new { @class = "btn" })
+        </div>
+    
+}

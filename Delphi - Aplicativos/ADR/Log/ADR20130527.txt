@@ -1,0 +1,242 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 27/05/2013 | 14:37:22 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 27/05/2013 | 14:37:23 | Arrumando Tributação...
+ 27/05/2013 | 14:37:23 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 27/05/2013 | 14:37:28 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 27/05/2013 | 14:37:28 | Verificando Processo: 00125/08
+ 27/05/2013 | 14:37:28 | CLIENTE: (148) AKER KVAERNER OIL & GAS DO BRASIL LTDA
+ 27/05/2013 | 14:37:28 | Verificando Processo: 04135/07
+ 27/05/2013 | 14:37:28 | CLIENTE: (46) ANDAIMES JIRAU LTDA
+ 27/05/2013 | 14:37:28 | Verificando Processo: 00118/09
+ 27/05/2013 | 14:37:28 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 27/05/2013 | 14:37:28 | Verificando Processo: 02481/04
+ 27/05/2013 | 14:37:28 | Verificando Processo: 09557/09
+ 27/05/2013 | 14:37:28 | CLIENTE: (187) BP ENERGY DO BRASIL LTDA.
+ 27/05/2013 | 14:37:28 | Verificando Processo: 00032/08
+ 27/05/2013 | 14:37:28 | Verificando Processo: 03098/08
+ 27/05/2013 | 14:37:28 | Verificando Processo: 03577/08
+ 27/05/2013 | 14:37:28 | Verificando Processo: 03581/08
+ 27/05/2013 | 14:37:28 | Verificando Processo: 04647/08
+ 27/05/2013 | 14:37:28 | Verificando Processo: 16602/12
+ 27/05/2013 | 14:37:28 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS16602_DI_1303515069.txt
+ 27/05/2013 | 14:38:02 | ERRO! Enviando Erro no Processo: 16602/12; Responsável: Marcio Moreira
+ 27/05/2013 | 14:38:02 | Gravando e-Mail automático...
+ 27/05/2013 | 14:38:03 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 27/05/2013 | 14:38:03 | Verificando Processo: 00054/11
+ 27/05/2013 | 14:38:03 | Verificando Processo: 07068/13
+ 27/05/2013 | 14:38:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS07068_DI_1310109372.txt
+ 27/05/2013 | 14:38:09 | ERRO! Não houve envios.
+ 27/05/2013 | 14:38:09 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 27/05/2013 | 14:38:09 | Gravando e-Mail automático...
+ 27/05/2013 | 14:38:09 | Verificando Processo: 07106/13
+ 27/05/2013 | 14:38:10 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS07106_DI_1310109224.txt
+ 27/05/2013 | 14:38:10 | ERRO! Não houve envios.
+ 27/05/2013 | 14:38:10 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 27/05/2013 | 14:38:10 | Gravando e-Mail automático...
+ 27/05/2013 | 14:38:10 | Verificando Processo: 07110/13
+ 27/05/2013 | 14:38:10 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS07110_DI_1310083640.txt
+ 27/05/2013 | 14:38:10 | Enviando confirmação do registro da DI do Processo: 07110/13; Responsável: Felipe Carvalho
+ 27/05/2013 | 14:38:10 | Gravando e-Mail automático...
+ 27/05/2013 | 14:38:10 | Enviando e-mails para contatos das empresas...
+ 27/05/2013 | 14:38:10 | CONTATO: Esmeralda Silva
+ 27/05/2013 | 14:38:55 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 27/05/2013 | 14:38:55 | Arrumando Tributação...
+ 27/05/2013 | 14:38:55 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 27/05/2013 | 14:39:00 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 27/05/2013 | 14:39:00 | Verificando Processo: 00125/08
+ 27/05/2013 | 14:39:00 | CLIENTE: (148) AKER KVAERNER OIL & GAS DO BRASIL LTDA
+ 27/05/2013 | 14:39:00 | Verificando Processo: 04135/07
+ 27/05/2013 | 14:39:01 | CLIENTE: (46) ANDAIMES JIRAU LTDA
+ 27/05/2013 | 14:39:01 | Verificando Processo: 00118/09
+ 27/05/2013 | 14:39:01 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 27/05/2013 | 14:39:01 | Verificando Processo: 02481/04
+ 27/05/2013 | 14:39:01 | Verificando Processo: 09557/09
+ 27/05/2013 | 14:39:01 | CLIENTE: (187) BP ENERGY DO BRASIL LTDA.
+ 27/05/2013 | 14:39:01 | Verificando Processo: 00032/08
+ 27/05/2013 | 14:39:01 | Verificando Processo: 03098/08
+ 27/05/2013 | 14:39:01 | Verificando Processo: 03577/08
+ 27/05/2013 | 14:39:01 | Verificando Processo: 03581/08
+ 27/05/2013 | 14:39:01 | Verificando Processo: 04647/08
+ 27/05/2013 | 14:39:01 | Verificando Processo: 16602/12
+ 27/05/2013 | 14:39:01 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS16602_DI_1303515069.txt
+ 27/05/2013 | 14:39:01 | ERRO! Enviando Erro no Processo: 16602/12; Responsável: Marcio Moreira
+ 27/05/2013 | 14:39:01 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:01 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 27/05/2013 | 14:39:01 | Verificando Processo: 00054/11
+ 27/05/2013 | 14:39:01 | Verificando Processo: 07068/13
+ 27/05/2013 | 14:39:01 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS07068_DI_1310109372.txt
+ 27/05/2013 | 14:39:01 | ERRO! Não houve envios.
+ 27/05/2013 | 14:39:01 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 27/05/2013 | 14:39:01 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:01 | Verificando Processo: 07106/13
+ 27/05/2013 | 14:39:01 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS07106_DI_1310109224.txt
+ 27/05/2013 | 14:39:01 | ERRO! Não houve envios.
+ 27/05/2013 | 14:39:01 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 27/05/2013 | 14:39:01 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:01 | Verificando Processo: 07882/13
+ 27/05/2013 | 14:39:01 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS07882_DI_1310082580.txt
+ 27/05/2013 | 14:39:01 | Enviando confirmação do registro da DI do Processo: 07882/13; Responsável: Diogo Mello
+ 27/05/2013 | 14:39:01 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:01 | Enviando e-mails para contatos das empresas...
+ 27/05/2013 | 14:39:01 | CONTATO: Esmeralda Silva
+ 27/05/2013 | 14:39:01 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:01 | Verificando Processo: 07972/13
+ 27/05/2013 | 14:39:01 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS07972_DI_1310059952.txt
+ 27/05/2013 | 14:39:01 | ERRO! Não houve envios.
+ 27/05/2013 | 14:39:01 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 27/05/2013 | 14:39:01 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:01 | CLIENTE: (238) BW OFFSHORE DO BRASIL LTDA
+ 27/05/2013 | 14:39:02 | Verificando Processo: 03532/09
+ 27/05/2013 | 14:39:02 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 27/05/2013 | 14:39:02 | Verificando Processo: 00906/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 01844/06
+ 27/05/2013 | 14:39:02 | Verificando Processo: 01958/05
+ 27/05/2013 | 14:39:02 | Verificando Processo: 02078/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 02260/06
+ 27/05/2013 | 14:39:02 | CLIENTE: (7) CGG DO BRASIL PARTICIPAÇÕES LTDA
+ 27/05/2013 | 14:39:02 | Verificando Processo: 01402/07
+ 27/05/2013 | 14:39:02 | Verificando Processo: 02180/07
+ 27/05/2013 | 14:39:02 | Verificando Processo: 02807/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 03612/08
+ 27/05/2013 | 14:39:02 | Verificando Processo: 04601/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 05927/09
+ 27/05/2013 | 14:39:02 | CLIENTE: (179) CHEVRON BRASIL LTDA.
+ 27/05/2013 | 14:39:02 | Verificando Processo: 03051/08
+ 27/05/2013 | 14:39:02 | CLIENTE: (234) CHEVRON BRASIL UPSTREAM FRADE LTDA
+ 27/05/2013 | 14:39:02 | Verificando Processo: 00145/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 01661/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 01697/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 01752/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 01778/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 01788/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 01792/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 01815/09
+ 27/05/2013 | 14:39:02 | Verificando Processo: 04876/08
+ 27/05/2013 | 14:39:02 | Verificando Processo: 06215/08
+ 27/05/2013 | 14:39:02 | CLIENTE: (216) CONSTRUTORA NORBERTO ODEBRECHT S/A
+ 27/05/2013 | 14:39:02 | Verificando Processo: 00455/09
+ 27/05/2013 | 14:39:02 | CLIENTE: (344) ENSCO BRAZIL-SERVIÇOS DE PETROLEO LTDA
+ 27/05/2013 | 14:39:02 | Verificando Processo: 06194/13
+ 27/05/2013 | 14:39:02 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS06194_DI_1310088057.txt
+ 27/05/2013 | 14:39:02 | Enviando confirmação do registro da DI do Processo: 06194/13; Responsável: Adriana Monteiro
+ 27/05/2013 | 14:39:02 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:02 | Não foram encontrados contatos da empresa.
+ 27/05/2013 | 14:39:02 | Enviando e-mail de aviso para o setor Operacional...
+ 27/05/2013 | 14:39:02 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:02 | Verificando Processo: 06244/13
+ 27/05/2013 | 14:39:02 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS06244_DI_1310085759.txt
+ 27/05/2013 | 14:39:02 | Enviando confirmação do registro da DI do Processo: 06244/13; Responsável: Adriana Monteiro
+ 27/05/2013 | 14:39:02 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:02 | Não foram encontrados contatos da empresa.
+ 27/05/2013 | 14:39:02 | Enviando e-mail de aviso para o setor Operacional...
+ 27/05/2013 | 14:39:02 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:02 | Verificando Processo: 06269/13
+ 27/05/2013 | 14:39:02 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS06269_DI_1310083861.txt
+ 27/05/2013 | 14:39:02 | Enviando confirmação do registro da DI do Processo: 06269/13; Responsável: Adriana Monteiro
+ 27/05/2013 | 14:39:02 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:02 | Não foram encontrados contatos da empresa.
+ 27/05/2013 | 14:39:02 | Enviando e-mail de aviso para o setor Operacional...
+ 27/05/2013 | 14:39:02 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:02 | CLIENTE: (94) FRANKS INTERNATIONAL BRASIL LTDA
+ 27/05/2013 | 14:39:02 | Verificando Processo: 00002/06
+ 27/05/2013 | 14:39:02 | Verificando Processo: 02416/08
+ 27/05/2013 | 14:39:02 | CLIENTE: (96) FRANKS INTERNATIONAL BRASIL LTDA
+ 27/05/2013 | 14:39:02 | Verificando Processo: 02558/08
+ 27/05/2013 | 14:39:02 | CLIENTE: (94) FRANKS INTERNATIONAL BRASIL LTDA
+ 27/05/2013 | 14:39:02 | Verificando Processo: 03599/07
+ 27/05/2013 | 14:39:02 | CLIENTE: (43) FUGRO BRASIL - SERVIÇOS SUBMARINOS E LEVANTAMENTOS LTDA
+ 27/05/2013 | 14:39:02 | Verificando Processo: 03859/07
+ 27/05/2013 | 14:39:03 | Verificando Processo: 05164/08
+ 27/05/2013 | 14:39:03 | Verificando Processo: 05295/08
+ 27/05/2013 | 14:39:03 | Verificando Processo: 05557/08
+ 27/05/2013 | 14:39:03 | CLIENTE: (110) FUGRO DO BRASIL LTDA
+ 27/05/2013 | 14:39:03 | Verificando Processo: 00796/08
+ 27/05/2013 | 14:39:03 | CLIENTE: (99) FUGRO GEOSOLUTIONS DO (BRASIL)  SERV DE LEVANTAMENTO LTDA
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01213/07
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01369/07
+ 27/05/2013 | 14:39:03 | CLIENTE: (31) HALLIBURTON PRODUTOS LTDA.
+ 27/05/2013 | 14:39:03 | Verificando Processo: 00809/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01098/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01100/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01102/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01104/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01136/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01162/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01177/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01248/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01328/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01331/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01338/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01339/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01385/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01389/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01417/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01419/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01453/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01514/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01526/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01537/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01539/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01602/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01604/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01611/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01617/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01634/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01640/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01642/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01717/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01720/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01730/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01731/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01744/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01771/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01806/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01815/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01816/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01821/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01856/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 02040/04
+ 27/05/2013 | 14:39:03 | Verificando Processo: 02680/03
+ 27/05/2013 | 14:39:03 | CLIENTE: (6) J LOW BEER LTDA.
+ 27/05/2013 | 14:39:03 | Verificando Processo: 01068/03
+ 27/05/2013 | 14:39:03 | CLIENTE: (424) LUBRIZOL DO BRASIL ADITIVOS LTDA
+ 27/05/2013 | 14:39:03 | Verificando Processo: 00209/13
+ 27/05/2013 | 14:39:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS00209_DI_1305843349.txt
+ 27/05/2013 | 14:39:03 | ERRO! Enviando Erro no Processo: 00209/13; Responsável: Alessandro Felix
+ 27/05/2013 | 14:39:03 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:03 | Verificando Processo: 00254/13
+ 27/05/2013 | 14:39:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS00254_DI_1305945923.txt
+ 27/05/2013 | 14:39:04 | ERRO! Enviando Erro no Processo: 00254/13; Responsável: Alessandro Felix
+ 27/05/2013 | 14:39:04 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:04 | Verificando Processo: 00736/13
+ 27/05/2013 | 14:39:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS00736_DI_1304669639.txt
+ 27/05/2013 | 14:39:04 | ERRO! Não houve envios.
+ 27/05/2013 | 14:39:04 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 27/05/2013 | 14:39:04 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:04 | Verificando Processo: 00745/13
+ 27/05/2013 | 14:39:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS00745_DI_1307418726.txt
+ 27/05/2013 | 14:39:04 | ERRO! Não houve envios.
+ 27/05/2013 | 14:39:04 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 27/05/2013 | 14:39:04 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:04 | Verificando Processo: 00788/13
+ 27/05/2013 | 14:39:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS00788_DI_1304462988.txt
+ 27/05/2013 | 14:39:04 | ERRO! Não houve envios.
+ 27/05/2013 | 14:39:04 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 27/05/2013 | 14:39:04 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:04 | Verificando Processo: 00892/13
+ 27/05/2013 | 14:39:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS00892_DI_1309362132.txt
+ 27/05/2013 | 14:39:04 | ERRO! Não houve envios.
+ 27/05/2013 | 14:39:04 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 27/05/2013 | 14:39:04 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:04 | Verificando Processo: 01558/13
+ 27/05/2013 | 14:39:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS01558_DI_1306120812.txt
+ 27/05/2013 | 14:39:04 | ERRO! Enviando Erro no Processo: 01558/13; Responsável: Alessandro Felix
+ 27/05/2013 | 14:39:04 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:04 | CLIENTE: (425) LUBRIZOL DO BRASIL ADITIVOS LTDA
+ 27/05/2013 | 14:39:04 | Verificando Processo: 01917/13
+ 27/05/2013 | 14:39:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS01917_DI_1308040905.txt
+ 27/05/2013 | 14:39:04 | ERRO! Não houve envios.
+ 27/05/2013 | 14:39:04 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 27/05/2013 | 14:39:04 | Gravando e-Mail automático...
+ 27/05/2013 | 14:39:04 | Verificando Processo: 01919/13
+ 27/05/2013 | 14:39:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS01919_DI_1306526517.txt

@@ -1,0 +1,1682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1DA57AA8-E95A-4C90-8D7A-9B0AAF815832}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MS2000WEB</RootNamespace>
+    <AssemblyName>MS2000WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bytescout.Spreadsheet">
+      <HintPath>..\packages\Bytescout.Spreadsheet.2.3.0.1287\lib\net40\Bytescout.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Bytescout.SpreadsheetControl">
+      <HintPath>..\packages\Bytescout.Spreadsheet.2.3.0.1287\lib\net40\Bytescout.SpreadsheetControl.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Exchange.WebServices">
+      <HintPath>..\..\..\Program Files\Microsoft\Exchange\Web Services\2.0\Microsoft.Exchange.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.WebServices.Auth">
+      <HintPath>..\..\..\Program Files\Microsoft\Exchange\Web Services\2.0\Microsoft.Exchange.WebServices.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PagedList">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.0-Beta1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\packages\WebActivatorEx.2.0.1\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BootstrapBundleConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AcessoGruposController.cs" />
+    <Compile Include="Controllers\CartaGarantidorController.cs" />
+    <Compile Include="Controllers\ContratosFornecedoresFinanceiroController.cs" />
+    <Compile Include="Controllers\ContratosFornecedoresFinanceiroUploadController.cs" />
+    <Compile Include="Controllers\ControleDeAtasDeReuniaoArquivoController.cs" />
+    <Compile Include="Controllers\ControleDeAtasDeReuniaoController.cs" />
+    <Compile Include="Controllers\ControleDeAtasDeReuniaoParticipantesController.cs" />
+    <Compile Include="Controllers\ControleDeTributosController.cs" />
+    <Compile Include="Controllers\DistribuicaoOperacionalController.cs" />
+    <Compile Include="Controllers\DocumentoParametrizadoController.cs" />
+    <Compile Include="Controllers\ExchangeController.cs" />
+    <Compile Include="Controllers\ExportacaoSeadrillController.cs" />
+    <Compile Include="Controllers\FormularioDesunitizacaoController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImportadoresController.cs" />
+    <Compile Include="Controllers\KPIEnscoController.cs" />
+    <Compile Include="Controllers\KPIOceanRigController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PreClassificacaoController.cs" />
+    <Compile Include="Controllers\PreDocumentosController.cs" />
+    <Compile Include="Controllers\PreFollowUpController.cs" />
+    <Compile Include="Controllers\PreProcessoController.cs" />
+    <Compile Include="Controllers\PreProcessosEmailsController.cs" />
+    <Compile Include="Controllers\ProcessosController.cs" />
+    <Compile Include="Controllers\RatController.cs" />
+    <Compile Include="Controllers\RatProrrogacaoController.cs" />
+    <Compile Include="Controllers\RatRepetroController.cs" />
+    <Compile Include="Controllers\RHEmpregadosController.cs" />
+    <Compile Include="Controllers\RHFormularioController.cs" />
+    <Compile Include="Controllers\RpatController.cs" />
+    <Compile Include="Controllers\SiscomexExportacaoController.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Acesso.cs" />
+    <Compile Include="Models\AcessoAcaoEspecifica.cs" />
+    <Compile Include="Models\AcessoAcaoEspecificaGrupo.cs" />
+    <Compile Include="Models\Avaliacao_Avaliacao.cs" />
+    <Compile Include="Models\Avaliacao_Categoria.cs" />
+    <Compile Include="Models\Avaliacao_Colaboradores.cs" />
+    <Compile Include="Models\Avaliacao_Perguntas.cs" />
+    <Compile Include="Models\Avaliacao_Respostas.cs" />
+    <Compile Include="Models\Avaliacao_Respostas_Colaboradores.cs" />
+    <Compile Include="Models\Contratos_Fornecedores_Cadastrados_Financeiro.cs" />
+    <Compile Include="Models\Contratos_Fornecedores_Cadastrados_Upload.cs" />
+    <Compile Include="Models\Controle_de_Tributos.cs" />
+    <Compile Include="Models\controle_normas_setor_subsetor.cs" />
+    <Compile Include="Models\Denuncia.cs" />
+    <Compile Include="Models\FollowUp_Check_Rejeicao_Relacao.cs" />
+    <Compile Include="Models\FollowUp_Check_Rejeicao_Tipo.cs" />
+    <Compile Include="Models\Follow_Excecoes_Numerarios_Importador.cs" />
+    <Compile Include="Models\Fornecedores_Empresa.cs" />
+    <Compile Include="Models\ItensFaturas2.cs" />
+    <Compile Include="Models\Mapping\Avaliacao_AvaliacaoMap.cs" />
+    <Compile Include="Models\Mapping\Avaliacao_CategoriaMap.cs" />
+    <Compile Include="Models\Mapping\Avaliacao_ColaboradoresMap.cs" />
+    <Compile Include="Models\Mapping\Avaliacao_PerguntasMap.cs" />
+    <Compile Include="Models\Mapping\Avaliacao_RespostasMap.cs" />
+    <Compile Include="Models\Mapping\Avaliacao_Respostas_ColaboradoresMap.cs" />
+    <Compile Include="Models\Mapping\Contratos_Fornecedores_Cadastrados_FinanceiroMap.cs" />
+    <Compile Include="Models\Mapping\Contratos_Fornecedores_Cadastrados_UploadMap.cs" />
+    <Compile Include="Models\Mapping\Controle_de_TributosMap.cs" />
+    <Compile Include="Models\Mapping\controle_normas_setor_subsetorMap.cs" />
+    <Compile Include="Models\Mapping\DenunciaMap.cs" />
+    <Compile Include="Models\Mapping\FollowUp_Check_Rejeicao_RelacaoMap.cs" />
+    <Compile Include="Models\Mapping\FollowUp_Check_Rejeicao_TipoMap.cs" />
+    <Compile Include="Models\Mapping\Follow_Excecoes_Numerarios_ImportadorMap.cs" />
+    <Compile Include="Models\Mapping\Fornecedores_EmpresaMap.cs" />
+    <Compile Include="Models\Mapping\ItensFaturas2Map.cs" />
+    <Compile Include="Models\Mapping\MSTreinamentoMap.cs" />
+    <Compile Include="Models\Mapping\Pre_ClassificacaoMap.cs" />
+    <Compile Include="Models\Mapping\Pre_Classificacao_Importador_LayoutMap.cs" />
+    <Compile Include="Models\Mapping\Pre_Classificacao_LayoutMap.cs" />
+    <Compile Include="Models\Mapping\Pre_Classificacao_MatrizMap.cs" />
+    <Compile Include="Models\Mapping\Pre_Classificacao_NewMap.cs" />
+    <Compile Include="Models\Mapping\Pre_Classificacao_OldMap.cs" />
+    <Compile Include="Models\Mapping\Pre_Processos_EmailsMap.cs" />
+    <Compile Include="Models\Mapping\Pre_Processos_Emails_AnexosMap.cs" />
+    <Compile Include="Models\Mapping\Processos2Map.cs" />
+    <Compile Include="Models\Mapping\Processo_Carta_GarantidorMap.cs" />
+    <Compile Include="Models\Mapping\RAT_ProrrogacaoMap.cs" />
+    <Compile Include="Models\Mapping\RAT_RepetroMap.cs" />
+    <Compile Include="Models\Mapping\Relacao_Itens_Processo_PreProcessoMap.cs" />
+    <Compile Include="Models\Mapping\Repetro2Map.cs" />
+    <Compile Include="Models\Mapping\RH_AdmissaoMap.cs" />
+    <Compile Include="Models\Mapping\RH_CorMap.cs" />
+    <Compile Include="Models\Mapping\RH_DesligamentoMap.cs" />
+    <Compile Include="Models\Mapping\RH_EmpregadosMap.cs" />
+    <Compile Include="Models\Mapping\RH_EscolaridadeMap.cs" />
+    <Compile Include="Models\Mapping\RH_FormulariosMap.cs" />
+    <Compile Include="Models\Mapping\RH_FuncaoMap.cs" />
+    <Compile Include="Models\Mapping\RH_NacionalidadeMap.cs" />
+    <Compile Include="Models\Mapping\TAB_TP_IMPORTADORMap.cs" />
+    <Compile Include="Models\Mapping\vRepetro_Itens_EntreguesMap.cs" />
+    <Compile Include="Models\Mapping\vRepetro_Itens_Entregues_seadrillMap.cs" />
+    <Compile Include="Models\Metadata\AcessoGruposMetadata.cs" />
+    <Compile Include="Models\Metadata\Controle_de_TributosMetadata.cs" />
+    <Compile Include="Models\Metadata\PreClassificacaoMetadata.cs" />
+    <Compile Include="Models\Metadata\PreFollowUpMetadata.cs" />
+    <Compile Include="Models\Metadata\RatRepetroMetadata.cs" />
+    <Compile Include="Models\Metadata\RHEmpregadosMetadata.cs" />
+    <Compile Include="Models\MS2000AcessoContext.cs" />
+    <Compile Include="Models\MSTreinamento.cs" />
+    <Compile Include="Models\Pre_Classificacao.cs" />
+    <Compile Include="Models\Pre_Classificacao_Importador_Layout.cs" />
+    <Compile Include="Models\Pre_Classificacao_Layout.cs" />
+    <Compile Include="Models\Pre_Classificacao_Matriz.cs" />
+    <Compile Include="Models\Pre_Classificacao_New.cs" />
+    <Compile Include="Models\Pre_Classificacao_Old.cs" />
+    <Compile Include="Models\Pre_Processos_Emails.cs" />
+    <Compile Include="Models\Pre_Processos_Emails_Anexos.cs" />
+    <Compile Include="Models\Processos2.cs" />
+    <Compile Include="Models\Processo_Carta_Garantidor.cs" />
+    <Compile Include="Models\RAT_Prorrogacao.cs" />
+    <Compile Include="Models\RAT_Repetro.cs" />
+    <Compile Include="Models\Relacao_Itens_Processo_PreProcesso.cs" />
+    <Compile Include="Models\Repetro2.cs" />
+    <Compile Include="Models\Repository\AcessoGruposRepository.cs" />
+    <Compile Include="Models\Repository\AcessoGrupoUsuarioRepository.cs" />
+    <Compile Include="Models\Repository\AcessoAcaoEspecificaGrupoRepository.cs" />
+    <Compile Include="Models\AcessoGrupos.cs" />
+    <Compile Include="Models\AcessoGrupoUsuario.cs" />
+    <Compile Include="Models\AcessoPagina.cs" />
+    <Compile Include="Models\AcessoPaginaGrupo.cs" />
+    <Compile Include="Models\Acrescimos_Faturas.cs" />
+    <Compile Include="Models\Acrescimos_ICMS.cs" />
+    <Compile Include="Models\Acrescimos_ICMS_CD.cs" />
+    <Compile Include="Models\Acresc_ATAereo.cs" />
+    <Compile Include="Models\Adesao_Laboral.cs" />
+    <Compile Include="Models\Ajudante.cs" />
+    <Compile Include="Models\Anl_Des_Analises.cs" />
+    <Compile Include="Models\Anl_Des_Competencias.cs" />
+    <Compile Include="Models\Anl_Des_Controle_Hierarquia.cs" />
+    <Compile Include="Models\Anl_Des_Hierarquia_Analise.cs" />
+    <Compile Include="Models\Anl_Des_Opinioes_Sugestoes.cs" />
+    <Compile Include="Models\Anl_Des_Perguntas.cs" />
+    <Compile Include="Models\Anl_Des_Resultados.cs" />
+    <Compile Include="Models\Apenc_Pendencias.cs" />
+    <Compile Include="Models\apen_temp.cs" />
+    <Compile Include="Models\Armazem.cs" />
+    <Compile Include="Models\Armazem_Processo.cs" />
+    <Compile Include="Models\Associacao_Numerario_Documento.cs" />
+    <Compile Include="Models\Atos_concessorios.cs" />
+    <Compile Include="Models\Atos_Importador.cs" />
+    <Compile Include="Models\Atos_Legais.cs" />
+    <Compile Include="Models\Atos_subcontratadas.cs" />
+    <Compile Include="Models\Atos_tipos_benefic.cs" />
+    <Compile Include="Models\ATUALIZANET.cs" />
+    <Compile Include="Models\Audita_Registro_DI.cs" />
+    <Compile Include="Models\Autorizacao_Registros.cs" />
+    <Compile Include="Models\Autorizacao_Registros_Contas.cs" />
+    <Compile Include="Models\Autorizacao_Registros_Contas_Clientes.cs" />
+    <Compile Include="Models\Autorizacao_Reg_Status.cs" />
+    <Compile Include="Models\CAE.cs" />
+    <Compile Include="Models\Cambio_antecipado.cs" />
+    <Compile Include="Models\Cambio_antecipado_faturas.cs" />
+    <Compile Include="Models\Canai.cs" />
+    <Compile Include="Models\Canais_Ing.cs" />
+    <Compile Include="Models\Centros_Custos.cs" />
+    <Compile Include="Models\Certificado.cs" />
+    <Compile Include="Models\Concarga.cs" />
+    <Compile Include="Models\Conhecimento_Processo.cs" />
+    <Compile Include="Models\Consumo_Energia.cs" />
+    <Compile Include="Models\Conta.cs" />
+    <Compile Include="Models\Contas_a_Pagar.cs" />
+    <Compile Include="Models\Contas_a_Pagar_Pagamentos.cs" />
+    <Compile Include="Models\Contas_Correntes.cs" />
+    <Compile Include="Models\Contas_Pagar.cs" />
+    <Compile Include="Models\Contas_Pagar_Correcoes.cs" />
+    <Compile Include="Models\Contas_Pagar_Correcoes_OLD.cs" />
+    <Compile Include="Models\Contas_Pagar_OLD.cs" />
+    <Compile Include="Models\Contas_Pagar_Tipos_Correcoes.cs" />
+    <Compile Include="Models\Contas_Pagar_Tipos_Correcoes_OLD.cs" />
+    <Compile Include="Models\Contas_Receber.cs" />
+    <Compile Include="Models\Contatos_Importadores.cs" />
+    <Compile Include="Models\Contrato.cs" />
+    <Compile Include="Models\Contratosout2010.cs" />
+    <Compile Include="Models\contratos_cadastrados_financeiro.cs" />
+    <Compile Include="Models\contratos_cadastrados_upload.cs" />
+    <Compile Include="Models\Contratos_R.cs" />
+    <Compile Include="Models\Controle_ADE_Andamento.cs" />
+    <Compile Include="Models\Controle_ADE_Deferido.cs" />
+    <Compile Include="Models\Controle_ADE_Deferido_Anexo.cs" />
+    <Compile Include="Models\Controle_ADE_Fiscais.cs" />
+    <Compile Include="Models\Controle_ADE_Status.cs" />
+    <Compile Include="Models\Controle_ADE_Tipo.cs" />
+    <Compile Include="Models\Controle_APEN_TV.cs" />
+    <Compile Include="Models\Controle_APEN_TV_Relatorio.cs" />
+    <Compile Include="Models\Controle_APEN_TV_Visualizar.cs" />
+    <Compile Include="Models\Controle_Atas.cs" />
+    <Compile Include="Models\Controle_Atas_Arquivos.cs" />
+    <Compile Include="Models\Controle_Atas_Participantes.cs" />
+    <Compile Include="Models\Controle_BL.cs" />
+    <Compile Include="Models\Controle_Hierarquico_Celulas.cs" />
+    <Compile Include="Models\Controle_Hierarquico_Clientes_Cel.cs" />
+    <Compile Include="Models\Controle_Hierarquico_Colaborador.cs" />
+    <Compile Include="Models\Controle_Hierarquico_Colaborador_Cel.cs" />
+    <Compile Include="Models\Controle_Hierarquico_Operacoes.cs" />
+    <Compile Include="Models\Controle_IPS.cs" />
+    <Compile Include="Models\Controle_MDOC_TV.cs" />
+    <Compile Include="Models\Controle_Medicao.cs" />
+    <Compile Include="Models\Controle_Medicao_Itens.cs" />
+    <Compile Include="Models\Controle_Navios.cs" />
+    <Compile Include="Models\Controle_Navios_Chegada.cs" />
+    <Compile Include="Models\Controle_Navios_Processos.cs" />
+    <Compile Include="Models\Controle_Navios_Terminal.cs" />
+    <Compile Include="Models\Controle_normas_setor.cs" />
+    <Compile Include="Models\Controle_Numerarios.cs" />
+    <Compile Include="Models\Controle_Numerarios_Movimentos.cs" />
+    <Compile Include="Models\Controle_Numerarios_Solicitacao.cs" />
+    <Compile Include="Models\Controle_Numerarios_Status.cs" />
+    <Compile Include="Models\Controle_Papel.cs" />
+    <Compile Include="Models\Controle_Pastas.cs" />
+    <Compile Include="Models\Controle_Pastas_Nivel_Usuario.cs" />
+    <Compile Include="Models\Controle_Pastas_Nivel_Usuario_Historico.cs" />
+    <Compile Include="Models\Controle_Rede_Logica.cs" />
+    <Compile Include="Models\Controle_Rede_Logica_PATCHPANELS.cs" />
+    <Compile Include="Models\Controle_Rede_Logica_SWITCHS.cs" />
+    <Compile Include="Models\Controle_Rede_Telefonia.cs" />
+    <Compile Include="Models\Controle_Rede_Telefonia_ID01.cs" />
+    <Compile Include="Models\Controle_Rede_Telefonia_ID02.cs" />
+    <Compile Include="Models\Controle_Softwares.cs" />
+    <Compile Include="Models\Controle_TR.cs" />
+    <Compile Include="Models\Controle_TVs.cs" />
+    <Compile Include="Models\Controle_TVs_Importadores.cs" />
+    <Compile Include="Models\Controle_TVs_Programas.cs" />
+    <Compile Include="Models\Controle_Usuarios_Senhas.cs" />
+    <Compile Include="Models\Correco.cs" />
+    <Compile Include="Models\Correcoes_Receber.cs" />
+    <Compile Include="Models\CPF_AUDITORES_FISCAIS.cs" />
+    <Compile Include="Models\Creditos_Processos.cs" />
+    <Compile Include="Models\Custos_Processos.cs" />
+    <Compile Include="Models\Custos_Processos_web.cs" />
+    <Compile Include="Models\Custos_Unitarios.cs" />
+    <Compile Include="Models\Custos_Unitarios_web.cs" />
+    <Compile Include="Models\Deducoes_Faturas.cs" />
+    <Compile Include="Models\Destinatario.cs" />
+    <Compile Include="Models\Dic_Campos.cs" />
+    <Compile Include="Models\Dic_Detalhes.cs" />
+    <Compile Include="Models\Dic_Tabelas.cs" />
+    <Compile Include="Models\Documento.cs" />
+    <Compile Include="Models\Documentos_23092009.cs" />
+    <Compile Include="Models\Documentos_excluidos.cs" />
+    <Compile Include="Models\Documentos_NEW.cs" />
+    <Compile Include="Models\Documentos_Relatorios_parametrizacao.cs" />
+    <Compile Include="Models\Documentos_Relatorios_Parametrizacao_status.cs" />
+    <Compile Include="Models\Documentos_Relatorios_Parametrizacao_Tipo.cs" />
+    <Compile Include="Models\Emails_avisos.cs" />
+    <Compile Include="Models\Emails_avisos_MS2000.cs" />
+    <Compile Include="Models\Email_auto.cs" />
+    <Compile Include="Models\Email_auto2.cs" />
+    <Compile Include="Models\Embalagem_Processo.cs" />
+    <Compile Include="Models\Empresa.cs" />
+    <Compile Include="Models\Entrada.cs" />
+    <Compile Include="Models\Envia_email_docs.cs" />
+    <Compile Include="Models\Evento.cs" />
+    <Compile Include="Models\Eventos_Grupos.cs" />
+    <Compile Include="Models\Eventos_Ing.cs" />
+    <Compile Include="Models\Exportadore.cs" />
+    <Compile Include="Models\Extrato_CC_Web.cs" />
+    <Compile Include="Models\Extrato_MCC.cs" />
+    <Compile Include="Models\Extrato_temp.cs" />
+    <Compile Include="Models\Fabricantes_Produtores.cs" />
+    <Compile Include="Models\Faixas_Desembaraco.cs" />
+    <Compile Include="Models\Fatura.cs" />
+    <Compile Include="Models\Faturamento_Check_List.cs" />
+    <Compile Include="Models\Faturamento_Check_List_Itens.cs" />
+    <Compile Include="Models\Faturamento_Declaracao_Origem.cs" />
+    <Compile Include="Models\Faturamento_Notas_Credito.cs" />
+    <Compile Include="Models\Faturamento_Notas_Debito.cs" />
+    <Compile Include="Models\Faturamento_Recibos.cs" />
+    <Compile Include="Models\Faturas_mov.cs" />
+    <Compile Include="Models\Faturas_old.cs" />
+    <Compile Include="Models\Feriado.cs" />
+    <Compile Include="Models\Fiadore.cs" />
+    <Compile Include="Models\Fiel_Depositario.cs" />
+    <Compile Include="Models\Filiai.cs" />
+    <Compile Include="Models\Followup.cs" />
+    <Compile Include="Models\FollowUp_Check.cs" />
+    <Compile Include="Models\FollowUp_Check_Clientes.cs" />
+    <Compile Include="Models\FollowUp_Check_Tipo_Processo.cs" />
+    <Compile Include="Models\FollowUp_Check_Universo.cs" />
+    <Compile Include="Models\Followup_comercial.cs" />
+    <Compile Include="Models\FollowUp_Indicador_Pendencia.cs" />
+    <Compile Include="Models\Followup_Resumido.cs" />
+    <Compile Include="Models\FOLLOW_ANTIGO.cs" />
+    <Compile Include="Models\Forma_Admissao.cs" />
+    <Compile Include="Models\Forma_de_Pagamento.cs" />
+    <Compile Include="Models\Fornecedore.cs" />
+    <Compile Include="Models\Fras.cs" />
+    <Compile Include="Models\Frequencia_Acidente.cs" />
+    <Compile Include="Models\Fundamentacao_RCR.cs" />
+    <Compile Include="Models\Fundamento_Legal_ICMS.cs" />
+    <Compile Include="Models\Greve.cs" />
+    <Compile Include="Models\GUIAtemp.cs" />
+    <Compile Include="Models\Hitorico_Fragmentacao_Indice.cs" />
+    <Compile Include="Models\Hora_Extra.cs" />
+    <Compile Include="Models\Importadore.cs" />
+    <Compile Include="Models\Importadores_Agrupados.cs" />
+    <Compile Include="Models\Importadores_Autorizacoes.cs" />
+    <Compile Include="Models\Importadores_Extratos.cs" />
+    <Compile Include="Models\Importadores_Grupos.cs" />
+    <Compile Include="Models\Importadores_Radar.cs" />
+    <Compile Include="Models\Importador_Processo_FundoFIXO.cs" />
+    <Compile Include="Models\Inventario.cs" />
+    <Compile Include="Models\ISO_Letreiro.cs" />
+    <Compile Include="Models\ItensFatura.cs" />
+    <Compile Include="Models\ItensFaturasTEMP.cs" />
+    <Compile Include="Models\ItensFaturas_LOG.cs" />
+    <Compile Include="Models\ItensFaturas_OLD.cs" />
+    <Compile Include="Models\Itens_Faturas_Mov.cs" />
+    <Compile Include="Models\Locais_Inventario.cs" />
+    <Compile Include="Models\Locais_Inventarioout2010.cs" />
+    <Compile Include="Models\LOGNET.cs" />
+    <Compile Include="Models\LOGSI.cs" />
+    <Compile Include="Models\Log_Documentos.cs" />
+    <Compile Include="Models\Mapping\AcessoAcaoEspecificaGrupoMap.cs" />
+    <Compile Include="Models\Mapping\AcessoAcaoEspecificaMap.cs" />
+    <Compile Include="Models\Mapping\AcessoGruposMap.cs" />
+    <Compile Include="Models\Mapping\AcessoGrupoUsuarioMap.cs" />
+    <Compile Include="Models\Mapping\AcessoMap.cs" />
+    <Compile Include="Models\Mapping\AcessoPaginaGrupoMap.cs" />
+    <Compile Include="Models\Mapping\AcessoPaginaMap.cs" />
+    <Compile Include="Models\Mapping\Acrescimos_FaturasMap.cs" />
+    <Compile Include="Models\Mapping\Acrescimos_ICMSMap.cs" />
+    <Compile Include="Models\Mapping\Acrescimos_ICMS_CDMap.cs" />
+    <Compile Include="Models\Mapping\Acresc_ATAereoMap.cs" />
+    <Compile Include="Models\Mapping\Adesao_LaboralMap.cs" />
+    <Compile Include="Models\Mapping\AjudanteMap.cs" />
+    <Compile Include="Models\Mapping\Anl_Des_AnalisesMap.cs" />
+    <Compile Include="Models\Mapping\Anl_Des_CompetenciasMap.cs" />
+    <Compile Include="Models\Mapping\Anl_Des_Controle_HierarquiaMap.cs" />
+    <Compile Include="Models\Mapping\Anl_Des_Hierarquia_AnaliseMap.cs" />
+    <Compile Include="Models\Mapping\Anl_Des_Opinioes_SugestoesMap.cs" />
+    <Compile Include="Models\Mapping\Anl_Des_PerguntasMap.cs" />
+    <Compile Include="Models\Mapping\Anl_Des_ResultadosMap.cs" />
+    <Compile Include="Models\Mapping\Apenc_PendenciasMap.cs" />
+    <Compile Include="Models\Mapping\apen_tempMap.cs" />
+    <Compile Include="Models\Mapping\ArmazemMap.cs" />
+    <Compile Include="Models\Mapping\Armazem_ProcessoMap.cs" />
+    <Compile Include="Models\Mapping\Associacao_Numerario_DocumentoMap.cs" />
+    <Compile Include="Models\Mapping\Atos_concessoriosMap.cs" />
+    <Compile Include="Models\Mapping\Atos_ImportadorMap.cs" />
+    <Compile Include="Models\Mapping\Atos_LegaisMap.cs" />
+    <Compile Include="Models\Mapping\Atos_subcontratadasMap.cs" />
+    <Compile Include="Models\Mapping\Atos_tipos_beneficMap.cs" />
+    <Compile Include="Models\Mapping\ATUALIZANETMap.cs" />
+    <Compile Include="Models\Mapping\Audita_Registro_DIMap.cs" />
+    <Compile Include="Models\Mapping\Autorizacao_RegistrosMap.cs" />
+    <Compile Include="Models\Mapping\Autorizacao_Registros_ContasMap.cs" />
+    <Compile Include="Models\Mapping\Autorizacao_Registros_Contas_ClientesMap.cs" />
+    <Compile Include="Models\Mapping\Autorizacao_Reg_StatusMap.cs" />
+    <Compile Include="Models\Mapping\CAEMap.cs" />
+    <Compile Include="Models\Mapping\Cambio_antecipadoMap.cs" />
+    <Compile Include="Models\Mapping\Cambio_antecipado_faturasMap.cs" />
+    <Compile Include="Models\Mapping\CanaiMap.cs" />
+    <Compile Include="Models\Mapping\Canais_IngMap.cs" />
+    <Compile Include="Models\Mapping\Centros_CustosMap.cs" />
+    <Compile Include="Models\Mapping\CertificadoMap.cs" />
+    <Compile Include="Models\Mapping\ConcargaMap.cs" />
+    <Compile Include="Models\Mapping\Conhecimento_ProcessoMap.cs" />
+    <Compile Include="Models\Mapping\Consumo_EnergiaMap.cs" />
+    <Compile Include="Models\Mapping\ContaMap.cs" />
+    <Compile Include="Models\Mapping\Contas_a_PagarMap.cs" />
+    <Compile Include="Models\Mapping\Contas_a_Pagar_PagamentosMap.cs" />
+    <Compile Include="Models\Mapping\Contas_CorrentesMap.cs" />
+    <Compile Include="Models\Mapping\Contas_PagarMap.cs" />
+    <Compile Include="Models\Mapping\Contas_Pagar_CorrecoesMap.cs" />
+    <Compile Include="Models\Mapping\Contas_Pagar_Correcoes_OLDMap.cs" />
+    <Compile Include="Models\Mapping\Contas_Pagar_OLDMap.cs" />
+    <Compile Include="Models\Mapping\Contas_Pagar_Tipos_CorrecoesMap.cs" />
+    <Compile Include="Models\Mapping\Contas_Pagar_Tipos_Correcoes_OLDMap.cs" />
+    <Compile Include="Models\Mapping\Contas_ReceberMap.cs" />
+    <Compile Include="Models\Mapping\Contatos_ImportadoresMap.cs" />
+    <Compile Include="Models\Mapping\ContratoMap.cs" />
+    <Compile Include="Models\Mapping\Contratosout2010Map.cs" />
+    <Compile Include="Models\Mapping\contratos_cadastrados_financeiroMap.cs" />
+    <Compile Include="Models\Mapping\contratos_cadastrados_uploadMap.cs" />
+    <Compile Include="Models\Mapping\Contratos_RMap.cs" />
+    <Compile Include="Models\Mapping\Controle_ADE_AndamentoMap.cs" />
+    <Compile Include="Models\Mapping\Controle_ADE_DeferidoMap.cs" />
+    <Compile Include="Models\Mapping\Controle_ADE_Deferido_AnexoMap.cs" />
+    <Compile Include="Models\Mapping\Controle_ADE_FiscaisMap.cs" />
+    <Compile Include="Models\Mapping\Controle_ADE_StatusMap.cs" />
+    <Compile Include="Models\Mapping\Controle_ADE_TipoMap.cs" />
+    <Compile Include="Models\Mapping\Controle_APEN_TVMap.cs" />
+    <Compile Include="Models\Mapping\Controle_APEN_TV_RelatorioMap.cs" />
+    <Compile Include="Models\Mapping\Controle_APEN_TV_VisualizarMap.cs" />
+    <Compile Include="Models\Mapping\Controle_AtasMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Atas_ArquivosMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Atas_ParticipantesMap.cs" />
+    <Compile Include="Models\Mapping\Controle_BLMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Hierarquico_CelulasMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Hierarquico_Clientes_CelMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Hierarquico_ColaboradorMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Hierarquico_Colaborador_CelMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Hierarquico_OperacoesMap.cs" />
+    <Compile Include="Models\Mapping\Controle_IPSMap.cs" />
+    <Compile Include="Models\Mapping\Controle_MDOC_TVMap.cs" />
+    <Compile Include="Models\Mapping\Controle_MedicaoMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Medicao_ItensMap.cs" />
+    <Compile Include="Models\Mapping\Controle_NaviosMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Navios_ChegadaMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Navios_ProcessosMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Navios_TerminalMap.cs" />
+    <Compile Include="Models\Mapping\Controle_normas_setorMap.cs" />
+    <Compile Include="Models\Mapping\Controle_NumerariosMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Numerarios_MovimentosMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Numerarios_SolicitacaoMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Numerarios_StatusMap.cs" />
+    <Compile Include="Models\Mapping\Controle_PapelMap.cs" />
+    <Compile Include="Models\Mapping\Controle_PastasMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Pastas_Nivel_UsuarioMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Pastas_Nivel_Usuario_HistoricoMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Rede_LogicaMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Rede_Logica_PATCHPANELSMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Rede_Logica_SWITCHSMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Rede_TelefoniaMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Rede_Telefonia_ID01Map.cs" />
+    <Compile Include="Models\Mapping\Controle_Rede_Telefonia_ID02Map.cs" />
+    <Compile Include="Models\Mapping\Controle_SoftwaresMap.cs" />
+    <Compile Include="Models\Mapping\Controle_TRMap.cs" />
+    <Compile Include="Models\Mapping\Controle_TVsMap.cs" />
+    <Compile Include="Models\Mapping\Controle_TVs_ImportadoresMap.cs" />
+    <Compile Include="Models\Mapping\Controle_TVs_ProgramasMap.cs" />
+    <Compile Include="Models\Mapping\Controle_Usuarios_SenhasMap.cs" />
+    <Compile Include="Models\Mapping\Correcoes_ReceberMap.cs" />
+    <Compile Include="Models\Mapping\CorrecoMap.cs" />
+    <Compile Include="Models\Mapping\CPF_AUDITORES_FISCAISMap.cs" />
+    <Compile Include="Models\Mapping\Creditos_ProcessosMap.cs" />
+    <Compile Include="Models\Mapping\Custos_ProcessosMap.cs" />
+    <Compile Include="Models\Mapping\Custos_Processos_webMap.cs" />
+    <Compile Include="Models\Mapping\Custos_UnitariosMap.cs" />
+    <Compile Include="Models\Mapping\Custos_Unitarios_webMap.cs" />
+    <Compile Include="Models\Mapping\Deducoes_FaturasMap.cs" />
+    <Compile Include="Models\Mapping\DestinatarioMap.cs" />
+    <Compile Include="Models\Mapping\Dic_CamposMap.cs" />
+    <Compile Include="Models\Mapping\Dic_DetalhesMap.cs" />
+    <Compile Include="Models\Mapping\Dic_TabelasMap.cs" />
+    <Compile Include="Models\Mapping\DocumentoMap.cs" />
+    <Compile Include="Models\Mapping\Documentos_23092009Map.cs" />
+    <Compile Include="Models\Mapping\Documentos_excluidosMap.cs" />
+    <Compile Include="Models\Mapping\Documentos_NEWMap.cs" />
+    <Compile Include="Models\Mapping\Documentos_Relatorios_parametrizacaoMap.cs" />
+    <Compile Include="Models\Mapping\Documentos_Relatorios_Parametrizacao_statusMap.cs" />
+    <Compile Include="Models\Mapping\Documentos_Relatorios_Parametrizacao_TipoMap.cs" />
+    <Compile Include="Models\Mapping\Emails_avisosMap.cs" />
+    <Compile Include="Models\Mapping\Emails_avisos_MS2000Map.cs" />
+    <Compile Include="Models\Mapping\Email_auto2Map.cs" />
+    <Compile Include="Models\Mapping\Email_autoMap.cs" />
+    <Compile Include="Models\Mapping\Embalagem_ProcessoMap.cs" />
+    <Compile Include="Models\Mapping\EmpresaMap.cs" />
+    <Compile Include="Models\Mapping\EntradaMap.cs" />
+    <Compile Include="Models\Mapping\Envia_email_docsMap.cs" />
+    <Compile Include="Models\Mapping\EventoMap.cs" />
+    <Compile Include="Models\Mapping\Eventos_GruposMap.cs" />
+    <Compile Include="Models\Mapping\Eventos_IngMap.cs" />
+    <Compile Include="Models\Mapping\ExportadoreMap.cs" />
+    <Compile Include="Models\Mapping\Extrato_CC_WebMap.cs" />
+    <Compile Include="Models\Mapping\Extrato_MCCMap.cs" />
+    <Compile Include="Models\Mapping\Extrato_tempMap.cs" />
+    <Compile Include="Models\Mapping\Fabricantes_ProdutoresMap.cs" />
+    <Compile Include="Models\Mapping\Faixas_DesembaracoMap.cs" />
+    <Compile Include="Models\Mapping\FaturaMap.cs" />
+    <Compile Include="Models\Mapping\Faturamento_Check_ListMap.cs" />
+    <Compile Include="Models\Mapping\Faturamento_Check_List_ItensMap.cs" />
+    <Compile Include="Models\Mapping\Faturamento_Declaracao_OrigemMap.cs" />
+    <Compile Include="Models\Mapping\Faturamento_Notas_CreditoMap.cs" />
+    <Compile Include="Models\Mapping\Faturamento_Notas_DebitoMap.cs" />
+    <Compile Include="Models\Mapping\Faturamento_RecibosMap.cs" />
+    <Compile Include="Models\Mapping\Faturas_movMap.cs" />
+    <Compile Include="Models\Mapping\Faturas_oldMap.cs" />
+    <Compile Include="Models\Mapping\FeriadoMap.cs" />
+    <Compile Include="Models\Mapping\FiadoreMap.cs" />
+    <Compile Include="Models\Mapping\Fiel_DepositarioMap.cs" />
+    <Compile Include="Models\Mapping\FiliaiMap.cs" />
+    <Compile Include="Models\Mapping\FollowupMap.cs" />
+    <Compile Include="Models\Mapping\FollowUp_CheckMap.cs" />
+    <Compile Include="Models\Mapping\FollowUp_Check_ClientesMap.cs" />
+    <Compile Include="Models\Mapping\FollowUp_Check_Tipo_ProcessoMap.cs" />
+    <Compile Include="Models\Mapping\FollowUp_Check_UniversoMap.cs" />
+    <Compile Include="Models\Mapping\Followup_comercialMap.cs" />
+    <Compile Include="Models\Mapping\FollowUp_Indicador_PendenciaMap.cs" />
+    <Compile Include="Models\Mapping\Followup_ResumidoMap.cs" />
+    <Compile Include="Models\Mapping\FOLLOW_ANTIGOMap.cs" />
+    <Compile Include="Models\Mapping\Forma_AdmissaoMap.cs" />
+    <Compile Include="Models\Mapping\Forma_de_PagamentoMap.cs" />
+    <Compile Include="Models\Mapping\FornecedoreMap.cs" />
+    <Compile Include="Models\Mapping\FrasMap.cs" />
+    <Compile Include="Models\Mapping\Frequencia_AcidenteMap.cs" />
+    <Compile Include="Models\Mapping\Fundamentacao_RCRMap.cs" />
+    <Compile Include="Models\Mapping\Fundamento_Legal_ICMSMap.cs" />
+    <Compile Include="Models\Mapping\GreveMap.cs" />
+    <Compile Include="Models\Mapping\GUIAtempMap.cs" />
+    <Compile Include="Models\Mapping\Hitorico_Fragmentacao_IndiceMap.cs" />
+    <Compile Include="Models\Mapping\Hora_ExtraMap.cs" />
+    <Compile Include="Models\Mapping\ImportadoreMap.cs" />
+    <Compile Include="Models\Mapping\Importadores_AgrupadosMap.cs" />
+    <Compile Include="Models\Mapping\Importadores_AutorizacoesMap.cs" />
+    <Compile Include="Models\Mapping\Importadores_ExtratosMap.cs" />
+    <Compile Include="Models\Mapping\Importadores_GruposMap.cs" />
+    <Compile Include="Models\Mapping\Importadores_RadarMap.cs" />
+    <Compile Include="Models\Mapping\Importador_Processo_FundoFIXOMap.cs" />
+    <Compile Include="Models\Mapping\InventarioMap.cs" />
+    <Compile Include="Models\Mapping\ISO_LetreiroMap.cs" />
+    <Compile Include="Models\Mapping\ItensFaturaMap.cs" />
+    <Compile Include="Models\Mapping\ItensFaturasTEMPMap.cs" />
+    <Compile Include="Models\Mapping\ItensFaturas_LOGMap.cs" />
+    <Compile Include="Models\Mapping\ItensFaturas_OLDMap.cs" />
+    <Compile Include="Models\Mapping\Itens_Faturas_MovMap.cs" />
+    <Compile Include="Models\Mapping\Locais_InventarioMap.cs" />
+    <Compile Include="Models\Mapping\Locais_Inventarioout2010Map.cs" />
+    <Compile Include="Models\Mapping\LOGNETMap.cs" />
+    <Compile Include="Models\Mapping\LOGSIMap.cs" />
+    <Compile Include="Models\Mapping\Log_DocumentosMap.cs" />
+    <Compile Include="Models\Mapping\MenuMap.cs" />
+    <Compile Include="Models\Mapping\MesMap.cs" />
+    <Compile Include="Models\Mapping\Monitoracao_DocumentosMap.cs" />
+    <Compile Include="Models\Mapping\Monitor_processamentosMap.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_Contas_CorrentesMap.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_pastasMap.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_RepetroMap.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_Repetro_01032011Map.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_Repetro_14022011Map.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_Repetro_23122010Map.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_Repetro_25022011Map.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_Repetro_31012011Map.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_Repetro_copiaMap.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_Repetro_TESTEMap.cs" />
+    <Compile Include="Models\Mapping\Movimentacao_UsuariosMap.cs" />
+    <Compile Include="Models\Mapping\MSAVISA_AVISOSMap.cs" />
+    <Compile Include="Models\Mapping\MSCGPO_POSMap.cs" />
+    <Compile Include="Models\Mapping\MSCGPO_POS_ITENSMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_ContribuinteMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_EmbarcacaoMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Emprestimo_AcessoriosMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Emprestimo_Acessorios_IntermediarioMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Emprestimo_AdmissaoMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Emprestimo_Admissao_IntermediarioMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Emprestimo_EmbarcacaoMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Emprestimo_Embarcacao_IntermediarioMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_GrupoMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Juntada_AcessoriosMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Juntada_Acessorios_IntermediarioMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Juntada_AdmissaoMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Juntada_Admissao_IntermediarioMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Juntada_EmbarcacaoMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Juntada_Embarcacao_IntermediarioMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Processos_AcessoriosMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Processos_Acessorios_IntermediarioMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Processos_AdmissaoMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Processos_Admissao_IntermediarioMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Processos_EmbarcacaoMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Processos_Embarcacao_IntermediarioMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_SolicitanteMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Status_EmprestimoMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Tipo_ContribuinteMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Tipo_JuntadaMap.cs" />
+    <Compile Include="Models\Mapping\MSCPRO_Tipo_ProcessoMap.cs" />
+    <Compile Include="Models\Mapping\MSLINKMap.cs" />
+    <Compile Include="Models\Mapping\MSLINKS_enMap.cs" />
+    <Compile Include="Models\Mapping\MSLOGIN_SolucoesMap.cs" />
+    <Compile Include="Models\Mapping\MSLOGIN_Solucoes_MenusMap.cs" />
+    <Compile Include="Models\Mapping\MSLOGIN_Solucoes_ParametrosMap.cs" />
+    <Compile Include="Models\Mapping\MSLOGIN_Solucoes_UsuariosMap.cs" />
+    <Compile Include="Models\Mapping\MSLOGIN_Solucoes_Usuarios_AcessosMap.cs" />
+    <Compile Include="Models\Mapping\MSLOGIN_Solucoes_Usuarios_Acessos_HorariosMap.cs" />
+    <Compile Include="Models\Mapping\MSLOGIN_Solucoes_Usuarios_Log_AcessoMap.cs" />
+    <Compile Include="Models\Mapping\MSLOGIN_UsuariosMap.cs" />
+    <Compile Include="Models\Mapping\MSLOGIN_Usuarios_Chaves_SegurancaMap.cs" />
+    <Compile Include="Models\Mapping\MSLOGIN_Usuarios_TempMap.cs" />
+    <Compile Include="Models\Mapping\MSREPETRO_RTCMap.cs" />
+    <Compile Include="Models\Mapping\MSREPETRO_RTC_ITENSMap.cs" />
+    <Compile Include="Models\Mapping\MSTabelaMap.cs" />
+    <Compile Include="Models\Mapping\MSTabelas_FOLLOWUPMap.cs" />
+    <Compile Include="Models\Mapping\MSWEBMAIL_AnexosMap.cs" />
+    <Compile Include="Models\Mapping\MSWEBMAIL_Catalogo_EnderecoMap.cs" />
+    <Compile Include="Models\Mapping\MSWEBMAIL_CoresMap.cs" />
+    <Compile Include="Models\Mapping\MSWEBMAIL_MarcadoresMap.cs" />
+    <Compile Include="Models\Mapping\MSWEBMAIL_PastasMap.cs" />
+    <Compile Include="Models\Mapping\MSWEBMAIL_Tipo_AnexosMap.cs" />
+    <Compile Include="Models\Mapping\MSWEBMAIL_Tipo_PastasMap.cs" />
+    <Compile Include="Models\Mapping\MSWEBMAIL_Tipo_PrioridadeMap.cs" />
+    <Compile Include="Models\Mapping\MSWEBMAIL_Usuarios_AssinaturasMap.cs" />
+    <Compile Include="Models\Mapping\Nao_ConformidadeMap.cs" />
+    <Compile Include="Models\Mapping\Natureza_de_OperacaoMap.cs" />
+    <Compile Include="Models\Mapping\NCM_COM_LIMap.cs" />
+    <Compile Include="Models\Mapping\NCM_COM_LI_LOGMap.cs" />
+    <Compile Include="Models\Mapping\NFDetalheMap.cs" />
+    <Compile Include="Models\Mapping\NFiscaiMap.cs" />
+    <Compile Include="Models\Mapping\NF_WebMap.cs" />
+    <Compile Include="Models\Mapping\NF_Web_detalhesMap.cs" />
+    <Compile Include="Models\Mapping\NF_Web_detalhes_TempMap.cs" />
+    <Compile Include="Models\Mapping\NF_Web_ICMSMap.cs" />
+    <Compile Include="Models\Mapping\NF_Web_NatoperMap.cs" />
+    <Compile Include="Models\Mapping\NF_Web_NumeradorMap.cs" />
+    <Compile Include="Models\Mapping\Normas_gerencia_ProcMap.cs" />
+    <Compile Include="Models\Mapping\Normas_Usuario_SetorMap.cs" />
+    <Compile Include="Models\Mapping\Notas_FiscaisMap.cs" />
+    <Compile Include="Models\Mapping\Notas_Fiscais_DetalhesMap.cs" />
+    <Compile Include="Models\Mapping\Notas_Fiscais_ServicosMap.cs" />
+    <Compile Include="Models\Mapping\Notas_Fiscais_Servicos_DetalhesMap.cs" />
+    <Compile Include="Models\Mapping\Notas_Fiscais_Servicos_ImportadoresMap.cs" />
+    <Compile Include="Models\Mapping\Notas_Fiscais_Servicos_ProcessosMap.cs" />
+    <Compile Include="Models\Mapping\Numerador_Importacao_DadosMap.cs" />
+    <Compile Include="Models\Mapping\Numerador_Notas_FiscaisMap.cs" />
+    <Compile Include="Models\Mapping\Numerarios_ProcessosMap.cs" />
+    <Compile Include="Models\Mapping\Numerarios_Processos_backupMap.cs" />
+    <Compile Include="Models\Mapping\Numerarios_Processos_old2Map.cs" />
+    <Compile Include="Models\Mapping\Numerarios_Processos_oldMap.cs" />
+    <Compile Include="Models\Mapping\Observacoes_Processo_FinanceiroMap.cs" />
+    <Compile Include="Models\Mapping\Observacoes_Termo_ResponsabilidadeMap.cs" />
+    <Compile Include="Models\Mapping\Observacoes_verso_TRMap.cs" />
+    <Compile Include="Models\Mapping\Obs_EventosMap.cs" />
+    <Compile Include="Models\Mapping\Obs_Eventos_IngMap.cs" />
+    <Compile Include="Models\Mapping\PagamentoMap.cs" />
+    <Compile Include="Models\Mapping\Pagamentos_ReceberMap.cs" />
+    <Compile Include="Models\Mapping\paramentros_contabilizatempMap.cs" />
+    <Compile Include="Models\Mapping\ParametroMap.cs" />
+    <Compile Include="Models\Mapping\Parametros_ContabilizacaoMap.cs" />
+    <Compile Include="Models\Mapping\Parametros_FaturamentoMap.cs" />
+    <Compile Include="Models\Mapping\Parametros_NF_ServicosMap.cs" />
+    <Compile Include="Models\Mapping\Parametros_Sol_NumerariosMap.cs" />
+    <Compile Include="Models\Mapping\PatrimonioMap.cs" />
+    <Compile Include="Models\Mapping\PG_PARC_VARMap.cs" />
+    <Compile Include="Models\Mapping\PG_PERC_VINCMap.cs" />
+    <Compile Include="Models\Mapping\Plan1Map.cs" />
+    <Compile Include="Models\Mapping\Planilha_BRASDRILMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_BRASDRIL_ItensMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_Brasdril_Quinzenal_FinanceiroMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_Brasdril_Quinzenal_Financeiro_ItensMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_BRASDRIL_StatusMap.cs" />
+    <Compile Include="Models\Mapping\PLANILHA_FINALMap.cs" />
+    <Compile Include="Models\Mapping\PLANILHA_FORMATOMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_Medicao_HonorariosMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_Medicao_Honorarios_ItensMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_PrestContasDespesas_FinanceiroMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_PrestContasDespesas_Financeiro_ItensMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_PrestContas_FinanceiroMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_PrestContas_Financeiro_ItensMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_TransoceanMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_Transocean_ItensMap.cs" />
+    <Compile Include="Models\Mapping\Planilha_Transocean_StatusMap.cs" />
+    <Compile Include="Models\Mapping\Plano_ContasMap.cs" />
+    <Compile Include="Models\Mapping\PlataformaMap.cs" />
+    <Compile Include="Models\Mapping\pre_documentosMap.cs" />
+    <Compile Include="Models\Mapping\pre_followupMap.cs" />
+    <Compile Include="Models\Mapping\pre_processosMap.cs" />
+    <Compile Include="Models\Mapping\pre_relacao_processosMap.cs" />
+    <Compile Include="Models\Mapping\ProcessoMap.cs" />
+    <Compile Include="Models\Mapping\Processos1Map.cs" />
+    <Compile Include="Models\Mapping\Processos_AbertosMap.cs" />
+    <Compile Include="Models\Mapping\Processos_AdicoesMap.cs" />
+    <Compile Include="Models\Mapping\Processos_ADICOES_ICMS_PIS_COFINSMap.cs" />
+    <Compile Include="Models\Mapping\Processos_AFATMap.cs" />
+    <Compile Include="Models\Mapping\Processos_ALCMap.cs" />
+    <Compile Include="Models\Mapping\Processos_AnexoMap.cs" />
+    <Compile Include="Models\Mapping\Processos_Docs_InstrucaoMap.cs" />
+    <Compile Include="Models\Mapping\Processos_EDI_CIE01Map.cs" />
+    <Compile Include="Models\Mapping\Processos_EmailsMap.cs" />
+    <Compile Include="Models\Mapping\Processos_Emails_AnexosMap.cs" />
+    <Compile Include="Models\Mapping\Processos_Emails_Tipo_AnexosMap.cs" />
+    <Compile Include="Models\Mapping\Processos_ExtratosMap.cs" />
+    <Compile Include="Models\Mapping\Processos_ImpostosMap.cs" />
+    <Compile Include="Models\Mapping\Processos_Impostos_ParametrosMap.cs" />
+    <Compile Include="Models\Mapping\Processos_NumeradorMap.cs" />
+    <Compile Include="Models\Mapping\Processos_registro_impostosMap.cs" />
+    <Compile Include="Models\Mapping\Processos_REsMap.cs" />
+    <Compile Include="Models\Mapping\Processos_ResponsabilidadesMap.cs" />
+    <Compile Include="Models\Mapping\Processos_Taxas_ConversaoDoDiaSeguinteMap.cs" />
+    <Compile Include="Models\Mapping\Processos_Taxas_ConversaoMap.cs" />
+    <Compile Include="Models\Mapping\PROCESSOS_TAXAS_CONVERSAO_CAMBIO_AMANHAMap.cs" />
+    <Compile Include="Models\Mapping\Processos_TimelineMap.cs" />
+    <Compile Include="Models\Mapping\Processos_Timeline_tempMap.cs" />
+    <Compile Include="Models\Mapping\Processos_Tipo_UrgenciaMap.cs" />
+    <Compile Include="Models\Mapping\Processos_Visao_Geral2Map.cs" />
+    <Compile Include="Models\Mapping\Processos_Visao_GeralMap.cs" />
+    <Compile Include="Models\Mapping\Processou_imp_siscomexMap.cs" />
+    <Compile Include="Models\Mapping\ProcuradoreMap.cs" />
+    <Compile Include="Models\Mapping\produtoslogreveMap.cs" />
+    <Compile Include="Models\Mapping\ProdutosnewMap.cs" />
+    <Compile Include="Models\Mapping\Proposta_de_acaoMap.cs" />
+    <Compile Include="Models\Mapping\Questionario_AlternativasMap.cs" />
+    <Compile Include="Models\Mapping\Questionario_ControleMap.cs" />
+    <Compile Include="Models\Mapping\Questionario_PerguntasMap.cs" />
+    <Compile Include="Models\Mapping\Questionario_QuestionarioMap.cs" />
+    <Compile Include="Models\Mapping\Questionario_RespostasMap.cs" />
+    <Compile Include="Models\Mapping\Questionario_SenhasMap.cs" />
+    <Compile Include="Models\Mapping\RATMap.cs" />
+    <Compile Include="Models\Mapping\RCRtempMap.cs" />
+    <Compile Include="Models\Mapping\Relatorio_Follows_KPIMap.cs" />
+    <Compile Include="Models\Mapping\Repetro1Map.cs" />
+    <Compile Include="Models\Mapping\RepetrodescnullMap.cs" />
+    <Compile Include="Models\Mapping\RepetroLogUsuarioMap.cs" />
+    <Compile Include="Models\Mapping\RepetroMap.cs" />
+    <Compile Include="Models\Mapping\RepetroMARINEMap.cs" />
+    <Compile Include="Models\Mapping\RepetroTEMPMap.cs" />
+    <Compile Include="Models\Mapping\Repetro_AjustarMap.cs" />
+    <Compile Include="Models\Mapping\Repetro_INCLUSAO_DISMap.cs" />
+    <Compile Include="Models\Mapping\REPETRO_PLANILHA_GERALMap.cs" />
+    <Compile Include="Models\Mapping\REPETRO_RTCMap.cs" />
+    <Compile Include="Models\Mapping\REPETRO_RTC_D1Map.cs" />
+    <Compile Include="Models\Mapping\REPETRO_RTC_DMap.cs" />
+    <Compile Include="Models\Mapping\REPETRO_RTC_ITENSMap.cs" />
+    <Compile Include="Models\Mapping\REPETRO_RTC_ITENS_D1Map.cs" />
+    <Compile Include="Models\Mapping\REPETRO_RTC_ITENS_DMap.cs" />
+    <Compile Include="Models\Mapping\Repetro_tempMap.cs" />
+    <Compile Include="Models\Mapping\Responsaveis_por_ImportadorMap.cs" />
+    <Compile Include="Models\Mapping\RMBRMap.cs" />
+    <Compile Include="Models\Mapping\Rotatividade_FuncionarioMap.cs" />
+    <Compile Include="Models\Mapping\RPATMap.cs" />
+    <Compile Include="Models\Mapping\RPRtempMap.cs" />
+    <Compile Include="Models\Mapping\SACMap.cs" />
+    <Compile Include="Models\Mapping\Sac_UserMap.cs" />
+    <Compile Include="Models\Mapping\Salarios_MinimosMap.cs" />
+    <Compile Include="Models\Mapping\Saldos_diariosMap.cs" />
+    <Compile Include="Models\Mapping\Satisfacao_PerguntasMap.cs" />
+    <Compile Include="Models\Mapping\Satisfacao_QuestionarioMap.cs" />
+    <Compile Include="Models\Mapping\Satisfacao_RespostasMap.cs" />
+    <Compile Include="Models\Mapping\Satisfacao_UsuarioMap.cs" />
+    <Compile Include="Models\Mapping\Seadriil_Relatorio_tempMap.cs" />
+    <Compile Include="Models\Mapping\SetoreMap.cs" />
+    <Compile Include="Models\Mapping\Siscomex_Atualizacao_MaquinasMap.cs" />
+    <Compile Include="Models\Mapping\Siscomex_Atualizacao_TabelasMap.cs" />
+    <Compile Include="Models\Mapping\SoftwareMap.cs" />
+    <Compile Include="Models\Mapping\Solicitacao_ChequesMap.cs" />
+    <Compile Include="Models\Mapping\Solicitacao_Cheques_ItensMap.cs" />
+    <Compile Include="Models\Mapping\Solicitacao_Cheques_StatusMap.cs" />
+    <Compile Include="Models\Mapping\Solicitacao_TraclaMap.cs" />
+    <Compile Include="Models\Mapping\Solicitacao_Tracla_ItensMap.cs" />
+    <Compile Include="Models\Mapping\Solicitacao_Tracla_StatusMap.cs" />
+    <Compile Include="Models\Mapping\Status_PatrimonioMap.cs" />
+    <Compile Include="Models\Mapping\Sub_Tipo_DocumentosMap.cs" />
+    <Compile Include="Models\Mapping\Sub_Tipo_Documentos_IngMap.cs" />
+    <Compile Include="Models\Mapping\Sub_Tipo_PatrimonioMap.cs" />
+    <Compile Include="Models\Mapping\sysdiagramMap.cs" />
+    <Compile Include="Models\Mapping\TAB_ALADIMap.cs" />
+    <Compile Include="Models\Mapping\TAB_ATRIB_VALORACAO_NVEMap.cs" />
+    <Compile Include="Models\Mapping\TAB_CONVERSAO_CAMBIOMap.cs" />
+    <Compile Include="Models\Mapping\TAB_DOC_INSTRUCAO_DESPACHOMap.cs" />
+    <Compile Include="Models\Mapping\TAB_FUND_LEGAL_PIS_COFINSMap.cs" />
+    <Compile Include="Models\Mapping\TAB_INCOTERMS_VENDAMap.cs" />
+    <Compile Include="Models\Mapping\TAB_INST_FINANC_INTERNACIONALMap.cs" />
+    <Compile Include="Models\Mapping\TAB_MODALID_PAGAMENTOMap.cs" />
+    <Compile Include="Models\Mapping\TAB_MOEDAMap.cs" />
+    <Compile Include="Models\Mapping\TAB_MOEDA_CONVERSAOMap.cs" />
+    <Compile Include="Models\Mapping\TAB_MOT_ADMISSAO_TEMPMap.cs" />
+    <Compile Include="Models\Mapping\TAB_MOT_SEM_COBERT_CAMBIALMap.cs" />
+    <Compile Include="Models\Mapping\TAB_NALADISHMap.cs" />
+    <Compile Include="Models\Mapping\TAB_NCMMap.cs" />
+    <Compile Include="Models\Mapping\TAB_NCM_INGMap.cs" />
+    <Compile Include="Models\Mapping\TAB_PAISMap.cs" />
+    <Compile Include="Models\Mapping\TAB_PAISnovoMap.cs" />
+    <Compile Include="Models\Mapping\TAB_RECINTO_SETORES_IMPORTACAOMap.cs" />
+    <Compile Include="Models\Mapping\TAB_REC_ALFANDEGADOMap.cs" />
+    <Compile Include="Models\Mapping\TAB_REGRAS_DSI_PIS_COFINSMap.cs" />
+    <Compile Include="Models\Mapping\TAB_REG_TRIBUTARIOMap.cs" />
+    <Compile Include="Models\Mapping\TAB_TIPO_DECLARACAOMap.cs" />
+    <Compile Include="Models\Mapping\TAB_TIPO_DECLARACAO_IngMap.cs" />
+    <Compile Include="Models\Mapping\TAB_TP_ATO_LEGALMap.cs" />
+    <Compile Include="Models\Mapping\TAB_TP_EMBALAGEMMap.cs" />
+    <Compile Include="Models\Mapping\TAB_UFMap.cs" />
+    <Compile Include="Models\Mapping\TAB_UF_ALIQUOTASMap.cs" />
+    <Compile Include="Models\Mapping\TAB_UNID_MEDIDAMap.cs" />
+    <Compile Include="Models\Mapping\TAB_UNID_MEDIDA_ingMap.cs" />
+    <Compile Include="Models\Mapping\TAB_URFMap.cs" />
+    <Compile Include="Models\Mapping\TAB_VIA_TRANSPORTEMap.cs" />
+    <Compile Include="Models\Mapping\TAB_VIA_TRANSPORTE_IngMap.cs" />
+    <Compile Include="Models\Mapping\TB_RCR_OBS_ESPECIFICAMap.cs" />
+    <Compile Include="Models\Mapping\tempdetalheMap.cs" />
+    <Compile Include="Models\Mapping\Termos_De_ResponsabilidadeMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_CertificadosMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_contratosMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_creditosMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_creditos_ingMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_CustosMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_custos_webMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_de_CargasMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_de_Cargas_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_de_Notas_FiscaisMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_de_ProcessosMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_de_Processos_c_respMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_de_Processos_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_Email_AvisoMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_Lancamento_CcorrenteMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_Locais_InventarioMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_Locais_Inventario_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_Movimentacao_RepetroMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_Movimentacao_Repetro_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_Movimentacao_UsuariosMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_NCMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_NumerarioMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_Numerario_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_Numerario_ObrigatorioMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_RateioMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_situacao_fiscalMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_situacao_fiscal_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_status_documentosMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_status_documentos_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_status_processosMap.cs" />
+    <Compile Include="Models\Mapping\Tipos_status_processos_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipo_DocumentosMap.cs" />
+    <Compile Include="Models\Mapping\Tipo_Documentos_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipo_Doc_CargaMap.cs" />
+    <Compile Include="Models\Mapping\Tipo_Doc_Carga_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipo_Doc_ChegadaMap.cs" />
+    <Compile Include="Models\Mapping\Tipo_Doc_Chegada_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipo_PatrimonioMap.cs" />
+    <Compile Include="Models\Mapping\Tipo_UtilizacaoMap.cs" />
+    <Compile Include="Models\Mapping\Tipo_Utilizacao_IngMap.cs" />
+    <Compile Include="Models\Mapping\Tipo_VinculacaoMap.cs" />
+    <Compile Include="Models\Mapping\TransmittalMap.cs" />
+    <Compile Include="Models\Mapping\Transmittal_itensMap.cs" />
+    <Compile Include="Models\Mapping\Transmittal_testeMap.cs" />
+    <Compile Include="Models\Mapping\TransportadoreMap.cs" />
+    <Compile Include="Models\Mapping\Tratamento_Tributario_ICMSMap.cs" />
+    <Compile Include="Models\Mapping\Tributacao_Item_FaturaMap.cs" />
+    <Compile Include="Models\Mapping\UsuarioMap.cs" />
+    <Compile Include="Models\Mapping\UsuariosClienteMap.cs" />
+    <Compile Include="Models\Mapping\UsuariosGrupoLocalMap.cs" />
+    <Compile Include="Models\Mapping\UsuariosGrupoMap.cs" />
+    <Compile Include="Models\Mapping\UsuariosMenuMap.cs" />
+    <Compile Include="Models\Mapping\UsuariosNETMap.cs" />
+    <Compile Include="Models\Mapping\Usuarios_APENMap.cs" />
+    <Compile Include="Models\Mapping\usuarios_beneficio_repetroMap.cs" />
+    <Compile Include="Models\Mapping\Usuarios_LogMap.cs" />
+    <Compile Include="Models\Mapping\Usuarios_Resp_habilitadosMap.cs" />
+    <Compile Include="Models\Mapping\Usuarios_Resp_Habilitados_oldMap.cs" />
+    <Compile Include="Models\Mapping\Usuario_Follow_AbertoMap.cs" />
+    <Compile Include="Models\Mapping\USUMap.cs" />
+    <Compile Include="Models\Mapping\verifica_repetroMap.cs" />
+    <Compile Include="Models\Mapping\via_tipoMap.cs" />
+    <Compile Include="Models\Mapping\Voucher_TransoceanMap.cs" />
+    <Compile Include="Models\Mapping\Voucher_Transocean_ItensMap.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\Mes.cs" />
+    <Compile Include="Models\Metadata\Documentos_Relatorios_parametrizacaoMetadata.cs" />
+    <Compile Include="Models\Metadata\Documentos_Relatorios_Parametrizacao_statusMetadata.cs" />
+    <Compile Include="Models\Metadata\Documentos_Relatorios_Parametrizacao_TipoMetadata.cs" />
+    <Compile Include="Models\Metadata\ImportadorMetadata.cs" />
+    <Compile Include="Models\Metadata\PreDocumentosMetadata.cs" />
+    <Compile Include="Models\Metadata\PreProcessoMetadata.cs" />
+    <Compile Include="Models\Metadata\RATMetadata.cs" />
+    <Compile Include="Models\Metadata\UsuarioMetadata.cs" />
+    <Compile Include="Models\Monitoracao_Documentos.cs" />
+    <Compile Include="Models\Monitor_processamentos.cs" />
+    <Compile Include="Models\Movimentacao_Contas_Correntes.cs" />
+    <Compile Include="Models\Movimentacao_pastas.cs" />
+    <Compile Include="Models\Movimentacao_Repetro.cs" />
+    <Compile Include="Models\Movimentacao_Repetro_01032011.cs" />
+    <Compile Include="Models\Movimentacao_Repetro_14022011.cs" />
+    <Compile Include="Models\Movimentacao_Repetro_23122010.cs" />
+    <Compile Include="Models\Movimentacao_Repetro_25022011.cs" />
+    <Compile Include="Models\Movimentacao_Repetro_31012011.cs" />
+    <Compile Include="Models\Movimentacao_Repetro_copia.cs" />
+    <Compile Include="Models\Movimentacao_Repetro_TESTE.cs" />
+    <Compile Include="Models\Movimentacao_Usuarios.cs" />
+    <Compile Include="Models\MS2000Context.cs" />
+    <Compile Include="Models\MSAVISA_AVISOS.cs" />
+    <Compile Include="Models\MSCGPO_POS.cs" />
+    <Compile Include="Models\MSCGPO_POS_ITENS.cs" />
+    <Compile Include="Models\MSCPRO_Contribuinte.cs" />
+    <Compile Include="Models\MSCPRO_Embarcacao.cs" />
+    <Compile Include="Models\MSCPRO_Emprestimo_Acessorios.cs" />
+    <Compile Include="Models\MSCPRO_Emprestimo_Acessorios_Intermediario.cs" />
+    <Compile Include="Models\MSCPRO_Emprestimo_Admissao.cs" />
+    <Compile Include="Models\MSCPRO_Emprestimo_Admissao_Intermediario.cs" />
+    <Compile Include="Models\MSCPRO_Emprestimo_Embarcacao.cs" />
+    <Compile Include="Models\MSCPRO_Emprestimo_Embarcacao_Intermediario.cs" />
+    <Compile Include="Models\MSCPRO_Grupo.cs" />
+    <Compile Include="Models\MSCPRO_Juntada_Acessorios.cs" />
+    <Compile Include="Models\MSCPRO_Juntada_Acessorios_Intermediario.cs" />
+    <Compile Include="Models\MSCPRO_Juntada_Admissao.cs" />
+    <Compile Include="Models\MSCPRO_Juntada_Admissao_Intermediario.cs" />
+    <Compile Include="Models\MSCPRO_Juntada_Embarcacao.cs" />
+    <Compile Include="Models\MSCPRO_Juntada_Embarcacao_Intermediario.cs" />
+    <Compile Include="Models\MSCPRO_Processos_Acessorios.cs" />
+    <Compile Include="Models\MSCPRO_Processos_Acessorios_Intermediario.cs" />
+    <Compile Include="Models\MSCPRO_Processos_Admissao.cs" />
+    <Compile Include="Models\MSCPRO_Processos_Admissao_Intermediario.cs" />
+    <Compile Include="Models\MSCPRO_Processos_Embarcacao.cs" />
+    <Compile Include="Models\MSCPRO_Processos_Embarcacao_Intermediario.cs" />
+    <Compile Include="Models\MSCPRO_Solicitante.cs" />
+    <Compile Include="Models\MSCPRO_Status_Emprestimo.cs" />
+    <Compile Include="Models\MSCPRO_Tipo_Contribuinte.cs" />
+    <Compile Include="Models\MSCPRO_Tipo_Juntada.cs" />
+    <Compile Include="Models\MSCPRO_Tipo_Processo.cs" />
+    <Compile Include="Models\MSLINK.cs" />
+    <Compile Include="Models\MSLINKS_en.cs" />
+    <Compile Include="Models\MSLOGIN_Solucoes.cs" />
+    <Compile Include="Models\MSLOGIN_Solucoes_Menus.cs" />
+    <Compile Include="Models\MSLOGIN_Solucoes_Parametros.cs" />
+    <Compile Include="Models\MSLOGIN_Solucoes_Usuarios.cs" />
+    <Compile Include="Models\MSLOGIN_Solucoes_Usuarios_Acessos.cs" />
+    <Compile Include="Models\MSLOGIN_Solucoes_Usuarios_Acessos_Horarios.cs" />
+    <Compile Include="Models\MSLOGIN_Solucoes_Usuarios_Log_Acesso.cs" />
+    <Compile Include="Models\MSLOGIN_Usuarios.cs" />
+    <Compile Include="Models\MSLOGIN_Usuarios_Chaves_Seguranca.cs" />
+    <Compile Include="Models\MSLOGIN_Usuarios_Temp.cs" />
+    <Compile Include="Models\MSREPETRO_RTC.cs" />
+    <Compile Include="Models\MSREPETRO_RTC_ITENS.cs" />
+    <Compile Include="Models\MSTabela.cs" />
+    <Compile Include="Models\MSTabelas_FOLLOWUP.cs" />
+    <Compile Include="Models\MSWEBMAIL_Anexos.cs" />
+    <Compile Include="Models\MSWEBMAIL_Catalogo_Endereco.cs" />
+    <Compile Include="Models\MSWEBMAIL_Cores.cs" />
+    <Compile Include="Models\MSWEBMAIL_Marcadores.cs" />
+    <Compile Include="Models\MSWEBMAIL_Pastas.cs" />
+    <Compile Include="Models\MSWEBMAIL_Tipo_Anexos.cs" />
+    <Compile Include="Models\MSWEBMAIL_Tipo_Pastas.cs" />
+    <Compile Include="Models\MSWEBMAIL_Tipo_Prioridade.cs" />
+    <Compile Include="Models\MSWEBMAIL_Usuarios_Assinaturas.cs" />
+    <Compile Include="Models\Nao_Conformidade.cs" />
+    <Compile Include="Models\Natureza_de_Operacao.cs" />
+    <Compile Include="Models\NCM_COM_LI.cs" />
+    <Compile Include="Models\NCM_COM_LI_LOG.cs" />
+    <Compile Include="Models\NFDetalhe.cs" />
+    <Compile Include="Models\NFiscai.cs" />
+    <Compile Include="Models\NF_Web.cs" />
+    <Compile Include="Models\NF_Web_detalhes.cs" />
+    <Compile Include="Models\NF_Web_detalhes_Temp.cs" />
+    <Compile Include="Models\NF_Web_ICMS.cs" />
+    <Compile Include="Models\NF_Web_Natoper.cs" />
+    <Compile Include="Models\NF_Web_Numerador.cs" />
+    <Compile Include="Models\Normas_gerencia_Proc.cs" />
+    <Compile Include="Models\Normas_Usuario_Setor.cs" />
+    <Compile Include="Models\Notas_Fiscais.cs" />
+    <Compile Include="Models\Notas_Fiscais_Detalhes.cs" />
+    <Compile Include="Models\Notas_Fiscais_Servicos.cs" />
+    <Compile Include="Models\Notas_Fiscais_Servicos_Detalhes.cs" />
+    <Compile Include="Models\Notas_Fiscais_Servicos_Importadores.cs" />
+    <Compile Include="Models\Notas_Fiscais_Servicos_Processos.cs" />
+    <Compile Include="Models\Numerador_Importacao_Dados.cs" />
+    <Compile Include="Models\Numerador_Notas_Fiscais.cs" />
+    <Compile Include="Models\Numerarios_Processos.cs" />
+    <Compile Include="Models\Numerarios_Processos_backup.cs" />
+    <Compile Include="Models\Numerarios_Processos_old.cs" />
+    <Compile Include="Models\Numerarios_Processos_old2.cs" />
+    <Compile Include="Models\Observacoes_Processo_Financeiro.cs" />
+    <Compile Include="Models\Observacoes_Termo_Responsabilidade.cs" />
+    <Compile Include="Models\Observacoes_verso_TR.cs" />
+    <Compile Include="Models\Obs_Eventos.cs" />
+    <Compile Include="Models\Obs_Eventos_Ing.cs" />
+    <Compile Include="Models\Pagamento.cs" />
+    <Compile Include="Models\Pagamentos_Receber.cs" />
+    <Compile Include="Models\paramentros_contabilizatemp.cs" />
+    <Compile Include="Models\Parametro.cs" />
+    <Compile Include="Models\Parametros_Contabilizacao.cs" />
+    <Compile Include="Models\Parametros_Faturamento.cs" />
+    <Compile Include="Models\Parametros_NF_Servicos.cs" />
+    <Compile Include="Models\Parametros_Sol_Numerarios.cs" />
+    <Compile Include="Models\Patrimonio.cs" />
+    <Compile Include="Models\PG_PARC_VAR.cs" />
+    <Compile Include="Models\PG_PERC_VINC.cs" />
+    <Compile Include="Models\Plan1.cs" />
+    <Compile Include="Models\Planilha_BRASDRIL.cs" />
+    <Compile Include="Models\Planilha_BRASDRIL_Itens.cs" />
+    <Compile Include="Models\Planilha_Brasdril_Quinzenal_Financeiro.cs" />
+    <Compile Include="Models\Planilha_Brasdril_Quinzenal_Financeiro_Itens.cs" />
+    <Compile Include="Models\Planilha_BRASDRIL_Status.cs" />
+    <Compile Include="Models\PLANILHA_FINAL.cs" />
+    <Compile Include="Models\PLANILHA_FORMATO.cs" />
+    <Compile Include="Models\Planilha_Medicao_Honorarios.cs" />
+    <Compile Include="Models\Planilha_Medicao_Honorarios_Itens.cs" />
+    <Compile Include="Models\Planilha_PrestContasDespesas_Financeiro.cs" />
+    <Compile Include="Models\Planilha_PrestContasDespesas_Financeiro_Itens.cs" />
+    <Compile Include="Models\Planilha_PrestContas_Financeiro.cs" />
+    <Compile Include="Models\Planilha_PrestContas_Financeiro_Itens.cs" />
+    <Compile Include="Models\Planilha_Transocean.cs" />
+    <Compile Include="Models\Planilha_Transocean_Itens.cs" />
+    <Compile Include="Models\Planilha_Transocean_Status.cs" />
+    <Compile Include="Models\Plano_Contas.cs" />
+    <Compile Include="Models\Plataforma.cs" />
+    <Compile Include="Models\pre_documentos.cs" />
+    <Compile Include="Models\pre_followup.cs" />
+    <Compile Include="Models\pre_processos.cs" />
+    <Compile Include="Models\pre_relacao_processos.cs" />
+    <Compile Include="Models\Processo.cs" />
+    <Compile Include="Models\Processos1.cs" />
+    <Compile Include="Models\Processos_Abertos.cs" />
+    <Compile Include="Models\Processos_Adicoes.cs" />
+    <Compile Include="Models\Processos_ADICOES_ICMS_PIS_COFINS.cs" />
+    <Compile Include="Models\Processos_AFAT.cs" />
+    <Compile Include="Models\Processos_ALC.cs" />
+    <Compile Include="Models\Processos_Anexo.cs" />
+    <Compile Include="Models\Processos_Docs_Instrucao.cs" />
+    <Compile Include="Models\Processos_EDI_CIE01.cs" />
+    <Compile Include="Models\Processos_Emails.cs" />
+    <Compile Include="Models\Processos_Emails_Anexos.cs" />
+    <Compile Include="Models\Processos_Emails_Tipo_Anexos.cs" />
+    <Compile Include="Models\Processos_Extratos.cs" />
+    <Compile Include="Models\Processos_Impostos.cs" />
+    <Compile Include="Models\Processos_Impostos_Parametros.cs" />
+    <Compile Include="Models\Processos_Numerador.cs" />
+    <Compile Include="Models\Processos_registro_impostos.cs" />
+    <Compile Include="Models\Processos_REs.cs" />
+    <Compile Include="Models\Processos_Responsabilidades.cs" />
+    <Compile Include="Models\Processos_Taxas_Conversao.cs" />
+    <Compile Include="Models\Processos_Taxas_ConversaoDoDiaSeguinte.cs" />
+    <Compile Include="Models\PROCESSOS_TAXAS_CONVERSAO_CAMBIO_AMANHA.cs" />
+    <Compile Include="Models\Processos_Timeline.cs" />
+    <Compile Include="Models\Processos_Timeline_temp.cs" />
+    <Compile Include="Models\Processos_Tipo_Urgencia.cs" />
+    <Compile Include="Models\Processos_Visao_Geral.cs" />
+    <Compile Include="Models\Processos_Visao_Geral2.cs" />
+    <Compile Include="Models\Processou_imp_siscomex.cs" />
+    <Compile Include="Models\Procuradore.cs" />
+    <Compile Include="Models\produtoslogreve.cs" />
+    <Compile Include="Models\Produtosnew.cs" />
+    <Compile Include="Models\Proposta_de_acao.cs" />
+    <Compile Include="Models\Questionario_Alternativas.cs" />
+    <Compile Include="Models\Questionario_Controle.cs" />
+    <Compile Include="Models\Questionario_Perguntas.cs" />
+    <Compile Include="Models\Questionario_Questionario.cs" />
+    <Compile Include="Models\Questionario_Respostas.cs" />
+    <Compile Include="Models\Questionario_Senhas.cs" />
+    <Compile Include="Models\RAT.cs" />
+    <Compile Include="Models\RCRtemp.cs" />
+    <Compile Include="Models\Relatorio_Follows_KPI.cs" />
+    <Compile Include="Models\Repetro.cs" />
+    <Compile Include="Models\Repetro1.cs" />
+    <Compile Include="Models\Repetrodescnull.cs" />
+    <Compile Include="Models\RepetroLogUsuario.cs" />
+    <Compile Include="Models\RepetroMARINE.cs" />
+    <Compile Include="Models\RepetroTEMP.cs" />
+    <Compile Include="Models\Repetro_Ajustar.cs" />
+    <Compile Include="Models\Repetro_INCLUSAO_DIS.cs" />
+    <Compile Include="Models\REPETRO_PLANILHA_GERAL.cs" />
+    <Compile Include="Models\REPETRO_RTC.cs" />
+    <Compile Include="Models\REPETRO_RTC_D.cs" />
+    <Compile Include="Models\REPETRO_RTC_D1.cs" />
+    <Compile Include="Models\REPETRO_RTC_ITENS.cs" />
+    <Compile Include="Models\REPETRO_RTC_ITENS_D.cs" />
+    <Compile Include="Models\REPETRO_RTC_ITENS_D1.cs" />
+    <Compile Include="Models\Repetro_temp.cs" />
+    <Compile Include="Models\Repository\AcessoAcaoEspecificaRepository.cs" />
+    <Compile Include="Models\Repository\AcessoPaginaRepository.cs" />
+    <Compile Include="Models\Repository\AcessoPaginaGrupoRepository.cs" />
+    <Compile Include="Models\Responsaveis_por_Importador.cs" />
+    <Compile Include="Models\RH_Admissao.cs" />
+    <Compile Include="Models\RH_Cor.cs" />
+    <Compile Include="Models\RH_Desligamento.cs" />
+    <Compile Include="Models\RH_Empregados.cs" />
+    <Compile Include="Models\RH_Escolaridade.cs" />
+    <Compile Include="Models\RH_Formularios.cs" />
+    <Compile Include="Models\RH_Funcao.cs" />
+    <Compile Include="Models\RH_Nacionalidade.cs" />
+    <Compile Include="Models\RMBR.cs" />
+    <Compile Include="Models\Rotatividade_Funcionario.cs" />
+    <Compile Include="Models\RPAT.cs" />
+    <Compile Include="Models\RPRtemp.cs" />
+    <Compile Include="Models\SAC.cs" />
+    <Compile Include="Models\Sac_User.cs" />
+    <Compile Include="Models\Salarios_Minimos.cs" />
+    <Compile Include="Models\Saldos_diarios.cs" />
+    <Compile Include="Models\Satisfacao_Perguntas.cs" />
+    <Compile Include="Models\Satisfacao_Questionario.cs" />
+    <Compile Include="Models\Satisfacao_Respostas.cs" />
+    <Compile Include="Models\Satisfacao_Usuario.cs" />
+    <Compile Include="Models\Seadriil_Relatorio_temp.cs" />
+    <Compile Include="Models\Security\MSActionAuthorization.cs" />
+    <Compile Include="Models\Security\MSAutorizacaoAuthorizeAttribute.cs" />
+    <Compile Include="Models\Security\MSControllerAuthorization.cs" />
+    <Compile Include="Models\Security\NoCacheAttribute.cs" />
+    <Compile Include="Models\Setore.cs" />
+    <Compile Include="Models\Siscomex_Atualizacao_Maquinas.cs" />
+    <Compile Include="Models\Siscomex_Atualizacao_Tabelas.cs" />
+    <Compile Include="Models\Software.cs" />
+    <Compile Include="Models\Solicitacao_Cheques.cs" />
+    <Compile Include="Models\Solicitacao_Cheques_Itens.cs" />
+    <Compile Include="Models\Solicitacao_Cheques_Status.cs" />
+    <Compile Include="Models\Solicitacao_Tracla.cs" />
+    <Compile Include="Models\Solicitacao_Tracla_Itens.cs" />
+    <Compile Include="Models\Solicitacao_Tracla_Status.cs" />
+    <Compile Include="Models\Status_Patrimonio.cs" />
+    <Compile Include="Models\Sub_Tipo_Documentos.cs" />
+    <Compile Include="Models\Sub_Tipo_Documentos_Ing.cs" />
+    <Compile Include="Models\Sub_Tipo_Patrimonio.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Models\TAB_ALADI.cs" />
+    <Compile Include="Models\TAB_ATRIB_VALORACAO_NVE.cs" />
+    <Compile Include="Models\TAB_CONVERSAO_CAMBIO.cs" />
+    <Compile Include="Models\TAB_DOC_INSTRUCAO_DESPACHO.cs" />
+    <Compile Include="Models\TAB_FUND_LEGAL_PIS_COFINS.cs" />
+    <Compile Include="Models\TAB_INCOTERMS_VENDA.cs" />
+    <Compile Include="Models\TAB_INST_FINANC_INTERNACIONAL.cs" />
+    <Compile Include="Models\TAB_MODALID_PAGAMENTO.cs" />
+    <Compile Include="Models\TAB_MOEDA.cs" />
+    <Compile Include="Models\TAB_MOEDA_CONVERSAO.cs" />
+    <Compile Include="Models\TAB_MOT_ADMISSAO_TEMP.cs" />
+    <Compile Include="Models\TAB_MOT_SEM_COBERT_CAMBIAL.cs" />
+    <Compile Include="Models\TAB_NALADISH.cs" />
+    <Compile Include="Models\TAB_NCM.cs" />
+    <Compile Include="Models\TAB_NCM_ING.cs" />
+    <Compile Include="Models\TAB_PAIS.cs" />
+    <Compile Include="Models\TAB_PAISnovo.cs" />
+    <Compile Include="Models\TAB_RECINTO_SETORES_IMPORTACAO.cs" />
+    <Compile Include="Models\TAB_REC_ALFANDEGADO.cs" />
+    <Compile Include="Models\TAB_REGRAS_DSI_PIS_COFINS.cs" />
+    <Compile Include="Models\TAB_REG_TRIBUTARIO.cs" />
+    <Compile Include="Models\TAB_TIPO_DECLARACAO.cs" />
+    <Compile Include="Models\TAB_TIPO_DECLARACAO_Ing.cs" />
+    <Compile Include="Models\TAB_TP_ATO_LEGAL.cs" />
+    <Compile Include="Models\TAB_TP_EMBALAGEM.cs" />
+    <Compile Include="Models\TAB_TP_IMPORTADOR.cs" />
+    <Compile Include="Models\TAB_UF.cs" />
+    <Compile Include="Models\TAB_UF_ALIQUOTAS.cs" />
+    <Compile Include="Models\TAB_UNID_MEDIDA.cs" />
+    <Compile Include="Models\TAB_UNID_MEDIDA_ing.cs" />
+    <Compile Include="Models\TAB_URF.cs" />
+    <Compile Include="Models\TAB_VIA_TRANSPORTE.cs" />
+    <Compile Include="Models\TAB_VIA_TRANSPORTE_Ing.cs" />
+    <Compile Include="Models\TB_RCR_OBS_ESPECIFICA.cs" />
+    <Compile Include="Models\tempdetalhe.cs" />
+    <Compile Include="Models\Termos_De_Responsabilidade.cs" />
+    <Compile Include="Models\Tipos_Certificados.cs" />
+    <Compile Include="Models\Tipos_contratos.cs" />
+    <Compile Include="Models\Tipos_creditos.cs" />
+    <Compile Include="Models\Tipos_creditos_ing.cs" />
+    <Compile Include="Models\Tipos_Custos.cs" />
+    <Compile Include="Models\Tipos_custos_web.cs" />
+    <Compile Include="Models\Tipos_de_Cargas.cs" />
+    <Compile Include="Models\Tipos_de_Cargas_Ing.cs" />
+    <Compile Include="Models\Tipos_de_Notas_Fiscais.cs" />
+    <Compile Include="Models\Tipos_de_Processos.cs" />
+    <Compile Include="Models\Tipos_de_Processos_c_resp.cs" />
+    <Compile Include="Models\Tipos_de_Processos_Ing.cs" />
+    <Compile Include="Models\Tipos_Email_Aviso.cs" />
+    <Compile Include="Models\Tipos_Lancamento_Ccorrente.cs" />
+    <Compile Include="Models\Tipos_Locais_Inventario.cs" />
+    <Compile Include="Models\Tipos_Locais_Inventario_Ing.cs" />
+    <Compile Include="Models\Tipos_Movimentacao_Repetro.cs" />
+    <Compile Include="Models\Tipos_Movimentacao_Repetro_Ing.cs" />
+    <Compile Include="Models\Tipos_Movimentacao_Usuarios.cs" />
+    <Compile Include="Models\Tipos_NC.cs" />
+    <Compile Include="Models\Tipos_Numerario.cs" />
+    <Compile Include="Models\Tipos_Numerario_Ing.cs" />
+    <Compile Include="Models\Tipos_Numerario_Obrigatorio.cs" />
+    <Compile Include="Models\Tipos_Rateio.cs" />
+    <Compile Include="Models\Tipos_situacao_fiscal.cs" />
+    <Compile Include="Models\Tipos_situacao_fiscal_Ing.cs" />
+    <Compile Include="Models\Tipos_status_documentos.cs" />
+    <Compile Include="Models\Tipos_status_documentos_Ing.cs" />
+    <Compile Include="Models\Tipos_status_processos.cs" />
+    <Compile Include="Models\Tipos_status_processos_Ing.cs" />
+    <Compile Include="Models\Tipo_Documentos.cs" />
+    <Compile Include="Models\Tipo_Documentos_Ing.cs" />
+    <Compile Include="Models\Tipo_Doc_Carga.cs" />
+    <Compile Include="Models\Tipo_Doc_Carga_Ing.cs" />
+    <Compile Include="Models\Tipo_Doc_Chegada.cs" />
+    <Compile Include="Models\Tipo_Doc_Chegada_Ing.cs" />
+    <Compile Include="Models\Tipo_Patrimonio.cs" />
+    <Compile Include="Models\Tipo_Utilizacao.cs" />
+    <Compile Include="Models\Tipo_Utilizacao_Ing.cs" />
+    <Compile Include="Models\Tipo_Vinculacao.cs" />
+    <Compile Include="Models\Transmittal.cs" />
+    <Compile Include="Models\Transmittal_itens.cs" />
+    <Compile Include="Models\Transmittal_teste.cs" />
+    <Compile Include="Models\Transportadore.cs" />
+    <Compile Include="Models\Tratamento_Tributario_ICMS.cs" />
+    <Compile Include="Models\Tributacao_Item_Fatura.cs" />
+    <Compile Include="Models\USU.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\Repository\UsuarioRepository.cs" />
+    <Compile Include="Models\UsuariosCliente.cs" />
+    <Compile Include="Models\UsuariosGrupo.cs" />
+    <Compile Include="Models\UsuariosGrupoLocal.cs" />
+    <Compile Include="Models\UsuariosMenu.cs" />
+    <Compile Include="Models\UsuariosNET.cs" />
+    <Compile Include="Models\Usuarios_APEN.cs" />
+    <Compile Include="Models\usuarios_beneficio_repetro.cs" />
+    <Compile Include="Models\Usuarios_Log.cs" />
+    <Compile Include="Models\Usuarios_Resp_habilitados.cs" />
+    <Compile Include="Models\Usuarios_Resp_Habilitados_old.cs" />
+    <Compile Include="Models\Usuario_Follow_Aberto.cs" />
+    <Compile Include="Models\Util\MSFuncoes.cs" />
+    <Compile Include="Models\Util\VariaveisGlobais.cs" />
+    <Compile Include="Models\verifica_repetro.cs" />
+    <Compile Include="Models\via_tipo.cs" />
+    <Compile Include="Models\Voucher_Transocean.cs" />
+    <Compile Include="Models\Voucher_Transocean_Itens.cs" />
+    <Compile Include="Models\vRepetro_Itens_Entregues.cs" />
+    <Compile Include="Models\vRepetro_Itens_Entregues_seadrill.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AcessoGruposViewModel.cs" />
+    <Compile Include="ViewModels\AcrescimoFaturaViewModel.cs" />
+    <Compile Include="ViewModels\CabecalhoViewmodel.cs" />
+    <Compile Include="ViewModels\CartaGarantidorViewModel.cs" />
+    <Compile Include="ViewModels\ContratosFornecedoresFinanceiroViewModel.cs" />
+    <Compile Include="ViewModels\ControleDeTributoViewModel.cs" />
+    <Compile Include="ViewModels\DistribuicaoOperacionalViewModel.cs" />
+    <Compile Include="ViewModels\DocumentoParametrizadoStatusViewModel.cs" />
+    <Compile Include="ViewModels\DocumentosParametrizadoListViewModel.cs" />
+    <Compile Include="ViewModels\DocumentosParametrizadoViewModel.cs" />
+    <Compile Include="ViewModels\ExchangeViewModel.cs" />
+    <Compile Include="ViewModels\FornecedoresEmpresaViewModel.cs" />
+    <Compile Include="ViewModels\ImportadoresViewModel.cs" />
+    <Compile Include="ViewModels\ItensFaturaViewModel.cs" />
+    <Compile Include="ViewModels\OceanGraficoViewModel.cs" />
+    <Compile Include="ViewModels\ProcessosViewModel.cs" />
+    <Compile Include="ViewModels\RatProrrogacaoViewModel.cs" />
+    <Compile Include="ViewModels\SiscomexExportacao\enquadramento.cs" />
+    <Compile Include="ViewModels\EnscoGraficoViewModel.cs" />
+    <Compile Include="ViewModels\SiscomexExportacao\fabricante.cs" />
+    <Compile Include="ViewModels\FormularioDesunitizacaoViewModel.cs" />
+    <Compile Include="ViewModels\SiscomexExportacao\instrumento_comercial.cs" />
+    <Compile Include="ViewModels\SiscomexExportacao\item_mercadoria.cs" />
+    <Compile Include="ViewModels\LinhaViewModel.cs" />
+    <Compile Include="ViewModels\PreClassificacaoViewModel.cs" />
+    <Compile Include="ViewModels\PreDocumentosViewModel.cs" />
+    <Compile Include="ViewModels\PreFollowUpViewModel.cs" />
+    <Compile Include="ViewModels\PreProcessosEmailsViewModel.cs" />
+    <Compile Include="ViewModels\PreProcessoViewModel.cs" />
+    <Compile Include="ViewModels\RatViewModel.cs" />
+    <Compile Include="ViewModels\SiscomexExportacao\Registro_Exportacao.cs" />
+    <Compile Include="ViewModels\SiscomexExportacao\re_base.cs" />
+    <Compile Include="ViewModels\RpatViewModel.cs" />
+    <Compile Include="ViewModels\SiscomexExportacaoViewModel.cs" />
+    <Compile Include="ViewModels\UsuariosListViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Acesso.css" />
+    <Content Include="Content\bootstrap-responsive.css" />
+    <Content Include="Content\bootstrap-responsive.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\accessDenied.png" />
+    <Content Include="Content\images\banner01.jpg" />
+    <Content Include="Content\images\banner02.jpg" />
+    <Content Include="Content\images\banner03.jpg" />
+    <Content Include="Content\images\banner04.jpg" />
+    <Content Include="Content\images\banner05.jpg" />
+    <Content Include="Content\images\banner06.jpg" />
+    <Content Include="Content\images\banner06_01.jpg" />
+    <Content Include="Content\images\carregando.gif" />
+    <Content Include="Content\images\error.png" />
+    <Content Include="Content\images\fdo_input.gif" />
+    <Content Include="Content\images\fdo_textarea.jpg" />
+    <Content Include="Content\images\fnd_acesso.png" />
+    <Content Include="Content\images\glyphicons-halflings-white.png" />
+    <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\images\icon_mail.png" />
+    <Content Include="Content\images\login_fnd.jpg" />
+    <Content Include="Content\images\login_fundo.jpg" />
+    <Content Include="Content\images\logotipo.png" />
+    <Content Include="Content\images\logotipo_white.png" />
+    <Content Include="Content\images\logotipo_white_01.png" />
+    <Content Include="Content\images\success.png" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\Producao.pubxml" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\globalize.culture.pt-BR.js" />
+    <Content Include="Scripts\globalize.js" />
+    <Content Include="Scripts\jquery.corner.js" />
+    <Content Include="Scripts\jquery.maskMoney.js" />
+    <Content Include="Scripts\jquery.webcam.js" />
+    <Content Include="Scripts\jscam.swf" />
+    <Content Include="Scripts\jscam_canvas_only.swf" />
+    <Content Include="Scripts\methods_pt.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\msscript.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Scripts\jquery-migrate-1.1.1.js" />
+    <Content Include="Scripts\jquery-migrate-1.1.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.blockUI.min.js" />
+    <Content Include="Scripts\jquery.maskedinput-1.3.1.js" />
+    <Content Include="Scripts\jquery.maskedinput-1.3.1.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.2.1.debug.js" />
+    <Content Include="Scripts\knockout-2.2.1.js" />
+    <Content Include="Scripts\knockout.mapping-latest.debug.js" />
+    <Content Include="Scripts\knockout.mapping-latest.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\DocumentoParametrizado\Index.cshtml" />
+    <Content Include="Views\DocumentoParametrizado\Details.cshtml" />
+    <Content Include="Views\DocumentoParametrizado\Create.cshtml" />
+    <Content Include="Views\DocumentoParametrizado\Edit.cshtml" />
+    <Content Include="Views\DocumentoParametrizado\Delete.cshtml" />
+    <Content Include="Views\Shared\_MenuSuperior.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\DocumentoParametrizado\ViewDocumentos.cshtml" />
+    <Content Include="Views\Rpat\PrintReport.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Rpat\Index.cshtml" />
+    <Content Include="Views\Rpat\Create.cshtml" />
+    <Content Include="Views\Rat\Index.cshtml" />
+    <Content Include="Views\Rat\Create.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniao\Create.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniao\Index.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniaoParticipantes\Create.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniaoArquivo\Index.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniaoArquivo\Details.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniaoArquivo\FileUpload.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniaoArquivo\Edit.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniaoArquivo\Delete.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniaoParticipantes\Index.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniaoParticipantes\Delete.cshtml" />
+    <Content Include="Views\Rat\Edit.cshtml" />
+    <Content Include="Views\ControleDeAtasDeReuniao\Edit.cshtml" />
+    <Content Include="Views\PreProcesso\Index.cshtml" />
+    <Content Include="Views\PreProcesso\Create.cshtml" />
+    <Content Include="Views\PreProcesso\Edit.cshtml" />
+    <Content Include="Views\PreDocumentos\Index.cshtml" />
+    <Content Include="Views\PreDocumentos\Create.cshtml" />
+    <Content Include="Views\PreDocumentos\Edit.cshtml" />
+    <Content Include="Views\PreFollowUp\Index.cshtml" />
+    <Content Include="Views\PreFollowUp\Create.cshtml" />
+    <Content Include="Views\PreFollowUp\Edit.cshtml" />
+    <Content Include="Views\KPIEnsco\Index.cshtml" />
+    <Content Include="Views\KPIEnsco\Graficos.cshtml">
+      <BrowseToURL>~/KPIEnsco/CaboFrioAereoConsumoVere</BrowseToURL>
+    </Content>
+    <Content Include="Views\Shared\_SystemMessages.cshtml" />
+    <Content Include="Views\AcessoGrupos\Create.cshtml" />
+    <Content Include="Views\AcessoGrupos\Edit.cshtml" />
+    <Content Include="Views\AcessoGrupos\Delete.cshtml" />
+    <Content Include="Views\AcessoGrupos\Index.cshtml" />
+    <Content Include="Views\AcessoGrupos\_CreateOrEdit.cshtml" />
+    <Content Include="Views\PreProcessosEmails\Index.cshtml" />
+    <Content Include="Views\AcessoGrupos\EditPermisaoDeAcesso.cshtml" />
+    <Content Include="Views\PreProcessosEmails\MostraDetalhe.cshtml" />
+    <Content Include="Views\ExportacaoSeadrill\Index.cshtml" />
+    <Content Include="Views\PreProcesso\VisualizaPreProcesso.cshtml" />
+    <Content Include="Views\PreClassificacao\Index.cshtml" />
+    <Content Include="Views\PreClassificacao\IndexItens.cshtml" />
+    <Content Include="Views\PreClassificacao\EditItens.cshtml" />
+    <Content Include="Views\PreClassificacao\ConfirmarImportacao.cshtml" />
+    <Content Include="Views\FormularioDesunitizacao\Index.cshtml" />
+    <Content Include="Views\PreProcesso\GerarProcesso.cshtml" />
+    <Content Include="Views\RHFormulario\Index.cshtml" />
+    <Content Include="Views\RHFormulario\MostraFormulario.cshtml" />
+    <Content Include="Views\RHFormulario\Create.cshtml" />
+    <Content Include="Views\RHFormulario\Edit.cshtml" />
+    <Content Include="Views\RHFormulario\Delete.cshtml" />
+    <Content Include="Views\CartaGarantidor\Index.cshtml" />
+    <Content Include="Views\SiscomexExportacao\Index.cshtml" />
+    <Content Include="Views\ContratosFornecedoresFinanceiro\Create.cshtml" />
+    <Content Include="Views\ContratosFornecedoresFinanceiro\Edit.cshtml" />
+    <Content Include="Views\ContratosFornecedoresFinanceiro\Index.cshtml" />
+    <Content Include="Views\ContratosFornecedoresFinanceiroUpload\Create.cshtml" />
+    <Content Include="Views\ContratosFornecedoresFinanceiroUpload\Index.cshtml" />
+    <Content Include="Views\DistribuicaoOperacional\Index.cshtml" />
+    <Content Include="Views\Processos\Index.cshtml" />
+    <Content Include="Views\Processos\Create.cshtml" />
+    <Content Include="Views\Processos\Edit.cshtml" />
+    <Content Include="Views\Exchange\Index.cshtml" />
+    <Content Include="Views\DistribuicaoOperacional\ProcessosAndamento.cshtml" />
+    <Content Include="Views\Exchange\ViewEmailBody.cshtml" />
+    <Content Include="Views\ControleDeTributos\Index.cshtml" />
+    <Content Include="Views\ControleDeTributos\Details.cshtml" />
+    <Content Include="Views\ControleDeTributos\Create.cshtml" />
+    <Content Include="Views\ControleDeTributos\Edit.cshtml" />
+    <Content Include="Views\ControleDeTributos\Delete.cshtml" />
+    <Content Include="Views\Rat\Solicitacao.cshtml" />
+    <Content Include="Views\RatProrrogacao\Edit.cshtml" />
+    <Content Include="Views\RatProrrogacao\Index.cshtml" />
+    <Content Include="Views\RatProrrogacao\Create.cshtml" />
+    <Content Include="Views\Importadores\Index.cshtml" />
+    <Content Include="Views\Importadores\Create.cshtml" />
+    <Content Include="Views\RatRepetro\Index.cshtml" />
+    <Content Include="Views\RatRepetro\Edit.cshtml" />
+    <Content Include="Views\RatRepetro\Create.cshtml" />
+    <Content Include="Views\RHEmpregados\Index.cshtml" />
+    <Content Include="Views\RHEmpregados\Edit.cshtml" />
+    <Content Include="Views\RHEmpregados\Create.cshtml" />
+    <Content Include="Views\RHEmpregados\WebCam.cshtml" />
+    <Content Include="Views\RatRepetro\ViewDadosProcesso.cshtml" />
+    <Content Include="Views\KPIOceanRig\Index.cshtml" />
+    <Content Include="Views\KPIOceanRig\Graficos.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CartaGarantidor\rptCartaGarantidor.rdlc" />
+    <EmbeddedResource Include="Views\ContratosFornecedoresFinanceiro\rptContratosFornecedores.rdlc" />
+    <EmbeddedResource Include="Views\FormularioDesunitizacao\rptFormularioDesunitizacao.rdlc" />
+    <EmbeddedResource Include="Views\RatProrrogacao\rptRATProrrogacao.rdlc" />
+    <EmbeddedResource Include="Views\RatRepetro\rptRATRepetro.rdlc" />
+    <EmbeddedResource Include="Views\Rat\rptRAT1.rdlc" />
+    <EmbeddedResource Include="Views\Rat\rptRAT.rdlc" />
+    <EmbeddedResource Include="Views\Rpat\rptRPAT.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2962</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:47118/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

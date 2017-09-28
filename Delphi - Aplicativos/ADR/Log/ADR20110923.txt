@@ -1,0 +1,1052 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 23/09/2011 | 12:06:02 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 23/09/2011 | 12:06:11 | >>> FINALIZANDO O PROCESSAMENTO DO ADR
+ 23/09/2011 | 12:06:32 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 23/09/2011 | 12:06:32 | Arrumando Tributação...
+ 23/09/2011 | 12:06:32 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 23/09/2011 | 12:06:36 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 23/09/2011 | 12:06:36 | Verificando Processo: 00125/08
+ 23/09/2011 | 12:06:36 | CLIENTE: (148) AKER KVAERNER OIL & GAS DO BRASIL LTDA
+ 23/09/2011 | 12:06:36 | Verificando Processo: 04135/07
+ 23/09/2011 | 12:06:36 | CLIENTE: (46) ANDAIMES JIRAU LTDA
+ 23/09/2011 | 12:06:36 | Verificando Processo: 00118/09
+ 23/09/2011 | 12:06:36 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 23/09/2011 | 12:06:36 | Verificando Processo: 02481/04
+ 23/09/2011 | 12:06:36 | Verificando Processo: 09557/09
+ 23/09/2011 | 12:06:36 | CLIENTE: (187) BP ENERGY DO BRASIL LTDA.
+ 23/09/2011 | 12:06:36 | Verificando Processo: 00032/08
+ 23/09/2011 | 12:06:36 | Verificando Processo: 03098/08
+ 23/09/2011 | 12:06:37 | Verificando Processo: 03577/08
+ 23/09/2011 | 12:06:37 | Verificando Processo: 03581/08
+ 23/09/2011 | 12:06:37 | Verificando Processo: 04647/08
+ 23/09/2011 | 12:06:37 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 23/09/2011 | 12:06:37 | Verificando Processo: 00054/11
+ 23/09/2011 | 12:06:37 | CLIENTE: (238) BW OFFSHORE DO BRASIL LTDA
+ 23/09/2011 | 12:06:37 | Verificando Processo: 03532/09
+ 23/09/2011 | 12:06:37 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 23/09/2011 | 12:06:37 | Verificando Processo: 00906/09
+ 23/09/2011 | 12:06:37 | Verificando Processo: 01844/06
+ 23/09/2011 | 12:06:37 | Verificando Processo: 01958/05
+ 23/09/2011 | 12:06:37 | Verificando Processo: 02078/09
+ 23/09/2011 | 12:06:37 | Verificando Processo: 02260/06
+ 23/09/2011 | 12:06:37 | CLIENTE: (7) CGG DO BRASIL PARTICIPAÇÕES LTDA
+ 23/09/2011 | 12:06:37 | Verificando Processo: 01402/07
+ 23/09/2011 | 12:06:37 | Verificando Processo: 02180/07
+ 23/09/2011 | 12:06:37 | Verificando Processo: 02807/09
+ 23/09/2011 | 12:06:37 | Verificando Processo: 03612/08
+ 23/09/2011 | 12:06:37 | Verificando Processo: 04601/09
+ 23/09/2011 | 12:06:37 | Verificando Processo: 05927/09
+ 23/09/2011 | 12:06:37 | CLIENTE: (179) CHEVRON BRASIL LTDA.
+ 23/09/2011 | 12:06:37 | Verificando Processo: 03051/08
+ 23/09/2011 | 12:06:37 | CLIENTE: (234) CHEVRON BRASIL UPSTREAM FRADE LTDA
+ 23/09/2011 | 12:06:37 | Verificando Processo: 00145/09
+ 23/09/2011 | 12:06:37 | Verificando Processo: 01661/09
+ 23/09/2011 | 12:06:37 | Verificando Processo: 01697/09
+ 23/09/2011 | 12:06:37 | Verificando Processo: 01752/09
+ 23/09/2011 | 12:06:37 | Verificando Processo: 01778/09
+ 23/09/2011 | 12:06:37 | Verificando Processo: 01788/09
+ 23/09/2011 | 12:06:37 | Verificando Processo: 01792/09
+ 23/09/2011 | 12:06:38 | Verificando Processo: 01815/09
+ 23/09/2011 | 12:06:38 | Verificando Processo: 04876/08
+ 23/09/2011 | 12:06:38 | Verificando Processo: 06215/08
+ 23/09/2011 | 12:06:38 | CLIENTE: (216) CONSTRUTORA NORBERTO ODEBRECHT S/A
+ 23/09/2011 | 12:06:38 | Verificando Processo: 00455/09
+ 23/09/2011 | 12:06:38 | CLIENTE: (94) FRANKS INTERNATIONAL BRASIL LTDA
+ 23/09/2011 | 12:06:38 | Verificando Processo: 00002/06
+ 23/09/2011 | 12:06:38 | Verificando Processo: 02416/08
+ 23/09/2011 | 12:06:38 | Verificando Processo: 03599/07
+ 23/09/2011 | 12:06:38 | CLIENTE: (43) FUGRO BRASIL - SERVIÇOS SUBMARINOS E LEVANTAMENTOS LTDA
+ 23/09/2011 | 12:06:38 | Verificando Processo: 03859/07
+ 23/09/2011 | 12:06:38 | Verificando Processo: 05164/08
+ 23/09/2011 | 12:06:38 | Verificando Processo: 05295/08
+ 23/09/2011 | 12:06:38 | Verificando Processo: 05557/08
+ 23/09/2011 | 12:06:38 | CLIENTE: (110) FUGRO DO BRASIL LTDA
+ 23/09/2011 | 12:06:38 | Verificando Processo: 00796/08
+ 23/09/2011 | 12:06:38 | CLIENTE: (99) FUGRO GEOSOLUTIONS DO (BRASIL)  SERV DE LEVANTAMENTO LTDA
+ 23/09/2011 | 12:06:38 | Verificando Processo: 01213/07
+ 23/09/2011 | 12:06:38 | Verificando Processo: 01369/07
+ 23/09/2011 | 12:06:38 | CLIENTE: (31) HALLIBURTON PRODUTOS LTDA.
+ 23/09/2011 | 12:06:38 | Verificando Processo: 00809/04
+ 23/09/2011 | 12:06:38 | Verificando Processo: 01098/04
+ 23/09/2011 | 12:06:38 | Verificando Processo: 01100/04
+ 23/09/2011 | 12:06:38 | Verificando Processo: 01102/04
+ 23/09/2011 | 12:06:38 | Verificando Processo: 01104/04
+ 23/09/2011 | 12:06:38 | Verificando Processo: 01136/04
+ 23/09/2011 | 12:06:38 | Verificando Processo: 01162/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01177/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01248/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01328/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01331/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01338/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01339/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01385/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01389/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01417/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01419/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01453/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01514/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01526/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01537/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01539/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01602/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01604/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01611/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01617/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01634/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01640/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01642/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01717/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01720/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01730/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01731/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01744/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01771/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01806/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01815/04
+ 23/09/2011 | 12:06:39 | Verificando Processo: 01816/04
+ 23/09/2011 | 12:06:40 | Verificando Processo: 01821/04
+ 23/09/2011 | 12:06:40 | Verificando Processo: 01856/04
+ 23/09/2011 | 12:06:40 | Verificando Processo: 02040/04
+ 23/09/2011 | 12:06:40 | Verificando Processo: 02680/03
+ 23/09/2011 | 12:06:40 | CLIENTE: (6) J LOW BEER LTDA.
+ 23/09/2011 | 12:06:40 | Verificando Processo: 01068/03
+ 23/09/2011 | 12:06:40 | CLIENTE: (100) MARÉ ALTA DO BRASIL NAVEGAÇÃO LTDA
+ 23/09/2011 | 12:06:40 | Verificando Processo: 00198/06
+ 23/09/2011 | 12:06:40 | Verificando Processo: 02644/08
+ 23/09/2011 | 12:06:40 | Verificando Processo: 04364/09
+ 23/09/2011 | 12:06:40 | CLIENTE: (152) MODEC SERVIÇOS DE PETROLEO DO BRASIL LTDA
+ 23/09/2011 | 12:06:40 | Verificando Processo: 04123/08
+ 23/09/2011 | 12:06:40 | Verificando Processo: 12315/11
+ 23/09/2011 | 12:06:40 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12315_DI_1117949208.txt
+ 23/09/2011 | 12:06:40 | ERRO! Não houve envios.
+ 23/09/2011 | 12:06:40 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:06:40 | Gravando e-Mail automático...
+ 23/09/2011 | 12:06:40 | Verificando Processo: 12681/11
+ 23/09/2011 | 12:06:40 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12681_DI_1117785124.txt
+ 23/09/2011 | 12:06:40 | ERRO! Não houve envios.
+ 23/09/2011 | 12:06:40 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:06:40 | Gravando e-Mail automático...
+ 23/09/2011 | 12:06:40 | CLIENTE: (30) NOBLE DO BRASIL S/C LTDA
+ 23/09/2011 | 12:06:40 | Verificando Processo: 01073/03
+ 23/09/2011 | 12:06:40 | Verificando Processo: 01074/03
+ 23/09/2011 | 12:06:41 | Verificando Processo: 02950/03
+ 23/09/2011 | 12:06:41 | CLIENTE: (296) ODEBRECHT OLEO E GAS S/A
+ 23/09/2011 | 12:06:41 | Verificando Processo: 10817/11
+ 23/09/2011 | 12:06:41 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS10817_DI_1116659028.txt
+ 23/09/2011 | 12:06:41 | ERRO! Enviando Erro no Processo: 10817/11; Responsável: Alexandro Henrique da costa
+ 23/09/2011 | 12:06:41 | Gravando e-Mail automático...
+ 23/09/2011 | 12:06:41 | Verificando Processo: 11268/11
+ 23/09/2011 | 12:06:41 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS11268_DI_1116744866.txt
+ 23/09/2011 | 12:06:41 | ERRO! Enviando Erro no Processo: 11268/11; Responsável: Alexandro Henrique da costa
+ 23/09/2011 | 12:06:41 | Gravando e-Mail automático...
+ 23/09/2011 | 12:06:41 | Verificando Processo: 12111/11
+ 23/09/2011 | 12:06:41 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12111_DI_1118014334.txt
+ 23/09/2011 | 12:06:41 | ERRO! Não houve envios.
+ 23/09/2011 | 12:06:41 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:06:41 | Gravando e-Mail automático...
+ 23/09/2011 | 12:06:41 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 23/09/2011 | 12:06:42 | Verificando Processo: 03485/07
+ 23/09/2011 | 12:06:42 | Verificando Processo: 03751/09
+ 23/09/2011 | 12:06:42 | Verificando Processo: 05666/08
+ 23/09/2011 | 12:06:42 | Verificando Processo: 06316/08
+ 23/09/2011 | 12:06:42 | CLIENTE: (83) PETROBRAS - TRANSPORTE S.A. - TRANSPETRO
+ 23/09/2011 | 12:06:42 | Verificando Processo: 00888/05
+ 23/09/2011 | 12:06:42 | CLIENTE: (1) PGS INVESTIGAÇÃO PETROLIFERA LTDA
+ 23/09/2011 | 12:06:42 | Verificando Processo: 01412/05
+ 23/09/2011 | 12:06:42 | Verificando Processo: 02302/07
+ 23/09/2011 | 12:06:42 | Verificando Processo: 02303/07
+ 23/09/2011 | 12:06:42 | Verificando Processo: 03248/04
+ 23/09/2011 | 12:06:42 | Verificando Processo: 06337/08
+ 23/09/2011 | 12:06:42 | Verificando Processo: 06429/08
+ 23/09/2011 | 12:06:42 | CLIENTE: (155) PGS SUPORTE LOGISTICO E SERVIÇOS LTDA
+ 23/09/2011 | 12:06:42 | Verificando Processo: 04034/09
+ 23/09/2011 | 12:06:42 | Verificando Processo: 10791/11
+ 23/09/2011 | 12:06:42 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS10791_DI_1118037253.txt
+ 23/09/2011 | 12:06:42 | ERRO! Não houve envios.
+ 23/09/2011 | 12:06:42 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:06:42 | Gravando e-Mail automático...
+ 23/09/2011 | 12:06:42 | CLIENTE: (229) PPB DO BRASIL SERVIÇOS MARITIMOS LTDA
+ 23/09/2011 | 12:06:42 | Verificando Processo: 01370/09
+ 23/09/2011 | 12:06:42 | Verificando Processo: 02068/09
+ 23/09/2011 | 12:06:42 | Verificando Processo: 04997/09
+ 23/09/2011 | 12:06:42 | Verificando Processo: 05110/09
+ 23/09/2011 | 12:06:42 | Verificando Processo: 12557/11
+ 23/09/2011 | 12:06:43 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12557_DI_1118025654.txt
+ 23/09/2011 | 12:06:43 | ERRO! Não houve envios.
+ 23/09/2011 | 12:06:43 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:06:43 | Gravando e-Mail automático...
+ 23/09/2011 | 12:06:43 | CLIENTE: (226) SEADRILL SERVIÇOS DE PETROLEO LTDA
+ 23/09/2011 | 12:06:43 | Verificando Processo: 00845/09
+ 23/09/2011 | 12:06:43 | Verificando Processo: 02598/09
+ 23/09/2011 | 12:06:43 | Verificando Processo: 03406/09
+ 23/09/2011 | 12:06:43 | CLIENTE: (97) SEAPOS LTDA
+ 23/09/2011 | 12:06:43 | Verificando Processo: 01489/07
+ 23/09/2011 | 12:06:43 | Verificando Processo: 02721/03
+ 23/09/2011 | 12:06:43 | Verificando Processo: 02722/03
+ 23/09/2011 | 12:06:43 | Verificando Processo: 02770/09
+ 23/09/2011 | 12:06:43 | Verificando Processo: 03543/08
+ 23/09/2011 | 12:06:43 | Verificando Processo: 04413/09
+ 23/09/2011 | 12:06:43 | Verificando Processo: 05262/08
+ 23/09/2011 | 12:06:43 | Verificando Processo: 05789/08
+ 23/09/2011 | 12:06:43 | Verificando Processo: 06441/08
+ 23/09/2011 | 12:06:43 | CLIENTE: (182) SEAPOS LTDA.
+ 23/09/2011 | 12:06:43 | Verificando Processo: 01710/08
+ 23/09/2011 | 12:06:43 | Verificando Processo: 07811/09
+ 23/09/2011 | 12:06:43 | CLIENTE: (177) SHELL BRASIL LTDA.
+ 23/09/2011 | 12:06:43 | Verificando Processo: 03092/08
+ 23/09/2011 | 12:06:43 | CLIENTE: (208) STENA SERVICES BRAZIL LTDA.
+ 23/09/2011 | 12:06:43 | Verificando Processo: 01817/08
+ 23/09/2011 | 12:06:43 | Verificando Processo: 01850/09
+ 23/09/2011 | 12:06:43 | Verificando Processo: 02181/08
+ 23/09/2011 | 12:06:43 | Verificando Processo: 02425/08
+ 23/09/2011 | 12:06:43 | Verificando Processo: 02666/09
+ 23/09/2011 | 12:06:44 | CLIENTE: (191) TEEKAY PETROJARL PRODUÇÃO PETROLÍFERA DO BRASIL LTDA.
+ 23/09/2011 | 12:06:44 | Verificando Processo: 01411/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 02818/08
+ 23/09/2011 | 12:06:44 | Verificando Processo: 03774/08
+ 23/09/2011 | 12:06:44 | Verificando Processo: 04653/08
+ 23/09/2011 | 12:06:44 | CLIENTE: (2) TRANSOCEAN BRASIL LTDA
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00042/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00043/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00099/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00213/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00215/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00216/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00219/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00220/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00229/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00232/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00240/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00483/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00484/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00485/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00487/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00489/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00490/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00491/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00493/09
+ 23/09/2011 | 12:06:44 | Verificando Processo: 00494/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00531/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00587/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00588/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00600/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00604/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00605/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00606/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00607/08
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00687/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00754/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00779/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00780/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 00854/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01003/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01038/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01049/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01051/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01090/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01093/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01124/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01218/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01252/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01331/09
+ 23/09/2011 | 12:06:45 | Verificando Processo: 01351/09
+ 23/09/2011 | 12:06:46 | Verificando Processo: 01396/09
+ 23/09/2011 | 12:06:46 | Verificando Processo: 01397/09
+ 23/09/2011 | 12:06:46 | Verificando Processo: 01473/09
+ 23/09/2011 | 12:06:46 | Verificando Processo: 01489/09
+ 23/09/2011 | 12:06:46 | Verificando Processo: 01620/09
+ 23/09/2011 | 12:06:46 | Verificando Processo: 01629/09
+ 23/09/2011 | 12:06:46 | Verificando Processo: 01735/05
+ 23/09/2011 | 12:06:46 | Verificando Processo: 01828/09
+ 23/09/2011 | 12:06:46 | Verificando Processo: 01872/09
+ 23/09/2011 | 12:06:46 | Verificando Processo: 01998/04
+ 23/09/2011 | 12:06:47 | Verificando Processo: 02100/09
+ 23/09/2011 | 12:06:47 | Verificando Processo: 02123/09
+ 23/09/2011 | 12:06:47 | Verificando Processo: 02217/09
+ 23/09/2011 | 12:06:47 | Verificando Processo: 02444/09
+ 23/09/2011 | 12:06:47 | Verificando Processo: 02918/08
+ 23/09/2011 | 12:06:47 | Verificando Processo: 03139/09
+ 23/09/2011 | 12:06:47 | Verificando Processo: 03329/08
+ 23/09/2011 | 12:06:47 | Verificando Processo: 03374/09
+ 23/09/2011 | 12:06:48 | Verificando Processo: 03392/08
+ 23/09/2011 | 12:06:48 | Verificando Processo: 03446/09
+ 23/09/2011 | 12:06:48 | Verificando Processo: 03615/08
+ 23/09/2011 | 12:06:48 | Verificando Processo: 03694/08
+ 23/09/2011 | 12:06:48 | Verificando Processo: 03697/08
+ 23/09/2011 | 12:06:48 | Verificando Processo: 03710/09
+ 23/09/2011 | 12:06:48 | Verificando Processo: 03807/08
+ 23/09/2011 | 12:06:48 | Verificando Processo: 03865/09
+ 23/09/2011 | 12:06:48 | Verificando Processo: 03919/08
+ 23/09/2011 | 12:06:48 | Verificando Processo: 03924/08
+ 23/09/2011 | 12:06:49 | Verificando Processo: 04171/09
+ 23/09/2011 | 12:06:49 | Verificando Processo: 04352/08
+ 23/09/2011 | 12:06:49 | Verificando Processo: 04401/09
+ 23/09/2011 | 12:06:49 | Verificando Processo: 04418/08
+ 23/09/2011 | 12:06:49 | Verificando Processo: 04562/09
+ 23/09/2011 | 12:06:49 | Verificando Processo: 04632/08
+ 23/09/2011 | 12:06:49 | Verificando Processo: 04638/08
+ 23/09/2011 | 12:06:49 | Verificando Processo: 04644/08
+ 23/09/2011 | 12:06:49 | Verificando Processo: 04824/08
+ 23/09/2011 | 12:06:49 | Verificando Processo: 04946/08
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05103/08
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05177/09
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05190/09
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05277/08
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05278/08
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05281/08
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05342/08
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05438/09
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05523/08
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05524/08
+ 23/09/2011 | 12:06:50 | Verificando Processo: 05526/08
+ 23/09/2011 | 12:06:51 | Verificando Processo: 05528/08
+ 23/09/2011 | 12:06:51 | Verificando Processo: 05537/08
+ 23/09/2011 | 12:06:51 | Verificando Processo: 05720/08
+ 23/09/2011 | 12:06:51 | Verificando Processo: 05724/08
+ 23/09/2011 | 12:06:51 | Verificando Processo: 05726/08
+ 23/09/2011 | 12:06:51 | Verificando Processo: 05727/08
+ 23/09/2011 | 12:06:51 | Verificando Processo: 05836/09
+ 23/09/2011 | 12:06:51 | Verificando Processo: 05917/08
+ 23/09/2011 | 12:06:51 | Verificando Processo: 06087/08
+ 23/09/2011 | 12:06:51 | Verificando Processo: 06170/09
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06297/09
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06298/09
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06381/09
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06417/08
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06418/08
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06461/08
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06463/08
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06465/08
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06467/08
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06472/08
+ 23/09/2011 | 12:06:52 | Verificando Processo: 06490/08
+ 23/09/2011 | 12:06:53 | Verificando Processo: 06492/08
+ 23/09/2011 | 12:06:53 | Verificando Processo: 06584/09
+ 23/09/2011 | 12:06:53 | Verificando Processo: 06693/09
+ 23/09/2011 | 12:06:53 | Verificando Processo: 12331/11
+ 23/09/2011 | 12:06:53 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12331_DI_1116146314.txt
+ 23/09/2011 | 12:06:53 | ERRO! Enviando Erro no Processo: 12331/11; Responsável: Marcio Luiz Moreira
+ 23/09/2011 | 12:06:53 | Gravando e-Mail automático...
+ 23/09/2011 | 12:06:53 | CLIENTE: (354) UTEC SURVEY DO BRASIL LTDA.
+ 23/09/2011 | 12:06:53 | Verificando Processo: 11830/11
+ 23/09/2011 | 12:06:53 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS11830_DI_1100292540.txt
+ 23/09/2011 | 12:06:53 | ERRO! Enviando Erro no Processo: 11830/11; Responsável: Leonardo Camargo
+ 23/09/2011 | 12:06:53 | Gravando e-Mail automático...
+ 23/09/2011 | 12:06:53 | >>> FINALIZANDO O PROCESSAMENTO DO ADR
+ 23/09/2011 | 12:23:52 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 23/09/2011 | 12:23:53 | Arrumando Tributação...
+ 23/09/2011 | 12:23:53 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 23/09/2011 | 12:23:55 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 23/09/2011 | 12:23:56 | Verificando Processo: 00125/08
+ 23/09/2011 | 12:23:56 | CLIENTE: (148) AKER KVAERNER OIL & GAS DO BRASIL LTDA
+ 23/09/2011 | 12:23:56 | Verificando Processo: 04135/07
+ 23/09/2011 | 12:23:56 | CLIENTE: (46) ANDAIMES JIRAU LTDA
+ 23/09/2011 | 12:23:56 | Verificando Processo: 00118/09
+ 23/09/2011 | 12:23:56 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 23/09/2011 | 12:23:56 | Verificando Processo: 02481/04
+ 23/09/2011 | 12:23:56 | Verificando Processo: 09557/09
+ 23/09/2011 | 12:23:56 | CLIENTE: (86) ASTROMARITIMA NAVEGAÇÃO S/A
+ 23/09/2011 | 12:23:56 | Verificando Processo: 12146/11
+ 23/09/2011 | 12:23:57 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12146_DI_1118039612.txt
+ 23/09/2011 | 12:23:57 | ERRO! Não houve envios.
+ 23/09/2011 | 12:23:57 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:23:57 | Gravando e-Mail automático...
+ 23/09/2011 | 12:23:57 | CLIENTE: (187) BP ENERGY DO BRASIL LTDA.
+ 23/09/2011 | 12:23:57 | Verificando Processo: 00032/08
+ 23/09/2011 | 12:23:57 | Verificando Processo: 03098/08
+ 23/09/2011 | 12:23:57 | Verificando Processo: 03577/08
+ 23/09/2011 | 12:23:57 | Verificando Processo: 03581/08
+ 23/09/2011 | 12:23:57 | Verificando Processo: 04647/08
+ 23/09/2011 | 12:23:57 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 23/09/2011 | 12:23:57 | Verificando Processo: 00054/11
+ 23/09/2011 | 12:23:57 | CLIENTE: (238) BW OFFSHORE DO BRASIL LTDA
+ 23/09/2011 | 12:23:57 | Verificando Processo: 03532/09
+ 23/09/2011 | 12:23:57 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 23/09/2011 | 12:23:57 | Verificando Processo: 00906/09
+ 23/09/2011 | 12:23:57 | Verificando Processo: 01844/06
+ 23/09/2011 | 12:23:57 | Verificando Processo: 01958/05
+ 23/09/2011 | 12:23:57 | Verificando Processo: 02078/09
+ 23/09/2011 | 12:23:57 | Verificando Processo: 02260/06
+ 23/09/2011 | 12:23:57 | CLIENTE: (7) CGG DO BRASIL PARTICIPAÇÕES LTDA
+ 23/09/2011 | 12:23:57 | Verificando Processo: 01402/07
+ 23/09/2011 | 12:23:57 | Verificando Processo: 02180/07
+ 23/09/2011 | 12:23:57 | Verificando Processo: 02807/09
+ 23/09/2011 | 12:23:57 | Verificando Processo: 03612/08
+ 23/09/2011 | 12:23:57 | Verificando Processo: 04601/09
+ 23/09/2011 | 12:23:57 | Verificando Processo: 05927/09
+ 23/09/2011 | 12:23:57 | CLIENTE: (179) CHEVRON BRASIL LTDA.
+ 23/09/2011 | 12:23:57 | Verificando Processo: 03051/08
+ 23/09/2011 | 12:23:57 | CLIENTE: (234) CHEVRON BRASIL UPSTREAM FRADE LTDA
+ 23/09/2011 | 12:23:58 | Verificando Processo: 00145/09
+ 23/09/2011 | 12:23:58 | Verificando Processo: 01661/09
+ 23/09/2011 | 12:23:58 | Verificando Processo: 01697/09
+ 23/09/2011 | 12:23:58 | Verificando Processo: 01752/09
+ 23/09/2011 | 12:23:58 | Verificando Processo: 01778/09
+ 23/09/2011 | 12:23:58 | Verificando Processo: 01788/09
+ 23/09/2011 | 12:23:58 | Verificando Processo: 01792/09
+ 23/09/2011 | 12:23:58 | Verificando Processo: 01815/09
+ 23/09/2011 | 12:23:58 | Verificando Processo: 04876/08
+ 23/09/2011 | 12:23:58 | Verificando Processo: 06215/08
+ 23/09/2011 | 12:23:58 | CLIENTE: (216) CONSTRUTORA NORBERTO ODEBRECHT S/A
+ 23/09/2011 | 12:23:58 | Verificando Processo: 00455/09
+ 23/09/2011 | 12:23:58 | CLIENTE: (94) FRANKS INTERNATIONAL BRASIL LTDA
+ 23/09/2011 | 12:23:58 | Verificando Processo: 00002/06
+ 23/09/2011 | 12:23:58 | Verificando Processo: 02416/08
+ 23/09/2011 | 12:23:58 | Verificando Processo: 03599/07
+ 23/09/2011 | 12:23:58 | CLIENTE: (43) FUGRO BRASIL - SERVIÇOS SUBMARINOS E LEVANTAMENTOS LTDA
+ 23/09/2011 | 12:23:58 | Verificando Processo: 03859/07
+ 23/09/2011 | 12:23:58 | Verificando Processo: 05164/08
+ 23/09/2011 | 12:23:58 | Verificando Processo: 05295/08
+ 23/09/2011 | 12:23:58 | Verificando Processo: 05557/08
+ 23/09/2011 | 12:23:58 | CLIENTE: (110) FUGRO DO BRASIL LTDA
+ 23/09/2011 | 12:23:58 | Verificando Processo: 00796/08
+ 23/09/2011 | 12:23:58 | CLIENTE: (99) FUGRO GEOSOLUTIONS DO (BRASIL)  SERV DE LEVANTAMENTO LTDA
+ 23/09/2011 | 12:23:58 | Verificando Processo: 01213/07
+ 23/09/2011 | 12:23:58 | Verificando Processo: 01369/07
+ 23/09/2011 | 12:23:59 | CLIENTE: (31) HALLIBURTON PRODUTOS LTDA.
+ 23/09/2011 | 12:23:59 | Verificando Processo: 00809/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01098/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01100/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01102/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01104/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01136/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01162/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01177/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01248/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01328/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01331/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01338/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01339/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01385/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01389/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01417/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01419/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01453/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01514/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01526/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01537/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01539/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01602/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01604/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01611/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01617/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01634/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01640/04
+ 23/09/2011 | 12:23:59 | Verificando Processo: 01642/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01717/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01720/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01730/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01731/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01744/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01771/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01806/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01815/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01816/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01821/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01856/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 02040/04
+ 23/09/2011 | 12:24:00 | Verificando Processo: 02680/03
+ 23/09/2011 | 12:24:00 | CLIENTE: (6) J LOW BEER LTDA.
+ 23/09/2011 | 12:24:00 | Verificando Processo: 01068/03
+ 23/09/2011 | 12:24:00 | CLIENTE: (100) MARÉ ALTA DO BRASIL NAVEGAÇÃO LTDA
+ 23/09/2011 | 12:24:00 | Verificando Processo: 00198/06
+ 23/09/2011 | 12:24:00 | Verificando Processo: 02644/08
+ 23/09/2011 | 12:24:00 | Verificando Processo: 04364/09
+ 23/09/2011 | 12:24:00 | CLIENTE: (152) MODEC SERVIÇOS DE PETROLEO DO BRASIL LTDA
+ 23/09/2011 | 12:24:00 | Verificando Processo: 04123/08
+ 23/09/2011 | 12:24:00 | Verificando Processo: 12315/11
+ 23/09/2011 | 12:24:00 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12315_DI_1117949208.txt
+ 23/09/2011 | 12:24:00 | Enviando confirmação do registro da DI do Processo: 12315/11; Responsável: Diego dos Santos Aguiar
+ 23/09/2011 | 12:24:00 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:00 | Não foram encontrados contatos da empresa.
+ 23/09/2011 | 12:24:00 | Enviando e-mail de aviso para o setor Operacional...
+ 23/09/2011 | 12:24:00 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:00 | Verificando Processo: 12681/11
+ 23/09/2011 | 12:24:01 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12681_DI_1117785124.txt
+ 23/09/2011 | 12:24:01 | ERRO! Não houve envios.
+ 23/09/2011 | 12:24:01 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:24:01 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:01 | CLIENTE: (30) NOBLE DO BRASIL S/C LTDA
+ 23/09/2011 | 12:24:01 | Verificando Processo: 01073/03
+ 23/09/2011 | 12:24:01 | Verificando Processo: 01074/03
+ 23/09/2011 | 12:24:01 | Verificando Processo: 02950/03
+ 23/09/2011 | 12:24:01 | CLIENTE: (296) ODEBRECHT OLEO E GAS S/A
+ 23/09/2011 | 12:24:01 | Verificando Processo: 10817/11
+ 23/09/2011 | 12:24:01 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS10817_DI_1116659028.txt
+ 23/09/2011 | 12:24:01 | ERRO! Enviando Erro no Processo: 10817/11; Responsável: Alexandro Henrique da costa
+ 23/09/2011 | 12:24:01 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:01 | Verificando Processo: 11268/11
+ 23/09/2011 | 12:24:01 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS11268_DI_1116744866.txt
+ 23/09/2011 | 12:24:01 | ERRO! Enviando Erro no Processo: 11268/11; Responsável: Alexandro Henrique da costa
+ 23/09/2011 | 12:24:01 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:01 | Verificando Processo: 12111/11
+ 23/09/2011 | 12:24:02 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12111_DI_1118014334.txt
+ 23/09/2011 | 12:24:02 | ERRO! Não houve envios.
+ 23/09/2011 | 12:24:02 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:24:02 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:02 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 23/09/2011 | 12:24:02 | Verificando Processo: 03485/07
+ 23/09/2011 | 12:24:02 | Verificando Processo: 03751/09
+ 23/09/2011 | 12:24:02 | Verificando Processo: 05666/08
+ 23/09/2011 | 12:24:02 | Verificando Processo: 06316/08
+ 23/09/2011 | 12:24:02 | CLIENTE: (83) PETROBRAS - TRANSPORTE S.A. - TRANSPETRO
+ 23/09/2011 | 12:24:02 | Verificando Processo: 00888/05
+ 23/09/2011 | 12:24:02 | CLIENTE: (1) PGS INVESTIGAÇÃO PETROLIFERA LTDA
+ 23/09/2011 | 12:24:02 | Verificando Processo: 01412/05
+ 23/09/2011 | 12:24:02 | Verificando Processo: 02302/07
+ 23/09/2011 | 12:24:02 | Verificando Processo: 02303/07
+ 23/09/2011 | 12:24:02 | Verificando Processo: 03248/04
+ 23/09/2011 | 12:24:02 | Verificando Processo: 06337/08
+ 23/09/2011 | 12:24:02 | Verificando Processo: 06429/08
+ 23/09/2011 | 12:24:02 | CLIENTE: (155) PGS SUPORTE LOGISTICO E SERVIÇOS LTDA
+ 23/09/2011 | 12:24:02 | Verificando Processo: 04034/09
+ 23/09/2011 | 12:24:02 | Verificando Processo: 10791/11
+ 23/09/2011 | 12:24:02 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS10791_DI_1118037253.txt
+ 23/09/2011 | 12:24:02 | ERRO! Não houve envios.
+ 23/09/2011 | 12:24:02 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:24:02 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:03 | CLIENTE: (229) PPB DO BRASIL SERVIÇOS MARITIMOS LTDA
+ 23/09/2011 | 12:24:03 | Verificando Processo: 01370/09
+ 23/09/2011 | 12:24:03 | Verificando Processo: 02068/09
+ 23/09/2011 | 12:24:03 | Verificando Processo: 04997/09
+ 23/09/2011 | 12:24:03 | Verificando Processo: 05110/09
+ 23/09/2011 | 12:24:03 | Verificando Processo: 12557/11
+ 23/09/2011 | 12:24:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12557_DI_1118025654.txt
+ 23/09/2011 | 12:24:03 | ERRO! Não houve envios.
+ 23/09/2011 | 12:24:03 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:24:03 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:03 | CLIENTE: (226) SEADRILL SERVIÇOS DE PETROLEO LTDA
+ 23/09/2011 | 12:24:03 | Verificando Processo: 00845/09
+ 23/09/2011 | 12:24:03 | Verificando Processo: 02598/09
+ 23/09/2011 | 12:24:03 | Verificando Processo: 03406/09
+ 23/09/2011 | 12:24:03 | CLIENTE: (97) SEAPOS LTDA
+ 23/09/2011 | 12:24:03 | Verificando Processo: 01489/07
+ 23/09/2011 | 12:24:03 | Verificando Processo: 02721/03
+ 23/09/2011 | 12:24:03 | Verificando Processo: 02722/03
+ 23/09/2011 | 12:24:03 | Verificando Processo: 02770/09
+ 23/09/2011 | 12:24:03 | Verificando Processo: 03543/08
+ 23/09/2011 | 12:24:03 | Verificando Processo: 04413/09
+ 23/09/2011 | 12:24:03 | Verificando Processo: 05262/08
+ 23/09/2011 | 12:24:03 | Verificando Processo: 05789/08
+ 23/09/2011 | 12:24:03 | Verificando Processo: 06441/08
+ 23/09/2011 | 12:24:03 | CLIENTE: (182) SEAPOS LTDA.
+ 23/09/2011 | 12:24:03 | Verificando Processo: 01710/08
+ 23/09/2011 | 12:24:04 | Verificando Processo: 07811/09
+ 23/09/2011 | 12:24:04 | CLIENTE: (177) SHELL BRASIL LTDA.
+ 23/09/2011 | 12:24:04 | Verificando Processo: 03092/08
+ 23/09/2011 | 12:24:04 | CLIENTE: (208) STENA SERVICES BRAZIL LTDA.
+ 23/09/2011 | 12:24:04 | Verificando Processo: 01817/08
+ 23/09/2011 | 12:24:04 | Verificando Processo: 01850/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 02181/08
+ 23/09/2011 | 12:24:04 | Verificando Processo: 02425/08
+ 23/09/2011 | 12:24:04 | Verificando Processo: 02666/09
+ 23/09/2011 | 12:24:04 | CLIENTE: (191) TEEKAY PETROJARL PRODUÇÃO PETROLÍFERA DO BRASIL LTDA.
+ 23/09/2011 | 12:24:04 | Verificando Processo: 01411/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 02818/08
+ 23/09/2011 | 12:24:04 | Verificando Processo: 03774/08
+ 23/09/2011 | 12:24:04 | Verificando Processo: 04653/08
+ 23/09/2011 | 12:24:04 | CLIENTE: (2) TRANSOCEAN BRASIL LTDA
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00042/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00043/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00099/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00213/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00215/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00216/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00219/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00220/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00229/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00232/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00240/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00483/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00484/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00485/09
+ 23/09/2011 | 12:24:04 | Verificando Processo: 00487/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00489/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00490/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00491/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00493/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00494/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00531/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00587/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00588/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00600/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00604/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00605/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00606/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00607/08
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00687/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00754/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00779/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00780/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 00854/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01003/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01038/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01049/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01051/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01090/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01093/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01124/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01218/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01252/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01331/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01351/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01396/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01397/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01473/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01489/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01620/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01629/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01735/05
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01828/09
+ 23/09/2011 | 12:24:05 | Verificando Processo: 01872/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 01998/04
+ 23/09/2011 | 12:24:06 | Verificando Processo: 02100/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 02123/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 02217/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 02444/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 02918/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03139/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03329/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03374/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03392/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03446/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03615/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03694/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03697/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03710/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03807/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03865/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03919/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 03924/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 04171/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 04352/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 04401/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 04418/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 04562/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 04632/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 04638/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 04644/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 04824/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 04946/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 05103/08
+ 23/09/2011 | 12:24:06 | Verificando Processo: 05177/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 05190/09
+ 23/09/2011 | 12:24:06 | Verificando Processo: 05277/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05278/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05281/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05342/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05438/09
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05523/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05524/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05526/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05528/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05537/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05720/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05724/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05726/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05727/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05836/09
+ 23/09/2011 | 12:24:07 | Verificando Processo: 05917/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 06087/08
+ 23/09/2011 | 12:24:07 | Verificando Processo: 06170/09
+ 23/09/2011 | 12:24:07 | Verificando Processo: 06297/09
+ 23/09/2011 | 12:24:07 | Verificando Processo: 06298/09
+ 23/09/2011 | 12:24:07 | Verificando Processo: 06381/09
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06417/08
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06418/08
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06461/08
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06463/08
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06465/08
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06467/08
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06472/08
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06490/08
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06492/08
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06584/09
+ 23/09/2011 | 12:24:08 | Verificando Processo: 06693/09
+ 23/09/2011 | 12:24:08 | Verificando Processo: 12331/11
+ 23/09/2011 | 12:24:08 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12331_DI_1116146314.txt
+ 23/09/2011 | 12:24:08 | ERRO! Enviando Erro no Processo: 12331/11; Responsável: Marcio Luiz Moreira
+ 23/09/2011 | 12:24:08 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:08 | CLIENTE: (354) UTEC SURVEY DO BRASIL LTDA.
+ 23/09/2011 | 12:24:08 | Verificando Processo: 11830/11
+ 23/09/2011 | 12:24:08 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS11830_DI_1100292540.txt
+ 23/09/2011 | 12:24:08 | ERRO! Enviando Erro no Processo: 11830/11; Responsável: Leonardo Camargo
+ 23/09/2011 | 12:24:08 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:08 | >>> FINALIZANDO O PROCESSAMENTO DO ADR
+ 23/09/2011 | 12:24:15 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 23/09/2011 | 12:24:16 | Arrumando Tributação...
+ 23/09/2011 | 12:24:16 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 23/09/2011 | 12:24:19 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 23/09/2011 | 12:24:19 | Verificando Processo: 00125/08
+ 23/09/2011 | 12:24:19 | CLIENTE: (148) AKER KVAERNER OIL & GAS DO BRASIL LTDA
+ 23/09/2011 | 12:24:19 | Verificando Processo: 04135/07
+ 23/09/2011 | 12:24:19 | CLIENTE: (46) ANDAIMES JIRAU LTDA
+ 23/09/2011 | 12:24:19 | Verificando Processo: 00118/09
+ 23/09/2011 | 12:24:20 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 23/09/2011 | 12:24:20 | Verificando Processo: 02481/04
+ 23/09/2011 | 12:24:20 | Verificando Processo: 09557/09
+ 23/09/2011 | 12:24:20 | CLIENTE: (86) ASTROMARITIMA NAVEGAÇÃO S/A
+ 23/09/2011 | 12:24:20 | Verificando Processo: 12146/11
+ 23/09/2011 | 12:24:21 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12146_DI_1118039612.txt
+ 23/09/2011 | 12:24:21 | ERRO! Não houve envios.
+ 23/09/2011 | 12:24:21 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:24:21 | Gravando e-Mail automático...
+ 23/09/2011 | 12:24:21 | CLIENTE: (187) BP ENERGY DO BRASIL LTDA.
+ 23/09/2011 | 12:24:21 | Verificando Processo: 00032/08
+ 23/09/2011 | 12:24:21 | Verificando Processo: 03098/08
+ 23/09/2011 | 12:24:21 | Verificando Processo: 03577/08
+ 23/09/2011 | 12:24:21 | Verificando Processo: 03581/08
+ 23/09/2011 | 12:24:22 | Verificando Processo: 04647/08
+ 23/09/2011 | 12:24:22 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 23/09/2011 | 12:24:22 | Verificando Processo: 00054/11
+ 23/09/2011 | 12:24:22 | CLIENTE: (238) BW OFFSHORE DO BRASIL LTDA
+ 23/09/2011 | 12:24:22 | Verificando Processo: 03532/09
+ 23/09/2011 | 12:24:22 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 23/09/2011 | 12:24:22 | Verificando Processo: 00906/09
+ 23/09/2011 | 12:24:22 | Verificando Processo: 01844/06
+ 23/09/2011 | 12:24:22 | Verificando Processo: 01958/05
+ 23/09/2011 | 12:24:23 | Verificando Processo: 02078/09
+ 23/09/2011 | 12:24:23 | Verificando Processo: 02260/06
+ 23/09/2011 | 12:24:23 | CLIENTE: (7) CGG DO BRASIL PARTICIPAÇÕES LTDA
+ 23/09/2011 | 12:24:23 | Verificando Processo: 01402/07
+ 23/09/2011 | 12:24:23 | Verificando Processo: 02180/07
+ 23/09/2011 | 12:24:24 | Verificando Processo: 02807/09
+ 23/09/2011 | 12:24:24 | Verificando Processo: 03612/08
+ 23/09/2011 | 12:24:24 | Verificando Processo: 04601/09
+ 23/09/2011 | 12:24:24 | Verificando Processo: 05927/09
+ 23/09/2011 | 12:24:24 | CLIENTE: (179) CHEVRON BRASIL LTDA.
+ 23/09/2011 | 12:24:24 | Verificando Processo: 03051/08
+ 23/09/2011 | 12:24:24 | CLIENTE: (234) CHEVRON BRASIL UPSTREAM FRADE LTDA
+ 23/09/2011 | 12:27:56 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 23/09/2011 | 12:27:56 | Arrumando Tributação...
+ 23/09/2011 | 12:27:57 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 23/09/2011 | 12:28:01 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 23/09/2011 | 12:28:01 | Verificando Processo: 00125/08
+ 23/09/2011 | 12:28:01 | CLIENTE: (148) AKER KVAERNER OIL & GAS DO BRASIL LTDA
+ 23/09/2011 | 12:28:01 | Verificando Processo: 04135/07
+ 23/09/2011 | 12:28:01 | CLIENTE: (46) ANDAIMES JIRAU LTDA
+ 23/09/2011 | 12:28:01 | Verificando Processo: 00118/09
+ 23/09/2011 | 12:28:01 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 23/09/2011 | 12:28:01 | Verificando Processo: 02481/04
+ 23/09/2011 | 12:28:01 | Verificando Processo: 09557/09
+ 23/09/2011 | 12:28:01 | CLIENTE: (86) ASTROMARITIMA NAVEGAÇÃO S/A
+ 23/09/2011 | 12:28:01 | Verificando Processo: 12146/11
+ 23/09/2011 | 12:28:01 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12146_DI_1118039612.txt
+ 23/09/2011 | 12:28:01 | ERRO! Não houve envios.
+ 23/09/2011 | 12:28:01 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:28:01 | Gravando e-Mail automático...
+ 23/09/2011 | 12:28:01 | CLIENTE: (187) BP ENERGY DO BRASIL LTDA.
+ 23/09/2011 | 12:28:01 | Verificando Processo: 00032/08
+ 23/09/2011 | 12:28:01 | Verificando Processo: 03098/08
+ 23/09/2011 | 12:28:01 | Verificando Processo: 03577/08
+ 23/09/2011 | 12:28:01 | Verificando Processo: 03581/08
+ 23/09/2011 | 12:28:01 | Verificando Processo: 04647/08
+ 23/09/2011 | 12:28:01 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 23/09/2011 | 12:28:01 | Verificando Processo: 00054/11
+ 23/09/2011 | 12:28:01 | CLIENTE: (238) BW OFFSHORE DO BRASIL LTDA
+ 23/09/2011 | 12:28:01 | Verificando Processo: 03532/09
+ 23/09/2011 | 12:28:01 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 23/09/2011 | 12:28:01 | Verificando Processo: 00906/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01844/06
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01958/05
+ 23/09/2011 | 12:28:02 | Verificando Processo: 02078/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 02260/06
+ 23/09/2011 | 12:28:02 | CLIENTE: (7) CGG DO BRASIL PARTICIPAÇÕES LTDA
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01402/07
+ 23/09/2011 | 12:28:02 | Verificando Processo: 02180/07
+ 23/09/2011 | 12:28:02 | Verificando Processo: 02807/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 03612/08
+ 23/09/2011 | 12:28:02 | Verificando Processo: 04601/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 05927/09
+ 23/09/2011 | 12:28:02 | CLIENTE: (179) CHEVRON BRASIL LTDA.
+ 23/09/2011 | 12:28:02 | Verificando Processo: 03051/08
+ 23/09/2011 | 12:28:02 | CLIENTE: (234) CHEVRON BRASIL UPSTREAM FRADE LTDA
+ 23/09/2011 | 12:28:02 | Verificando Processo: 00145/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01661/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01697/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01752/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01778/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01788/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01792/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01815/09
+ 23/09/2011 | 12:28:02 | Verificando Processo: 04876/08
+ 23/09/2011 | 12:28:02 | Verificando Processo: 06215/08
+ 23/09/2011 | 12:28:02 | CLIENTE: (216) CONSTRUTORA NORBERTO ODEBRECHT S/A
+ 23/09/2011 | 12:28:02 | Verificando Processo: 00455/09
+ 23/09/2011 | 12:28:02 | CLIENTE: (94) FRANKS INTERNATIONAL BRASIL LTDA
+ 23/09/2011 | 12:28:02 | Verificando Processo: 00002/06
+ 23/09/2011 | 12:28:02 | Verificando Processo: 02416/08
+ 23/09/2011 | 12:28:02 | Verificando Processo: 03599/07
+ 23/09/2011 | 12:28:02 | CLIENTE: (43) FUGRO BRASIL - SERVIÇOS SUBMARINOS E LEVANTAMENTOS LTDA
+ 23/09/2011 | 12:28:02 | Verificando Processo: 03859/07
+ 23/09/2011 | 12:28:02 | Verificando Processo: 05164/08
+ 23/09/2011 | 12:28:02 | Verificando Processo: 05295/08
+ 23/09/2011 | 12:28:02 | Verificando Processo: 05557/08
+ 23/09/2011 | 12:28:02 | CLIENTE: (110) FUGRO DO BRASIL LTDA
+ 23/09/2011 | 12:28:02 | Verificando Processo: 00796/08
+ 23/09/2011 | 12:28:02 | CLIENTE: (99) FUGRO GEOSOLUTIONS DO (BRASIL)  SERV DE LEVANTAMENTO LTDA
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01213/07
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01369/07
+ 23/09/2011 | 12:28:02 | CLIENTE: (31) HALLIBURTON PRODUTOS LTDA.
+ 23/09/2011 | 12:28:02 | Verificando Processo: 00809/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01098/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01100/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01102/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01104/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01136/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01162/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01177/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01248/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01328/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01331/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01338/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01339/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01385/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01389/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01417/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01419/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01453/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01514/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01526/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01537/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01539/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01602/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01604/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01611/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01617/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01634/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01640/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01642/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01717/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01720/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01730/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01731/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01744/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01771/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01806/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01815/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01816/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01821/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01856/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 02040/04
+ 23/09/2011 | 12:28:02 | Verificando Processo: 02680/03
+ 23/09/2011 | 12:28:02 | CLIENTE: (6) J LOW BEER LTDA.
+ 23/09/2011 | 12:28:02 | Verificando Processo: 01068/03
+ 23/09/2011 | 12:28:02 | CLIENTE: (100) MARÉ ALTA DO BRASIL NAVEGAÇÃO LTDA
+ 23/09/2011 | 12:28:02 | Verificando Processo: 00198/06
+ 23/09/2011 | 12:28:02 | Verificando Processo: 02644/08
+ 23/09/2011 | 12:28:02 | Verificando Processo: 04364/09
+ 23/09/2011 | 12:28:03 | CLIENTE: (152) MODEC SERVIÇOS DE PETROLEO DO BRASIL LTDA
+ 23/09/2011 | 12:28:03 | Verificando Processo: 04123/08
+ 23/09/2011 | 12:28:03 | Verificando Processo: 12681/11
+ 23/09/2011 | 12:28:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12681_DI_1117785124.txt
+ 23/09/2011 | 12:28:03 | ERRO! Não houve envios.
+ 23/09/2011 | 12:28:03 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:28:03 | Gravando e-Mail automático...
+ 23/09/2011 | 12:28:03 | CLIENTE: (30) NOBLE DO BRASIL S/C LTDA
+ 23/09/2011 | 12:28:03 | Verificando Processo: 01073/03
+ 23/09/2011 | 12:28:03 | Verificando Processo: 01074/03
+ 23/09/2011 | 12:28:03 | Verificando Processo: 02950/03
+ 23/09/2011 | 12:28:03 | CLIENTE: (296) ODEBRECHT OLEO E GAS S/A
+ 23/09/2011 | 12:28:03 | Verificando Processo: 10817/11
+ 23/09/2011 | 12:28:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS10817_DI_1116659028.txt
+ 23/09/2011 | 12:28:03 | ERRO! Enviando Erro no Processo: 10817/11; Responsável: Alexandro Henrique da costa
+ 23/09/2011 | 12:28:03 | Gravando e-Mail automático...
+ 23/09/2011 | 12:28:03 | Verificando Processo: 11268/11
+ 23/09/2011 | 12:28:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS11268_DI_1116744866.txt
+ 23/09/2011 | 12:28:03 | ERRO! Enviando Erro no Processo: 11268/11; Responsável: Alexandro Henrique da costa
+ 23/09/2011 | 12:28:03 | Gravando e-Mail automático...
+ 23/09/2011 | 12:28:03 | Verificando Processo: 12111/11
+ 23/09/2011 | 12:28:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12111_DI_1118014334.txt
+ 23/09/2011 | 12:28:03 | ERRO! Não houve envios.
+ 23/09/2011 | 12:28:03 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:28:03 | Gravando e-Mail automático...
+ 23/09/2011 | 12:28:03 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 23/09/2011 | 12:28:03 | Verificando Processo: 03485/07
+ 23/09/2011 | 12:28:03 | Verificando Processo: 03751/09
+ 23/09/2011 | 12:28:03 | Verificando Processo: 05666/08
+ 23/09/2011 | 12:28:03 | Verificando Processo: 06316/08
+ 23/09/2011 | 12:28:03 | CLIENTE: (83) PETROBRAS - TRANSPORTE S.A. - TRANSPETRO
+ 23/09/2011 | 12:28:03 | Verificando Processo: 00888/05
+ 23/09/2011 | 12:28:03 | CLIENTE: (1) PGS INVESTIGAÇÃO PETROLIFERA LTDA
+ 23/09/2011 | 12:28:03 | Verificando Processo: 01412/05
+ 23/09/2011 | 12:28:03 | Verificando Processo: 02302/07
+ 23/09/2011 | 12:28:03 | Verificando Processo: 02303/07
+ 23/09/2011 | 12:28:03 | Verificando Processo: 03248/04
+ 23/09/2011 | 12:28:03 | Verificando Processo: 06337/08
+ 23/09/2011 | 12:28:03 | Verificando Processo: 06429/08
+ 23/09/2011 | 12:28:03 | CLIENTE: (155) PGS SUPORTE LOGISTICO E SERVIÇOS LTDA
+ 23/09/2011 | 12:28:03 | Verificando Processo: 04034/09
+ 23/09/2011 | 12:28:03 | Verificando Processo: 10791/11
+ 23/09/2011 | 12:28:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS10791_DI_1118037253.txt
+ 23/09/2011 | 12:28:04 | ERRO! Não houve envios.
+ 23/09/2011 | 12:28:04 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:28:04 | Gravando e-Mail automático...
+ 23/09/2011 | 12:28:04 | CLIENTE: (229) PPB DO BRASIL SERVIÇOS MARITIMOS LTDA
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01370/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 02068/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 04997/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 05110/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 12557/11
+ 23/09/2011 | 12:28:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12557_DI_1118025654.txt
+ 23/09/2011 | 12:28:04 | ERRO! Não houve envios.
+ 23/09/2011 | 12:28:04 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 23/09/2011 | 12:28:04 | Gravando e-Mail automático...
+ 23/09/2011 | 12:28:04 | CLIENTE: (226) SEADRILL SERVIÇOS DE PETROLEO LTDA
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00845/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 02598/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 03406/09
+ 23/09/2011 | 12:28:04 | CLIENTE: (97) SEAPOS LTDA
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01489/07
+ 23/09/2011 | 12:28:04 | Verificando Processo: 02721/03
+ 23/09/2011 | 12:28:04 | Verificando Processo: 02722/03
+ 23/09/2011 | 12:28:04 | Verificando Processo: 02770/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 03543/08
+ 23/09/2011 | 12:28:04 | Verificando Processo: 04413/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 05262/08
+ 23/09/2011 | 12:28:04 | Verificando Processo: 05789/08
+ 23/09/2011 | 12:28:04 | Verificando Processo: 06441/08
+ 23/09/2011 | 12:28:04 | CLIENTE: (182) SEAPOS LTDA.
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01710/08
+ 23/09/2011 | 12:28:04 | Verificando Processo: 07811/09
+ 23/09/2011 | 12:28:04 | CLIENTE: (177) SHELL BRASIL LTDA.
+ 23/09/2011 | 12:28:04 | Verificando Processo: 03092/08
+ 23/09/2011 | 12:28:04 | CLIENTE: (208) STENA SERVICES BRAZIL LTDA.
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01817/08
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01850/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 02181/08
+ 23/09/2011 | 12:28:04 | Verificando Processo: 02425/08
+ 23/09/2011 | 12:28:04 | Verificando Processo: 02666/09
+ 23/09/2011 | 12:28:04 | CLIENTE: (191) TEEKAY PETROJARL PRODUÇÃO PETROLÍFERA DO BRASIL LTDA.
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01411/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 02818/08
+ 23/09/2011 | 12:28:04 | Verificando Processo: 03774/08
+ 23/09/2011 | 12:28:04 | Verificando Processo: 04653/08
+ 23/09/2011 | 12:28:04 | CLIENTE: (2) TRANSOCEAN BRASIL LTDA
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00042/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00043/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00099/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00213/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00215/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00216/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00219/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00220/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00229/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00232/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00240/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00483/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00484/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00485/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00487/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00489/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00490/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00491/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00493/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00494/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00531/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00587/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00588/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00600/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00604/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00605/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00606/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00607/08
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00687/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00754/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00779/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00780/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 00854/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01003/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01038/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01049/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01051/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01090/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01093/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01124/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01218/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01252/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01331/09
+ 23/09/2011 | 12:28:04 | Verificando Processo: 01351/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 01396/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 01397/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 01473/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 01489/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 01620/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 01629/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 01735/05
+ 23/09/2011 | 12:28:05 | Verificando Processo: 01828/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 01872/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 01998/04
+ 23/09/2011 | 12:28:05 | Verificando Processo: 02100/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 02123/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 02217/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 02444/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 02918/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03139/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03329/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03374/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03392/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03446/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03615/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03694/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03697/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03710/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03807/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03865/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03919/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 03924/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 04171/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 04352/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 04401/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 04418/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 04562/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 04632/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 04638/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 04644/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 04824/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 04946/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05103/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05177/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05190/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05277/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05278/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05281/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05342/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05438/09
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05523/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05524/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05526/08
+ 23/09/2011 | 12:28:05 | Verificando Processo: 05528/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 05537/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 05720/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 05724/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 05726/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 05727/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 05836/09
+ 23/09/2011 | 12:28:06 | Verificando Processo: 05917/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06087/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06170/09
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06297/09
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06298/09
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06381/09
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06417/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06418/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06461/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06463/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06465/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06467/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06472/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06490/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06492/08
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06584/09
+ 23/09/2011 | 12:28:06 | Verificando Processo: 06693/09
+ 23/09/2011 | 12:28:06 | Verificando Processo: 12331/11
+ 23/09/2011 | 12:28:06 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12331_DI_1116146314.txt
+ 23/09/2011 | 12:28:06 | ERRO! Enviando Erro no Processo: 12331/11; Responsável: Marcio Luiz Moreira
+ 23/09/2011 | 12:28:06 | Gravando e-Mail automático...
+ 23/09/2011 | 12:28:07 | CLIENTE: (354) UTEC SURVEY DO BRASIL LTDA.
+ 23/09/2011 | 12:28:07 | Verificando Processo: 11830/11
+ 23/09/2011 | 12:28:07 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS11830_DI_1100292540.txt
+ 23/09/2011 | 12:28:07 | ERRO! Enviando Erro no Processo: 11830/11; Responsável: Leonardo Camargo
+ 23/09/2011 | 12:28:07 | Gravando e-Mail automático...
+ 23/09/2011 | 12:28:07 | >>> FINALIZANDO O PROCESSAMENTO DO ADR

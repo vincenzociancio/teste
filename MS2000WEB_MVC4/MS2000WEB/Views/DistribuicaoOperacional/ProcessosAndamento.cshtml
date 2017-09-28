@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MS2000WEB.ViewModels.DistribuicaoOperacionalViewModel>
+@using MS2000WEB.ViewModels
+
+@{    
+    if (ViewBag.dados != null)
+    {
+@* <div class="grid" style="margin-left: 5px;" id="grid">
+        <div class="grid">*@
+    <table class="grid" cellspacing="8" border="1" width="99%">
+        <thead>
+            <tr>
+                <th style="text-align:center" bgcolor="#5D7B9D" color="#FFFFFF" ><font color="#FFFFFF">Usuário</font>
+                </th>
+                <th bgcolor="#5D7B9D" color="#FFFFFF"><font color="#FFFFFF">QTD</font>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr style="border:inherit">
+                    <td style="border:inset" align="center">
+                        @item.Nome_completo
+                    </td>
+                    <td style="border:inset" align="center">
+                        @item.ContarDeCodigo
+                    </td>
+                </tr> 
+            }
+        </tbody>
+    </table>   
+@*  </div>
+    </div>*@
+    }
+}

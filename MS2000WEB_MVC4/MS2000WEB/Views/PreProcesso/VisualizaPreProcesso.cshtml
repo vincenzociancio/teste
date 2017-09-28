@@ -1,0 +1,130 @@
+﻿@model MS2000WEB.ViewModels.PreProcessoViewModel
+@*@model MS2000WEB.Models.Pre_Processos*@
+
+@{
+    ViewBag.Title = "Pre-Processo";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Pré Processo</a> <span class="divider">></span></li>
+    <li class="active">Visualizar</li>
+</ul>
+
+<h4>Pré Processo - Visualização</h4>
+<hr />
+
+@using (Html.BeginForm("VisualizaPreProcesso", "PreProcesso", FormMethod.Post, new { @class = "form-stacked" }))
+{           
+    @Html.ValidationSummary(true)            
+    @Html.AntiForgeryToken();    
+        <div>
+            <div class="row">
+                <div class="span*">
+                    <div class="clearfix">
+                        @Html.Label("Pré Processo ")
+                        <div class="input">
+                            @Html.TextBoxFor(model => model.codigo, new { @disabled = "disabled" })                            
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        @Html.Label("Invoice ")
+                        <div class="input">
+                            @Html.TextBoxFor(model => model.Invoice, new { @disabled = "disabled" })                            
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("PO")
+                        <div class="input">
+                            @Html.TextBoxFor(model => model.PO, new { @disabled = "disabled" })                                    
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("Valor ")
+                        <div class="input">
+                            @Html.TextBoxFor(model => model.Valor, new { @disabled = "disabled" })             
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("Tipo de Processo")
+                        <div class="input">
+                             @Html.TextBoxFor(model => model.TipoProcesso, new { @disabled = "disabled" })  
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("Referência do Cliente ")
+                        <div class="input">
+                            @Html.TextBoxFor(model => model.RefCliente, new { @disabled = "disabled" })  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.Label("Data ")
+                        <div class="input">
+                            @Html.TextBoxFor(model => model.Data, new { @disabled = "disabled" })  
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("Packing List")
+                        <div class="input">
+                            @Html.TextBoxFor(model => model.PO, new { @disabled = "disabled" })  
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("Importador")
+                        <div class="input">                           
+                            @Html.TextBoxFor(model => model.Importador, new { @disabled = "disabled" })  
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("Tipo de Moeda")
+                        <div class="input">                            
+                             @Html.TextBoxFor(model => model.TipoMoeda, new { @disabled = "disabled" })  
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("Tipo de Declaração")
+                        <div class="input">
+                            @Html.TextBoxFor(model => model.TipoDeclaracao, new { @disabled = "disabled" })  
+                        </div>
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("DTA ")
+                        <div class="input">                            
+                            @Html.TextBoxFor(model => model.DTA, new { @disabled = "disabled" })  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span* offset*">
+                    <div class="clearfix">
+                        @Html.Label("Descrição")
+                        <div class="input">
+                            @Html.TextAreaFor(model => model.Descricao, new { @class = "span5", @disabled = "disabled" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+               
+
+        <div class="form-actions">        
+            @Html.ActionLink("Voltar", "Index", "PreProcesso", null,new { @class = "btn" })     
+        </div>
+
+           
+    
+}

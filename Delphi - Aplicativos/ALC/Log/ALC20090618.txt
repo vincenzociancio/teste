@@ -1,0 +1,14 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 18/06/2009 | 11:42:14 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 18/06/2009 | 11:42:14 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 18/06/2009 | 11:42:14 | CLIENTE: (2) TRANSOCEAN BRASIL LTDA
+ 18/06/2009 | 11:42:14 | Verificando Processo: 00076/08
+ 18/06/2009 | 11:42:14 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 18/06/2009 | 11:42:14 | Gravando e-Mail automático...
+ 18/06/2009 | 11:44:15 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 18/06/2009 | 11:44:15 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 18/06/2009 | 11:44:15 | CLIENTE: (2) TRANSOCEAN BRASIL LTDA
+ 18/06/2009 | 11:44:15 | Verificando Processo: 00076/08
+ 18/06/2009 | 11:44:15 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 18/06/2009 | 11:44:15 | Gravando e-Mail automático...
+ 18/06/2009 | 11:44:15 | >>> FINALIZANDO O PROCESSAMENTO DO ALC

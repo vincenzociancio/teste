@@ -1,0 +1,164 @@
+﻿@*@{
+
+  List<MS2000WEB.ViewModels.EnscoGraficoViewModel> x = ViewBag.teste1;
+
+        if (x != null)
+        {
+            if (x.Count() > 0)
+            {
+                var macChart = new Chart(width: 600, height: 400)
+                       .AddTitle("Campeonato Paulista - 2012")
+                       .AddSeries(
+                        name: "CampeonatoPaulista",
+                        xValue: x.Select(y => y.Dia).ToArray(),
+                        yValues: x.Select(y => y.TotalValor).ToArray())
+                    .GetBytes("png");                
+               
+            }
+        }
+    }*@
+<div style="overflow:scroll; height:500px" >
+    <div class="clearfix">
+        <img src="@Url.Action("CaboFrioAereoConsumoVerde", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <img src="@Url.Action("GaleaoAereoConsumoVerde", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="clearfix">
+        <img src="@Url.Action("CaboFrioAereoConsumoAmarelo", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <img src="@Url.Action("GaleaoAereoConsumoAmarelo", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="clearfix">
+        <img src="@Url.Action("CaboFrioAereoConsumoVermelho", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <img src="@Url.Action("GaleaoAereoConsumoVermelho", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="clearfix">
+        <img src="@Url.Action("CaboFrioAereoAdmissaoTemporariaAmarelo", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <img src="@Url.Action("GaleaoAereoAdmissaoTemporariaAmarelo", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="clearfix">
+        <img src="@Url.Action("CaboFrioAereoAdmissaoTemporariaVermelho", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <img src="@Url.Action("GaleaoAereoAdmissaoTemporariaVermelho", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="clearfix">
+        <img src="@Url.Action("CaboFrioAereoConsumoAdmissaoTemporariaAmarelo", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <img src="@Url.Action("GaleaoAereoConsumoAdmissaoTemporariaAmarelo", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="clearfix">
+        <img src="@Url.Action("CaboFrioAereoConsumoAdmissaoTemporariaVermelho", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <img src="@Url.Action("GaleaoAereoConsumoAdmissaoTemporariaVermelho", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="clearfix">
+        <img src="@Url.Action("MaritimoConsumoVerde", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+        <br />
+        <br />
+        <img src="@Url.Action("MaritimoConsumoAmarelo", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+        <br />
+        <br />
+        <img src="@Url.Action("MaritimoConsumoVermelho", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="clearfix">
+        <img src="@Url.Action("MaritimoAdmissaoTemporariaAmarelo", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+        <br />
+        <br />
+        <img src="@Url.Action("MaritimoAdmissaoTemporariaVermelho", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="clearfix">
+        <img src="@Url.Action("MaritimoConsumoAdmissaoTemporariaAmarelo", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+        <br />
+        <br />
+        <img src="@Url.Action("MaritimoConsumoAdmissaoTemporariaVermelho", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <div class="input">
+            @Html.TextArea("teste", new { @class = "span6" })
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="clearfix">
+        <img src="@Url.Action("AereoMediaDias", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+        <br />
+        <img src="@Url.Action("MaritimoMediaDias", new { data = (string)ViewBag.Data })" alt="SimpleChart" />
+
+    </div>
+</div>
+<div class="editor-field">
+    @Html.DropDownList("SelecaoProcesso", new[]{
+           new SelectListItem{Text = "Cabo Frio - Aéreo - Consumo - Verde" ,Value = "1"},
+           new SelectListItem{Text = "Galeão - Aéreo - Consumo - Verde" ,Value = "2"},
+           new SelectListItem{Text = "Cabo Frio - Aéreo - Consumo - Amarelo" ,Value = "3"},
+           new SelectListItem{Text = "Galeão - Aéreo - Consumo - Amarelo" ,Value = "4"},
+           new SelectListItem{Text = "Cabo Frio - Aéreo - Consumo - Vermelho" ,Value = "5"},
+           new SelectListItem{Text = "Galeão - Aéreo - Consumo - Vermelho" ,Value = "6"},
+           new SelectListItem{Text = "Cabo Frio - Aéreo - Admissão Temporária - Amarelo" ,Value = "7"},
+           new SelectListItem{Text = "Galeão - Aéreo - Admissão Temporária - Amarelo" ,Value = "8"},
+           new SelectListItem{Text = "Cabo Frio - Aéreo - Admissão Temporária - Vermelho" ,Value = "9"},
+           new SelectListItem{Text = "Galeão - Aéreo - Admissão Temporária - Vermelho" ,Value = "10"},
+           new SelectListItem{Text = "Cabo Frio - Aéreo - Consumo e Admissão Temporária - Amarelo" ,Value = "11"},
+           new SelectListItem{Text = "Galeão - Aéreo - Consumo e Admissão Temporária - Amarelo" ,Value = "12"},
+           new SelectListItem{Text = "Cabo Frio - Aéreo - Consumo e Admissão Temporária - Vermelho" ,Value = "13"},
+           new SelectListItem{Text = "Galeão - Aéreo - Consumo e Admissão Temporária - Vermelho" ,Value = "14"},
+           new SelectListItem{Text = "Marítimo - Consumo - Verde" ,Value = "15"},
+           new SelectListItem{Text = "Marítimo - Consumo - Amarelo" ,Value = "16"},
+           new SelectListItem{Text = "Marítimo - Consumo - Vermelho" ,Value = "17"},
+           new SelectListItem{Text = "Marítimo - Admissão Temporária - Amarelo" ,Value = "18"},
+           new SelectListItem{Text = "Marítimo - Admissão Temporária - Vermelho" ,Value = "19"},
+           new SelectListItem{Text = "Marítimo - Consumo e Admissão Temporária - Amarelo" ,Value = "20"},
+           new SelectListItem{Text = "Marítimo - Consumo e Admissão Temporária - Vermelho" ,Value = "21"}
+           }, "Selecione", new { @class = "span6" })
+
+</div>

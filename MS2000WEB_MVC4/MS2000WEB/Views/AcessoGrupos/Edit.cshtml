@@ -1,0 +1,28 @@
+@model MS2000WEB.Models.AcessoGrupos
+
+@{
+    ViewBag.Title = "Edição";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Sistema</a> <span class="divider">></span></li>
+    <li><a href="#">Grupos de Acesso</a> <span class="divider">></span></li>
+    <li class="active">Edição</li>
+</ul>
+
+<h4>Grupos de Acesso do Sistema</h4>
+@using (Html.BeginForm("Edit", "AcessoGrupos", FormMethod.Post, new { @class = "form-stacked" }))
+{ 
+    @Html.ValidationSummary(true)
+    @Html.HiddenFor(model => model.PK_AcessoGrupo)
+    <div class="row">
+        <div class="span*">
+            @Html.Partial("_CreateOrEdit", Model)
+        </div>
+    </div>
+    <div class="form-actions">
+        <input type="submit" class="btn btn-inverse" name="Edit" value="Salvar alterações" />
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>   
+}

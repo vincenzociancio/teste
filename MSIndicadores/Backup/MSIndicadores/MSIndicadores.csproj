@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0839585-1FB0-4299-A090-90702E65531E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSIndicadores</RootNamespace>
+    <AssemblyName>MSIndicadores</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="frmIndicadorAbertura.aspx" />
+    <Content Include="frmIndicadorAdesaoLaboral.aspx" />
+    <Content Include="frmIndicadorApenc.aspx" />
+    <Content Include="frmIndicadorArmazenagem.aspx" />
+    <Content Include="frmIndicadorCheckIn.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="frmIndicadorAcidentes.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\abertura.cs" />
+    <Compile Include="Classes\Acidente.cs" />
+    <Compile Include="Classes\AdesaoLaboral.cs" />
+    <Compile Include="Classes\ApenC.cs" />
+    <Compile Include="Classes\Armazenagem.cs" />
+    <Compile Include="Classes\checkin.cs" />
+    <Compile Include="Classes\Consumo_Energia.cs" />
+    <Compile Include="Classes\DiaSemana.cs" />
+    <Compile Include="Classes\Follow_UP.cs" />
+    <Compile Include="Classes\Meses.cs" />
+    <Compile Include="Classes\SAC.cs" />
+    <Compile Include="Classes\Turnover.cs" />
+    <Compile Include="Classes\HoraExtra.cs" />
+    <Compile Include="Classes\Satisfacao.cs" />
+    <Compile Include="Classes\util.cs" />
+    <Compile Include="frmIndicadorAbertura.aspx.cs">
+      <DependentUpon>frmIndicadorAbertura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorAbertura.aspx.designer.cs">
+      <DependentUpon>frmIndicadorAbertura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorAdesaoLaboral.aspx.cs">
+      <DependentUpon>frmIndicadorAdesaoLaboral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorAdesaoLaboral.aspx.designer.cs">
+      <DependentUpon>frmIndicadorAdesaoLaboral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorApenc.aspx.cs">
+      <DependentUpon>frmIndicadorApenc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorApenc.aspx.designer.cs">
+      <DependentUpon>frmIndicadorApenc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorArmazenagem.aspx.cs">
+      <DependentUpon>frmIndicadorArmazenagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorArmazenagem.aspx.designer.cs">
+      <DependentUpon>frmIndicadorArmazenagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorCheckIn.aspx.cs">
+      <DependentUpon>frmIndicadorCheckIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorCheckIn.aspx.designer.cs">
+      <DependentUpon>frmIndicadorCheckIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorConsumoEnergia.aspx.cs">
+      <DependentUpon>frmIndicadorConsumoEnergia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorConsumoEnergia.aspx.designer.cs">
+      <DependentUpon>frmIndicadorConsumoEnergia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorFollow.aspx.cs">
+      <DependentUpon>frmIndicadorFollow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorFollow.aspx.designer.cs">
+      <DependentUpon>frmIndicadorFollow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorHoraExtra.aspx.cs">
+      <DependentUpon>frmIndicadorHoraExtra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorHoraExtra.aspx.designer.cs">
+      <DependentUpon>frmIndicadorHoraExtra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorSAC.aspx.cs">
+      <DependentUpon>frmIndicadorSAC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorSAC.aspx.designer.cs">
+      <DependentUpon>frmIndicadorSAC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorSatisfacao.aspx.cs">
+      <DependentUpon>frmIndicadorSatisfacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorSatisfacao.aspx.designer.cs">
+      <DependentUpon>frmIndicadorSatisfacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorTurnover.aspx.cs">
+      <DependentUpon>frmIndicadorTurnover.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorTurnover.aspx.designer.cs">
+      <DependentUpon>frmIndicadorTurnover.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master.Master.cs">
+      <DependentUpon>master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master.Master.designer.cs">
+      <DependentUpon>master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Model\modelAcidente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>modelAcidente.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndicadorAcidentes.aspx.cs">
+      <DependentUpon>frmIndicadorAcidentes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndicadorAcidentes.aspx.designer.cs">
+      <DependentUpon>frmIndicadorAcidentes.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="frmIndicadorConsumoEnergia.aspx" />
+    <Content Include="frmIndicadorFollow.aspx" />
+    <Content Include="frmIndicadorHoraExtra.aspx" />
+    <Content Include="frmIndicadorSAC.aspx" />
+    <Content Include="frmIndicadorSatisfacao.aspx" />
+    <Content Include="frmIndicadorTurnover.aspx" />
+    <Content Include="imagem\logo_mssil.png" />
+    <Content Include="imagem\logo_mssil2.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="master.Master" />
+    <EntityDeploy Include="Model\modelAcidente.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>modelAcidente.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>43592</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

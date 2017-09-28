@@ -1,0 +1,67 @@
+﻿@model MS2000WEB.Models.Controle_Atas
+
+@{
+    ViewBag.Title = "Novo";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">ISO</a> <span class="divider">></span></li>
+    <li><a href="#">Controle de Atas de Reunião</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+
+<h4>Controle de Atas de Reunião</h4>
+
+
+@using (Html.BeginForm("Create", "ControleDeAtasDeReuniao", FormMethod.Post, new { @class = "form-stacked" }))
+{           
+    @Html.AntiForgeryToken();    
+    
+    <div class="editor-field">
+        @Html.Label("Tema ")
+        @Html.EditorFor(model => model.tema)
+        @Html.ValidationMessageFor(model => model.tema)
+    </div>
+    <br />   
+    <div class="editor-field">
+        @Html.Label("Data ")
+        @Html.EditorFor(model => model.data)        
+        @Html.ValidationMessageFor(model => model.data)
+    </div>
+    <br />    
+    <div class="editor-field">
+        @Html.Label("Responsável ")
+        @Html.DropDownList("fk_usuario", "Selecione")
+        @Html.ValidationMessageFor(model => model.fk_usuario)
+    </div>    
+    <br />    
+    <div class="editor-field">
+        @Html.Label("Tipo ")
+        @Html.RadioButtonFor(model => model.tipo, 0) Operacional
+        @Html.RadioButtonFor(model => model.tipo, 1) SGI               
+        @Html.ValidationMessageFor(model => model.tipo)
+    </div>
+    <br />    
+    <div class="editor-field">
+        @Html.Label("Importador ")
+        @Html.DropDownList("fk_importador", "Selecione")
+        @Html.ValidationMessageFor(model => model.fk_importador)
+    </div>      
+    
+    <div class="form-actions">        
+    @*<input id="submit" type="submit" class="btn btn-inverse" value="Salvar" /> *@
+    @*@Html.ActionLink("Salvar", "Create", null, new { @class = "btn btn-inverse" })*@    
+    <button type="submit" class="btn btn-inverse">Salvar</button>        
+    @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })   
+    </div>           
+}
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#data").mask("99/99/9999");
+    });
+</script>
+
+

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<MS2000WEB.ViewModels.RpatViewModel>
+
+@{
+    ViewBag.Title = "RPAT";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Emissão de RPAT</a> <span class="divider">></span></li>
+    <li class="active">Index</li>
+</ul>
+
+<h4>Emissão de Requerimento de Prorrogação do Regime de Admissão Temporária</h4>
+
+<hr />
+<div class="row">
+    <div class="span3">@Html.ActionLink("Incluir Novo RPAT", "Create", null, new { @class = "btn btn-inverse" })</div>
+    <div class="span6 offset*">
+        <form class="form-search">
+            <label>Pesquisar por MS:</label>
+            @Html.TextBox("Codigo", null, new { @class = "span3 search-query" })
+            <button type="submit" class="btn btn-inverse">Pesquisar</button>
+        </form>
+    </div>
+</div>
+
+<div style="overflow-y: auto;">
+    @{
+        if (Model != null)
+        {
+            WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10, canSort: false, ajaxUpdateContainerId: "grid");
+        @grid.GetHtml(htmlAttributes: new { id = "grid" },
+                                tableStyle: "grade",
+                                headerStyle: "header",
+                                alternatingRowStyle: "alt",
+                                selectedRowStyle: "selected",
+                                columns: grid.Columns(
+                                grid.Column("Fk_Importador", header: "Importador"),
+                                grid.Column("Fk_Processo", header: "N° Processo"),
+                                grid.Column("Numero_RCR", header: "Número RCR"),
+                                grid.Column("Data_Criacao", header: "Data de Criação", format: (item) => item.Data_Criacao != null ? item.Data_Criacao.ToString("dd/MM/yy") : "", canSort: true),
+                                grid.Column("Data_Inicial", header: "Vigência Inicial", format: (item) => item.Data_Inicial != null ? item.Data_Inicial.ToString("dd/MM/yy") : "", canSort: true),
+                                grid.Column("Data_Final", header: "Vigência Final", format: (item) => item.Data_Final != null ? item.Data_Final.ToString("dd/MM/yy") : "", canSort: true),
+                                grid.Column("Dt_Prorrogacao", header: "Data de Prorrogação", format: (item) => item.Dt_Prorrogacao != null ? item.Dt_Prorrogacao.ToString("dd/MM/yy") : "", canSort: true),
+                                grid.Column(format: (item) => @Html.ActionLink("Download", "PrintReport", new { Id = item.ID }))
+                                                          ));
+        }
+    }
+</div>

@@ -1,0 +1,123 @@
+﻿@model MS2000WEB.Models.Processo_Carta_Garantidor
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Carta Garantidor </a><span class="divider">></span></li>
+    <li class="active">Index</li>
+</ul>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input[type='text']").val("");
+        $("#txtprocesso").val("");
+        //  $("#txtprocesso").mask("99999/99");
+        $("#Download").click(function () {
+            if ($("#txtprocesso").val() == "") {
+                $("#msgErro").empty().prepend("<p><b>Campos obrigatórios:</b></p><ul><li> Processo </li></ul>");
+                return false;
+            }
+            else {
+                return true;
+            }
+        });
+        $("#txtprocesso").keyup(function () {
+            var Proc = $(this).val();
+            $("#txtCNPJFiador").val("");
+            $("#txtEnderecoFiador").val("");
+            $("#Fiadores").val("");
+            $("#Periodo_fianca_inicial").val("");
+            $("#Periodo_fianca_final").val("");
+            if ($(this).val().length == 5) {
+                $("#txtprocesso").val($(this).val() + "/");
+            }
+            //alert(Proc.replace("/","",).replace("",""));
+            if ($(this).val().length >= 8) {
+                $.getJSON("@Url.Action("VerificarFiador", "CartaGarantidor")", { Processo: Proc },
+                function (data) {
+                    $("#txtCNPJFiador").val(data.cnpj);
+                    $("#txtEnderecoFiador").val(data.endereco);
+                    $("#Fiadores").val(data.codfiador);
+                    $("#Periodo_fianca_inicial").val(data.inicial);
+                    $("#Periodo_fianca_final").val(data.Final);
+                    $("#msgErro").empty().prepend(data.msg)
+
+                });
+            }
+        });
+
+        $("#Fiadores").change(function () {
+            var codigo = $(this).val();
+            $.getJSON("@Url.Action("getFiador", "CartaGarantidor")", { codFiador: codigo },
+                function (data) {
+                    $("#txtCNPJFiador").val(data.cnpj);
+                    $("#txtEnderecoFiador").val(data.endereco);
+                    // $("#Fiadores").val(data.codfiador);                  
+                });
+        });
+        $("#Periodo_fianca_inicial").mask("99/99/9999");
+        $("#Periodo_fianca_final").mask("99/99/9999");
+    });
+
+
+
+</script>
+
+<h4>Carta do Garantidor </h4>
+
+
+@using (Html.BeginForm("PrintReport", "CartaGarantidor", FormMethod.Post,
+                    new { enctype = "multipart/form-data", @class = "form-stacked" }))
+{   
+    <div class="clearfix" id="msgErro" style="color: red; font-size: 12px;"></div>
+    <div class="row">
+        <div class="span*">
+            <div class="clearfix">
+                @Html.Label("Processo")
+                @Html.TextBox("txtprocesso", null, new { @class = "span2" })
+            </div>
+            <div class="clearfix">
+                @Html.Label("Período da Fiança")
+                De @Html.TextBoxFor(model => model.Periodo_fianca_inicial, new { @class = "span2" })
+                @* @Html.TextBox("txtDataFiancaInicial", null, new { @class = "span2" })*@  Até   
+                 @Html.TextBoxFor(model => model.Periodo_fianca_final, new { @class = "span2" })
+                @*@Html.TextBox("txtDataFiancaFinal", null, new { @class = "span2" })  *@
+            </div>
+            <div class="clearfix">
+                @Html.Label("Termo de Garantia")
+                @Html.DropDownList("Termo", new[]{
+           new SelectListItem{Text = "Termo de Garantia - IN/RFB 1361/13, ART. 7°." ,Value = "Termo de Garantia - IN/RFB 1361/13, ART. 7°."},
+           new SelectListItem{Text = "Termo de Garantia - IN/RFB 844/08, ART. 2° PARAGRAFO 1°." ,Value = "Termo de Garantia - IN/RFB 844/08, ART. 2° PARAGRAFO 1°."},
+           new SelectListItem{Text = "Termo de Garantia - IN/RFB 844/08, ART. 2° Anexo Único." ,Value = "Termo de Garantia - IN/RFB 844/08, ART. 2° Anexo Único."},
+           new SelectListItem{Text = "Termo de Garantia - IN/RFB 1415, ART. 3 º INC I" ,Value = "IN/RFB 1415, ART. 3 º INC I"},
+           new SelectListItem{Text = "Termo de Garantia - IN/RFB 1415, ART. 3º INC II" ,Value = "IN/RFB 1415, ART. 3º INC II"}
+           }, "Selecione", new { @class = "span4" })
+            </div>
+            <div class="clearfix">
+                @Html.Label("Nome do Fiador")
+                @Html.DropDownList("Fiadores", null, "Selecione", new { @class = "span4" })
+            </div>
+            <div class="clearfix">
+                @Html.Label("CNPJ/CPF do Fiador")
+                @Html.TextBox("txtCNPJFiador", null, new { @class = "span2" })
+            </div>
+            <div class="clearfix">
+                @Html.Label("Endereço do Fiador")
+                @Html.TextBox("txtEnderecoFiador", null, new { @class = "span4" })
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div class="form-actions">
+        <input type="submit" name="confirmar" id="Download" value="Download" class="btn  btn-inverse" />
+        @Html.ActionLink("Voltar", "index", "Home", null, new { @class = "btn" })
+    </div>
+}

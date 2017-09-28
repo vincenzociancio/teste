@@ -1,0 +1,81 @@
+﻿@model MS2000WEB.Models.RAT
+
+@using (Html.BeginForm("Create", "Rat", FormMethod.Post, new { @class = "form-stacked" }))
+{
+    <div class="clearfix">
+        @Html.ValidationSummary(true)
+        @Html.Label("Número do MS")
+        <div class="input">
+            @Html.TextBoxFor(model => model.Fk_Processo)
+            @Html.ValidationMessageFor(model => model.Fk_Processo)
+        </div>
+    </div>    
+   
+    <fieldset>
+        <legend>FUNDAMENTAÇÃO DO PEDIDO</legend>
+        <div class="clearfix">
+            <div class="input">
+                @Html.TextBox("CodFundamento", null, new { @class = "span1" })
+                @Html.DropDownList("Fund_Pedido", "selecione")
+                @Html.ValidationMessageFor(model => model.Fund_Pedido)
+                @* @Html.DropDownList("FundamentacaoPedidos", (SelectList)ViewData["FundamentacaoPedido"], "Selecione",new { @class = "span4" })*@
+            </div>
+        </div>
+    </fieldset> 
+    
+    <div class="clearfix">
+        <fieldset>
+            <legend>OPÇÃO PELO DOMICÍLIO TRIBUTÁRIO ELETRÔNICO</legend>
+            <div class="input">
+                @Html.RadioButtonFor(model => model.Opcao_Tributario, true) Sim 
+            @Html.RadioButtonFor(model => model.Opcao_Tributario, false) Não
+            </div>
+        </fieldset>
+    </div>
+    
+    <div class="clearfix">
+        <fieldset>
+            <legend>INSTRUÇÃO DO PEDIDO</legend>
+            <div class="clearfix">
+                @Html.CheckBox("Inst_Ped_Contrato", false)
+                <span>Contrato de prestação de serviços</span>
+            </div>
+            <div class="clearfix">
+                @Html.CheckBox("Inst_Ped_Contrato_arrendamento", false)
+                <span>Contrato de arrendamento operacional, de aluguel ou de empréstimo</span>
+            </div>
+            <div class="clearfix">
+                @Html.Label("Informações Complementares")
+                @Html.TextAreaFor(model => model.Inf_Complementares, new { @class = "span4 xxlarge" })
+                @Html.ValidationMessageFor(model => model.Inf_Complementares)
+            </div>
+        </fieldset>
+    </div>
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Salvar</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>   
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#Fund_Pedido").change(function () {
+            $("#CodFundamento").val($("#Fund_Pedido").val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#CodFundamento").keyup(function () {
+            $("#Fund_Pedido").val($("#CodFundamento").val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Fk_Processo").mask("99999/99");
+    });
+</script>

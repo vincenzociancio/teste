@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Solution1">
+</Property><Property Name="Arquivo de Solução" Value="C:\VStudio\Consulta_SQLServer\Solution1.ssmssln">
+</Property><Property Name="Date" Value="segunda-feira, 4 de setembro de 2017">
+</Property><Property Name="Time" Value="14:20">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Solution1.ssmssln" Description="O backup do arquivo como C:\VStudio\Consulta_SQLServer\Backup\Solution1.ssmssln foi feito com êxito">
+</Event><Event ErrorLevel="2" Project="" Source="Solution1.ssmssln" Description="O arquivo de solução 'C:\VStudio\Consulta_SQLServer\Solution1.ssmssln' não pode ser convertido porque está como somente leitura no disco. Para converter a solução, altere as permissões no arquivo de solução para permitir modificações e reabra-o.">
+</Event><Event ErrorLevel="3" Project="" Source="Solution1.ssmssln" Description="Não Convertido">
+</Event></UpgradeLog>

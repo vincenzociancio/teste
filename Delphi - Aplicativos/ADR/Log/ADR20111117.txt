@@ -1,0 +1,618 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 17/11/2011 | 21:05:56 | >>> INICIANDO O PROCESSAMENTO DO ADR
+ 17/11/2011 | 21:05:56 | Arrumando Tributação...
+ 17/11/2011 | 21:05:56 | GERANDO RELAÇÃO DAS DI'S REGISTRADAS
+ 17/11/2011 | 21:06:00 | CLIENTE: (103) AGGREKO BRASIL ENERGIA LTDA
+ 17/11/2011 | 21:06:00 | Verificando Processo: 00125/08
+ 17/11/2011 | 21:06:00 | CLIENTE: (148) AKER KVAERNER OIL & GAS DO BRASIL LTDA
+ 17/11/2011 | 21:06:00 | Verificando Processo: 04135/07
+ 17/11/2011 | 21:06:00 | CLIENTE: (46) ANDAIMES JIRAU LTDA
+ 17/11/2011 | 21:06:00 | Verificando Processo: 00118/09
+ 17/11/2011 | 21:06:01 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 17/11/2011 | 21:06:01 | Verificando Processo: 02481/04
+ 17/11/2011 | 21:06:01 | Verificando Processo: 09557/09
+ 17/11/2011 | 21:06:01 | CLIENTE: (86) ASTROMARITIMA NAVEGAÇÃO S/A
+ 17/11/2011 | 21:06:01 | Verificando Processo: 13719/11
+ 17/11/2011 | 21:06:01 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13719_DI_1121826069.txt
+ 17/11/2011 | 21:06:01 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:01 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:01 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:01 | CLIENTE: (21) ASTROMARITIMA NAVEGAÇÃO S/A
+ 17/11/2011 | 21:06:01 | Verificando Processo: 14854/11
+ 17/11/2011 | 21:06:02 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14854_DI_1121825984.txt
+ 17/11/2011 | 21:06:02 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:02 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:02 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:02 | CLIENTE: (86) ASTROMARITIMA NAVEGAÇÃO S/A
+ 17/11/2011 | 21:06:02 | Verificando Processo: 15315/11
+ 17/11/2011 | 21:06:02 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15315_DI_1121825976.txt
+ 17/11/2011 | 21:06:02 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:02 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:02 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:02 | CLIENTE: (187) BP ENERGY DO BRASIL LTDA.
+ 17/11/2011 | 21:06:02 | Verificando Processo: 00032/08
+ 17/11/2011 | 21:06:02 | Verificando Processo: 03098/08
+ 17/11/2011 | 21:06:02 | Verificando Processo: 03577/08
+ 17/11/2011 | 21:06:02 | Verificando Processo: 03581/08
+ 17/11/2011 | 21:06:02 | Verificando Processo: 04647/08
+ 17/11/2011 | 21:06:02 | CLIENTE: (252) BRASDRIL SOCIEDADE DE PERFURAÇÕES LTDA
+ 17/11/2011 | 21:06:02 | Verificando Processo: 00054/11
+ 17/11/2011 | 21:06:02 | Verificando Processo: 15833/11
+ 17/11/2011 | 21:06:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15833_DI_1121782940.txt
+ 17/11/2011 | 21:06:03 | Enviando confirmação do registro da DI do Processo: 15833/11; Responsável: Luciano Silva
+ 17/11/2011 | 21:06:03 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:03 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:03 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:03 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:03 | Verificando Processo: 15835/11
+ 17/11/2011 | 21:06:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15835_DI_1121779974.txt
+ 17/11/2011 | 21:06:03 | Enviando confirmação do registro da DI do Processo: 15835/11; Responsável: Diogo Mello
+ 17/11/2011 | 21:06:03 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:03 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:03 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:03 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:03 | Verificando Processo: 15836/11
+ 17/11/2011 | 21:06:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15836_DI_1121793756.txt
+ 17/11/2011 | 21:06:03 | Enviando confirmação do registro da DI do Processo: 15836/11; Responsável: Luciano Silva
+ 17/11/2011 | 21:06:03 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:03 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:03 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:03 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:03 | Verificando Processo: 15837/11
+ 17/11/2011 | 21:06:03 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15837_DI_1121779460.txt
+ 17/11/2011 | 21:06:03 | Enviando confirmação do registro da DI do Processo: 15837/11; Responsável: Adriana Vitório Monteiro
+ 17/11/2011 | 21:06:03 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:03 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:03 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:03 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:04 | Verificando Processo: 15861/11
+ 17/11/2011 | 21:06:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15861_DI_1121788868.txt
+ 17/11/2011 | 21:06:04 | Enviando confirmação do registro da DI do Processo: 15861/11; Responsável: Luciano Silva
+ 17/11/2011 | 21:06:04 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:04 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:04 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:04 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:04 | Verificando Processo: 15868/11
+ 17/11/2011 | 21:06:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15868_DI_1121786199.txt
+ 17/11/2011 | 21:06:04 | Enviando confirmação do registro da DI do Processo: 15868/11; Responsável: Luciano Silva
+ 17/11/2011 | 21:06:04 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:04 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:04 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:04 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:04 | CLIENTE: (238) BW OFFSHORE DO BRASIL LTDA
+ 17/11/2011 | 21:06:04 | Verificando Processo: 03532/09
+ 17/11/2011 | 21:06:04 | Verificando Processo: 14968/11
+ 17/11/2011 | 21:06:04 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14968_DI_1121792865.txt
+ 17/11/2011 | 21:06:04 | Enviando confirmação do registro da DI do Processo: 14968/11; Responsável: Diego dos Santos Aguiar
+ 17/11/2011 | 21:06:04 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:04 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:04 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:04 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:04 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 17/11/2011 | 21:06:04 | Verificando Processo: 00906/09
+ 17/11/2011 | 21:06:05 | Verificando Processo: 01844/06
+ 17/11/2011 | 21:06:05 | Verificando Processo: 01958/05
+ 17/11/2011 | 21:06:05 | Verificando Processo: 02078/09
+ 17/11/2011 | 21:06:05 | Verificando Processo: 02260/06
+ 17/11/2011 | 21:06:05 | Verificando Processo: 11828/11
+ 17/11/2011 | 21:06:05 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS11828_DI_1121809725.txt
+ 17/11/2011 | 21:06:05 | Enviando confirmação do registro da DI do Processo: 11828/11; Responsável: Leonardo Camargo
+ 17/11/2011 | 21:06:05 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:05 | Enviando e-mails para contatos das empresas...
+ 17/11/2011 | 21:06:05 | CONTATO: José Reis
+ 17/11/2011 | 21:06:05 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:05 | CONTATO: Leonardo Albuquerque
+ 17/11/2011 | 21:06:05 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:05 | CONTATO: Maria Carneiro
+ 17/11/2011 | 21:06:05 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:05 | CONTATO: Nivaldo Junior
+ 17/11/2011 | 21:06:05 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:05 | CLIENTE: (7) CGG DO BRASIL PARTICIPAÇÕES LTDA
+ 17/11/2011 | 21:06:05 | Verificando Processo: 01402/07
+ 17/11/2011 | 21:06:05 | Verificando Processo: 02180/07
+ 17/11/2011 | 21:06:05 | Verificando Processo: 02807/09
+ 17/11/2011 | 21:06:06 | Verificando Processo: 03612/08
+ 17/11/2011 | 21:06:06 | Verificando Processo: 04601/09
+ 17/11/2011 | 21:06:06 | Verificando Processo: 05927/09
+ 17/11/2011 | 21:06:06 | Verificando Processo: 12198/11
+ 17/11/2011 | 21:06:06 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS12198_DI_1121810103.txt
+ 17/11/2011 | 21:06:06 | Enviando confirmação do registro da DI do Processo: 12198/11; Responsável: Leonardo Camargo
+ 17/11/2011 | 21:06:06 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:06 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:06 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:06 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:06 | CLIENTE: (179) CHEVRON BRASIL LTDA.
+ 17/11/2011 | 21:06:06 | Verificando Processo: 03051/08
+ 17/11/2011 | 21:06:06 | CLIENTE: (234) CHEVRON BRASIL UPSTREAM FRADE LTDA
+ 17/11/2011 | 21:06:06 | Verificando Processo: 00145/09
+ 17/11/2011 | 21:06:06 | Verificando Processo: 01661/09
+ 17/11/2011 | 21:06:06 | Verificando Processo: 01697/09
+ 17/11/2011 | 21:06:06 | Verificando Processo: 01752/09
+ 17/11/2011 | 21:06:07 | Verificando Processo: 01778/09
+ 17/11/2011 | 21:06:07 | Verificando Processo: 01788/09
+ 17/11/2011 | 21:06:07 | Verificando Processo: 01792/09
+ 17/11/2011 | 21:06:07 | Verificando Processo: 01815/09
+ 17/11/2011 | 21:06:07 | Verificando Processo: 04876/08
+ 17/11/2011 | 21:06:07 | Verificando Processo: 06215/08
+ 17/11/2011 | 21:06:07 | CLIENTE: (216) CONSTRUTORA NORBERTO ODEBRECHT S/A
+ 17/11/2011 | 21:06:07 | Verificando Processo: 00455/09
+ 17/11/2011 | 21:06:07 | CLIENTE: (344) ENSCO BRAZIL-SERVIÇOS DE PETROLEO LTDA
+ 17/11/2011 | 21:06:07 | Verificando Processo: 14073/11
+ 17/11/2011 | 21:06:08 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14073_DI_1121755560.txt
+ 17/11/2011 | 21:06:08 | Enviando confirmação do registro da DI do Processo: 14073/11; Responsável: Jefferson Costa
+ 17/11/2011 | 21:06:08 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:08 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:08 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:08 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:08 | Verificando Processo: 14765/11
+ 17/11/2011 | 21:06:08 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14765_DI_1121814117.txt
+ 17/11/2011 | 21:06:08 | Enviando confirmação do registro da DI do Processo: 14765/11; Responsável: Leonardo Araujo
+ 17/11/2011 | 21:06:08 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:08 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:08 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:08 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:08 | CLIENTE: (94) FRANKS INTERNATIONAL BRASIL LTDA
+ 17/11/2011 | 21:06:08 | Verificando Processo: 00002/06
+ 17/11/2011 | 21:06:08 | Verificando Processo: 02416/08
+ 17/11/2011 | 21:06:08 | Verificando Processo: 03599/07
+ 17/11/2011 | 21:06:08 | CLIENTE: (43) FUGRO BRASIL - SERVIÇOS SUBMARINOS E LEVANTAMENTOS LTDA
+ 17/11/2011 | 21:06:08 | Verificando Processo: 03859/07
+ 17/11/2011 | 21:06:09 | Verificando Processo: 05164/08
+ 17/11/2011 | 21:06:09 | Verificando Processo: 05295/08
+ 17/11/2011 | 21:06:09 | Verificando Processo: 05557/08
+ 17/11/2011 | 21:06:09 | CLIENTE: (110) FUGRO DO BRASIL LTDA
+ 17/11/2011 | 21:06:09 | Verificando Processo: 00796/08
+ 17/11/2011 | 21:06:09 | CLIENTE: (99) FUGRO GEOSOLUTIONS DO (BRASIL)  SERV DE LEVANTAMENTO LTDA
+ 17/11/2011 | 21:06:09 | Verificando Processo: 01213/07
+ 17/11/2011 | 21:06:09 | Verificando Processo: 01369/07
+ 17/11/2011 | 21:06:09 | CLIENTE: (31) HALLIBURTON PRODUTOS LTDA.
+ 17/11/2011 | 21:06:09 | Verificando Processo: 00809/04
+ 17/11/2011 | 21:06:09 | Verificando Processo: 01098/04
+ 17/11/2011 | 21:06:09 | Verificando Processo: 01100/04
+ 17/11/2011 | 21:06:09 | Verificando Processo: 01102/04
+ 17/11/2011 | 21:06:09 | Verificando Processo: 01104/04
+ 17/11/2011 | 21:06:09 | Verificando Processo: 01136/04
+ 17/11/2011 | 21:06:09 | Verificando Processo: 01162/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01177/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01248/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01328/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01331/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01338/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01339/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01385/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01389/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01417/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01419/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01453/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01514/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01526/04
+ 17/11/2011 | 21:06:10 | Verificando Processo: 01537/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01539/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01602/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01604/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01611/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01617/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01634/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01640/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01642/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01717/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01720/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01730/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01731/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01744/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01771/04
+ 17/11/2011 | 21:06:11 | Verificando Processo: 01806/04
+ 17/11/2011 | 21:06:12 | Verificando Processo: 01815/04
+ 17/11/2011 | 21:06:12 | Verificando Processo: 01816/04
+ 17/11/2011 | 21:06:12 | Verificando Processo: 01821/04
+ 17/11/2011 | 21:06:12 | Verificando Processo: 01856/04
+ 17/11/2011 | 21:06:12 | Verificando Processo: 02040/04
+ 17/11/2011 | 21:06:12 | Verificando Processo: 02680/03
+ 17/11/2011 | 21:06:12 | CLIENTE: (6) J LOW BEER LTDA.
+ 17/11/2011 | 21:06:12 | Verificando Processo: 01068/03
+ 17/11/2011 | 21:06:12 | CLIENTE: (100) MARÉ ALTA DO BRASIL NAVEGAÇÃO LTDA
+ 17/11/2011 | 21:06:12 | Verificando Processo: 00198/06
+ 17/11/2011 | 21:06:12 | Verificando Processo: 02644/08
+ 17/11/2011 | 21:06:12 | Verificando Processo: 04364/09
+ 17/11/2011 | 21:06:12 | Verificando Processo: 14648/11
+ 17/11/2011 | 21:06:12 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14648_DI_1121829211.txt
+ 17/11/2011 | 21:06:12 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:12 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:12 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:13 | Verificando Processo: 15090/11
+ 17/11/2011 | 21:06:13 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15090_DI_1121829203.txt
+ 17/11/2011 | 21:06:13 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:13 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:13 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:13 | Verificando Processo: 15203/11
+ 17/11/2011 | 21:06:13 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15203_DI_1121829084.txt
+ 17/11/2011 | 21:06:13 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:13 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:13 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:13 | CLIENTE: (244) M-I SWACO DO BRASIL- COMERCIO,SERVIÇOS E MINERAÇÃO LTDA
+ 17/11/2011 | 21:06:13 | Verificando Processo: 13638/11
+ 17/11/2011 | 21:06:13 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13638_DI_1121801503.txt
+ 17/11/2011 | 21:06:13 | Enviando confirmação do registro da DI do Processo: 13638/11; Responsável: Pedro Jaime
+ 17/11/2011 | 21:06:13 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:13 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:13 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:13 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:13 | Verificando Processo: 15665/11
+ 17/11/2011 | 21:06:13 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15665_DI_1121827561.txt
+ 17/11/2011 | 21:06:13 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:13 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:13 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:13 | CLIENTE: (152) MODEC SERVIÇOS DE PETROLEO DO BRASIL LTDA
+ 17/11/2011 | 21:06:13 | Verificando Processo: 04123/08
+ 17/11/2011 | 21:06:14 | CLIENTE: (30) NOBLE DO BRASIL S/C LTDA
+ 17/11/2011 | 21:06:14 | Verificando Processo: 01073/03
+ 17/11/2011 | 21:06:14 | Verificando Processo: 01074/03
+ 17/11/2011 | 21:06:14 | Verificando Processo: 02950/03
+ 17/11/2011 | 21:06:14 | CLIENTE: (296) ODEBRECHT OLEO E GAS S/A
+ 17/11/2011 | 21:06:14 | Verificando Processo: 13767/11
+ 17/11/2011 | 21:06:14 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13767_DI_1121701304.txt
+ 17/11/2011 | 21:06:14 | Enviando confirmação do registro da DI do Processo: 13767/11; Responsável: Luiz Amorim
+ 17/11/2011 | 21:06:14 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:14 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:14 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:14 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:14 | Verificando Processo: 14459/11
+ 17/11/2011 | 21:06:14 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14459_DI_1121702360.txt
+ 17/11/2011 | 21:06:14 | Enviando confirmação do registro da DI do Processo: 14459/11; Responsável: Luiz Amorim
+ 17/11/2011 | 21:06:14 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:14 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:14 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:14 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:14 | Verificando Processo: 14844/11
+ 17/11/2011 | 21:06:14 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14844_DI_1121701339.txt
+ 17/11/2011 | 21:06:15 | Enviando confirmação do registro da DI do Processo: 14844/11; Responsável: Luiz Amorim
+ 17/11/2011 | 21:06:15 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:15 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:15 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:15 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:15 | Verificando Processo: 15119/11
+ 17/11/2011 | 21:06:15 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15119_DI_1121713078.txt
+ 17/11/2011 | 21:06:15 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:15 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:15 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:15 | Verificando Processo: 15123/11
+ 17/11/2011 | 21:06:15 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15123_DI_1121712870.txt
+ 17/11/2011 | 21:06:15 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:15 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:15 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:15 | Verificando Processo: 15302/11
+ 17/11/2011 | 21:06:15 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15302_DI_1121701320.txt
+ 17/11/2011 | 21:06:15 | Enviando confirmação do registro da DI do Processo: 15302/11; Responsável: Luiz Amorim
+ 17/11/2011 | 21:06:15 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:15 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:15 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:15 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:15 | CLIENTE: (88) PAN MARINE DO BRASIL LTDA
+ 17/11/2011 | 21:06:15 | Verificando Processo: 03485/07
+ 17/11/2011 | 21:06:15 | Verificando Processo: 03751/09
+ 17/11/2011 | 21:06:15 | Verificando Processo: 05666/08
+ 17/11/2011 | 21:06:16 | Verificando Processo: 06316/08
+ 17/11/2011 | 21:06:16 | CLIENTE: (83) PETROBRAS - TRANSPORTE S.A. - TRANSPETRO
+ 17/11/2011 | 21:06:16 | Verificando Processo: 00888/05
+ 17/11/2011 | 21:06:16 | CLIENTE: (1) PGS INVESTIGAÇÃO PETROLIFERA LTDA
+ 17/11/2011 | 21:06:16 | Verificando Processo: 01412/05
+ 17/11/2011 | 21:06:16 | Verificando Processo: 02302/07
+ 17/11/2011 | 21:06:16 | Verificando Processo: 02303/07
+ 17/11/2011 | 21:06:16 | Verificando Processo: 03248/04
+ 17/11/2011 | 21:06:16 | Verificando Processo: 06337/08
+ 17/11/2011 | 21:06:16 | Verificando Processo: 06429/08
+ 17/11/2011 | 21:06:16 | CLIENTE: (155) PGS SUPORTE LOGISTICO E SERVIÇOS LTDA
+ 17/11/2011 | 21:06:16 | Verificando Processo: 04034/09
+ 17/11/2011 | 21:06:16 | CLIENTE: (229) PPB DO BRASIL SERVIÇOS MARITIMOS LTDA
+ 17/11/2011 | 21:06:16 | Verificando Processo: 01370/09
+ 17/11/2011 | 21:06:16 | Verificando Processo: 04997/09
+ 17/11/2011 | 21:06:16 | Verificando Processo: 05110/09
+ 17/11/2011 | 21:06:16 | Verificando Processo: 13956/11
+ 17/11/2011 | 21:06:17 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13956_DI_1121817884.txt
+ 17/11/2011 | 21:06:17 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:17 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:17 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:17 | Verificando Processo: 14196/11
+ 17/11/2011 | 21:06:17 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14196_DI_1121819950.txt
+ 17/11/2011 | 21:06:17 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:17 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:17 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:17 | Verificando Processo: 14205/11
+ 17/11/2011 | 21:06:17 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14205_DI_1121818287.txt
+ 17/11/2011 | 21:06:17 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:17 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:17 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:17 | Verificando Processo: 14804/11
+ 17/11/2011 | 21:06:17 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14804_DI_1121817345.txt
+ 17/11/2011 | 21:06:17 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:17 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:17 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:17 | Verificando Processo: 14806/11
+ 17/11/2011 | 21:06:17 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14806_DI_1121819500.txt
+ 17/11/2011 | 21:06:17 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:18 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:18 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:18 | Verificando Processo: 15070/11
+ 17/11/2011 | 21:06:18 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15070_DI_1121818074.txt
+ 17/11/2011 | 21:06:18 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:18 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:18 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:18 | Verificando Processo: 15093/11
+ 17/11/2011 | 21:06:18 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15093_DI_1121818589.txt
+ 17/11/2011 | 21:06:18 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:18 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:18 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:18 | Verificando Processo: 15189/11
+ 17/11/2011 | 21:06:18 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15189_DI_1121819852.txt
+ 17/11/2011 | 21:06:18 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:18 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:18 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:18 | CLIENTE: (300) SCORPION SERVIÇOS OFFSHORE LTDA
+ 17/11/2011 | 21:06:18 | Verificando Processo: 14547/11
+ 17/11/2011 | 21:06:18 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14547_DI_1121823094.txt
+ 17/11/2011 | 21:06:18 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:18 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:18 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:18 | CLIENTE: (226) SEADRILL SERVIÇOS DE PETROLEO LTDA
+ 17/11/2011 | 21:06:19 | Verificando Processo: 00845/09
+ 17/11/2011 | 21:06:19 | Verificando Processo: 02598/09
+ 17/11/2011 | 21:06:19 | Verificando Processo: 03406/09
+ 17/11/2011 | 21:06:19 | CLIENTE: (303) SEADRILL SERVIÇOS DE PETROLEO LTDA
+ 17/11/2011 | 21:06:19 | Verificando Processo: 15399/11
+ 17/11/2011 | 21:06:19 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15399_DI_1121760335.txt
+ 17/11/2011 | 21:06:19 | Enviando confirmação do registro da DI do Processo: 15399/11; Responsável: Phelipe Oliveira
+ 17/11/2011 | 21:06:19 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:19 | Não foram encontrados contatos da empresa.
+ 17/11/2011 | 21:06:19 | Enviando e-mail de aviso para o setor Operacional...
+ 17/11/2011 | 21:06:19 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:19 | CLIENTE: (97) SEAPOS LTDA
+ 17/11/2011 | 21:06:19 | Verificando Processo: 01489/07
+ 17/11/2011 | 21:06:19 | Verificando Processo: 02721/03
+ 17/11/2011 | 21:06:19 | Verificando Processo: 02722/03
+ 17/11/2011 | 21:06:19 | Verificando Processo: 02770/09
+ 17/11/2011 | 21:06:19 | Verificando Processo: 03543/08
+ 17/11/2011 | 21:06:19 | Verificando Processo: 04413/09
+ 17/11/2011 | 21:06:19 | Verificando Processo: 05262/08
+ 17/11/2011 | 21:06:20 | Verificando Processo: 05789/08
+ 17/11/2011 | 21:06:20 | Verificando Processo: 06441/08
+ 17/11/2011 | 21:06:20 | CLIENTE: (182) SEAPOS LTDA.
+ 17/11/2011 | 21:06:20 | Verificando Processo: 01710/08
+ 17/11/2011 | 21:06:20 | Verificando Processo: 07811/09
+ 17/11/2011 | 21:06:20 | CLIENTE: (177) SHELL BRASIL LTDA.
+ 17/11/2011 | 21:06:20 | Verificando Processo: 03092/08
+ 17/11/2011 | 21:06:20 | CLIENTE: (208) STENA SERVICES BRAZIL LTDA.
+ 17/11/2011 | 21:06:20 | Verificando Processo: 02666/09
+ 17/11/2011 | 21:06:20 | CLIENTE: (191) TEEKAY PETROJARL PRODUÇÃO PETROLÍFERA DO BRASIL LTDA.
+ 17/11/2011 | 21:06:20 | Verificando Processo: 01411/09
+ 17/11/2011 | 21:06:20 | Verificando Processo: 02818/08
+ 17/11/2011 | 21:06:20 | Verificando Processo: 03774/08
+ 17/11/2011 | 21:06:20 | Verificando Processo: 04653/08
+ 17/11/2011 | 21:06:20 | CLIENTE: (2) TRANSOCEAN BRASIL LTDA
+ 17/11/2011 | 21:06:20 | Verificando Processo: 00042/09
+ 17/11/2011 | 21:06:20 | Verificando Processo: 00043/09
+ 17/11/2011 | 21:06:20 | Verificando Processo: 00099/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00213/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00215/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00216/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00219/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00220/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00229/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00232/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00240/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00483/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00484/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00485/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00487/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00489/09
+ 17/11/2011 | 21:06:21 | Verificando Processo: 00490/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00491/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00493/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00494/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00531/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00587/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00588/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00600/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00604/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00605/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00606/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00607/08
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00687/09
+ 17/11/2011 | 21:06:22 | Verificando Processo: 00754/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 00779/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 00780/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 00854/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01003/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01038/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01049/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01051/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01090/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01093/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01124/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01218/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01252/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01331/09
+ 17/11/2011 | 21:06:23 | Verificando Processo: 01351/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 01396/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 01397/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 01473/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 01489/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 01620/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 01629/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 01735/05
+ 17/11/2011 | 21:06:24 | Verificando Processo: 01828/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 01872/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 01998/04
+ 17/11/2011 | 21:06:24 | Verificando Processo: 02100/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 02123/09
+ 17/11/2011 | 21:06:24 | Verificando Processo: 02217/09
+ 17/11/2011 | 21:06:25 | Verificando Processo: 02444/09
+ 17/11/2011 | 21:06:25 | Verificando Processo: 02918/08
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03139/09
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03329/08
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03374/09
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03392/08
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03446/09
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03615/08
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03694/08
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03697/08
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03710/09
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03807/08
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03865/09
+ 17/11/2011 | 21:06:25 | Verificando Processo: 03919/08
+ 17/11/2011 | 21:06:26 | Verificando Processo: 03924/08
+ 17/11/2011 | 21:06:26 | Verificando Processo: 04171/09
+ 17/11/2011 | 21:06:26 | Verificando Processo: 04352/08
+ 17/11/2011 | 21:06:26 | Verificando Processo: 04401/09
+ 17/11/2011 | 21:06:26 | Verificando Processo: 04418/08
+ 17/11/2011 | 21:06:26 | Verificando Processo: 04562/09
+ 17/11/2011 | 21:06:26 | Verificando Processo: 04632/08
+ 17/11/2011 | 21:06:26 | Verificando Processo: 04638/08
+ 17/11/2011 | 21:06:26 | Verificando Processo: 04644/08
+ 17/11/2011 | 21:06:26 | Verificando Processo: 04824/08
+ 17/11/2011 | 21:06:26 | Verificando Processo: 04946/08
+ 17/11/2011 | 21:06:26 | Verificando Processo: 05103/08
+ 17/11/2011 | 21:06:26 | Verificando Processo: 05177/09
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05190/09
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05277/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05278/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05281/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05342/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05438/09
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05523/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05524/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05526/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05528/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05537/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05720/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05724/08
+ 17/11/2011 | 21:06:27 | Verificando Processo: 05726/08
+ 17/11/2011 | 21:06:28 | Verificando Processo: 05727/08
+ 17/11/2011 | 21:06:28 | Verificando Processo: 05836/09
+ 17/11/2011 | 21:06:28 | Verificando Processo: 05917/08
+ 17/11/2011 | 21:06:28 | Verificando Processo: 06087/08
+ 17/11/2011 | 21:06:28 | Verificando Processo: 06170/09
+ 17/11/2011 | 21:06:28 | Verificando Processo: 06297/09
+ 17/11/2011 | 21:06:28 | Verificando Processo: 06298/09
+ 17/11/2011 | 21:06:28 | Verificando Processo: 06381/09
+ 17/11/2011 | 21:06:28 | Verificando Processo: 06417/08
+ 17/11/2011 | 21:06:28 | Verificando Processo: 06418/08
+ 17/11/2011 | 21:06:28 | Verificando Processo: 06461/08
+ 17/11/2011 | 21:06:28 | Verificando Processo: 06463/08
+ 17/11/2011 | 21:06:28 | Verificando Processo: 06465/08
+ 17/11/2011 | 21:06:29 | Verificando Processo: 06467/08
+ 17/11/2011 | 21:06:29 | Verificando Processo: 06472/08
+ 17/11/2011 | 21:06:29 | Verificando Processo: 06490/08
+ 17/11/2011 | 21:06:29 | Verificando Processo: 06492/08
+ 17/11/2011 | 21:06:29 | Verificando Processo: 06584/09
+ 17/11/2011 | 21:06:29 | Verificando Processo: 06693/09
+ 17/11/2011 | 21:06:29 | Verificando Processo: 13823/11
+ 17/11/2011 | 21:06:29 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS13823_DI_1121828894.txt
+ 17/11/2011 | 21:06:29 | Enviando confirmação do registro da DI do Processo: 13823/11; Responsável: Eliane Machado
+ 17/11/2011 | 21:06:29 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:29 | Enviando e-mails para contatos das empresas...
+ 17/11/2011 | 21:06:29 | CONTATO: Danielle Montalvao
+ 17/11/2011 | 21:06:29 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:29 | CONTATO: F. Nunes
+ 17/11/2011 | 21:06:29 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | CONTATO: Frederico
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | CONTATO: Rita Santos
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | CONTATO: Vanderson Rangel
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | Verificando Processo: 14287/11
+ 17/11/2011 | 21:06:30 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS14287_DI_1121813579.txt
+ 17/11/2011 | 21:06:30 | Enviando confirmação do registro da DI do Processo: 14287/11; Responsável: Leonardo da Silva Barbosa
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | Enviando e-mails para contatos das empresas...
+ 17/11/2011 | 21:06:30 | CONTATO: Danielle Montalvao
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | CONTATO: F. Nunes
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | CONTATO: Frederico
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | CONTATO: Rita Santos
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | CONTATO: Vanderson Rangel
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | Verificando Processo: 15676/11
+ 17/11/2011 | 21:06:30 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15676_DI_1121815377.txt
+ 17/11/2011 | 21:06:30 | Enviando confirmação do registro da DI do Processo: 15676/11; Responsável: Leonardo da Silva Barbosa
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | Enviando e-mails para contatos das empresas...
+ 17/11/2011 | 21:06:30 | CONTATO: Danielle Montalvao
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | CONTATO: F. Nunes
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | CONTATO: Frederico
+ 17/11/2011 | 21:06:30 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:30 | CONTATO: Rita Santos
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | CONTATO: Vanderson Rangel
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | Verificando Processo: 15779/11
+ 17/11/2011 | 21:06:31 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15779_DI_1121776789.txt
+ 17/11/2011 | 21:06:31 | Enviando confirmação do registro da DI do Processo: 15779/11; Responsável: Valéria Fernandes
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | Enviando e-mails para contatos das empresas...
+ 17/11/2011 | 21:06:31 | CONTATO: Danielle Montalvao
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | CONTATO: F. Nunes
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | CONTATO: Frederico
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | CONTATO: Rita Santos
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | CONTATO: Vanderson Rangel
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | Verificando Processo: 15845/11
+ 17/11/2011 | 21:06:31 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15845_DI_1121792482.txt
+ 17/11/2011 | 21:06:31 | Enviando confirmação do registro da DI do Processo: 15845/11; Responsável: Leonardo da Silva Barbosa
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | Enviando e-mails para contatos das empresas...
+ 17/11/2011 | 21:06:31 | CONTATO: Danielle Montalvao
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | CONTATO: F. Nunes
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | CONTATO: Frederico
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | CONTATO: Rita Santos
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:31 | CONTATO: Vanderson Rangel
+ 17/11/2011 | 21:06:31 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:32 | Verificando Processo: 15847/11
+ 17/11/2011 | 21:06:32 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15847_DI_1121822519.txt
+ 17/11/2011 | 21:06:32 | ERRO! Não houve envios.
+ 17/11/2011 | 21:06:32 | ERRO! Enviando aviso de Aguardando Contabilização ICMS
+ 17/11/2011 | 21:06:32 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:32 | Verificando Processo: 15849/11
+ 17/11/2011 | 21:06:32 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS15849_DI_1121793330.txt
+ 17/11/2011 | 21:06:32 | Enviando confirmação do registro da DI do Processo: 15849/11; Responsável: Leonardo da Silva Barbosa
+ 17/11/2011 | 21:06:32 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:32 | Enviando e-mails para contatos das empresas...
+ 17/11/2011 | 21:06:32 | CONTATO: Danielle Montalvao
+ 17/11/2011 | 21:06:32 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:32 | CONTATO: F. Nunes
+ 17/11/2011 | 21:06:32 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:32 | CONTATO: Frederico
+ 17/11/2011 | 21:06:32 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:32 | CONTATO: Rita Santos
+ 17/11/2011 | 21:06:32 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:32 | CONTATO: Vanderson Rangel
+ 17/11/2011 | 21:06:32 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:32 | Verificando Processo: 16012/11
+ 17/11/2011 | 21:06:32 | Salvando arquivo: \\MSSERVER01\sistemas\MS2000\planilhas\ADR_MS16012_DI_1121818198.txt
+ 17/11/2011 | 21:06:32 | Enviando confirmação do registro da DI do Processo: 16012/11; Responsável: Valéria Fernandes
+ 17/11/2011 | 21:06:32 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:32 | Enviando e-mails para contatos das empresas...
+ 17/11/2011 | 21:06:32 | CONTATO: Danielle Montalvao
+ 17/11/2011 | 21:06:33 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:33 | CONTATO: F. Nunes
+ 17/11/2011 | 21:06:33 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:33 | CONTATO: Frederico
+ 17/11/2011 | 21:06:33 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:33 | CONTATO: Rita Santos
+ 17/11/2011 | 21:06:33 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:33 | CONTATO: Vanderson Rangel
+ 17/11/2011 | 21:06:33 | Gravando e-Mail automático...
+ 17/11/2011 | 21:06:33 | >>> FINALIZANDO O PROCESSAMENTO DO ADR

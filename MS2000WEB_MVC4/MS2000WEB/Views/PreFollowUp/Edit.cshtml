@@ -1,0 +1,198 @@
+﻿@model MS2000WEB.Models.Pre_Followup
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Pré-Processo</a> <span class="divider">></span></li>
+    <li><a href="#">Follw-Up</a> <span class="divider">></span></li>
+    <li class="active">Edição</li>
+</ul>
+
+<h4>Follow-Up</h4>
+
+@using (Html.BeginForm("Edit", "PreFollowUp", FormMethod.Post, new { @class = "form-stacked" }))
+{
+    @Html.ValidationSummary(false, "Ocorreram erros no formulário. Por favor, corrija os erros e tente novamente.")
+    @Html.AntiForgeryToken()   
+
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.pk_codigo)
+    </div>
+
+    <div class="editor-field">
+        @Html.HiddenFor(model => model.fk_preprocesso)
+    </div>
+        
+    <div class="clearfix">
+        @Html.Label("Data ")
+        <div class="input">
+            @Html.DisplayFor(model => model.data)
+            @Html.HiddenFor(model => model.data)
+        </div>
+    </div>
+             
+    <div class="clearfix">
+        @Html.Label("Hora ")
+        <div class="input">
+            @*@Html.EditorFor(model => model.hora)*@
+            @Html.TextBoxFor(model => model.hora, new { @class = "span1", @disabled = "disabled" })
+        </div>
+    </div>
+          
+    <div class="clearfix">
+        @Html.Label("Evento ")
+        <div class="input">
+            @Html.TextBox("Cod_Evento", Model.fk_evento, new { @class = "span1" })
+            @Html.DropDownList("fk_evento", null, string.Empty, new { id = "ddlEventos" })
+        </div>
+    </div>
+               
+    <div class="clearfix">
+        @Html.Label("Observação do Evento ")
+        <div class="input">
+            @Html.TextBox("Cod_ObsEvento", Model.fk_observacao, new { @class = "span1" })
+            @*@Html.DropDownListFor(Model => Model.fk_observacao, new SelectList(ViewBag.fk_observacao as System.Collections.IEnumerable, "Codigo", "Descricao"),null, new { id = "ddlObsEventos" })*@
+            @Html.DropDownList("fk_observacao", string.Empty)
+        </div>
+    </div>
+                
+    <div class="clearfix">
+        @Html.Label("Observação Detalhada ")
+        <div class="input">
+            @Html.TextAreaFor(model => model.obsespecificado, new { @class = "text-box", @rows = 5 })
+        </div>
+    </div>
+
+    <div class="form-actions">
+        @*<input id="submit" type="submit" class="btn btn-inverse" value="Salvar Alterações" />*@
+        @* @Html.ActionLink("Salvar Alterações", "Edit", null, new { @class = "btn btn-inverse" }) *@
+        <button type="submit" class="btn btn-inverse">Salvar alterações</button>
+        @Html.ActionLink("Cancelar", "Index", new { id = Model.fk_preprocesso }, new { @class = "btn" })
+    </div>    
+}
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //getObsEventos($("#ddlEventos").val());
+
+        $("#ddlEventos").change(function () {
+            var idObsEvento = $(this).val();
+            getObsEventos(idObsEvento);
+        });
+
+        $("#Cod_Evento").change(function () {
+            var idObsEvento = $(this).val();
+            getObsEventos(idObsEvento);
+        });
+        
+        function getObsEventos(param) {
+            //$.getJSON("/PreFollowUp/PopulateObsEventoDropDownList", { id: param },
+            $.getJSON("@Url.Action("PopulateObsEventoDropDownList","PreFollowUp")", { id: param },
+            function (eventoData) {
+                var select = $("#fk_observacao");
+                select.empty();
+                select.append($('<option/>', {
+                    value: 0,
+                    text: "Selecione"
+                }));
+                $.each(eventoData, function (index, itemData) {
+
+                    select.append($('<option/>', {
+                        value: itemData.Value,
+                        text: itemData.Text
+                    }));
+                });
+            });
+        }
+    });
+
+
+    $(document).ready(function () {
+        $("#ddlEventos").change(function () {
+            $("#Cod_Evento").val($(this).val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Cod_Evento").keyup(function () {
+            $("#ddlEventos").val($("#Cod_Evento").val())
+        });
+    });
+
+
+
+    $(document).ready(function () {
+        $("#fk_observacao").change(function () {
+            $("#Cod_ObsEvento").val($(this).val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Cod_ObsEvento").keyup(function () {
+            $("#fk_observacao").val($("#Cod_ObsEvento").val())
+        });
+    });
+
+
+
+
+
+
+    $(document).ready(function () {
+        $("#hora").change(function () {
+            var hora = $("#hora").val();
+            //alert("teste");
+            mascara_hora(hora);
+        });
+        function mascara_hora(hora) {
+            var myhora = '';
+            myhora = myhora + hora;
+            if (myhora.length == 2) {
+                myhora = myhora + ':';
+                document.forms[0].hora.value = myhora;
+            }
+            if (myhora.length == 5) {
+                verifica_hora();
+            }
+        }
+
+        function verifica_hora() {
+
+            hrs = (document.forms[0].hora.value.substring(0, 2));
+            min = (document.forms[0].hora.value.substring(3, 5));
+
+            //alert('hrs ' + hrs);
+            //alert('min ' + min);
+
+            situacao = "";
+            // verifica data e hora 
+            if ((hrs < 00) || (hrs > 23) || (min < 00) || (min > 59)) {
+                situacao = "falsa";
+            }
+
+            if (document.forms[0].hora.value == "") {
+                situacao = "falsa";
+            }
+
+            if (situacao == "falsa") {
+                alert("Hora inválida!");
+                document.forms[0].hora.focus();
+            }
+        }
+    })
+
+
+
+</script>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,110 @@
+﻿@model PagedList.IPagedList<MS2000WEB.Models.RAT_Repetro>
+
+@using PagedList.Mvc;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "RAT Repetro";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Emissão de RAT</a> <span class="divider">></span></li>
+    <li><a href="#">Repetro</a> <span class="divider">></span></li>
+    <li class="active">Index</li>
+</ul>
+<h4>Requerimento de Admissão Temporária(RAT) - Repetro</h4>
+<hr />
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="span10">
+            <form class="form-search">
+                <label style="width: 200px!important;">Entre com número do processo</label>
+                @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "span2 search-query" })
+                <button type="submit" class="btn btn-inverse">Pesquisar</button>
+                @*<button type="submit" class="btn btn-inverse">Incluir novo RAT(Repetro)</button>*@
+                @Html.ActionLink("Incluir novo RAT(Repetro)", "Create", null, new { @class = "btn btn-inverse", id = "btnIncluir" })
+            </form>
+        </div>
+    </div>
+}
+
+<div class="row">
+    <div class="span10">
+        <table id="grid" class="grade">
+            @if (Model != null)
+            {          
+                <thead>
+                    <tr class="header">
+                        <th scope="col" style="white-space: nowrap !important;">Ações
+                        </th>
+                        <th scope="col" style="white-space: nowrap !important;">Processo
+                        </th>
+                        <th scope="col" style="white-space: nowrap !important;">Nome da Empresa
+                        </th>
+                        <th scope="col" style="white-space: nowrap !important;">Prazo Solicitado
+                        </th>
+                        <th scope="col" style="white-space: nowrap !important;">Unidade Jurisdicionante
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var row in Model)
+                    {     
+                        <tr>
+                            <td>
+                                <ul class="nav pull-center" style="list-style-type: none!important; padding: 0px; margin: 0px;">
+                                    <li class="dropdown" style="line-height: 0px!important;">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <i class="icon-list"></i><b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>@Html.ActionLink("Editar", "Edit", "RatRepetro", new { id = row.ID }, null)</li>
+                                            <li class="divider"></li>
+                                            <li>@Html.ActionLink("Download do Requerimento (.pdf)", "PrintReport", "RatRepetro", new { id = row.ID }, null)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </td>
+
+                            <td style="white-space: nowrap !important;">
+                                @row.FK_Processo
+                            </td>
+                            <td>
+                                @row.Nome_Empresa_Estrangeira
+                            </td>
+                            <td>
+                                @Convert.ToDateTime(row.Enquadramento_Prazo_Solicitado).ToString("dd/MM/yyyy")
+                            </td>
+                            <td>
+                                @row.Unidade_Jurisdicionante
+                            </td>
+                        </tr>
+                    }
+                </tbody> 
+            }
+        </table>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="span10 text-center">
+        Página @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) de @Model.PageCount
+        <br />
+        <div class="pagedList">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, currentFilter = ViewBag.CurrentFilter }))
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#SearchString").mask("99999/99");
+        $("table tr:odd").addClass("alt");
+    });
+</script>

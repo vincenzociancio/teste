@@ -1,0 +1,47 @@
+﻿@model MS2000WEB.Models.RH_Formularios
+
+@{
+    ViewBag.Title = "Editar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">RH</a> <span class="divider">></span></li>
+    <li><a href="#">Formulário</a> <span class="divider">></span></li>
+    <li><a href="#">Cadastro</a> <span class="divider">></span></li>
+    <li class="active">Deletar</li>
+</ul>
+
+<h4>Formulario</h4>
+
+
+
+@using (Html.BeginForm("Edit", "RHFormulario", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-stacked" }))
+{           
+    @Html.AntiForgeryToken();   
+    @Html.HiddenFor(model => model.Id) 
+    @Html.HiddenFor(model => model.Descricao_Arquivo) 
+    @Html.HiddenFor(model => model.Caminho) 
+    @Html.HiddenFor(model => model.Tipo_Arquivo) 
+    @Html.HiddenFor(model => model.Data) 
+    @Html.HiddenFor(model => model.Lixo)     
+    
+    <div class="editor-field">
+        @Html.Label("Título ")
+        @Html.EditorFor(model => model.Titulo)
+        @Html.ValidationMessageFor(model => model.Titulo)
+    </div>
+    <br />   
+    
+    <div class="form-actions">
+    <button type="submit" class="btn btn-inverse">Salvar</button>        
+    @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })   
+    </div>           
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

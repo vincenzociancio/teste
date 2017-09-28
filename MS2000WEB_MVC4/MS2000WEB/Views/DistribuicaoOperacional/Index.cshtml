@@ -1,0 +1,162 @@
+﻿@model List<MS2000WEB.ViewModels.DistribuicaoOperacionalViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">ver </a><span class="divider">></span></li>
+    <li class="active">Index</li>
+</ul>
+
+
+<script type="text/javascript">
+
+    function ajaxStop() {
+        $.unblockUI();
+    }
+
+    $(document).ready(function () {
+        $("#lblCliente").css('visibility', 'hidden');
+        $("#lblCNPJ").css('visibility', 'hidden');
+        $("#txtCliente").css('visibility', 'hidden');
+        $("#txtCNPJ").css('visibility', 'hidden');
+        $("input[type='text']").val("");
+        $("#txtprocesso").val("");
+        //  $("#txtprocesso").mask("99999/99");
+        $("#Confirma").click(function () {
+            if (($("#txtprocesso").val() == "") || ($("#Superv_Resp").val() == "") || ($("#Coord_Resp").val() == "")) {
+                $("#msgErro").empty().prepend("<p><b>Campos obrigatórios:</b></p><ul><li> Processo </li><li> Supervisor Responsável </li><li> Coordenador Responsável </li></ul>");
+                return false;
+            }
+            else {
+                return true;
+            }
+        });
+        $("#txtprocesso").keyup(function () {
+            var Proc = $(this).val();
+            $("#Resp_ms").val("");
+            $("#Resp_Cliente").val("");
+            $("#Superv_Resp").val("");
+            $("#Coord_Resp").val("");
+            $("#lblCliente").val("");
+            $("#lblCNPJ").val("");
+            $("#lblCliente").css('visibility', 'hidden');
+            $("#lblCNPJ").css('visibility', 'hidden');
+            $("#txtCliente").css('visibility', 'hidden');
+            $("#txtCNPJ").css('visibility', 'hidden');
+            if ($(this).val().length == 5) {
+                $("#txtprocesso").val($(this).val() + "/");
+            }
+            //alert(Proc.replace("/","",).replace("",""));
+            if ($(this).val().length >= 8) {
+                $.getJSON("@Url.Action("VerificarDistribuicao", "DistribuicaoOperacional")", { Processo: Proc },
+function (data) {
+    $("#Resp_ms").val(data.respms);
+    $("#Resp_Cliente").val(data.respcli);
+    $("#Superv_Resp").val(data.superv);
+    $("#Coord_Resp").val(data.coord);
+    //  $("#lblCliente").val(data.imp);
+    //  $("#lblCNPJ").val(data.cnpj);
+    $("#msgErro").empty().prepend(data.msg);
+    //  var teste = (data.coord).val();
+    //  alert(data.redirectTo);
+    //  if (data.redirectTo != "") {
+    //     window.location.href = data.redirectTo;
+    //  }
+    if (data.imp != "") {
+        $("#lblCliente").css('visibility', 'visible');
+        $("#lblCNPJ").css('visibility', 'visible');
+        $("#txtCliente").css('visibility', 'visible');
+        $("#txtCNPJ").css('visibility', 'visible');
+        $("#txtCliente").val(data.imp);
+        $("#txtCNPJ").val(data.cnpj);
+        // window.location.href = data.redirectTo;
+    }
+});
+        }
+        });
+    });
+</script>
+
+<h4>Distribuição Operacional de Processos </h4>
+
+@using (Html.BeginForm("SalvarDistribuicao", "DistribuicaoOperacional", FormMethod.Post, new { @class = "form-stacked" }))
+{   
+    <div class="clearfix" id="msgErro" style="color: red; font-size: 12px;"></div>
+    <fieldset>
+        <legend>Entre com o Processos </legend>
+    </fieldset>
+    <div class="row">
+        <div class="span2">
+            <div class="clearfix">
+                @Html.Label("Processo")
+                @Html.TextBox("txtprocesso", null, new { @class = "span2" })
+                @Html.Label("Cliente: ", new { @id = "lblCliente" })
+                @*<div class="clearfix" id="lblCliente" style="color: red; font-size: 12px;"></div>*@
+                @Html.TextBox("txtCliente", null, new { @class = "span5", @disabled = "disabled" })
+
+                <fieldset>
+                    <legend>Distribuir Processos </legend>
+                    <div class="clearfix">
+                        @Html.Label("Responsável MS")
+                        @Html.DropDownList("Resp_ms", null, "Selecione", new { @class = "span5" })
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("Responsável Cliente")
+                        @Html.DropDownList("Resp_Cliente", null, "Selecione", new { @class = "span5" })
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("Supervisor Responsável")
+                        @Html.DropDownList("Superv_Resp", null, "Selecione", new { @class = "span5" })
+                    </div>
+
+                    <div class="clearfix">
+                        @Html.Label("Coordenador Responsável")
+                        @Html.DropDownList("Coord_Resp", null, "Selecione", new { @class = "span5" })
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+        <div class="span*">
+            @Html.Label("CNPJ: ", new { @id = "lblCNPJ" })
+            @*             <div class="clearfix" id="lblCNPJ" style="color: red; font-size: 12px;"></div>*@
+            @Html.TextBox("txtCNPJ", null, new { @class = "span3", @disabled = "disabled" })
+        </div>
+        <div class="span* offset*">
+            <fieldset>
+                <legend>Processos em andamento por usuário </legend>
+
+                <div style="overflow-y:scroll; height: 280px">
+                    <div id="viewProcessos" class="body_exchange">                       
+                      @Html.Partial("ProcessosAndamento")
+                    </div> 
+                </div>
+            </fieldset>
+            <br />
+            <div align="center">
+                @Ajax.ActionLink("Atualiza", "GetAtualiza", "DistribuicaoOperacional", null,
+                                            new AjaxOptions
+                                            {
+                                                HttpMethod = "Post",
+                                                InsertionMode = InsertionMode.Replace,
+                                                UpdateTargetId = "viewProcessos",
+                                                OnComplete = "ajaxStop()"
+                                            }, new { @class = "btn  btn-inverse" })
+                @*   @Html.ActionLink("Atualiza", "GetAtualiza", "DistribuicaoOperacional", null, new { @class = "btn  btn-inverse" })*@
+            </div>
+        </div>
+    </div>@*
+    <div class="row">*@      
+@*</div>*@    
+    <br />
+    <div class="form-actions">
+        <input type="submit" name="Confirma" id="Confirma" value="Confirma" class="btn  btn-inverse" />
+        @Html.ActionLink("Cancelar", "index", "Home", null, new { @class = "btn" })
+    </div>
+}

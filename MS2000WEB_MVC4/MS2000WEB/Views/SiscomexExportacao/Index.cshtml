@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">ver </a><span class="divider">></span></li>
+    <li class="active">Index</li>
+</ul>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("input[type='text']").val("");
+        $("#txtprocesso").val("");
+        $("#txtprocesso").mask("99999/99");
+        $("#Download").click(function () {
+            if ($("#txtprocesso").val() == "") {
+                $("#msgErro").empty().prepend("<p><b>Campos obrigatórios:</b></p><ul><li> Processo </li></ul>");
+                return false;
+            }
+            else {
+                return true;
+            }
+        });
+    });
+</script>
+
+<h4>Carta do Garantidor </h4>
+
+@* <div class="editor-field">
+       @Html.DropDownList("ImportadorCgcCpf", "Selecione")      
+  </div>*@
+@using (Html.BeginForm("teste", "SiscomexExportacao",
+                    FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-stacked" }))
+{   
+    <div class="clearfix" id="msgErro" style="color: red; font-size: 12px;"></div>
+    <div class="row">
+        <div class="span*">
+            <div class="clearfix">
+                @Html.Label("Processo")
+                @Html.TextBox("txtprocesso", null, new { @class = "span2" })
+                @* <input type="submit" class="btn btn-inverse" value="Pesquisar" />*@
+            </div>           
+        </div>
+    </div>
+    <br />
+
+    <div class="form-actions">
+        <input type="submit" name="Processar" id="Download" value="Download" class="btn  btn-inverse" />
+    </div>
+}

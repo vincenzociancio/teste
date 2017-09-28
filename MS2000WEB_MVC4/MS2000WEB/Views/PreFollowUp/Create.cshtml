@@ -1,0 +1,208 @@
+﻿@model MS2000WEB.Models.Pre_Followup
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#ddlEventos").change(function () {
+            var idObsEvento = $(this).val();
+            //$.getJSON("/PreFollowUp/PopulateObsEventoDropDownList", { id: idObsEvento },
+            $.getJSON("@Url.Action("PopulateObsEventoDropDownList", "PreFollowUp")", { id: idObsEvento },          
+            function (eventoData) {
+                var select = $("#ddlObsEventos");
+                select.empty();
+                select.append($('<option/>', {
+                    value: 0,
+                    text: "Selecione"
+                }));
+                $.each(eventoData, function (index, itemData) {
+
+                    select.append($('<option/>', {
+                        value: itemData.Value,
+                        text: itemData.Text
+                    }));
+                });
+            });
+        });
+
+    });
+
+
+
+    $(document).ready(function () {
+        $("#Cod_Evento").change(function () {
+            var idObsEvento = $(this).val();
+            //$.getJSON("/PreFollowUp/PopulateObsEventoDropDownList", { id: idObsEvento },
+            $.getJSON("@Url.Action("PopulateObsEventoDropDownList", "PreFollowUp")", { id: idObsEvento },          
+            function (eventoData) {
+                var select = $("#ddlObsEventos");
+                select.empty();
+                select.append($('<option/>', {
+                    value: 0,
+                    text: "Selecione"
+                }));
+                $.each(eventoData, function (index, itemData) {
+
+                    select.append($('<option/>', {
+                        value: itemData.Value,
+                        text: itemData.Text
+                    }));
+                });
+            });
+        });
+
+    });
+
+    $(document).ready(function () {
+        $("#ddlEventos").change(function () {
+            $("#Cod_Evento").val($(this).val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Cod_Evento").keyup(function () {
+            $("#ddlEventos").val($("#Cod_Evento").val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#ddlObsEventos").change(function () {
+            $("#Cod_ObsEvento").val($(this).val())
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Cod_ObsEvento").keyup(function () {
+            $("#ddlObsEventos").val($("#Cod_ObsEvento").val())
+        });
+    });
+
+
+
+</script>
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Pré-Processo</a> <span class="divider">></span></li>
+    <li><a href="#">Follwo-Up</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+
+<h4>Follow-Up</h4>
+
+@using (Html.BeginForm("Create", "PreFollowUp", FormMethod.Post, new { @class = "form-stacked" }))
+{
+   
+    @Html.ValidationSummary(false, "Ocorreram erros no formulário. Por favor, corrija os erros e tente novamente.")
+    @Html.Hidden("fk_preprocesso", (int)ViewBag.fk_preprocessos) 
+    @Html.AntiForgeryToken()
+        
+    <div class="clearfix">
+        @Html.Label("Data ")
+        @Html.Label("", string.Format("{0:dd/MM/yyyy}", DateTime.Now))
+        <div class="input">
+            @Html.HiddenFor(model => model.data)
+        </div>
+    </div>
+         
+    <div class="clearfix">
+        @*@Html.Label("Hora ")*@
+        <div class="input">
+            @Html.HiddenFor(model => model.hora, new { @class = "span1" })
+        </div>
+    </div>
+    
+            
+            
+@*----------------Eventos-----------------*@
+                   
+        
+    <div class="clearfix">
+        @Html.Label("Evento ")
+        <div class="input">
+            @Html.TextBox("Cod_Evento", null, new { @class = "span1" })
+            @Html.DropDownListFor(Model => Model.fk_evento, new SelectList(ViewBag.fk_evento as System.Collections.IEnumerable, "Codigo", "Descricao"),
+        "Selecione", new { id = "ddlEventos", style = "width: 400px;" })
+        </div>
+    </div>
+               
+    <div class="clearfix">
+        @Html.Label("Observação do Evento ")
+        <div class="input">
+            @Html.TextBox("Cod_ObsEvento", null, new { @class = "span1" })
+            @Html.DropDownListFor(Model => Model.fk_observacao, new SelectList(Enumerable.Empty<SelectListItem>(), "Codigo", "Descricao"), "Selecione", new { id = "ddlObsEventos",style = "width: 400px;" })
+        </div>
+    </div> 
+       
+    <div class="clearfix">
+        @Html.Label("Observação Detalhada ")
+        <div class="input">
+            @Html.TextAreaFor(model => model.obsespecificado, new { @class = "span5"})
+            @Html.ValidationMessageFor(model => model.obsespecificado)
+        </div>
+    </div>
+    
+    <div class="form-actions">
+        @*<input id="submit" type="submit" class="btn btn-inverse" value="Salvar" />*@
+        @*@Html.ActionLink("Salvar", "Create", null, new { @class = "btn btn-inverse" }) *@
+        <button type="submit" class="btn btn-inverse">Salvar</button>
+        @Html.ActionLink("Cancelar", "Index", new { id = (int)ViewBag.fk_preprocessos }, new { @class = "btn" })
+    </div>
+       
+}
+
+<script>
+
+
+    $(document).ready(function () {
+        $("#hora").change(function () {
+            var hora = $("#hora").val();
+            //alert("teste");
+            mascara_hora(hora);
+        });
+        function mascara_hora(hora) {
+            var myhora = '';
+            myhora = myhora + hora;
+            if (myhora.length == 2) {
+                myhora = myhora + ':';
+                document.forms[0].hora.value = myhora;
+            }
+            if (myhora.length == 5) {
+                verifica_hora();
+            }
+        }
+
+        function verifica_hora() {
+
+            hrs = (document.forms[0].hora.value.substring(0, 2));
+            min = (document.forms[0].hora.value.substring(3, 5));
+
+            //alert('hrs ' + hrs);
+            //alert('min ' + min);
+
+            situacao = "";
+            // verifica data e hora 
+            if ((hrs < 00) || (hrs > 23) || (min < 00) || (min > 59)) {
+                situacao = "falsa";
+            }
+
+            if (document.forms[0].hora.value == "") {
+                situacao = "falsa";
+            }
+
+            if (situacao == "falsa") {
+                alert("Hora inválida!");
+                document.forms[0].hora.focus();
+            }
+        }
+    })
+
+</script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

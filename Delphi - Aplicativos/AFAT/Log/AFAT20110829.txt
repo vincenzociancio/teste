@@ -1,0 +1,321 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 29/08/2011 | 15:00:44 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 15:00:44 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 15:03:19 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 15:03:19 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 15:05:28 | EMAIL: Antonio Bibas
+ 29/08/2011 | 15:05:34 | EMAIL: Eli Junior
+ 29/08/2011 | 15:05:36 | EMAIL: Fabiano Souza
+ 29/08/2011 | 15:05:37 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 15:05:38 | EMAIL: Juan Silva
+ 29/08/2011 | 15:05:41 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 15:05:44 | EMAIL: Maria Eduarda
+ 29/08/2011 | 15:05:46 | EMAIL: Natasha Cunha
+ 29/08/2011 | 15:05:47 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 15:05:49 | EMAIL: Tereza Moraes
+ 29/08/2011 | 15:05:51 | EMAIL: Welison Martins
+ 29/08/2011 | 15:05:53 | Gravando e-Mails automáticos...
+ 29/08/2011 | 15:07:32 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 15:07:32 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 15:09:28 | EMAIL: Antonio Bibas
+ 29/08/2011 | 15:31:56 | EMAIL: Eli Junior
+ 29/08/2011 | 15:31:57 | EMAIL: Fabiano Souza
+ 29/08/2011 | 15:31:58 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 15:31:58 | EMAIL: Juan Silva
+ 29/08/2011 | 15:31:59 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 15:32:00 | EMAIL: Maria Eduarda
+ 29/08/2011 | 15:32:00 | EMAIL: Natasha Cunha
+ 29/08/2011 | 15:32:36 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 15:32:41 | EMAIL: Tereza Moraes
+ 29/08/2011 | 15:32:50 | EMAIL: Welison Martins
+ 29/08/2011 | 15:32:54 | Gravando e-Mails automáticos...
+ 29/08/2011 | 15:34:32 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 15:34:32 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 15:36:39 | EMAIL: Antonio Bibas
+ 29/08/2011 | 15:36:47 | EMAIL: Eli Junior
+ 29/08/2011 | 15:36:48 | EMAIL: Fabiano Souza
+ 29/08/2011 | 15:36:52 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 15:36:53 | EMAIL: Juan Silva
+ 29/08/2011 | 15:36:54 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 15:36:55 | EMAIL: Maria Eduarda
+ 29/08/2011 | 15:36:56 | EMAIL: Natasha Cunha
+ 29/08/2011 | 15:36:57 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 15:36:58 | EMAIL: Tereza Moraes
+ 29/08/2011 | 15:36:59 | EMAIL: Welison Martins
+ 29/08/2011 | 15:37:06 | Gravando e-Mails automáticos...
+ 29/08/2011 | 15:37:31 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 15:37:31 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 15:39:28 | EMAIL: Antonio Bibas
+ 29/08/2011 | 15:39:33 | EMAIL: Eli Junior
+ 29/08/2011 | 15:39:34 | EMAIL: Fabiano Souza
+ 29/08/2011 | 15:39:34 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 15:39:35 | EMAIL: Juan Silva
+ 29/08/2011 | 15:39:37 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 15:39:39 | EMAIL: Maria Eduarda
+ 29/08/2011 | 15:39:40 | EMAIL: Natasha Cunha
+ 29/08/2011 | 15:39:42 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 15:39:44 | EMAIL: Tereza Moraes
+ 29/08/2011 | 15:39:46 | EMAIL: Welison Martins
+ 29/08/2011 | 15:39:48 | Gravando e-Mails automáticos...
+ 29/08/2011 | 15:41:42 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 15:41:42 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 15:41:52 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 15:41:52 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 15:43:50 | EMAIL: Antonio Bibas
+ 29/08/2011 | 15:44:02 | EMAIL: Eli Junior
+ 29/08/2011 | 15:44:03 | EMAIL: Fabiano Souza
+ 29/08/2011 | 15:44:04 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 15:44:06 | EMAIL: Juan Silva
+ 29/08/2011 | 15:44:07 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 15:44:07 | EMAIL: Maria Eduarda
+ 29/08/2011 | 15:44:10 | EMAIL: Natasha Cunha
+ 29/08/2011 | 15:44:13 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 15:44:15 | EMAIL: Tereza Moraes
+ 29/08/2011 | 15:44:16 | EMAIL: Welison Martins
+ 29/08/2011 | 15:44:16 | Gravando e-Mails automáticos...
+ 29/08/2011 | 15:44:16 | >>> FINALIZANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 15:45:58 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 15:45:58 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 15:47:56 | EMAIL: Antonio Bibas
+ 29/08/2011 | 15:48:01 | EMAIL: Eli Junior
+ 29/08/2011 | 15:48:02 | EMAIL: Fabiano Souza
+ 29/08/2011 | 15:48:03 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 15:48:03 | EMAIL: Juan Silva
+ 29/08/2011 | 15:48:04 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 15:48:04 | EMAIL: Maria Eduarda
+ 29/08/2011 | 15:48:05 | EMAIL: Natasha Cunha
+ 29/08/2011 | 15:48:05 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 15:48:06 | EMAIL: Tereza Moraes
+ 29/08/2011 | 15:48:07 | EMAIL: Welison Martins
+ 29/08/2011 | 15:48:09 | Gravando e-Mails automáticos...
+ 29/08/2011 | 15:48:09 | >>> FINALIZANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:27:11 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:27:11 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 16:29:29 | EMAIL: Antonio Bibas
+ 29/08/2011 | 16:29:37 | EMAIL: Eli Junior
+ 29/08/2011 | 16:29:48 | EMAIL: Fabiano Souza
+ 29/08/2011 | 16:29:49 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 16:29:50 | EMAIL: Juan Silva
+ 29/08/2011 | 16:29:50 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 16:29:51 | EMAIL: Maria Eduarda
+ 29/08/2011 | 16:29:52 | EMAIL: Natasha Cunha
+ 29/08/2011 | 16:29:52 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 16:29:57 | EMAIL: Tereza Moraes
+ 29/08/2011 | 16:30:00 | EMAIL: Welison Martins
+ 29/08/2011 | 16:30:02 | Gravando e-Mails automáticos...
+ 29/08/2011 | 16:30:32 | >>> FINALIZANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:32:19 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:32:19 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 16:34:58 | EMAIL: Antonio Bibas
+ 29/08/2011 | 16:35:05 | EMAIL: Eli Junior
+ 29/08/2011 | 16:35:06 | EMAIL: Fabiano Souza
+ 29/08/2011 | 16:35:07 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 16:35:08 | EMAIL: Juan Silva
+ 29/08/2011 | 16:35:08 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 16:35:09 | EMAIL: Maria Eduarda
+ 29/08/2011 | 16:35:09 | EMAIL: Natasha Cunha
+ 29/08/2011 | 16:35:10 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 16:35:13 | EMAIL: Tereza Moraes
+ 29/08/2011 | 16:35:16 | EMAIL: Welison Martins
+ 29/08/2011 | 16:35:18 | Gravando e-Mails automáticos...
+ 29/08/2011 | 16:35:43 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:35:43 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 16:36:22 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:36:22 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 16:38:20 | EMAIL: Antonio Bibas
+ 29/08/2011 | 16:42:57 | EMAIL: Eli Junior
+ 29/08/2011 | 16:42:59 | EMAIL: Fabiano Souza
+ 29/08/2011 | 16:43:09 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 16:43:10 | EMAIL: Juan Silva
+ 29/08/2011 | 16:43:10 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 16:43:10 | EMAIL: Maria Eduarda
+ 29/08/2011 | 16:43:11 | EMAIL: Natasha Cunha
+ 29/08/2011 | 16:43:11 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 16:43:11 | EMAIL: Tereza Moraes
+ 29/08/2011 | 16:43:13 | EMAIL: Welison Martins
+ 29/08/2011 | 16:43:14 | Gravando e-Mails automáticos...
+ 29/08/2011 | 16:43:50 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:43:50 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 16:45:49 | EMAIL: Antonio Bibas
+ 29/08/2011 | 16:45:52 | EMAIL: Eli Junior
+ 29/08/2011 | 16:45:52 | EMAIL: Fabiano Souza
+ 29/08/2011 | 16:45:53 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 16:45:53 | EMAIL: Juan Silva
+ 29/08/2011 | 16:45:53 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 16:45:53 | EMAIL: Maria Eduarda
+ 29/08/2011 | 16:45:53 | EMAIL: Natasha Cunha
+ 29/08/2011 | 16:45:54 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 16:45:54 | EMAIL: Tereza Moraes
+ 29/08/2011 | 16:45:55 | EMAIL: Welison Martins
+ 29/08/2011 | 16:45:55 | Gravando e-Mails automáticos...
+ 29/08/2011 | 16:49:21 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:49:21 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 16:50:06 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:50:06 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 16:52:03 | EMAIL: Antonio Bibas
+ 29/08/2011 | 16:52:06 | EMAIL: Eli Junior
+ 29/08/2011 | 16:52:06 | EMAIL: Fabiano Souza
+ 29/08/2011 | 16:52:07 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 16:52:07 | EMAIL: Juan Silva
+ 29/08/2011 | 16:52:07 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 16:52:08 | EMAIL: Maria Eduarda
+ 29/08/2011 | 16:52:08 | EMAIL: Natasha Cunha
+ 29/08/2011 | 16:52:08 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 16:52:09 | EMAIL: Tereza Moraes
+ 29/08/2011 | 16:52:09 | EMAIL: Welison Martins
+ 29/08/2011 | 16:52:10 | Gravando e-Mails automáticos...
+ 29/08/2011 | 16:53:08 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:53:08 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 16:55:05 | EMAIL: Antonio Bibas
+ 29/08/2011 | 16:55:09 | EMAIL: Eli Junior
+ 29/08/2011 | 16:55:10 | EMAIL: Fabiano Souza
+ 29/08/2011 | 16:55:12 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 16:55:13 | EMAIL: Juan Silva
+ 29/08/2011 | 16:55:15 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 16:55:16 | EMAIL: Maria Eduarda
+ 29/08/2011 | 16:55:16 | EMAIL: Natasha Cunha
+ 29/08/2011 | 16:55:17 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 16:55:17 | EMAIL: Tereza Moraes
+ 29/08/2011 | 16:55:18 | EMAIL: Welison Martins
+ 29/08/2011 | 16:55:19 | Gravando e-Mails automáticos...
+ 29/08/2011 | 16:59:36 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 16:59:36 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:00:00 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:00:00 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:01:56 | EMAIL: Antonio Bibas
+ 29/08/2011 | 17:02:49 | EMAIL: Eli Junior
+ 29/08/2011 | 17:02:51 | EMAIL: Fabiano Souza
+ 29/08/2011 | 17:02:52 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 17:02:52 | EMAIL: Juan Silva
+ 29/08/2011 | 17:02:53 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 17:02:53 | EMAIL: Maria Eduarda
+ 29/08/2011 | 17:02:54 | EMAIL: Natasha Cunha
+ 29/08/2011 | 17:02:54 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 17:02:55 | EMAIL: Tereza Moraes
+ 29/08/2011 | 17:02:55 | EMAIL: Welison Martins
+ 29/08/2011 | 17:02:55 | Gravando e-Mails automáticos...
+ 29/08/2011 | 17:14:29 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:14:29 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:15:30 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:15:30 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:17:23 | EMAIL: Antonio Bibas
+ 29/08/2011 | 17:17:43 | EMAIL: Eli Junior
+ 29/08/2011 | 17:17:43 | EMAIL: Fabiano Souza
+ 29/08/2011 | 17:17:44 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 17:17:45 | EMAIL: Juan Silva
+ 29/08/2011 | 17:17:45 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 17:17:46 | EMAIL: Maria Eduarda
+ 29/08/2011 | 17:17:48 | EMAIL: Natasha Cunha
+ 29/08/2011 | 17:17:48 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 17:17:49 | EMAIL: Tereza Moraes
+ 29/08/2011 | 17:17:49 | EMAIL: Welison Martins
+ 29/08/2011 | 17:17:50 | Gravando e-Mails automáticos...
+ 29/08/2011 | 17:17:54 | <*> ERRO! e-Mail não gravado. MSG: tbEmailAuto: Type mismatch for field 'Para', expecting: WideString actual: String
+ 29/08/2011 | 17:17:54 | >>> FINALIZANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:18:40 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:18:40 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:20:35 | EMAIL: Antonio Bibas
+ 29/08/2011 | 17:20:35 | EMAIL: Eli Junior
+ 29/08/2011 | 17:20:35 | EMAIL: Fabiano Souza
+ 29/08/2011 | 17:20:35 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 17:20:35 | EMAIL: Juan Silva
+ 29/08/2011 | 17:20:35 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 17:20:35 | EMAIL: Maria Eduarda
+ 29/08/2011 | 17:20:35 | EMAIL: Natasha Cunha
+ 29/08/2011 | 17:20:35 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 17:20:35 | EMAIL: Tereza Moraes
+ 29/08/2011 | 17:20:35 | EMAIL: Welison Martins
+ 29/08/2011 | 17:20:35 | Gravando e-Mails automáticos...
+ 29/08/2011 | 17:21:23 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:21:23 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:22:22 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:22:22 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:24:19 | EMAIL: Antonio Bibas
+ 29/08/2011 | 17:24:19 | EMAIL: Eli Junior
+ 29/08/2011 | 17:24:19 | EMAIL: Fabiano Souza
+ 29/08/2011 | 17:24:19 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 17:24:19 | EMAIL: Juan Silva
+ 29/08/2011 | 17:24:19 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 17:24:19 | EMAIL: Maria Eduarda
+ 29/08/2011 | 17:24:19 | EMAIL: Natasha Cunha
+ 29/08/2011 | 17:24:19 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 17:24:19 | EMAIL: Tereza Moraes
+ 29/08/2011 | 17:24:19 | EMAIL: Welison Martins
+ 29/08/2011 | 17:24:19 | Gravando e-Mails automáticos...
+ 29/08/2011 | 17:27:18 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:27:18 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:29:17 | EMAIL: Antonio Bibas
+ 29/08/2011 | 17:29:17 | EMAIL: Eli Junior
+ 29/08/2011 | 17:29:17 | EMAIL: Fabiano Souza
+ 29/08/2011 | 17:29:17 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 17:29:17 | EMAIL: Juan Silva
+ 29/08/2011 | 17:29:17 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 17:29:17 | EMAIL: Maria Eduarda
+ 29/08/2011 | 17:29:17 | EMAIL: Natasha Cunha
+ 29/08/2011 | 17:29:17 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 17:29:17 | EMAIL: Tereza Moraes
+ 29/08/2011 | 17:29:17 | EMAIL: Welison Martins
+ 29/08/2011 | 17:30:20 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:30:20 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:35:02 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:35:02 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:37:03 | EMAIL: Antonio Bibas
+ 29/08/2011 | 17:37:03 | EMAIL: Eli Junior
+ 29/08/2011 | 17:37:03 | EMAIL: Fabiano Souza
+ 29/08/2011 | 17:37:03 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 17:37:03 | EMAIL: Juan Silva
+ 29/08/2011 | 17:37:03 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 17:37:03 | EMAIL: Maria Eduarda
+ 29/08/2011 | 17:37:03 | EMAIL: Natasha Cunha
+ 29/08/2011 | 17:37:03 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 17:37:03 | EMAIL: Tereza Moraes
+ 29/08/2011 | 17:37:03 | EMAIL: Welison Martins
+ 29/08/2011 | 17:37:03 | Gravando e-Mails automáticos...
+ 29/08/2011 | 17:37:03 | >>> FINALIZANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:38:20 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:38:20 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:40:25 | EMAIL: Antonio Bibas
+ 29/08/2011 | 17:40:25 | EMAIL: Eli Junior
+ 29/08/2011 | 17:40:25 | EMAIL: Fabiano Souza
+ 29/08/2011 | 17:40:25 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 17:40:25 | EMAIL: Juan Silva
+ 29/08/2011 | 17:40:25 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 17:40:25 | EMAIL: Maria Eduarda
+ 29/08/2011 | 17:40:25 | EMAIL: Natasha Cunha
+ 29/08/2011 | 17:40:25 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 17:40:25 | EMAIL: Tereza Moraes
+ 29/08/2011 | 17:40:25 | EMAIL: Welison Martins
+ 29/08/2011 | 17:40:25 | Gravando e-Mails automáticos...
+ 29/08/2011 | 17:40:25 | >>> FINALIZANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:41:57 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:41:57 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:43:56 | EMAIL: Antonio Bibas
+ 29/08/2011 | 17:43:56 | EMAIL: Eli Junior
+ 29/08/2011 | 17:43:56 | EMAIL: Fabiano Souza
+ 29/08/2011 | 17:43:56 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 17:43:56 | EMAIL: Juan Silva
+ 29/08/2011 | 17:43:56 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 17:43:56 | EMAIL: Maria Eduarda
+ 29/08/2011 | 17:43:56 | EMAIL: Natasha Cunha
+ 29/08/2011 | 17:43:56 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 17:43:56 | EMAIL: Tereza Moraes
+ 29/08/2011 | 17:43:56 | EMAIL: Welison Martins
+ 29/08/2011 | 17:43:56 | Gravando e-Mails automáticos...
+ 29/08/2011 | 17:43:56 | >>> FINALIZANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:44:01 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:44:01 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:45:40 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 29/08/2011 | 17:45:40 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 29/08/2011 | 17:47:38 | EMAIL: Antonio Bibas
+ 29/08/2011 | 17:47:38 | EMAIL: Eli Junior
+ 29/08/2011 | 17:47:38 | EMAIL: Fabiano Souza
+ 29/08/2011 | 17:47:38 | EMAIL: Francisco Monteiro
+ 29/08/2011 | 17:47:38 | EMAIL: Juan Silva
+ 29/08/2011 | 17:47:38 | EMAIL: Luiza Ferraz
+ 29/08/2011 | 17:47:38 | EMAIL: Maria Eduarda
+ 29/08/2011 | 17:47:38 | EMAIL: Natasha Cunha
+ 29/08/2011 | 17:47:38 | EMAIL: Odilma Queiroz
+ 29/08/2011 | 17:47:38 | EMAIL: Tereza Moraes
+ 29/08/2011 | 17:47:38 | EMAIL: Welison Martins
+ 29/08/2011 | 17:47:38 | Gravando e-Mails automáticos...
+ 29/08/2011 | 17:47:38 | >>> FINALIZANDO O PROCESSAMENTO DO AFAT

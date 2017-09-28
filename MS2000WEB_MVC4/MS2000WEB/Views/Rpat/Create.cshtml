@@ -1,0 +1,34 @@
+﻿@model MS2000WEB.Models.RPAT
+
+@{
+    ViewBag.Title = "Emissão de RPAT";
+}
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Emissão de RPAT</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+<h4>Emissão de Requerimento de Prorrogação do Regime de Admissão Temporária</h4>
+
+@using (Html.BeginForm("Create", "Rpat", FormMethod.Post, new { @class = "form-stacked" }))
+{
+    @Html.ValidationSummary(true)
+    @Html.AntiForgeryToken();    
+    <label>Entre com número MS</label>    
+    @Html.TextBoxFor(model => model.Fk_Processo)    
+    @Html.ValidationMessageFor(model => model.Fk_Processo)
+    <label>Entre com a Justificativa</label>    
+    @Html.TextAreaFor(model => model.Justificativa, new { @class = "text-box" })
+    <label>Entre com a Observação</label>
+    @Html.TextAreaFor(model => model.Observacao, new { @class = "text-box" })
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Salvar</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

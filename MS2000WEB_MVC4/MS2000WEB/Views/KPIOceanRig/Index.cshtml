@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Index";
+   Layout = "~/Views/Shared/_Layout.cshtml";    
+}
+
+<h3>KPI OceanRig</h3>
+
+
+@using (Ajax.BeginForm("Graficos", "KPIOceanRig",
+    new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "resulte" }))
+{
+    <label class="control-label" for="CampoData">Digite o mês e o ano:</label>@Html.TextBox("data", null, new { @class = "input-medium search-query" })
+    <button type="submit" class="btn btn-inverse">Processar</button>
+}
+
+    <div id="resulte">
+        @{
+            if (IsAjax)
+            {
+                Html.RenderPartial("Graficos");              
+         
+            }        
+        }
+    </div>
+
+

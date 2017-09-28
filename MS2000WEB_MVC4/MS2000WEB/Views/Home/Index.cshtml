@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.hero-unit').corner();
+    });
+</script>
+
+<style type="text/css">
+    div.hero-unit {
+        background: url(./Content/images/banner06_01.jpg);
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        -khtml-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+</style>
+
+@section featured {
+    <div class="hero-unit">
+        <p class="text-center" style="color: white; font-weight: bold; font-size: 35px">Sistema Gerencial Aduaneiro</p>
+    </div>
+}
+
+<h1>Política de Gestão Integrada</h1>
+<ul class="unstyled">
+    <li style="font-size: 15px;">A MS LOGÍSTICA, especializada na realização de desembaraço aduaneiro, busca o aprimoramento contínuo de seus serviços, bem como a satisfação de seus clientes.
+    </li>
+</ul>
+<h3>Estes compromissos se fortalecem com:</h3>
+<ul style="font-size: 15px;">
+    <li>
+        <p>O atendimento aos requisitos de seus clientes;</p>
+    </li>
+    <li>
+        <p>O oferecimento de soluções inovadoras associadas com a otimização de seus processos;</p>
+    </li>
+    <li>
+        <p>O aprimoramento técnico de seus colaboradores;</p>
+    </li>
+    <li>
+        <p>A minimização dos impactos ambientais e a prevenção da poluição;</p>
+    </li>
+    <li>
+        <p>A garantia da saúde e segurança de seus colaboradores e visitantes;</p>
+    </li>
+    <li>
+        <p>O cumprimento da legislação e outros requisitos pertinentes;</p>
+    </li>
+    <li>
+        <p>O comprometimento com a Melhoria Contínua do Sistema de Gestão Integrado.</p>
+    </li>
+</ul>
+<hr />
+<p>Revisão 1 , 10/04/2012.</p>
+<p class="text-center" style="font-size: 14px; font-weight: bold;">
+    Manuel Marques<br>
+    Diretor</>
+</p>
+
+
+@*
+<div class="subnav">
+    <ul class="nav nav-pills pull-right">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="icon-cog"></i>ações
+               <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Dropdown menu item</a></li>
+                <li><a href="#">Dropdown menu item</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Dropdown menu item</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+*@

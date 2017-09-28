@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MS2000ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Frequencia_Acidente">
+      <EntityTypeMapping TypeName="MS2000Model.Frequencia_Acidente">
+        <MappingFragment StoreEntitySet="Frequencia_Acidente">
+          <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+          <ScalarProperty Name="Ano" ColumnName="Ano" />
+          <ScalarProperty Name="Mes" ColumnName="Mes" />
+          <ScalarProperty Name="Total_Horas" ColumnName="Total_Horas" />
+          <ScalarProperty Name="Total_Acidentes" ColumnName="Total_Acidentes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

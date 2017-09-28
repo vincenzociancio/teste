@@ -1,0 +1,17 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 22/06/2011 | 09:28:37 | >>> INICIANDO O PROCESSAMENTO DO AFAT
+ 22/06/2011 | 09:28:37 | GERANDO PLANILHA AUTOMÁTICA - AFAT
+ 22/06/2011 | 09:31:24 | EMAIL: Antonio Bibas
+ 22/06/2011 | 09:31:24 | EMAIL: Eli Junior
+ 22/06/2011 | 09:31:24 | EMAIL: Fabiano Souza
+ 22/06/2011 | 09:31:24 | EMAIL: Francisco Monteiro
+ 22/06/2011 | 09:31:24 | EMAIL: Juan Silva
+ 22/06/2011 | 09:31:24 | EMAIL: Luiza Ferraz
+ 22/06/2011 | 09:31:24 | EMAIL: Maria Eduarda
+ 22/06/2011 | 09:31:24 | EMAIL: Natasha Cunha
+ 22/06/2011 | 09:31:24 | EMAIL: Odilma Queiroz
+ 22/06/2011 | 09:31:24 | EMAIL: Tereza Moraes
+ 22/06/2011 | 09:31:24 | EMAIL: Welison Martins
+ 22/06/2011 | 09:31:24 | EMAIL: Wellington Medeiros
+ 22/06/2011 | 09:31:24 | Gravando e-Mails automáticos...
+ 22/06/2011 | 09:31:24 | >>> FINALIZANDO O PROCESSAMENTO DO AFAT

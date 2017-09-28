@@ -1,0 +1,13 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 12/07/2011 | 22:36:21 | >>> INICIANDO O PROCESSAMENTO DO APAD
+ 12/07/2011 | 22:36:21 | >>> FINALIZANDO O PROCESSAMENTO DO APAD
+ 12/07/2011 | 22:36:59 | >>> INICIANDO O PROCESSAMENTO DO APAD
+ 12/07/2011 | 22:36:59 | Gerando e-mail para: Leandro Serra...
+ 12/07/2011 | 22:36:59 | Verificando Processos Aguardando Desembaraço:
+ 12/07/2011 | 22:36:59 | Gravando e-Mail automático...
+ 12/07/2011 | 22:38:52 | >>> INICIANDO O PROCESSAMENTO DO APAD
+ 12/07/2011 | 22:38:52 | Gerando e-mail para: Leandro Serra...
+ 12/07/2011 | 22:38:52 | Verificando Processos Aguardando Desembaraço:
+ 12/07/2011 | 22:39:57 | Gravando e-Mail automático...
+ 12/07/2011 | 22:40:11 | Gravando data do aviso no parâmetro.
+ 12/07/2011 | 22:40:11 | >>> FINALIZANDO O PROCESSAMENTO DO APAD

@@ -1,0 +1,3 @@
+[0829/105421:ERROR:process_reader_win.cc(114)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido.  (0xc0000022)
+[0829/105421:ERROR:exception_snapshot_win.cc(88)] thread ID 15576 not found in process
+[0829/105421:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed

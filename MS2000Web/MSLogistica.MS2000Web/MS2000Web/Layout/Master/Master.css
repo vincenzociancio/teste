@@ -1,0 +1,363 @@
+﻿body
+{
+    /*top: 0;     left: 0;     font: 10px "Lucida Sans Unicode" , verdana, helvetica, sans-serif;*/
+    background-color: #e1ddd9;
+    font-size: 10px;
+    font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+    color: #564b47;
+    padding: 0px;
+    margin: 10px;
+}
+
+/**********************************Padrão para todos***********************************/
+
+/*Modal Popup*/
+.modalBackground
+{
+    background-color: Gray;
+    filter: alpha(opacity=70);
+    opacity: 0.7; /*background-color: #fff;*/
+    opacity: .5; /* FX/Opera/Safari/Chrome */
+    -ms-filter: "alpha(opacity=50)"; /* IE8 */
+}
+
+.modalPopup
+{
+    background-color: #fff;
+    border: solid 5px #ccc;
+    padding: 5px;
+    position: absolute;
+    top: 235px;
+    left: 222px;
+    height: 219px;
+    z-index: 1;
+    width: 650px;
+}
+
+.painelGrid
+{
+    width: 850px;
+    padding-left: 30px;
+}
+
+table.listaArquivos tr th
+{
+    border: solid 1px #9595AA;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 8pt;
+    height: 21px; /* background: url('../Imagens/gid_titulo_fundo_a.gif');*/
+    background: url('../Imagens/ui-bg_gloss-wave_55_5c9ccc_500x100.png') 50% 50% repeat-x;
+    color: White; /*color: Black;*/
+}
+
+div.divMnu
+{
+    /*width: 600px;*/
+    width: 100%;
+    height: 50px;
+    font-family: Verdana;
+    font-size: 10pt;
+}
+
+.mnu_left
+{
+    background: url(../Imagens/mnu_left.jpg) no-repeat;
+    width: 28px;
+    height: 54px;
+}
+
+.mnu_meio
+{
+    background: url(../Imagens/mnu_meio.jpg) repeat;
+    text-align: right;
+}
+
+.mnu_titulo
+{
+    height: 54px;
+    font-family: Verdana;
+    font-size: 11pt;
+    color: Gray;
+    font-weight: bold;
+    background: url(../Imagens/mnu_meio.jpg) repeat;
+    text-align: left;
+}
+
+.mnu_right
+{
+    background: url(../Imagens/mnu_right.jpg) no-repeat;
+    width: 30px;
+    height: 54px;
+}
+
+div.divGrview
+{
+    width: 590px;
+    padding: 0 0 0 10px;
+}
+
+.erro
+{
+    width: auto;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+span
+{
+    font-family: Verdana;
+    font-size: 10pt;
+}
+
+.textUppe input
+{
+    font-family: Verdana;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+div.Alterar
+{
+    width: 700px;
+    padding: 0 0 0 10px;
+}
+
+table.Alterar tr
+{
+    padding: 10px 5px 0 0;
+}
+
+#vwGrid
+{
+    text-align: center;
+}
+
+fieldset
+{
+    font-family: Verdana;
+    font-size: 10pt;
+}
+
+div.padding
+{
+    padding: 0 0 5px 0;
+}
+
+/**********************************Padrão para todos***********************************/
+
+
+
+/**********************************Jquery Padrão para todos***********************************/
+
+#ui-datepicker-div
+{
+    width: 250px;
+}
+
+#container
+{
+    width: 738px;
+    height: 450px;
+}
+#container h3
+{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+    height: 20px;
+    padding-top: 5px;
+    color: White;
+}
+#container
+{
+    padding: 0.5em;
+}
+
+.ui-dialog .ui-state-error
+{
+    padding: .3em;
+}
+.validateTips
+{
+    border: 1px solid transparent;
+    padding: 0.3em;
+}
+
+hr
+{
+    height: 0.5px;
+    border: solid 0.5px #9595AA;
+}
+
+input.error
+{
+    border: 1px solid #cd0a0a;
+    background: #fef1ec url(../Imagens/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x;
+    color: #cd0a0a;
+}
+
+/********************************Fim Jquery Padrão para todos*********************************/
+
+
+
+
+/************************************Master Page***************************************/
+
+.tblMaster
+{
+    /*width: 98%;     height: 98%;     top: 1%;     left: 1%;     border-collapse: collapse;     border-spacing: 0;     position: absolute;*/
+    width: 900px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.topoMaster
+{
+    width: 100%;
+    height: 60px;
+    background: url("../Imagens/fdo_textarea.jpg") repeat-x;
+}
+
+.subTopoMaster
+{
+    width: 100%;
+    height: 20px;
+    font: 10px "Lucida Sans Unicode" , verdana, helvetica, sans-serif; /*background-color: #26AAE1;*/
+    background-color: #507CD1; /*#0575BC;*/
+    color: White;
+    padding: 5px 0 5px 5px;
+    font-weight: bold;
+}
+
+.menuMaster
+{
+    height: 460px;
+    width: 150px;
+    font: 11px "Lucida Sans Unicode" , verdana, helvetica, sans-serif; /*padding: 10px 0 5px 0; /*border-right-style: solid;     border-right-color: #D3D3D3;     border-width: 2px;*/ /*background-color: #D1DDF1;*/ /*#E6E6FA;*/
+    background-color: #D1DDF1;
+    vertical-align: top;
+}
+
+.ContentMaster
+{
+    height: 460px;
+    width: 750px;
+    font: 10px "Lucida Sans Unicode" , verdana, helvetica, sans-serif; /*padding: 5px 5px 5px 5px; /*background: url("../Imagens/fdo_ctdo.jpg");     background-repeat: repeat-x;*/
+    vertical-align: top;
+    background-color: White;
+}
+
+.botton
+{
+    width: 100%;
+    height: 20px;
+    background-color: #507CD1; /*#0575BC;*/
+    color: White;
+    text-align: center;
+    font: 11px "Lucida Sans Unicode" , verdana, helvetica, sans-serif;
+    padding: 5px 0 5px 5px;
+}
+
+.lbHoraAtual
+{
+    /*  top: 10px; position: absolute; vertical-align: bottom; right: 90px;*/
+    padding: 1px 10px 1px 10px;
+    font-size: 12px;
+    text-align: right;
+    color: Gray;
+}
+
+.lbtnSair
+{
+    /*top: 30px;     position: absolute;     vertical-align: bottom;     right: 90px;*/
+    padding: 1px 10px 1px 10px;
+    font-size: 12px;
+}
+
+.lbUsuario
+{
+    /*top: 30px;     position: absolute;     vertical-align: bottom;     right: 140px;*/
+    padding: 1px 10px 1px 10px;
+    font-size: 12px;
+    text-align: right; /*     border-right-style: solid;     border-right-color: #D3D3D3;     border-width: 2px;*/
+    color: Gray;
+}
+
+/************************************Fim Master Page***************************************/
+
+
+/***********************************Página MenuPrincipal***********************************/
+.lbTitulo
+{
+    font-size: 16pt;
+    font-family: verdana;
+    width: 100%;
+    text-align: center; /* padding: 10px 10px 10px 10px;*/
+    color: Black;
+    font-weight: bold;
+    padding-bottom:10px;
+}
+
+.Texto
+{
+    font: 12px verdana;
+    width: 100%;
+    text-align: center; /*padding: 10px 10px 10px 10px;*/
+    color: Black;
+    /*font-weight: bold;*/
+}
+
+/*******************************Fim Página MenuPrincipal***********************************/
+
+
+/***********************************Página Procurador***********************************/
+
+.filtroProcurador
+{
+    width: 590px;
+    height: 80px;
+    text-align: left;
+    font-family: Verdana;
+    font-size: 10pt;
+    vertical-align: super;
+    padding-left: 10px;
+}
+
+
+/***********************************Fim Página Procurador***********************************/
+
+
+/***********************************Página Exportador***********************************/
+
+.filtroExportador
+{
+    width: 580px;
+    height: 100px;
+    text-align: left;
+    font-family: Verdana;
+    font-size: 10pt;
+    vertical-align: super;
+    padding-left: 20px;
+}
+
+
+/***********************************Fim Página Exportador***********************************/
+
+
+/***********************************Página Exportador Incluir***********************************/
+
+div.camposExportador
+{
+    width: 580px;
+    height: 100px;
+    font-family: Verdana;
+    font-size: 10pt;
+    padding: 10px 10px 10px 10px;
+}
+
+/***********************************Fim Página Exportador Incluir***********************************/

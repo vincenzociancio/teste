@@ -1,0 +1,60 @@
+﻿<style>
+    div.bloco_messages h4 {
+        color: #000000;
+        font-weight: 500 !important;
+    }
+
+    div.bloco_messages p {
+        color: #000000;
+        font-size: 14px;
+    }
+</style>
+
+@{
+    <div class="bloco_messages">
+        @if (TempData["AccessDenied"] != null)
+        {
+            if (Convert.ToBoolean(TempData["AccessDenied"]))
+            {
+            <div class="alert-message block-message error">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <div style="float: left; display: inline; padding-right: 20px;">
+                    <img src="~/Content/images/accessDenied.png" />
+                </div>
+                <h4>Acesso Negado!</h4>
+                <p>A página não pode ser exibida, pois você não tem permissão de acesso.</p>
+            </div>
+            }
+        }
+
+        @if (TempData["Sucesso"] != null)
+        {
+            if (!string.IsNullOrEmpty(TempData["Sucesso"].ToString()))
+            {
+            <div class="alert-message block-message success">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <div style="float: left; display: inline; padding-right: 20px;">
+                    <img src="~/Content/images/success.png" />
+                </div>
+                <h4>Sucesso!</h4>
+                <p>@Html.Raw(@TempData["Sucesso"].ToString())</p>
+            </div>
+            }
+        }
+
+        @if (TempData["Erro"] != null)
+        {
+            if (!string.IsNullOrEmpty(TempData["Erro"].ToString()))
+            {
+            <div class="alert-message block-message error">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <div style="float: left; display: inline; padding-right: 20px;">
+                    <img src="~/Content/images/error.png" />
+                </div>
+                <h4>Erro!</h4>
+                <p>@TempData["Erro"]</p>
+            </div>
+            }
+        }
+    </div>
+}

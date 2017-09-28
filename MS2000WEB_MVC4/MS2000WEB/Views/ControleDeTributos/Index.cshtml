@@ -1,0 +1,185 @@
+﻿@model IEnumerable<MS2000WEB.ViewModels.ControleDeTributoViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Financeiro</a> <span class="divider">></span></li>
+    <li><a href="#">Controle de Tributos</a> <span class="divider">></span></li>
+    <li class="active">Lista</li>
+</ul>
+
+<script type="text/javascript">
+
+    function ajaxStop() {
+        $.unblockUI();
+    }
+
+    $(document).ready(function () {
+        //$("#cmbPeriodicidade").hide("slow");
+        //$("#cmbCompetencia").hide("slow");
+        //$("#cmbNatureza").hide("slow");
+        //$("#txt").hide("slow");
+
+        $("#dvPanel").empty().append($("#txt").html());
+               $("#texto").val("");
+
+        $("#colunas_titulos").change(function () {
+            var param = $(this).val();
+          
+            if (param == "Natureza") {
+                $("#dvPanel").empty().append($("#cmbNatureza").html());
+                $("#Natureza").val(0);
+            }
+
+            else if (param == "Periodicidade") {
+                $("#dvPanel").empty().append($("#cmbPeriodicidade").html());
+                $("#Periodicidade").val(0);
+            }
+            else if (param == "Competencia") {
+                $("#dvPanel").empty().append($("#cmbCompetencia").html());
+                $("#Competencia").val(0);
+            }           
+            else {
+                $("#dvPanel").empty().append($("#txt").html());
+                $("#texto").val("");            
+            }
+
+        });
+
+    });
+</script>
+
+
+<h4>Controle de Tributos</h4>
+<div class="row">
+    <div class="span2">
+        @Html.ActionLink("Novo", "Create", null, new { @class = "btn btn-inverse" })
+    </div>
+    <div class="span* offset*">
+        <form class="form-search">
+            <div class="span*">
+                <label>Pesquisar por ano:</label>
+                @Html.DropDownList("colunas_titulos", new[] {
+                               new SelectListItem{Text= "Ano", Value = "Ano"}, 
+                               new SelectListItem{Text= "Competencia", Value = "Competencia"},
+                               new SelectListItem{Text= "Data", Value = "Data"},
+                               new SelectListItem{Text= "ID", Value = "ID"},
+                               new SelectListItem{Text= "Natureza", Value = "Natureza"},  
+                               new SelectListItem{Text= "Periodicidade", Value = "Periodicidade"}, 
+                               new SelectListItem{Text= "Tributo", Value = "Tributo"},                                 
+                               new SelectListItem{Text= "Valor", Value = "Valor"}},
+                               string.Empty, new { @class = "span2" })
+            </div>
+
+            <div id="dvPanel" class="span*">
+            </div>
+            <div style="display: none">
+                <div id="txt">
+                    @Html.TextBox("texto", null, new { @class = "span3 search-query" })
+                </div>
+
+                <div id="cmbNatureza">
+                    @Html.DropDownList("Natureza",
+                new[] { 
+                new SelectListItem{Text= "DARF", Value = "1"},
+                new SelectListItem{Text= "DARJ", Value = "2"},
+                new SelectListItem{Text= "DARM", Value = "3"},
+                new SelectListItem{Text= "GCSU", Value = "4"},
+                new SelectListItem{Text= "GFIP", Value = "5"},
+                new SelectListItem{Text= "GPS", Value = "6"},
+                new SelectListItem{Text= "GRDE", Value = "10"},
+                new SelectListItem{Text= "GRF", Value = "7"},
+                new SelectListItem{Text= "GRRF", Value = "8"},
+                new SelectListItem{Text= "ICMS", Value = "9"},
+            }, string.Empty, new { @class = "span2" })
+                </div>
+                <div id="cmbCompetencia">
+                    @Html.DropDownList("Competencia",
+                new[] { 
+                new SelectListItem{Text= "Janeiro", Value = "1"},
+                new SelectListItem{Text= "Fevereiro", Value = "2"},
+                new SelectListItem{Text= "Março", Value = "3"},
+                new SelectListItem{Text= "Abril", Value = "4"},
+                new SelectListItem{Text= "Maio", Value = "5"},
+                new SelectListItem{Text= "Junho", Value = "6"},
+                new SelectListItem{Text= "Julho", Value = "7"},
+                new SelectListItem{Text= "Agosto", Value = "8"},
+                new SelectListItem{Text= "Setembro", Value = "9"},
+                new SelectListItem{Text= "Outubro", Value = "10"},
+                new SelectListItem{Text= "Novembro", Value = "11"},
+                new SelectListItem{Text= "Dezembro", Value = "12"},
+                new SelectListItem{Text= "Décimo Terceiro", Value = "13"}
+            }, string.Empty, new { @class = "span2" })
+
+                </div>
+                <div id="cmbPeriodicidade">
+
+                    @Html.DropDownList("Periodicidade",
+                new[] { 
+                new SelectListItem{Text= "Diário", Value = "1"},
+                new SelectListItem{Text= "Semanal", Value = "2"},
+                new SelectListItem{Text= "Quinzenal", Value = "3"},
+                new SelectListItem{Text= "Mensal", Value = "4"},
+                new SelectListItem{Text= "Bimestral", Value = "5"},
+                new SelectListItem{Text= "Trimestral", Value = "6"},
+                new SelectListItem{Text= "Semestral", Value = "7"},
+                new SelectListItem{Text= "Anual", Value = "8"}                
+            }, string.Empty, new { @class = "span2" })
+                </div>
+            </div>
+            &nbsp;
+            <button type="submit" class="btn btn-inverse">Pesquisar</button>
+        </form>
+    </div>
+</div>
+<br />
+
+@if (Model.Count() > 0)
+{
+    WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10, canSort: false, ajaxUpdateContainerId: "grid");
+    @grid.GetHtml(htmlAttributes: new { id = "grid" },
+                                tableStyle: "grade",
+                                headerStyle: "header",
+                                alternatingRowStyle: "alt",
+                                selectedRowStyle: "selected", footerStyle: "pagination",
+                                           mode: WebGridPagerModes.All,
+        // firstText: "Primeiro",
+        //previousText: "Anterior",
+        //nextText: "Próximo >",
+        //lastText: "Último",                                                                
+                                columns: grid.Columns(grid.Column("", "Ações", style: "gridacao1", format: @<text>
+    <ul class="nav pull-center" style="list-style-type: none; padding: 0px; margin: 0px;">
+        <li class="dropdown" style="line-height: 0px!important;">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="icon-list"></i><b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>@Html.ActionLink("Editar", "Edit", new { Id = item.id })</li>
+            </ul>
+        </li>
+    </ul></text>),
+    grid.Column("ID", header: "ID"),
+    grid.Column("Tributo", header: "Natureza"),
+    grid.Column("Data", header: "Data de Pagamento", format: (item) => item.Data != null ? item.Data.ToString("dd/MM/yyyy") : ""),
+    grid.Column("Ano", header: "Ano"),
+    grid.Column("Competencia", header: "Competência"),
+    grid.Column("Periodicidade", header: "Períodicidade"),
+    grid.Column("Valor", header: "Valor")))
+@*<div class="pagination pagination-small pagination-right">
+    @grid.Pager(mode: WebGridPagerModes.All)
+    </div>*@
+    
+}
+else
+{    
+    <div class="alert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Não existe registro para o parâmetro especificado!
+    </div>    
+}
+
+

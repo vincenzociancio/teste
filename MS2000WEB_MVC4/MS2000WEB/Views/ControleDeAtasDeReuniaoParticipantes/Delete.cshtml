@@ -1,0 +1,25 @@
+﻿@model MS2000WEB.Models.Controle_Atas_Participantes
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+<h2>Participante</h2>
+
+<div class="alert alert-block">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <h4>Aviso!</h4>
+    Tem certeza de que deseja excluir este participante da Ata?
+</div>
+    <fieldset>
+        <legend>Deletar</legend>           
+    </fieldset>
+    @using (Html.BeginForm())
+{
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Confirmar</button>
+        @Html.ActionLink("Cancelar", "Index",  new { id = Model.fk_ata }, new { @class = "btn" })
+    </div>
+}
+
+

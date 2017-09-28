@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MS2000.Desktop.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="access" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\SISCOPRD\import.prd\import.mdb;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\SISCOPRD\import.prd\import.mdb;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="MsDomain" Type="System.String" Scope="User">
+      <Value Profile="(Default)">rjo-mslogistica.com.br</Value>
+    </Setting>
+    <Setting Name="MsUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ms2000</Value>
+    </Setting>
+    <Setting Name="MsPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ms@12345</Value>
+    </Setting>
+    <Setting Name="conn" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=msserver01;Initial Catalog=MS2000;User ID=sa;Password=lasbrug30@&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=msserver01;Initial Catalog=MS2000;User ID=sa;Password=lasbrug30@</Value>
+    </Setting>
+    <Setting Name="MS2000ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=MSDB01\MSSERVER01;Initial Catalog=MS2000;Persist Security Info=True;User ID=sa;Password=lasbrug30@&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=MSDB01\MSSERVER01;Initial Catalog=MS2000;Persist Security Info=True;User ID=sa;Password=lasbrug30@</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

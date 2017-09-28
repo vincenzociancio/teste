@@ -1,0 +1,349 @@
+﻿@model MS2000WEB.Models.RH_Empregados
+
+@{
+    ViewBag.Title = "Edição";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">RH</a> <span class="divider">></span></li>
+    <li><a href="#">Registro de Empregados</a> <span class="divider">></span></li>
+    <li class="active">Edição</li>
+</ul>
+
+<h4>Registro de Empregados</h4>
+
+@using (Html.BeginForm("Edit", "RHEmpregados", FormMethod.Post, new { @class = "form-stacked", @id = "form-stacked" }))
+{
+    <div class="row">
+        <div class="span6">
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(false, "Campos Obrigatórios:")
+            @Html.HiddenFor(model => model.ID)
+        </div>
+    </div>
+    //Dados Pessoais
+    <div class="row">
+        <div class="span8">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="row">
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Matricula)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Matricula, new { @class = "span2", maxlength = "8" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Nome)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Nome, new { @class = "span4", maxlength = "100" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Sexo)
+                            <div class="input">
+                                @Html.DropDownList("Sexo", new[] {
+                               new SelectListItem{Text= "MASCULINO", Value = "M"},
+                               new SelectListItem{Text= "FEMININO", Value = "F"}},
+                               string.Empty, new { @class = "span2" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.DataNascimento)
+                            <div class="input">
+                                <input data-val="true" class = "span2" data-val-date="The field Data de Pagamento must be a date." data-val-required="Data de Nascimento" id="DataNascimento" name="DataNascimento" type="date" value="@string.Format("{0:yyyy-MM-dd}", Model.DataNascimento)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.EstadoCivil)
+                            <div class="input">
+                                @Html.DropDownList("EstadoCivil", new[] {
+                               new SelectListItem{Text= "SOLTEIRO(a)", Value = "S"},
+                               new SelectListItem{Text= "CASADO(a)", Value = "C"},
+                               new SelectListItem{Text= "DIVORCIADO(a)", Value = "D"},
+                               new SelectListItem{Text= "VIÚVO(a)", Value = "V"}},
+                               string.Empty, new { @class = "span2" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Nacionalidade)
+                            <div class="input">
+                                @Html.DropDownList("Nacionalidade", null, string.Empty, new { @class = "span2" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Naturalidade)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Naturalidade, new { @class = "span2", maxlength = "30" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span4">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Pai_Nome)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Pai_Nome, new { @class = "span4", maxlength = "100" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Mae_Nome)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Mae_Nome, new { @class = "span4", maxlength = "100" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span4">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Escolaridade)
+                            <div class="input">
+                                @Html.DropDownList("Escolaridade", null, string.Empty, new { @class = "span4" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Raca_Cor)
+                            <div class="input">
+                                @Html.DropDownList("Raca_Cor", null, string.Empty, new { @class = "span2" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="span1">
+            <img class="img-polaroid" alt="Foto" src="@string.Format("/../../ArquivosUpload/RHFotos/{0}.jpg", @Model.ID)" style="height: 80px; width: 70px;" />
+        </div>
+    </div>
+    
+    //Documentos
+    <div class="row">
+        <div class="span9">
+            <fieldset>
+                <legend>Documentos</legend>
+                <div class="row">
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.RG)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.RG, new { @class = "span2", maxlength = "20" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.RG_Orgao)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.RG_Orgao, new { @class = "span2", maxlength = "10" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.RG_Emissao)
+                            <div class="input">
+                                <input data-val="true" class = "span3" data-val-date="The field Data de Emissão must be a date." data-val-required="Data de Emissão" id="RG_Emissao" name="RG_Emissao" type="date" value="@string.Format("{0:yyyy-MM-dd}", Model.RG_Emissao)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.CTPS)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.CTPS, new { @class = "span2", maxlength = "20" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.CTPS_Serie)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.CTPS_Serie, new { @class = "span2", maxlength = "20" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.CTPS_UF)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.CTPS_UF, new { @class = "span1", maxlength = "2" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Titulo)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Titulo, new { @class = "span2", maxlength = "20" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Titulo_Secao)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Titulo_Secao, new { @class = "span2", maxlength = "20" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Titulo_Zona)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Titulo_Zona, new { @class = "span1", maxlength = "2" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.CPF)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.CPF, new { @class = "span2", maxlength = "15" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.PIS)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.PIS, new { @class = "span2", maxlength = "11" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Certificado_Reservista)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Certificado_Reservista, new { @class = "span2", maxlength = "30" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+
+    //Endereço
+    <div class="row">
+        <div class="span9">
+            <fieldset>
+                <legend>Endereço</legend>
+                <div class="row">
+                    <div class="span3">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Endereco_Logradouro)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Endereco_Logradouro, new { @class = "span3", maxlength = "100" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Endereco_Complemento)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Endereco_Complemento, new { @class = "span2", maxlength = "30" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span1">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Endereco_Numero)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Endereco_Numero, new { @class = "span1", maxlength = "10" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Endereco_Bairro)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Endereco_Bairro, new { @class = "span3", maxlength = "30" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="span3">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Endereco_Cidade)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Endereco_Cidade, new { @class = "span3", maxlength = "100" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Endereco_CEP)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Endereco_CEP, new { @class = "span2", maxlength = "9" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="clearfix">
+                            @Html.LabelFor(model => model.Endereco_UF)
+                            <div class="input">
+                                @Html.TextBoxFor(model => model.Endereco_UF, new { @class = "span1", maxlength = "2" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>     
+    <br />
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Salvar</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>    
+}
+
+
+<script type="text/javascript">
+    if (navigator.appName == 'Microsoft Internet Explorer') {
+        $(document).ready(function () {
+            $("#DataNascimento").mask("99/99/9999");
+        });
+    }
+</script>

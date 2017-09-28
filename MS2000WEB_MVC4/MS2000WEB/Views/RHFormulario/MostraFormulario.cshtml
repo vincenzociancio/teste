@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MS2000WEB.Models.RH_Formularios>
+
+@{
+    ViewBag.Title = "Formulario - Lista de Arquivos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">RH</a> <span class="divider">></span></li>
+    <li><a href="#">Formulário</a> <span class="divider">></span></li>
+    <li class="active">Download</li>
+</ul>
+
+
+<h4>Formulário</h4>
+<hr />
+
+<div class="row">    
+    <div class="span6 offset*">
+        <form class="form-search">
+            <label>Pesquisar por Titulo:</label>
+            @Html.TextBox("txtTitulo", null, new { @class = "span3 search-query" })
+            <button type="submit" class="btn btn-inverse">Pesquisar</button>
+        </form>
+    </div>
+</div>
+
+@{
+    if (Model.Count() > 0)
+    {
+        WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10, canSort: false, ajaxUpdateContainerId: "grid");
+    @grid.GetHtml(htmlAttributes: new { id = "grid" },
+                                tableStyle: "grade",
+                                headerStyle: "header",
+                                alternatingRowStyle: "alt",
+                                selectedRowStyle: "selected",                                
+                                columns: grid.Columns(
+                                grid.Column("Titulo", header: "Titulo"),
+                                grid.Column("", "Ações", style: "gridacao", format: @<text>   
+                                @Html.ActionLink("Download", "GetFile", new { id = item.Id })</text>
+                                                          )));
+    }
+    else
+    {    
+    <div class="alert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        @* <h4>Aviso!</h4>*@
+        Não existe registro para o parametro especificado!
+    </div>    
+    }
+}

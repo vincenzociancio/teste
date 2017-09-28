@@ -1,0 +1,141 @@
+﻿@model MS2000WEB.Models.RAT
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>RAT</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Fk_Importador)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Fk_Importador)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Fk_Processo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Fk_Processo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Fund_Pedido)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Fund_Pedido)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Data_Criacao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Data_Criacao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Prazo_Requerido)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Prazo_Requerido)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Opcao_Tributario)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Opcao_Tributario)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Inst_Ped_Contrato)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Inst_Ped_Contrato)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Inst_Ped_Procuracao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Inst_Ped_Procuracao)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Inst_Ped_Outros)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Inst_Ped_Outros)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Inst_Ped_Contrato_arrendamento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Inst_Ped_Contrato_arrendamento)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Inst_Ped_Fatura)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Inst_Ped_Fatura)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cod_Fatura)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cod_Fatura)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Inf_Adicionais)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Inf_Adicionais)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Inf_Complementares)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Inf_Complementares)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Data_Inicial)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Data_Inicial)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Numero_Rat)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Numero_Rat)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Data_Entrada)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Data_Entrada)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Data_Aprovacao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Data_Aprovacao)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

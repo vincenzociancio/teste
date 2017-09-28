@@ -1,0 +1,147 @@
+﻿@model PagedList.IPagedList<MS2000WEB.ViewModels.ExchangeViewModel>
+@*@using PagedList.Mvc;*@
+
+
+@*@model List<MS2000WEB.ViewModels.ExchangeViewModel>*@
+
+@{
+    ViewBag.Title = "Index";         
+}
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    //function ajaxStart() {
+    //    alert("start");
+    //}
+
+    function ajaxStop() {
+        $.unblockUI();
+    }
+
+</script>
+
+<style>
+    .grid_exchange {
+        /*margin-left: 0 !important;
+        margin-right: 0 !important;*/
+        background-color: #fff !important;
+        border-width: 1px !important;
+        border-color: #ddd !important;
+        border-radius: 4px 4px 0 0 !important;
+        /*box-shadow: none !important;*/
+        height: 470px;
+        overflow-y: scroll;
+        border: solid 1px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .body_exchange {
+        /*margin-left: 0 !important;
+        margin-right: 0 !important;*/
+        background-color: #fff !important;
+        border-width: 1px !important;
+        border-color: #ddd !important;
+        border-radius: 4px 4px 0 0 !important;
+        /*box-shadow: none !important;*/
+        height: 605px;
+        overflow-y: scroll;
+        border: solid 1px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .mail_title {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        background-color: #034482 !important;
+        border-width: 1px !important;
+        border-color: #ddd !important;
+        border-radius: 4px 4px 0 0 !important;
+        box-shadow: none !important;
+        color: white;
+        border: solid 1px;
+        padding: 10px 10px 10px 10px;
+    }
+</style>
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Consulta</a> <span class="divider">></span></li>
+    <li><a href="#">Exchange</a> <span class="divider">></span></li>
+    <li class="active">Lista de E-mails</li>
+</ul>
+
+<hr />
+
+<form>
+    <div class="row">
+        <div style="width: 310px; float: left;">
+            <div class="span3" style="padding-bottom: 10px;">
+                <div class="clearfix">
+                    @Html.DropDownList("typeSearch",
+            new[] { new SelectListItem{Text= "Assunto e corpo da mensagem", Value = "1", Selected = true},
+                new SelectListItem{Text= "Assunto", Value = "2"},
+                new SelectListItem{Text= "Corpo da mensagem", Value = "3"}
+            }, new { @class = "span3" })
+                </div>
+                <br />
+                <div class="clearfix">
+                    @Html.TextBox("search", null, new { @style = "width:215px;", @placeholder = "Entre com o valor da pesquisa" })
+                    <button type="submit" class="btn"><i class="icon-search"></i></button>
+                </div>
+            </div>
+            <div class="span3">
+                <img alt="Mail" src="~/Content/images/icon_mail.png" />
+                <strong style="font-size: 16px; font-weight: bold!important; line-height: none;">Caixa de Entrada (@ViewBag.Total)</strong>
+            </div>
+            <div class="grid_exchange span3">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Count > 0)
+                        {
+                            foreach (var email in Model)
+                            {
+                            <tr>
+                                <td>
+                                    <blockquote>
+                                        <p>
+                                            @Ajax.ActionLink(@email.De, "GetBody", "Exchange", new { Id = email.ID.Replace("/", "") },
+                                            new AjaxOptions
+                                            {
+                                                HttpMethod = "Post",
+                                                InsertionMode = InsertionMode.Replace,
+                                                UpdateTargetId = "viewBody",
+                                                OnComplete = "ajaxStop()"
+                                            }, null)
+                                        </p>
+                                        <small style="font-size: 12px!important;">@email.Assunto</small>
+                                    </blockquote>
+                                </td>
+                                <td>
+                                    <p class="text-right">@string.Format("{0:D}", @email.Data)</p>
+                                </td>
+                            </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="viewBody" class="body_exchange" style="width: 630px; float: right;">
+            @if (Model.Count > 0)
+            {
+                @Html.Action("GetBody", "Exchange", null)
+            }
+            else
+            {
+                <strong style="font-size: 16px; line-height: none; color: red;">Nenhum email foi encontrado!</strong>
+            }
+        </div>
+        @*        <div class="row">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, search = "0", typeSearch = "0" }))
+        </div>*@
+    </div>
+</form>

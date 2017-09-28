@@ -1,0 +1,64 @@
+﻿@model MS2000WEB.Models.Controle_Atas_Arquivos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Controle_Atas_Arquivos</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.pk_atas_arquivos)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.pk_atas_arquivos)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Controle_Atas.tema)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Controle_Atas.tema)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.caminho)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.caminho)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.tipo_arquivo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.tipo_arquivo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.data)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.data)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.lixo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.lixo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.descricao_arquivo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.descricao_arquivo)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

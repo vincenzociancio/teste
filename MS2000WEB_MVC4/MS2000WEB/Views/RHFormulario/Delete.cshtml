@@ -1,0 +1,23 @@
+﻿@model MS2000WEB.Models.RH_Formularios
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+
+<h4>Formulário</h4>
+    
+@using (Html.BeginForm("Delete", "RHFormulario", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-stacked" }))
+{
+    <div class="alert alert-block">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4>Aviso!</h4>
+        <br />
+        Tem certeza de que deseja excluir o Formulário @Model.Titulo?
+    </div>
+    
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Confirmar</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>
+}

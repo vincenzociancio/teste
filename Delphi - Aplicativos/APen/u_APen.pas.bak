@@ -1,0 +1,1931 @@
+unit u_APen;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  Db, DBTables, Grids, DBGrids, StdCtrls, ComCtrls, ExtCtrls, FileCtrl,
+  ActnList;
+
+const
+     vCodAPL = 'APEN';
+     totST = 11;
+     vOK = 1;
+     vERRO = 2;
+
+
+type
+  TfrmAPen = class(TForm)
+    DB_MSCOMEX: TDatabase;
+    qrProcessos: TQuery;
+    pnlTop: TPanel;
+    pnlLog: TPanel;
+    reProcessa: TRichEdit;
+    alAPen: TActionList;
+    acInicializa: TAction;
+    acGeraEmail: TAction;
+    acProcessa: TAction;
+    acEnviaEmail: TAction;
+    acFinaliza: TAction;
+    qrParametros: TQuery;
+    qrParametrosEmpresa: TStringField;
+    qrParametrosFilial: TStringField;
+    qrUsuarios: TQuery;
+    qrUsuariosEmail: TStringField;
+    qrUsuariosnome_completo: TStringField;
+    qrEnviaEmail: TQuery;
+    qrEnviaEmailNome_Completo: TStringField;
+    qrEnviaEmailEmail: TStringField;
+    tbEmailAuto: TTable;
+    qrUsuariosProc: TQuery;
+    qrFatura: TQuery;
+    qrProcRegImp: TQuery;
+    qrFollow: TQuery;
+    qrItens: TQuery;
+    qrTribut: TQuery;
+    qrItensSequencial: TStringField;
+    qrTributSequencial: TStringField;
+    qrFollowData: TDateTimeField;
+    qrFollowHora: TStringField;
+    qrFollowCodevento: TStringField;
+    qrFollowDescricao: TStringField;
+    tmIniciar: TTimer;
+    qrListaDoc: TQuery;
+    qrListaDocProcesso: TStringField;
+    qrListaDocSub_Tipo_Doc: TStringField;
+    qrListaDocNumero_Doc: TStringField;
+    qrListaDocData_inclusao: TDateTimeField;
+    qrListaDocDescricao: TStringField;
+    qrListaDocCodigo: TStringField;
+    qrListaProc: TQuery;
+    qrListaProcImportador: TStringField;
+    qrListaProcCodPro: TStringField;
+    qrListaProcCodFat: TStringField;
+    qrListaProcNumerodoccarga: TStringField;
+    qrListaProcNR_DECLARACAO_IMP: TStringField;
+    qrListaProcNR_DECLARACAO_IMPC: TStringField;
+    qrListaProcNumero_RCR: TStringField;
+    qrListaProcNumero_TR: TStringField;
+    qrListaProcTipo: TStringField;
+    qrListaProcDESCRICAO: TStringField;
+    qrListaProcResponsavel: TStringField;
+    qrListaProcLocalPasta: TStringField;
+    qrListaProcDT_DESEMBARACO: TDateTimeField;
+    qrListaProcDT_DESEMBARACOC: TDateTimeField;
+    qrUsuariosProcUsuario: TStringField;
+    qrUsuariosProcNome_Completo: TStringField;
+    qrUsuariosProcEmail: TStringField;
+    qrUsuariosProcNomeSupervisor: TStringField;
+    qrUsuariosProcEmailSupervisor: TStringField;
+    qrUsuariosProcNomeSupervisorC: TStringField;
+    qrUsuariosProcEmailSupervisorC: TStringField;
+    qrListaProcData_Chegada_URF_Cheg: TDateTimeField;
+    Q_UP: TQuery;
+    q_nfs: TQuery;
+    DB_MSFOLLOWUP: TDatabase;
+    q_log_aplicativo: TQuery;
+    q_log_aplicativo_adicionar: TQuery;
+    q_log_aplicativo_atualizar_data: TQuery;
+    q_log_aplicativo_atualizar_finalizar: TQuery;
+    q_log_aplicativoAplicativo: TStringField;
+    q_log_aplicativoChave: TStringField;
+    q_log_aplicativoData_Processamento: TStringField;
+    tbEmailAutoCodigo: TAutoIncField;
+    tbEmailAutoPrograma: TStringField;
+    tbEmailAutoAssunto: TStringField;
+    tbEmailAutoTitulo: TStringField;
+    tbEmailAutoDe: TStringField;
+    tbEmailAutoPara: TStringField;
+    tbEmailAutoCC: TStringField;
+    tbEmailAutoCCO: TStringField;
+    tbEmailAutoBody: TMemoField;
+    tbEmailAutoAnexo: TStringField;
+    tbEmailAutoHTML: TIntegerField;
+    tbEmailAutoData: TDateTimeField;
+    tbEmailAutoHora: TDateTimeField;
+    qrProcessosStatus: TStringField;
+    qrProcessosFATURADO: TIntegerField;
+    qrProcessosCodigo: TStringField;
+    qrProcessosData: TDateTimeField;
+    qrProcessosImportador: TStringField;
+    qrProcessosCodigo_Cliente: TStringField;
+    qrProcessosTipo_Declaracao: TStringField;
+    qrProcessosTipo: TStringField;
+    qrProcessosContrato: TStringField;
+    qrProcessosLocal_Inventario: TStringField;
+    qrProcessosNR_DECL_IMP_MICRO: TStringField;
+    qrProcessosNR_DECL_IMP_PROT: TStringField;
+    qrProcessosNR_DECLARACAO_IMP: TStringField;
+    qrProcessosDT_PROCESSAMENTO: TStringField;
+    qrProcessosDT_TRANSMISSAO: TStringField;
+    qrProcessosDT_REGISTRO_DI: TStringField;
+    qrProcessosDT_DESEMBARACO: TDateTimeField;
+    qrProcessosDT_DISTRIBUICAO: TDateTimeField;
+    qrProcessosCanal: TStringField;
+    qrProcessosFiscal: TStringField;
+    qrProcessosCOD_SIT: TStringField;
+    qrProcessosCD_MOTIVO_TRANS: TStringField;
+    qrProcessosIN_MOEDA_UNICA: TIntegerField;
+    qrProcessosTX_INFO_COMPL: TMemoField;
+    qrProcessosCD_TIPO_PGTO_TRIB: TStringField;
+    qrProcessosNumero_RCR: TStringField;
+    qrProcessosData_Entrada_RCR: TDateTimeField;
+    qrProcessosData_Aprovacao_RCR: TDateTimeField;
+    qrProcessosFundamentacao_RCR: TStringField;
+    qrProcessosProcurador: TStringField;
+    qrProcessosNumero_TR: TStringField;
+    qrProcessosData_Entrada_TR: TDateTimeField;
+    qrProcessosData_vencimento_TR: TDateTimeField;
+    qrProcessosData_Aprovacao_TR: TDateTimeField;
+    qrProcessosData_Baixa_TR: TDateTimeField;
+    qrProcessosData_CI: TDateTimeField;
+    qrProcessosTipo_Garantia: TStringField;
+    qrProcessosNome_banco_GAR: TStringField;
+    qrProcessosAgencia_GAR: TStringField;
+    qrProcessosData_deposito_GAR: TDateTimeField;
+    qrProcessosNome_titulo_GAR: TStringField;
+    qrProcessosnumeros_titulos_GAR: TStringField;
+    qrProcessosNome_seguradora_GAR: TStringField;
+    qrProcessosapolice_GAR: TStringField;
+    qrProcessosnome_fiador_GAR: TStringField;
+    qrProcessosCNPJ_fiador_GAR: TStringField;
+    qrProcessosendereco_fiador_GAR: TStringField;
+    qrProcessosQuantidade_LI: TFloatField;
+    qrProcessosValor_FOB: TFloatField;
+    qrProcessosValor_CIF: TFloatField;
+    qrProcessosResponsavel_Importador: TStringField;
+    qrProcessosSaldo_Faturamento: TFloatField;
+    qrProcessosNR_DECL_IMP_MICROC: TStringField;
+    qrProcessosNR_DECL_IMP_PROTC: TStringField;
+    qrProcessosNR_DECLARACAO_IMPC: TStringField;
+    qrProcessosDT_PROCESSAMENTOC: TStringField;
+    qrProcessosDT_TRANSMISSAOC: TStringField;
+    qrProcessosDT_REGISTRO_DIC: TStringField;
+    qrProcessosDT_DESEMBARACOC: TDateTimeField;
+    qrProcessosDT_DISTRIBUICAOC: TDateTimeField;
+    qrProcessosCanalC: TStringField;
+    qrProcessosFiscalC: TStringField;
+    qrProcessosCOD_SITC: TStringField;
+    qrProcessosData_CIC: TDateTimeField;
+    qrProcessosValor_FOBC: TFloatField;
+    qrProcessosValor_CIFC: TFloatField;
+    qrProcessosident_meio1: TStringField;
+    qrProcessosident_meio2: TStringField;
+    qrProcessosCodevento: TStringField;
+    qrProcessosCodobs: TStringField;
+    qrProcessosObs_especifica: TStringField;
+    qrProcessosData_ufollowup: TDateTimeField;
+    qrProcessosHora_ufollowup: TStringField;
+    qrProcessosData_liberacao: TDateTimeField;
+    qrProcessosUrgente: TIntegerField;
+    qrProcessosconsolidado: TIntegerField;
+    qrProcessosPag_proporcional: TIntegerField;
+    qrProcessosRazao_Social: TStringField;
+    qrProcessosDescI: TStringField;
+    qrProcessosDescII: TStringField;
+    qrProcessosDescIII: TStringField;
+    qrProcessosEmail: TStringField;
+    qrProcessosConhecimentoProcesso: TStringField;
+    qrProcessosVia: TStringField;
+    qrProcessosEmbarcacao: TStringField;
+    qrProcessosTransportador: TStringField;
+    qrProcessosTipodoccarga: TStringField;
+    qrProcessosNumerodoccarga: TStringField;
+    qrProcessosNumeromaster: TStringField;
+    qrProcessosUtilizacao: TStringField;
+    qrProcessosTipomanifesto: TStringField;
+    qrProcessosNumeromanifesto: TStringField;
+    qrProcessosCodigo_Presenca_Carga: TStringField;
+    qrProcessosLocal: TStringField;
+    qrProcessosDataConhecimento: TDateTimeField;
+    qrProcessosPeso_Bruto: TFloatField;
+    qrProcessosPeso_Liquido: TFloatField;
+    qrProcessosPais_Procedencia: TStringField;
+    qrProcessosURF_chegada: TStringField;
+    qrProcessosData_Chegada_URF_Cheg: TDateTimeField;
+    qrProcessosURF_Despacho: TStringField;
+    qrProcessosData_Chegada_URF_Desp: TDateTimeField;
+    qrProcessosRecinto_Alfandegario: TStringField;
+    qrProcessosSetor_Alfandegario: TStringField;
+    qrProcessosFrete_Prepaid: TFloatField;
+    qrProcessosFrete_Collect: TFloatField;
+    qrProcessosFrete_Ter_Nac: TFloatField;
+    qrProcessosMoeda_Frete: TStringField;
+    qrProcessosValor_Seguro: TFloatField;
+    qrProcessosMoeda_Seguro: TStringField;
+    qrProcessosProcessoRegImp: TStringField;
+    qrProcessosBanco: TStringField;
+    qrProcessosAgencia: TStringField;
+    qrProcessosConta_Corrente: TStringField;
+    qrProcessosTaxa_SISCOMEX: TFloatField;
+    qrProcessosBancoc: TStringField;
+    qrProcessosAgenciac: TStringField;
+    qrProcessosConta_Correntec: TStringField;
+    qrProcessosTaxa_SISCOMEXc: TFloatField;
+    qrProcessosResponsavel_EmpresaC: TStringField;
+    qrProcessosResponsavel_Empresa: TStringField;
+    qrProcessosUsuario: TStringField;
+    qrProcessosSEM_NFS: TIntegerField;
+    qrFaturaCodigo: TStringField;
+    qrProcRegImpEmpresa: TStringField;
+    qrProcRegImpFilial: TStringField;
+    qrProcRegImpProcesso: TStringField;
+    qrProcRegImpBanco: TStringField;
+    qrProcRegImpAgencia: TStringField;
+    qrProcRegImpConta_Corrente: TStringField;
+    qrProcRegImpII: TFloatField;
+    qrProcRegImpIPI: TFloatField;
+    qrProcRegImpTaxa_SISCOMEX: TFloatField;
+    qrProcRegImpBancoc: TStringField;
+    qrProcRegImpAgenciac: TStringField;
+    qrProcRegImpConta_Correntec: TStringField;
+    qrProcRegImpIIc: TFloatField;
+    qrProcRegImpIPIc: TFloatField;
+    qrProcRegImpTaxa_SISCOMEXc: TFloatField;
+    qrProcRegImpEnviou_adcc: TIntegerField;
+    qrProcRegImpEnviou_adcc_c: TIntegerField;
+    qrProcRegImpEnviou_adr: TIntegerField;
+    qrProcRegImpEnviou_adr_c: TIntegerField;
+    q_nfsNFiscal: TStringField;
+    q_nfsProcesso: TStringField;
+    q_nfsCancelada: TIntegerField;
+    q_nfsData_emissao: TDateTimeField;
+    procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure acInicializaExecute(Sender: TObject);
+    procedure acGeraEmailExecute(Sender: TObject);
+    procedure acProcessaExecute(Sender: TObject);
+    procedure acEnviaEmailExecute(Sender: TObject);
+    procedure acFinalizaExecute(Sender: TObject);
+    procedure reProcessaChange(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure tmIniciarTimer(Sender: TObject);
+    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+    procedure VerificaDoc(Sender: TObject);
+    function Log_Aplicativo(Aplicativo: string; Chave: String) : boolean;
+    procedure Log_Aplicativo_finalizar(Aplicativo : String);
+    procedure Log_Aplicativo_Atualizar_Data(Aplicativo : String; Chave: String);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+    vet = Array[1..totST, 1..2] Of Integer;
+    vetSubTipo = Array[1..totST, 1..2] Of String;
+
+var
+   frmAPen: TfrmAPen;
+   arqDir, arqNome, Linha, arqDirResumo, arqNomeResumo: String;
+   arqLog, arqResumo: TextFile;
+   vFil, vEmp: String;
+   vProc,vPro: String;
+   vProcOk : BOOLEAN;
+
+//   vCont: Integer;
+//   vContInicial: Integer;
+   vUsu, vUsuR, vUsuN, vUsuE: String;
+   vStrResumo: String;
+   totProc, totOk, totErro: Integer;
+   totProcGeral, totOkGeral, totErroGeral: Integer;
+   vperc,vpercgeral:real;
+   vUsuValido: Boolean; // USUÁRIO VÁLIDO NO SISTEMA
+
+   vDe, vPara, vCC, vCCO: String;
+   vAssunto: String;
+   vTitulo: String;
+   vBody: String;
+   vHTML: Boolean = True;
+   vAnexo: String = '';
+
+      vNum,vprocesso: String;
+   vST: Integer;
+      vContInicial: vet = ((0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0));
+   vCont: vet;
+
+      vetST: vetSubTipo = (('FATURA','1'), ('CONHECIMENTO','2'), ('DI','3'), ('DI CONSUMO','3'),
+                        ('DSI','16'), ('CI','5'), ('CI CONSUMO','5'), ('RCR','14'),
+                        ('TR','11'), ('DI/DSI',''), ('DTA','13'));
+
+   
+implementation
+
+{$R *.DFM}
+
+procedure TfrmAPen.FormCreate(Sender: TObject);
+begin
+     Try
+        With DB_MSCOMEX Do Begin
+            Params.Values['USER NAME'] := '';
+            Params.Values['PASSWORD'] := 'lasbrug30';
+            Connected := True;
+        End;
+     Except
+        On E:Exception Do Begin
+           MessageDlg('Erro de Conexão com o Banco de Dados! Verifique sua conexão de rede.'+#13#10+#13#10+'ERRO: '+E.message, mtError,[mbOk], 0);
+           Close;
+           Application.Terminate;
+           Exit;
+        End;
+     End;
+
+      DB_MSFOLLOWUP.Params.Values['USER NAME'] := '';
+      DB_MSFOLLOWUP.Params.Values['PASSWORD'] := 'lasbrug30';
+      DB_MSFOLLOWUP.Connected := True;
+
+     qrParametros.Open;
+     vEmp := qrParametrosEmpresa.AsString;
+     vFil := qrParametrosFilial.AsString;
+     qrParametros.Close;
+
+     With qrEnviaEmail Do Begin
+         Params[0].AsString := vEmp;
+         Params[1].AsString := vFil;
+         Params[2].AsString := vCodAPL;
+     End;
+//     With qrUsuarios Do Begin
+//         Params[0].AsString := vEmp;
+//         Params[1].AsString := vFil;
+//     End;
+
+//     With qrUsuariosProc Do Begin
+//         Params[0].AsString := vEmp;
+//         Params[1].AsString := vFil;
+//     End;
+//     With qrProcessos Do Begin
+//         Params[0].AsString := vEmp;
+//         Params[1].AsString := vFil;
+//     End;
+     With qrFatura Do Begin
+         Params[0].AsString := vEmp;
+         Params[1].AsString := vFil;
+     End;
+///     With qrProcRegImp Do Begin
+///         Params[0].AsString := vEmp;
+///         Params[1].AsString := vFil;
+///     End;
+     With qrItens Do Begin
+         Params[0].AsString := vEmp;
+         Params[1].AsString := vFil;
+     End;
+     With qrTribut Do Begin
+         Params[0].AsString := vEmp;
+         Params[1].AsString := vFil;
+     End;
+{     With qrFollow Do Begin
+         Params[0].AsString := vEmp;
+         Params[1].AsString := vFil;
+     End;}
+
+     q_nfs.Open;
+end;
+
+procedure TfrmAPen.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+     Try
+        DB_MSCOMEX.Connected := False;
+        CloseFile(arqLog);
+     Except
+     End;
+
+     frmAPen := nil;
+     Action := caFree;
+end;
+
+procedure TfrmAPen.acInicializaExecute(Sender: TObject);
+begin
+     arqDir := ExtractFilePath(Application.ExeName)+'Log\';
+     arqNome := vCodAPL+FormatDateTime('yyyymmdd',Now)+'.txt';
+     AssignFile(arqLog,arqDir+arqNome);
+     If Not DirectoryExists(arqDir) Then
+        CreateDir(arqDir);
+     If FileExists(arqDir+arqNome) Then
+        AppEnd(arqLog)
+     Else Begin
+        ReWrite(arqLog);
+        Linha := '    DATA    |   HORA   | DESCRIÇÃO ';
+        Writeln(arqLog, Linha);  Flush(arqLog);
+        reProcessa.Lines.Append(Linha);
+     End;
+
+     Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+            + '>>> INICIANDO O PROCESSAMENTO DO APen';
+     Writeln(arqLog, Linha);  Flush(arqLog);
+     reProcessa.Lines.Append(Linha);
+
+     arqDirResumo := ExtractFilePath(Application.ExeName);
+     arqNomeResumo := 'Resumo.txt';
+     AssignFile(arqResumo,arqDirResumo+arqNomeResumo);
+     If FileExists(arqDirResumo+arqNomeResumo) Then
+        AppEnd(arqResumo)
+     Else
+        ReWrite(arqResumo);
+
+
+     { GERA EMAIL COM A RELAÇÃO DAS PENDÊNCIAS DOS PROCESSOS }
+     acGeraEmail.Execute;
+     If acFinaliza.Checked Then Exit;
+
+     { FINALIZA APLICAÇÃO }
+     acFinaliza.Execute;
+end;
+
+procedure TfrmAPen.acGeraEmailExecute(Sender: TObject);
+
+begin
+     Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+            + 'GERANDO RELAÇÃO DAS PENDÊNCIAS DOS PROCESSOS';
+     Writeln(arqLog, Linha);  Flush(arqLog);
+     reProcessa.Lines.Append(Linha);
+
+     vTitulo := Caption;
+
+     vDe := 'APEN<auditoria@logistic-ms.com.br>';
+     vPara := '';
+     vCC := '';
+     vCCO := '';
+{ ********* RETIRADA DO ENVIO DE E-MAIL PARA O OPERACIONAL (SOLICITADO POR ODILMA) ********
+     With qrUsuarios Do Begin
+         Open;
+         While Not Eof Do Begin
+              If (Pos(qrUsuariosEmail.AsString, vPara) = 0) And
+                 (Pos(qrUsuariosEmail.AsString, vCC) = 0) And
+                 (Pos(qrUsuariosEmail.AsString, vCCO) = 0) Then Begin
+                 If vCCO <> '' Then vCCO := vCCO + ', ';
+                 vCCO := vCCO + qrUsuariosEmail.AsString;
+              End;
+              Next;
+         End;
+         Close;
+     End;
+}
+     With qrEnviaEmail Do Begin
+         Open;
+         While Not Eof Do Begin
+              If (Pos(qrEnviaEmailEmail.AsString, vPara) = 0) And
+                 (Pos(qrEnviaEmailEmail.AsString, vCC) = 0) And
+                 (Pos(qrEnviaEmailEmail.AsString, vCCO) = 0) Then Begin
+                 If vCCO <> '' Then vCCO := vCCO + ', ';
+                 vCCO := vCCO + qrEnviaEmailEmail.AsString;
+              End;
+              Next;
+         End;
+         Close;
+     End;
+
+  //   vcco := 'marcos.marchi@mslogistica.com.br';
+{     ////EM BRANCO
+     vUsuValido := False;
+     vCont := vContInicial;
+     totProc := 0;
+
+          vUsuR := '' ;
+          vUsu  := '"SEM USUÁRIO"';
+          vUsuN := '"SEM USUÁRIO"';
+          vUsuE := '"SEM E-MAIL"';
+          vPara := '';
+
+          vCC := '';
+
+          vAssunto := 'APen - '+ vUsu +', em '+ FormatDateTime('dd/mm/yyyy "às" hh:nn:ss', Now());
+
+          vBody := '<TABLE ALIGN="CENTER" BORDER="1" WIDTH="100%">'
+                 + '<TR><TD><B>RESPONSÁVEL: '+ vUsuN +' ('+ vUsuE +')</B></TD></TR>';
+
+
+          acProcessa.Execute;
+          If acFinaliza.Checked Then Exit;
+
+          vBody := vBody + '</TABLE>';
+
+ //         { CONSTRUINDO RESUMO GERAL
+          If totProc <> 0 Then Begin
+             vStrResumo := vStrResumo +'<TR>'
+                         + '<TD><FONT SIZE="2">'+ vUsuN +'</FONT></TD>'
+                         + '<TD ALIGN="CENTER"><FONT COLOR="#0000DD">'+ IntToStr(totOk) +'</FONT></TD>'
+                         + '<TD ALIGN="CENTER"><FONT COLOR="#DD0000">'+ IntToStr(totErro) +'</FONT></TD>'
+                         + '<TD ALIGN="CENTER">'+ IntToStr(totProc) +'</TD>'
+                         + '</TR>';
+             Inc(totOkGeral, totOk);
+             Inc(totErroGeral, totErro);
+             Inc(totProcGeral, totProc);
+          End;
+
+          Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                 + 'Total de Processos OK: '+ IntToStr(totOk);
+          ///Writeln(arqLog, Linha);  Flush(arqLog);
+          reProcessa.Lines.Append(Linha);
+          Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                 + 'Total de Processos Desatualizados: '+ IntToStr(totErro);
+          ///Writeln(arqLog, Linha);  Flush(arqLog);
+          reProcessa.Lines.Append(Linha);
+
+          If (totProc <> 0) AND (vUsuValido OR (totErro <> 0)) Then Begin
+             acEnviaEmail.Execute;
+             If acFinaliza.Checked Then Exit;
+          End;
+}
+
+     qrUsuariosProc.Open;
+     //qrUsuariosProc.Filtered := TRUE;
+     While Not qrUsuariosProc.Eof Do Begin
+          if Log_Aplicativo('APEN',qrUsuariosProcUsuario.AsString) = true then begin
+                Application.ProcessMessages;
+                If acFinaliza.Checked Then Exit;
+
+                vCont := vContInicial;
+                totProc := 0;
+                vPRO := '';
+                vUsu := qrUsuariosProcUsuario.AsString;
+                vUsuR := qrUsuariosProcUsuario.AsString;
+                vUsuN := qrUsuariosProcNome_Completo.AsString;
+                vUsuE := qrUsuariosProcEmail.AsString;
+                vUsuValido := True;
+
+                if vUsuN='ARQUIVO' THEN vUsuN := 'SEM RESPONSÁVEL';
+
+                If vUsuR = '' Then Begin
+                        vUsu  := '"SEM USUÁRIO"';
+                        vUsuN := '"SEM USUÁRIO"';
+                        vUsuE := '"SEM E-MAIL"';
+                End Else Begin
+                        If vUsu = '' Then Begin
+                                vUsu  := vUsuR;
+                                vUsuN := vUsuR +' - "INVÁLIDO NO SISTEMA"';
+                                vUsuE := '"SEM E-MAIL"';
+                                vUsuValido := False;
+                        End Else
+                                If vUsuE = '' Then
+                                        vUsuE := '"SEM E-MAIL"';
+                End;
+
+                If vUsuE <> '"SEM E-MAIL"' Then
+                        vPara := vUsuN +'<'+ vUsuE +'>'
+                Else
+                        vPara := '';
+
+                vCC := '';
+                If qrUsuariosProcEmailSupervisor.AsString <> '' Then
+                        vCC := qrUsuariosProcNomeSupervisor.AsString +'<'+ qrUsuariosProcEmailSupervisor.AsString +'>';
+
+                If qrUsuariosProcEmailSupervisorC.AsString <> '' Then
+                        vCC := qrUsuariosProcNomeSupervisorC.AsString +'<'+ qrUsuariosProcEmailSupervisorC.AsString +'>';
+
+//              vAssunto := 'APEN - '+ vUsu +', em '+ FormatDateTime('dd/mm/yyyy "às" hh:nn:ss', Now());
+
+                vBody := '<TABLE ALIGN="CENTER" BORDER="1" WIDTH="100%">'
+                 + '<TR><TD><B>RESPONSÁVEL: '+ vUsuN +' ('+ vUsuE +')</B></TD></TR>';
+
+                { PROCESSA AS PENDÊNCIAS DOS PROCESSOS DO USUÁRIO }
+          //    if (vUsuR>='TATIANA') then begin
+
+                acProcessa.Execute;
+                
+                If acFinaliza.Checked Then Exit;
+
+                vBody := vBody + '</TABLE>';
+
+                vperc := 0;
+                { CONSTRUINDO RESUMO GERAL }
+                If totProc <> 0 Then Begin
+                        vperc := (totok*100)/totproc;
+                        vpercgeral := vpercgeral+vperc;
+
+                        vStrResumo := vStrResumo +'<TR>'
+                         + '<TD><FONT SIZE="2">'+ vUsuN +'</FONT></TD>'
+                         + '<TD ALIGN="CENTER"><FONT COLOR="#0000DD">'+ IntToStr(totOk) +'</FONT></TD>'
+                         + '<TD ALIGN="CENTER"><FONT COLOR="#DD0000">'+ IntToStr(totErro) +'</FONT></TD>'
+                         + '<TD ALIGN="CENTER">'+ IntToStr(totProc) +'</TD>'
+                         + '<TD ALIGN="CENTER">'+ floattostrf(vperc,fffixed,15,2) +'%</TD>'
+                         + '</TR>';
+                        Inc(totOkGeral, totOk);
+                        Inc(totErroGeral, totErro);
+                        Inc(totProcGeral, totProc);
+                        Writeln(arqResumo, vStrResumo);  Flush(arqResumo);
+                End;
+          //end;
+                Log_Aplicativo_Atualizar_Data('APEN',qrUsuariosProcUsuario.AsString);
+                qrUsuariosProc.Next;
+
+                Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                 + 'Total de Processos OK: '+ IntToStr(totOk);
+          ///   Writeln(arqLog, Linha);  Flush(arqLog);
+                reProcessa.Lines.Append(Linha);
+                Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                 + 'Total de Processos Desatualizados: '+ IntToStr(totErro);
+          ///   Writeln(arqLog, Linha);  Flush(arqLog);
+                reProcessa.Lines.Append(Linha);
+
+          //    If (totProc <> 0) AND (vUsuValido OR (totErro <> 0)) Then Begin
+                If (totProc <> 0)  Then Begin
+                        { ENVIA E-MAIL DA RELAÇÃO DAS PENDÊNCIA DOS PROCESSOS }
+//                      vAssunto := 'APEN - '+ vUsu+', ATENÇÃO!!! PROCESSOS OK('+IntToStr(totOk)+'), NÃO OK('+IntToStr(totErro)+')'+', em '+ FormatDateTime('dd/mm/yyyy "às" hh:nn:ss', Now());
+                        vAssunto := 'APEN - '+ vUsu+', ATENÇÃO!!! '+floattostrf(vperc,fffixed,15,2)+'% - OK('+IntToStr(totOk)+'), NÃO OK('+IntToStr(totErro)+')'+', em '+ FormatDateTime('dd/mm/yyyy "às" hh:nn:ss', Now());
+//                      if totOk=totproc then begin
+                        if toterro=0 then begin
+                                vAssunto := 'APEN - '+ vUsu+', PARABÉNS!!! 100% OK!!!, em '+ FormatDateTime('dd/mm/yyyy "às" hh:nn:ss', Now());
+                        end;
+
+                        Q_UP.Params[0].AsString := vusu;
+                        Q_UP.Params[1].Asinteger := totok;
+                        Q_UP.Params[2].Asinteger := toterro;
+                        Q_UP.Params[3].Asinteger := totproc;
+                        Q_UP.Params[4].Asfloat   := vperc;
+                        Q_UP.ExecSQL;
+
+                        acEnviaEmail.Execute;
+                        If acFinaliza.Checked Then Exit;
+                End;
+        End Else Begin
+                qrUsuariosProc.Next;
+        End; // Fim do IF
+     End; // Fim do while
+
+
+     { RESUMO GERAL }
+     Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+            + 'GERANDO RESUMO GERAL DAS PENDÊNCIAS DOS PROCESSOS';
+     Writeln(arqLog, Linha);  Flush(arqLog);
+     reProcessa.Lines.Append(Linha);
+     Reset(arqResumo);
+     while not Eof(arqResumo) do begin
+        Readln(arqResumo, Linha);
+        vStrResumo:= vStrResumo + Linha;
+     end;
+
+     vCC := '';
+     vPara := '';
+     vAssunto := 'APen - RESUMO GERAL - '+ FormatDateTime('dd/mm/yyyy "às" hh:nn:ss', Now());
+     vBody := '<TABLE ALIGN="CENTER" BORDER="1" WIDTH="100%">'
+            + '<TR>'
+            + '<TD ALIGN="CENTER" WIDTH="40%"><FONT SIZE="2"><B>RESPONSÁVEIS</B></FONT></TD>'
+            + '<TD ALIGN="CENTER" WIDTH="20%"><FONT SIZE="2"><B>PROCESSOS<BR>OK</B></FONT></TD>'
+            + '<TD ALIGN="CENTER" WIDTH="20%"><FONT SIZE="2"><B>PROCESSOS<BR>DESATUALIZADOS</B></FONT></TD>'
+            + '<TD ALIGN="CENTER" WIDTH="20%"><FONT SIZE="2"><B>TOTAL</B></FONT></TD>'
+            + '<TD ALIGN="CENTER" WIDTH="20%"><FONT SIZE="2"><B>PERCENTUAL</B></FONT></TD>'
+            + '</TR>'
+            + vStrResumo
+            + '<TR>'
+            + '<TD ALIGN="RIGHT"><B>TOTAIS</B></TD>'
+            + '<TD ALIGN="CENTER"><B>'+ IntToStr(totOkGeral) +'</B></TD>'
+            + '<TD ALIGN="CENTER"><B>'+ IntToStr(totErroGeral) +'</B></TD>'
+            + '<TD ALIGN="CENTER"><B>'+ IntToStr(totProcGeral) +'</B></TD>'
+            + '<TD ALIGN="CENTER"><B>'+ FLOATToStrF((totOkGeral*100)/totProcGeral,FFFIXED,15,2) +'%</B></TD>'
+            + '</TR>'
+            + '</TABLE>';
+
+     { ENVIA E-MAIL DO RESUMO GERAL DAS PENDÊNCIAS }
+     acEnviaEmail.Execute;
+
+     Log_Aplicativo_finalizar('APEN');
+end;
+
+procedure TfrmAPen.acProcessaExecute(Sender: TObject);
+var
+   vTemFatura: Boolean;
+   vFaltaFol: Boolean;
+   vOBS: String;
+   vResumo: String;
+   vSemFol, vUltFol: String;
+   vStatus, vStatusDesc: String;
+   totStatus, totStatusOk, totStatusErro: Integer;
+///   vBodyDir: String;
+///   vDiretoria: Boolean;
+   vData, vDataMaior: String;
+
+///    follow_off:boolean;
+///    follow_dir_total:string;
+   v1, v2, v3, v4, v5, v6: String;
+   i: Integer;
+entra:boolean;
+
+begin
+     Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+            + 'ANALISANDO USUÁRIO(A): '+ vUsuN;
+     Writeln(arqLog, Linha);  Flush(arqLog);
+     reProcessa.Lines.Append(Linha);
+
+     totProc := 0; totOk := 0; totErro := 0;
+     totStatus := 0; totStatusOk := 0; totStatusErro := 0;
+     vResumo := '';
+///     vBodyDir := '';
+///     vDiretoria := False;
+
+     qrProcessos.Close;
+     qrProcessos.Params[0].AsString := vUSUR;
+     qrProcessos.Params[1].AsString := vUSUR;
+     qrProcessos.Params[2].AsString := vUSUR;
+    // showmessage('vusur->'+vusur);
+ //    If vUsuR <> '' Then
+//        qrProcessos.SQL.Strings[3] := 'AND ( (P.Responsavel_Empresa = "'+ vUsuR +'" ) OR ( (P.Responsavel_Empresa Is Null) AND (P.Responsavel_EmpresaC = "'+ vUsuR +'") )  ) ';
+//        qrProcessos.SQL.Strings[3] := 'AND ( (P.Responsavel_Empresa = "'+ vUsuR +'" AND ( P.Responsavel_EmpresaC Is Not Null)) OR ( (P.Responsavel_Empresa Is Null) AND (P.Responsavel_EmpresaC = "'+ vUsuR +'") )  ) '
+//        qrProcessos.SQL.Strings[3] := ' AND ( (P.Responsavel_Empresa = "'+ vUsuR +'" ) OR ( P.Responsavel_EmpresaC = "'+ vUsuR +'") ) '
+    // Else
+     //   qrProcessos.SQL.Strings[3] := ' AND P.Responsavel_Empresa Is Null ';
+     qrProcessos.Open;
+
+     Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+            + 'Total de Processos: '+ IntToStr(qrProcessos.RecordCount);
+     Writeln(arqLog, Linha);  Flush(arqLog);
+     reProcessa.Lines.Append(Linha);
+
+     Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+            + 'Verificando por Status...';
+     //Writeln(arqLog, Linha);  Flush(arqLog);
+     reProcessa.Lines.Append(Linha);
+
+     While Not qrProcessos.Eof Do Begin
+          Application.ProcessMessages;
+          If acFinaliza.Checked Then Exit;
+
+          vProc := qrProcessosCodigo.AsString;
+          vStatus := qrProcessosStatus.AsString;
+          vStatusDesc := qrProcessosDescIII.AsString;
+          ///coloquei para ver os processos
+          Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now) + '--> Processo: '+ vproc;
+          Writeln(arqLog, Linha);  Flush(arqLog);
+          reProcessa.Lines.Append(Linha);
+
+          vProcOk := True;
+          vTemFatura := False;
+          vPRO := '';
+          vOBS := '';
+
+          vPRO := vPRO
+                + '<TR><TD><FONT SIZE="2">'
+                + '<B>PROCESSO: </B>'+ vProc;
+
+          { VERIFICA CLIENTE }
+          If qrProcessosImportador.AsString <> '' Then
+             vPRO := vPRO +', '+ qrProcessosRazao_Social.AsString
+          Else Begin
+             vProcOk := False;
+             vOBS := vOBS + 'Cliente não informado';
+          End;
+
+          { VERIFICA TIPO }
+          If qrProcessosTipo.AsString <> '' Then
+             vPRO := vPRO +', '+ qrProcessosDescI.AsString
+          Else Begin
+             vProcOk := False;
+             If vOBS <> '' Then vOBS := vOBS + ', ';
+             vOBS := vOBS + 'Tipo de Processo não informado';
+          End;
+
+          { VERIFICA DATA DE ABERTURA }
+          If qrProcessosData.AsString = '' Then Begin
+             vProcOk := False;
+             If vOBS <> '' Then vOBS := vOBS + ', ';
+             vOBS := vOBS + 'Informar a data de Abertura do Processo';
+          End
+          Else Begin
+             { VERIFICAR SOMENTE SE TIVER DATA DE ABERTURA }
+             { VERIFICA TIPO DE DECLARAÇÃO }
+             If (qrProcessosTipo.AsString = '1')  Or (qrProcessosTipo.AsString = '11') Or
+                (qrProcessosTipo.AsString = '12') Or (qrProcessosTipo.AsString = '13') Or
+                (qrProcessosTipo.AsString = '6') Or (qrProcessosTipo.AsString = '19') Or
+                ( (qrProcessosTipo.AsString = '17') And
+                  (qrProcessosData.AsDateTime >= StrToDateTime('13/11/2003')) ) Then Begin
+                If qrProcessosTipo_Declaracao.AsString <> '' Then
+                   vPRO := vPRO +', '+ qrProcessosDescII.AsString
+                Else Begin
+                   If vOBS <> '' Then vOBS := vOBS + ', ';
+                   vOBS := vOBS +'Tipo de Declaração não informado';
+                End;
+             End
+             Else Begin
+                If qrProcessosTipo_Declaracao.AsString <> '' Then Begin
+                   If vOBS <> '' Then vOBS := vOBS + ', ';
+                   vOBS := vOBS +'Tipo de Declaração não deve ser informado';
+                End;
+             End;
+
+             { VERIFICA CONTRATO }
+             If qrProcessosContrato.AsString = '' Then Begin
+                vProcOk := False;
+                If vOBS <> '' Then vOBS := vOBS + ', ';
+                vOBS := vOBS + 'Informar o Contrato';
+             End;
+
+             { VERIFICA LOCAL DE INVENTÁRIO }
+             If qrProcessosLocal_Inventario.AsString = '' Then Begin
+                vProcOk := False;
+                If vOBS <> '' Then vOBS := vOBS + ', ';
+                vOBS := vOBS + 'Informar o Local de Inventário';
+             End;
+
+             { VERIFICA SITUAÇÃO FISCAL }
+             If qrProcessosCOD_SIT.AsString = '' Then Begin
+                vProcOk := False;
+                If vOBS <> '' Then vOBS := vOBS + ', ';
+                vOBS := vOBS + 'Informar a Situação Fiscal do Processo';
+             End;
+
+             With qrFatura Do Begin
+                 Params[2].AsString := vProc;
+                 Open;
+                 vTemFatura := (RecordCount <> 0);
+                 Close;
+             End;
+
+             { VERIFICA REFERÊNCIA DO CLIENTE }
+             If vTemFatura Then
+                If qrProcessosCodigo_Cliente.AsString = '' Then Begin
+                   vProcOk := False;
+                   If vOBS <> '' Then vOBS := vOBS + ', ';
+                   vOBS := vOBS + 'Informar a Referência do Cliente';
+                End;
+
+             If vStatus >= '1' Then Begin
+                If (qrProcessosTipo.AsString = '1') Or (qrProcessosTipo.AsString = '11') Or
+                   (qrProcessosTipo.AsString = '12') Or (qrProcessosTipo.AsString = '13') Then Begin
+                   If qrProcessosTipo_Declaracao.AsString = '12' Then Begin
+                      { ADMISSÃO }
+                      { VERIFICA DI DE ADMISSÃO }
+                      If qrProcessosNR_DECLARACAO_IMP.AsString = '' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Número da DI de Admissão';
+                      End;
+
+                      { VERIFICA DATA DE REGISTRO DA DI DE ADMISSÃO }
+                      If qrProcessosDT_REGISTRO_DI.AsString    ='' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a data de Registro da DI de Admissão';
+                      End;
+
+                      { VERIFICA DATA DE DESEMBARAÇO DE ADMISSÃO }
+                      If qrProcessosDT_DESEMBARACO.AsString    ='' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a data de Desembaraço de Admissão';
+                      End;
+
+                      { VERIFICA VALOR FOB DE ADMISSÃO }
+                      If qrProcessosValor_FOB.AsFloat = 0 Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Valor FOB de Admissão';
+                      End;
+
+                      { VERIFICA VALOR CIF DE ADMISSÃO }
+                      If qrProcessosValor_CIF.AsFloat = 0 Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Valor CIF de Admissão';
+                      End;
+
+                      { CONSUMO }
+                      If (Not qrProcessosPag_Proporcional.AsBoolean) And
+                         (Not qrProcessosConsolidado.AsBoolean) Then Begin
+                         If (qrProcessosNR_DECLARACAO_IMPC.AsString <> '') Or
+                            (qrProcessosDT_REGISTRO_DIC.AsString <> '') Or
+                            (qrProcessosDT_DESEMBARACOC.AsString <> '') Or
+                            (qrProcessosValor_FOBC.AsFloat > 0 ) Or
+                            (qrProcessosValor_CIFC.AsFloat > 0 ) Then Begin
+                            { VERIFICA DI DE CONSUMO }
+                            If qrProcessosNR_DECLARACAO_IMPC.AsString = '' Then Begin
+                               vProcOk := False;
+                               If vOBS <> '' Then vOBS := vOBS + ', ';
+                               vOBS := vOBS + 'Informar o Número da DI de Consumo';
+                            End;
+
+                            { VERIFICA DATA DE REGISTRO DA DI DE CONSUMO }
+                            If qrProcessosDT_REGISTRO_DIC.AsString    = '' Then Begin
+                               vProcOk := False;
+                               If vOBS <> '' Then vOBS := vOBS + ', ';
+                               vOBS := vOBS + 'Informar a data de Registro da DI de Consumo';
+                            End;
+
+                            { VERIFICA DATA DESEMBARAÇO DE CONSUMO }
+                            If qrProcessosDT_DESEMBARACOC.AsString    = '' Then Begin
+                               vProcOk := False;
+                               If vOBS <> '' Then vOBS := vOBS + ', ';
+                               vOBS := vOBS + 'Informar a data de Desembaraço de Consumo';
+                            End;
+
+                            { VERIFICA VALOR FOB DE CONSUMO }
+                            If qrProcessosValor_FOBC.AsFloat = 0 Then Begin
+                               vProcOk := False;
+                               If vOBS <> '' Then vOBS := vOBS + ', ';
+                               vOBS := vOBS + 'Informar o Valor FOB de Consumo';
+                            End;
+
+                            { VERIFICA VALOR CIF DE CONSUMO }
+                            If qrProcessosValor_CIFC.AsFloat = 0 Then Begin
+                               vProcOk := False;
+                               If vOBS <> '' Then vOBS := vOBS + ', ';
+                               vOBS := vOBS + 'Informar o Valor CIF de Consumo';
+                            End;
+                         End;
+                      End;
+                   End
+                   Else Begin
+                      { VERIFICA DI }
+                      If qrProcessosNR_DECLARACAO_IMP.AsString = '' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Número da DI';
+                      End;
+
+                      { VERIFICA DATA DE REGISTRO DA DI }
+                      If qrProcessosDT_REGISTRO_DI.AsString    ='' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a data de Registro da DI';
+                      End;
+
+                      { VERIFICA DATA DE DESEMBARAÇO }
+                      If qrProcessosDT_DESEMBARACO.AsString    ='' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a data de Desembaraço';
+                      End;
+
+                      { VERIFICA VALOR FOB }
+                      If qrProcessosValor_FOB.AsFloat = 0 Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Valor FOB';
+                      End;
+
+                      { VERIFICA VALOR CIF }
+                      If qrProcessosValor_CIF.AsFloat = 0 Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Valor CIF';
+                      End;
+                   End;
+
+                   ///qrProcRegImp.Params[2].AsString := vProc;
+                   ///qrProcRegImp.Open;
+                   ///If qrProcRegImp.RecordCount <> 0 Then Begin
+                   If qrProcessosProcessoRegImp.AsString <> '' Then Begin
+                      { VERIFICA REGISTROS DO SISCOMEX }
+                      If ( (qrProcessosNR_Declaracao_Imp.AsString <> '') And
+                           ( (qrProcessosBanco.AsString = '') Or
+                             (qrProcessosAgencia.AsString = '') Or
+                             (qrProcessosConta_Corrente.AsString = '') Or
+                             (qrProcessosTaxa_Siscomex.AsFloat = 0) ) ) Then Begin
+                         If qrProcessosDT_Registro_DI.AsString <> '' Then Begin
+                            If (StrToDate(Copy(qrProcessosDT_Registro_DI.AsString,1,2)+'/'+Copy(qrProcessosDT_Registro_DI.AsString,3,2)+'/'+Copy(qrProcessosDT_Registro_DI.AsString,5,4)) >= StrToDate('25/10/2002')) Then Begin
+                               vProcOk := False;
+                               If vOBS <> '' Then vOBS := vOBS + ', ';
+                               vOBS := vOBS + 'Informar no Desembaraço os valores e/ou banco-agência-c.corrente registrados no Siscomex';
+                            End;
+                         End;
+                      End;
+
+                      { VERIFICA REGISTROS NA DI DE CONSUMO DO SISCOMEX }
+                      If ( (qrProcessosNR_Declaracao_ImpC.AsString <> '') And
+                           ( (qrProcessosBancoC.AsString = '') Or
+                             (qrProcessosAgenciaC.AsString = '') Or
+                             (qrProcessosConta_CorrenteC.AsString = '') Or
+                             (qrProcessosTaxa_SiscomexC.AsFloat = 0) ) ) Then Begin
+                         If qrProcessosDT_Registro_DIC.AsString <> '' Then Begin
+                            If (StrToDate(Copy(qrProcessosDT_Registro_DIC.AsString,1,2)+'/'+Copy(qrProcessosDT_Registro_DIC.AsString,3,2)+'/'+Copy(qrProcessosDT_Registro_DIC.AsString,5,4)) >= StrToDate('25/10/2002')) Then Begin
+                               vProcOk := False;
+                               If vOBS <> '' Then vOBS := vOBS + ', ';
+                               vOBS := vOBS + 'Informar no Desembaraço os valores e/ou banco-agência-c.corrente registrados na DI de consumo no Siscomex';
+                            End;
+                         End;
+                      End;
+                   End
+                   Else Begin
+                      { VERIFICA VALORES REGISTRADOS NO SISCOMEX }
+                      If (qrProcessosNR_Declaracao_Imp.AsString <> '') Then Begin
+                         If qrProcessosDT_Registro_DI.AsString <> '' Then Begin
+                            If (StrToDate(Copy(qrProcessosDT_Registro_DI.AsString,1,2)+'/'+Copy(qrProcessosDT_Registro_DI.AsString,3,2)+'/'+Copy(qrProcessosDT_Registro_DI.AsString,5,4)) >= StrToDate('25/10/2002')) Then Begin
+                               vProcOk := False;
+                               If vOBS <> '' Then vOBS := vOBS + ', ';
+                               vOBS := vOBS + 'Informar no Desembaraço os valores registrados no Siscomex';
+                            End;
+                         End;
+                      End;
+
+                      { VERIFICA NA DI DE CONSUMO VALORES REGISTRADOS NO SISCOMEX }
+                      If (qrProcessosNR_Declaracao_ImpC.AsString <> '') Then Begin
+                         If qrProcessosDT_Registro_DIC.AsString <> '' Then Begin
+                            If (StrToDate(Copy(qrProcessosDT_Registro_DIC.AsString,1,2)+'/'+Copy(qrProcessosDT_Registro_DIC.AsString,3,2)+'/'+Copy(qrProcessosDT_Registro_DIC.AsString,5,4)) >= StrToDate('25/10/2002')) Then Begin
+                               vProcOk := False;
+                               If vOBS <> '' Then vOBS := vOBS + ', ';
+                               vOBS := vOBS + 'Informar no Desembaraço os valores registrados na DI de consumo no Siscomex';
+                            End;
+                         End;
+                      End;
+                   End;
+                   ///qrProcRegImp.Close;
+
+                   { VERIFICA CANAL }
+                   If qrProcessosCanal.AsString = '' Then Begin
+                      vProcOk := False;
+                      If vOBS <> '' Then vOBS := vOBS + ', ';
+                      vOBS := vOBS + 'Informar o Canal';
+                   End;
+
+                   { VERIFICA FISCAL }
+                   If qrProcessosFiscal.AsString = '' Then Begin
+                      vProcOk := False;
+                      If vOBS <> '' Then vOBS := vOBS + ', ';
+                      vOBS := vOBS + 'Informar o Fiscal';
+                   End;
+
+                   If (qrProcessosTipo_Declaracao.AsString = '05') Or
+                      (qrProcessosTipo_Declaracao.AsString = '12') Then Begin
+                      { VERIFICA RCR }
+                      If qrProcessosNumero_RCR.AsString = '' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o número do RCR';
+                      End;
+
+                      { VERIFICA DATA DE ENTRADA DO RCR }
+                      If qrProcessosData_Entrada_RCR.AsString = '' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a data de entrada do RCR';
+                      End;
+
+                      { VERIFICA DATA DE APROVAÇÃO DO RCR }
+                      If qrProcessosData_Aprovacao_RCR.AsString = '' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a data de aprovação do RCR';
+                      End;
+
+                      { VERIFICA FUNCAMENTAÇÃO DO RCR }
+                      If qrProcessosFundamentacao_RCR.AsString = '' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a Fundamentação do RCR';
+                      End;
+
+                      { VERIFICA PROCURADOR }
+                      If qrProcessosProcurador.AsString = '' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Procurador';
+                      End;
+
+                      { VERIFICA TR }
+                      If qrProcessosNumero_TR.AsString = '' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o número do TR';
+                      End;
+
+                      { Odilma tirou em 25/07/2002 }
+                      { VERIFICA DATA DE ENTRADA DO TR }
+                      ///If qrProcessosData_Entrada_TR.AsString = '' Then Begin
+                      ///   vProcOk := False;
+                      ///   If vOBS <> '' Then vOBS := vOBS + ', ';
+                      ///   vOBS := vOBS + 'Informar a data de entrada do TR';
+                      ///End;
+
+                      { Odilma tirou em 25/07/2002 }
+                      { VERIFICA DATA DE APROVAÇÃO DO TR }
+                      ///If qrProcessosData_Aprovacao_TR.AsString = '' Then Begin
+                      ///   vProcOk := False;
+                      ///   If vOBS <> '' Then vOBS := vOBS + ', ';
+                      ///   vOBS := vOBS + 'Informar a data de aprovação do TR';
+                      ///End;
+                   End;
+                End;
+             End; { FIM DAS VERIFICAÇÕES COM STATUS >= 1 }
+
+             If vTemFatura Then Begin
+                { 1 = Importação; 11 = Importação - Aéreo; 12 = Importação - Marítimo; 13 = Importação - Rodoviário }
+                If (qrProcessosTipo.AsString = '1') Or (qrProcessosTipo.AsString = '11') Or
+                   (qrProcessosTipo.AsString = '12') Or (qrProcessosTipo.AsString = '13') Then Begin
+                   { VERIFICA CONHECIMENTO }
+
+                   { ALTERADO A VERIFICAÇÃO DAS INFORMAÇÕES DO CONHECIMENTO APENAS APÓS SER
+                     INFORMADO A DATA DE CHEGADA NA URF DE CHEGADA (ENTRADA)
+                     SOLICITADO POR ODILMA NO DIA 03/10/2006 }
+                   ////  If qrProcessosConhecimentoProcesso.AsString <> '' Then Begin
+                   If qrProcessosData_Chegada_URF_Cheg.AsString <> '' Then Begin
+                      { VERIFICA VIA DE TRANSPORTE }
+                      If qrProcessosVia.AsString = '' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a Via de Transporte';
+                      End;
+
+                      { VERIFICA EMBARCAÇÃO }
+                      {If qrProcesssosEmbarcacao.AsString = '' Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a Embarcação';
+                      End;}
+
+                      { 9 = Meios Próprios; A = Entrada Fícta }
+                      If (qrProcessosVia.AsString <> '9') And (qrProcessosVia.AsString <> 'A') Then Begin
+                         { VERIFICA TRANSPORTADOR }
+                         If qrProcessosTransportador.AsString = '' Then Begin
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar o Transportador';
+                         End;
+
+                         { VERIFICA TIPO DE CARGA }
+                         If qrProcessosTipoDocCarga.AsString = '' Then Begin
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar o Tipo de Carga';
+                         End;
+
+                         { VERIFICA DOCUMENTO DE CARGA }
+                         If qrProcessosNumeroDocCarga.AsString = '' Then Begin
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar o número do Documento de Carga';
+                         End;
+
+                         { VERIFICA NÚMERO MASTER }
+                         {If qrProcessosNumeroMaster.AsString = '' Then Begin
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar o número Master';
+                         End;}
+
+                         { VERIFICA UTILIZAÇÃO DOCUMENTO DA CARGA }
+                         If qrProcessosUtilizacao.AsString = '' Then Begin
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar a utilização Documento da Carga';
+                         End;
+
+                         { VERIFICA TIPO DE MANIFESTO }
+                         If qrProcessosTipomanifesto.AsString = '' Then Begin
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar o Tipo de Manifesto';
+                         End;
+
+                         { VERIFICA MANIFESTO }
+                         If qrProcessosNumeroManifesto.AsString = '' Then Begin
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar o número do Manifesto';
+                         End;
+
+                         If qrProcessosVia.AsString = '1' Then Begin
+                            { VERIFICA PRESENÇA DE CARGA }
+                            If qrProcessosCodigo_Presenca_Carga.AsString = '' Then Begin
+                               If vOBS <> '' Then vOBS := vOBS + ', ';
+                               vOBS := vOBS + 'Informar o código de Presença de Carga';
+                            End;
+                         End;
+                      End;
+
+                      { A = Entrada Fícta }
+                      If qrProcessosVia.AsString <> 'A' Then Begin
+                         { VERIFICA LOCAL DE EMBARQUE }
+                         If qrProcessosLocal.AsString = '' Then Begin
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar o Local de Embarque';
+                         End;
+
+                         { VERIFICA DATA DE EMBARQUE }
+                         If qrProcessosDataConhecimento.AsString = '' Then Begin
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar a Data de Embarque';
+                         End;
+                      End;
+
+                      { VERIFICA PESO BRUTO DA CARGA }
+                      If qrProcessosPeso_Bruto.AsFloat = 0 Then Begin
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Peso Bruto da Carga';
+                      End;
+
+                      { VERIFICA PESO LÍQUIDO DA CARGA }
+                      If qrProcessosPeso_Liquido.AsFloat = 0 Then Begin
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Peso Líquido da Carga';
+                      End;
+
+                      { VERIFICA PAIS DE PROCEDÊNCIA }
+                      If qrProcessosPais_Procedencia.AsString = '' Then Begin
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o País de Procedência';
+                      End;
+
+                      { VERIFICA URF DE CHEGADA }
+                      If qrProcessosURF_Chegada.AsString = '' Then Begin
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a URF de Chegada';
+                      End;
+
+                      { VERIFICA DATA DE CHEGADA NA URF DE CHEGADA }
+                      If qrProcessosData_Chegada_URF_Cheg.AsString = '' Then Begin
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a Data de Chegada na URF de Chegada';
+                      End;
+
+                      { VERIFICA URF DE DESPACHO }
+                      If qrProcessosURF_Despacho.AsString = '' Then Begin
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a URF de Despacho';
+                      End;
+
+                      { VERIFICA DATA DE CHEGADA NA URF DE DESPACHO }
+                      If qrProcessosData_Chegada_URF_Desp.AsString = '' Then Begin
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar a Data de Chegada na URF de Despacho';
+                      End;
+
+                      { VERIFICA RECINTO ALFANDEGADO }
+                      If qrProcessosRecinto_Alfandegario.AsString = '' Then Begin
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Recinto Alfandegado';
+                      End;
+
+                      { VERIFICA SETOR ALFANDEGADO }
+                      If qrProcessosSetor_Alfandegario.AsString = '' Then Begin
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Informar o Setor Alfandegado';
+                      End;
+
+                      If (qrProcessosFrete_Prepaid.AsFloat > 0) Or
+                         (qrProcessosFrete_Collect.AsFloat > 0) Or
+                         (qrProcessosFrete_Ter_Nac.AsFloat > 0) Then Begin
+                         { VERIFICA MOEDA DO FRETE }
+                         If qrProcessosMoeda_Frete.AsString = '' Then Begin
+                            vProcOk := False;
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar a Moeda do Frete';
+                         End;
+                      End;
+
+                      If qrProcessosValor_Seguro.AsFloat > 0 Then Begin
+                         { VERIFICA MOEDA DO SEGURO }
+                         If qrProcessosMoeda_Seguro.AsString = '' Then Begin
+                            vProcOk := False;
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Informar a Moeda do Seguro';
+                         End;
+                      End;
+                   ///End
+                   ///Else Begin
+                   ///   vProcOk := False;
+                   ///   If vOBS <> '' Then vOBS := vOBS + ', ';
+                   ///   vOBS := vOBS + 'Informar o Conhecimento deste Processo';
+                   End;
+                End;
+             End; { FIM DAS VERIFICAÇÕES SE O PROCESSO TEM FATURA }
+
+             If vStatus >= '1' Then Begin
+                If (qrProcessosTipo.AsString = '1') Or (qrProcessosTipo.AsString = '11') Or
+                   (qrProcessosTipo.AsString = '12') Or (qrProcessosTipo.AsString = '13') Then Begin
+                   { VERIFICA FATURA }
+                   If Not vTemFatura Then Begin
+                      vProcOk := False;
+                      If vOBS <> '' Then vOBS := vOBS + ', ';
+                      vOBS := vOBS + 'Verificar Faturas deste Processo';
+                   End
+                   Else Begin
+                      { VERIFICA ITENS DE FATURA }
+                      qrItens.Params[2].AsString := vProc;
+                      qrItens.Open;
+                      If qrItens.RecordCount = 0 Then Begin
+                         vProcOk := False;
+                         If vOBS <> '' Then vOBS := vOBS + ', ';
+                         vOBS := vOBS + 'Verificar Itens de Faturas deste Processo';
+                      End
+                      Else Begin
+                         { VERIFICA TRIBUTAÇÃO DOS ITENS DE FATURA }
+                         qrTribut.Params[2].AsString := vProc;
+                         qrTribut.Open;
+                         If qrTribut.RecordCount = 0 Then Begin
+                            vProcOk := False;
+                            If vOBS <> '' Then vOBS := vOBS + ', ';
+                            vOBS := vOBS + 'Verificar Tributação dos Itens de Faturas deste Processo';
+                         End;
+                         qrTribut.Close;
+                      End;
+                      qrItens.Close;
+                   End;
+                End;
+             End;
+
+             ///follow_off := False;
+             vFaltaFol := False;
+
+             vUltFol := '';
+             vSemFol := '';
+
+             { VERIFICA FOLLOW UP DE PROCESSOS NÃO FINALIZADOS }
+                   ///COLOQUEI EM 03062009
+                   entra := false;
+                   if qrprocessossem_nfs.asinteger=0 then begin
+                   If Not q_NFS.Locate('Processo', qrprocessoscodigo.asstring, []) Then Begin
+                      entra := true;
+                   end;
+                   end;
+
+           //If vStatus <= '1' Then Begin
+           if ((vStatus < '3') or entra ) and (not qrprocessosFATURADO.asboolean) Then Begin
+                qrFollow.Params[0].AsString := vProc;
+                qrFollow.Open;
+
+                If qrFollow.RecordCount = 0 Then Begin
+                   vProcOk := False;
+                   If vOBS <> '' Then vOBS := vOBS + ', ';
+                   vOBS := vOBS + 'Processo NÃO POSSUI FOLLOW INFORMADO!';
+                   ///follow_off := True;
+                End
+                Else Begin
+                   vData := qrProcessosData.AsString;
+                   vDataMaior := DateToStr(Date());
+                   { PEGA A MAIOR DATA DO DESEMBARAÇO, CASO TENHA DESEMBARAÇO }
+                   If qrProcessosTipo_Declaracao.AsString = '12' Then Begin
+                      If (qrProcessosDT_DESEMBARACO.AsString <> '') Or (qrProcessosDT_DESEMBARACOC.AsString <> '') Then Begin
+                         If qrProcessosDT_DESEMBARACO.AsString <> '' Then Begin
+                            vDataMaior := qrProcessosDT_DESEMBARACO.AsString;
+                            If qrProcessosDT_DESEMBARACOC.AsString <> '' Then Begin
+                               If qrProcessosDT_DESEMBARACOC.AsDateTime > StrToDate(vDataMaior) Then
+                                  vDataMaior := qrProcessosDT_DESEMBARACOC.AsString;
+                            End;
+                         End
+                         Else Begin
+                            If qrProcessosDT_DESEMBARACOC.AsString <> '' Then
+                               vDataMaior := qrProcessosDT_DESEMBARACOC.AsString;
+                         End;
+                      End;
+                   End
+                   Else Begin
+                      If qrProcessosDT_DESEMBARACO.AsString <> '' Then
+                         vDataMaior := qrProcessosDT_DESEMBARACO.AsString;
+                   End;
+
+                   ///coloquei em 26/07/2007
+                   If (qrProcessosData.AsDateTime >= StrToDateTime('01/01/2007')) and (qrProcessosTipo_Declaracao.AsString <> '') and (qrProcessosTipo.AsString <> '6') then begin
+                     If qrProcessosData_Liberacao.AsString <> '' Then begin
+                         vDataMaior := qrProcessosData_Liberacao.AsString;
+                     end
+                   else begin
+                      vDataMaior := DateToStr(Date());
+                   end;
+                   end;
+
+                   ///COLOQUEI EM 03062009
+                   if qrprocessossem_nfs.asinteger=0 then begin
+                   If Not q_NFS.Locate('Processo', qrprocessoscodigo.asstring, []) Then Begin
+                      vDataMaior := DateToStr(Date());
+                   end;
+                   end;
+
+                   { VERIFICA FOLLOW DA DATA DE ABERTURA DO PRECESSO ATÉ O DESEMBARAÇO OU ATÉ A DATA ATUAL }
+                   While StrToDate(vData) <= StrToDate(vDataMaior) Do Begin
+                        If Not qrFollow.Locate('Data', StrToDate(vData), []) Then Begin
+                           vProcOk := False;
+                           If vSemFol <> '' Then vSemFol := vSemFol + ', ';
+                           vSemFol := vSemFol + vData;
+                           vFaltaFol := True;
+                        End
+                        Else Begin
+                           While (Not qrFollow.Eof) And (qrFollowData.AsString = vData) Do Begin
+                               vUltFol := qrFollowData.AsString +' às '+ qrFollowHora.AsString +' - '+ qrFollowDescricao.AsString;
+                               qrFollow.Next;
+                           End;
+                        End;
+                        vData := DateToStr(StrToDate(vData)+1);
+                   End;
+
+                   If vFaltaFol Then Begin
+                      If vOBS <> '' Then vOBS := vOBS + ', ';
+                      vOBS := vOBS
+                            + 'Não foram informados follow up na(s) data(s): '+ vSemFol;
+                   End;
+                   {
+                   If vDataMaior = DateToStr(Date()) Then
+                      follow_off := (Not qrFollow.Locate('data',StrToDate(vDataMaior)-1,[]))
+                   Else
+                      follow_off := (Not qrFollow.Locate('data',StrToDate(vDataMaior),[]))
+                   }
+                End;
+                qrFollow.Close;
+             End; { FIM DAS VERIFICAÇÕES COM STATUS <= 1 }
+          End; { FIM DAS VERIFICAÇÕES COM DATA DE ABERTURA }
+
+          { VERIFICA STATUS }
+          If vStatus <> '' Then
+             vPRO := vPRO +'<BR><B>STATUS: </B>'+ vStatusDesc
+          Else
+             vPRO := vPRO +'<BR><B>STATUS: </B>NÃO INFORMADO';
+
+          if length(vobs)>500 then
+             vPRO := vPRO + '<BR><B>OBSERVAÇÕES: </B>'+ copy(vOBS,1,500)+'...'
+          else vPRO := vPRO + '<BR><B>OBSERVAÇÕES: </B>'+ vOBS;
+
+          If vUltFol <> '' Then
+             vPRO := vPRO + '<BR><B>Último Follow informado até o desembaraço: </B>'+ vUltFol;
+
+          vPRO := vPRO+ '<BR><B>Resp. Comercial: </B>'+ qrProcessosresponsavel_empresac.asstring;
+          vPRO := vPRO+ '<BR><B>Resp. Operacional: </B>'+ qrProcessosresponsavel_empresa.asstring;
+
+          vPRO := vPRO
+                + '<BR><B>e-Mail da Localização da Pasta: </B>';
+          If qrProcessosEmail.AsString <> '' Then
+             vPRO := vPRO + qrProcessosEmail.AsString
+          Else
+             vPRO := vPRO +'NÃO LOCALIZADO';
+          {
+          If follow_off Then Begin
+             vDiretoria := True;
+             vBodyDir := vBodyDir + vPRO
+                       + '<BR><B>OBSERVAÇÕES: </B>'+ vOBS
+                       + '<BR><B>RESPONSÁVEL: </B>'+ vUsuN +' ('+ vUsuE +')'
+                       + '<BR><B>STATUS DO PROCESSO: </B> '+ vStatusDesc
+                       + '</FONT></TD></TR>';
+          End;
+          }
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////tratamento de DOCUMENTOS
+//showmessage(copy(qrprocessosdata.asstring,7,4));
+//showmessage(copy(datetostr(date()),7,4));
+if copy(qrprocessosdata.asstring,7,4)=copy(datetostr(date()),7,4) then begin
+     vprocesso := qrprocessoscodigo.asstring;
+//     vPRO := vPRO +'<BR> verificando documentos.... '+vprocesso;
+
+     qrListaDoc.CLOSE;
+     qrListaDoc.Params[0].AsString := vProcesso;
+     qrListaDoc.Open;
+
+
+     With qrListaProc Do Begin
+         close;
+         Params[0].AsString := vprocesso;
+         Open;
+         While Not Eof Do Begin
+              Application.ProcessMessages;
+
+              v1 := qrListaProcCodFat.AsString;
+              v2 := qrListaProcNumerodoccarga.AsString;
+              v3 := qrListaProcNR_DECLARACAO_IMP.AsString;
+              v4 := qrListaProcNR_DECLARACAO_IMPC.AsString;
+              v5 := qrListaProcNumero_RCR.AsString;
+              v6 := qrListaProcNumero_TR.AsString;
+  //            vPRO := vPRO +'<BR>'+v1+' -- '+v2+' -- '+v3+' -- '+v4+' -- '+v5+' -- '+v6;
+
+              if  qrListaProcDT_DESEMBARACO.asstring='' then begin
+                  v3 := '';
+              end;
+              if  qrListaProcDT_DESEMBARACOc.asstring='' then begin
+                  v4 := '';
+              end;
+
+
+              vST := 0;
+              vST := 1;
+              if qrListaProcdata_chegada_urf_cheg.AsString <>'' then begin
+              If v1 <> '' Then Begin // FATURA
+                 vNum := v1;
+                 VerificaDoc(frmapen);
+              End;
+
+              vST := 2;
+              If v2 <> '' Then Begin // CONHECIMENTO
+                 vNum := v2;
+                 VerificaDoc(frmapen);
+              End;
+              end;
+
+              { PROCESSO DO TIPO: Importação DTA III or DTA Passagem Comum }
+              If (qrListaProcTipo.AsString = '16') OR (qrListaProcTipo.AsString = '25') Then Begin
+                 vST := 11;
+                 If v3 <> '' Then Begin // DTA
+                    vNum := v3;
+                    VerificaDoc(frmapen);
+                 End;
+              End
+              Else Begin
+                 { PROCESSO DO TIPO: Prorrogação de TR or Baixa de TR }
+                 If (qrListaProcTipo.AsString = '8') OR (qrListaProcTipo.AsString = 'BT') Then Begin
+                 vST := 8;
+                 End
+                 Else Begin
+                    { PROCESSO DO TIPO: Importação DSI }
+                    If qrListaProcTipo.AsString = '17' Then Begin
+                       { Inc(vST,3); } vST := 5;
+                       If v3 <> '' Then Begin // DSI
+                          vNum := v3;
+                          VerificaDoc(frmapen);
+                       End;
+                    End
+                    Else Begin
+                       { PROCESSO DO TIPO: Atendimento / Passageiro; Bagagem Acompanhada; Bagagem Desacompanhada / Destruição }
+                       If (qrListaProcTipo.AsString = 'AP') OR (qrListaProcTipo.AsString = 'BA') OR (qrListaProcTipo.AsString = 'BD') OR (qrListaProcTipo.AsString = '5') Then Begin
+                          { Inc(vST,8); } vST := 10;
+                          If v3 <> '' Then Begin // DI/DSI
+                             vNum := v3;
+                             VerificaDoc(frmapen);
+                          End;
+
+                          { PROCESSO DO TIPO: Destruição }
+                          If qrListaProcTipo.AsString = '5' Then Begin
+                             { Inc(vST); } vST := 6;
+                             If v3 <> '' Then Begin // CI
+                                vNum := v3;
+                                VerificaDoc(frmapen);
+
+                                { Inc(vST); } vST := 7;
+                                If v4 <> '' Then Begin // CI CONSUMO
+                                   vNum := v4;
+                                   VerificaDoc(frmapen);
+                                End;
+                             End;
+                          End;
+                       End
+                       Else Begin
+                          { PROCESSO DO TIPO: Reexportação }
+                          If qrListaProcTipo.AsString <> '22' Then Begin
+                             { Inc(vST); } vST := 3;
+                             If v3 <> '' Then Begin // DI
+                                vNum := v3;
+                                VerificaDoc(frmapen);
+
+                                { Inc(vST); } vST := 4;
+                                If v4 <> '' Then Begin // DI CONSUMO
+                                   vNum := v4;
+                                   VerificaDoc(frmapen);
+                                End;
+                             End
+                             Else { Inc(vST); } vST := 4;
+
+                             { Inc(vST); } vST := 6;
+                             If v3 <> '' Then Begin // CI
+                                vNum := v3;
+                                VerificaDoc(frmapen);
+
+                                { Inc(vST); } vST := 7;
+                                If v4 <> '' Then Begin // CI CONSUMO
+                                   vNum := v4;
+                                   VerificaDoc(frmapen);
+                                End;
+                             End
+                             Else { Inc(vST); } vST := 7;
+                          End;
+                       End;
+                    End;
+
+                    { Inc(vST); } vST := 8;
+                    If v5 <> '' Then Begin // RCR
+                       vNum := v5;
+                       VerificaDoc(frmapen);
+                    End;
+                 End;
+
+                 {Inc(vST); } vST := 9;
+                 If v6 <> '' Then Begin // TR
+                    vNum := v6;
+                    VerificaDoc(frmapen);
+                 End;
+              End;
+
+              Next;
+
+{              If Eof Then Begin
+                 If vStrObs <> '' Then Begin
+                    vBody := vBody + vStrPro + vStrObs + vStrLoc +'</FONT></TD></TR>';
+                    vDocPendente := True;
+                 End;
+              End
+              Else
+                 If vStrObs <> '' Then
+                    If vPro <> qrListaProcCodPro.AsString Then Begin
+                       vBody := vBody + vStrPro + vStrObs + vStrLoc +'</FONT></TD></TR>';
+                       vDocPendente := True;
+                    End;}
+         End; // WHILE
+
+         Close;
+     End;
+end;
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+          If vProcOk Then Begin
+             vPRO := vPRO +'<BR><BR><CENTER><FONT COLOR="0000DD"><B>PROCESSO OK</B></FONT></CENTER></FONT></TD></TR>';
+             Inc(totOk);
+             Inc(totStatusOk);
+          End
+          Else Begin
+             vPRO := vPRO +'<BR><BR><CENTER><FONT COLOR="DD0000"><B>PROCESSO DESATUALIZADO</B></FONT></CENTER></FONT></TD></TR>';
+             Inc(totErro);
+             Inc(totStatusErro);
+          End;
+
+//          If (vUsuValido AND ((Copy(vStatus,1,1) = '0')) Or (vUsuE = '"SEM E-MAIL"')) OR (Vusur='') Then
+          //Or (Not vProcOk)
+
+             { ADICIONAR O PROCESSO AO E-MAIL }
+          If (vStatus = '0') Or (vStatus = '01') Or (Not vProcOk) Then begin
+             vBody := vBody + vPRO;
+          end;
+
+          Inc(totProc);
+          Inc(totStatus);
+
+          qrProcessos.Next;
+
+          If (vStatus <> qrProcessosStatus.AsString) Or (qrProcessos.Eof) Then Begin
+             Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                    + 'Status Verificado: '+ vStatusDesc;
+             //Writeln(arqLog, Linha);  Flush(arqLog);
+             reProcessa.Lines.Append(Linha);
+
+             vResumo := vResumo
+                      + '<TR>'
+                      + '  <TD><FONT SIZE="2">'+ vStatusDesc +'</FONT></TD>'
+                      + '  <TD ALIGN="CENTER"><FONT COLOR="#0000DD">'+ IntToStr(totStatusOk) +'</FONT></TD>'
+                      + '  <TD ALIGN="CENTER"><FONT COLOR="#DD0000">'+ IntToStr(totStatusErro) +'</FONT></TD>'
+                      + '  <TD ALIGN="CENTER">'+ IntToStr(totStatus) +'</TD>'
+                      + '</TR>';
+             totStatus := 0; totStatusOk := 0; totStatusErro := 0;
+          End;
+     End;
+{
+     If vDiretoria Then Begin
+        follow_dir_total := follow_dir_total +vBodyDir;
+     End;
+}
+     { RESUMO }
+     vBody := vBody
+            + '<TR><TD><BR>'
+            + '<TABLE ALIGN="CENTER" WIDTH="90%" BORDER="1">'
+            + '<TR><TD ALIGN="CENTER" COLSPAN="4"><B>RESUMO DOS PROCESSOS</B></TD></TR>'
+            + '<TR>'
+            + '  <TD ALIGN="CENTER"><FONT SIZE="2"><B>STATUS</B></FONT></TD>'
+            + '  <TD ALIGN="CENTER"><FONT SIZE="2"><B>PROCESSOS<BR>OK</B></FONT></TD>'
+            + '  <TD ALIGN="CENTER"><FONT SIZE="2"><B>PROCESSOS<BR>DESATUALIZADOS</B></FONT></TD>'
+            + '  <TD ALIGN="CENTER"><FONT SIZE="2"><B>TOTAL</B></FONT></TD>'
+            + '</TR>'
+            + vResumo
+            + '<TR>'
+            + '  <TD ALIGN="RIGHT"><B>TOTAIS</B></TD>'
+            + '  <TD ALIGN="CENTER"><B>'+ IntToStr(totOk) +'</B></TD>'
+            + '  <TD ALIGN="CENTER"><B>'+ inttostr(totErro) +'</B></TD>'
+            + '  <TD ALIGN="CENTER"><B>'+ inttostr(totProc) +'</B></TD>'
+            + '</TR>'
+            + '</TABLE><BR>'
+            + '</TD></TR>';
+end;
+
+procedure TfrmAPen.acEnviaEmailExecute(Sender: TObject);
+begin
+     Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+            + 'Gravando e-Mail automático...';
+     Writeln(arqLog, Linha);  Flush(arqLog);
+     reProcessa.Lines.Append(Linha);
+
+     vBody := StringReplace(vBody, '''', '''+ Chr(39) +''', [rfReplaceAll]);
+     vBody := StringReplace(vBody, '`', '''+ Chr(96)  +''', [rfReplaceAll]);
+     /// vBody := StringReplace(vBody, '?', '''+ Chr(63) +''', [rfReplaceAll]);
+     /// vBody := StringReplace(vBody, '|', '''+ Chr(124) +''', [rfReplaceAll]);
+
+     If (vPara + vCC + vCCO) = '' Then Begin
+        Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+               + '<*> ERRO! Não há e-Mail para envio.';
+        Writeln(arqLog, Linha);  Flush(arqLog);
+        reProcessa.Lines.Append(Linha);
+        Exit;
+     End;
+{     if vPara='Alexandro Henrique da costa<alexandro.costa@mslogistica.com.br>' then begin
+        showmessage('entrou!');
+        Writeln(arqLog, vBody);  Flush(arqLog);
+        showmessage('saiu!');
+ }
+
+     Try
+        tbEmailAuto.Open;
+        tbEmailAuto.Append;
+        tbEmailAutoPrograma.AsString := vCodAPL;
+        tbEmailAutoTitulo.AsString := vTitulo;
+        tbEmailAutoAssunto.AsString := vAssunto;
+        tbEmailAutoAnexo.AsString := vAnexo;
+        tbEmailAutoHTML.AsBoolean := vHTML;
+        tbEmailAutoDe.AsString := vDe;
+        tbEmailAutoPara.AsString := vPara;
+        tbEmailAutoCC.AsString := vCC;
+        tbEmailAutoCCO.AsString := vCCO;
+        tbEmailAutoBody.AsString := vBody;
+        tbEmailAutoData.AsDateTime := Date();
+        tbEmailAutoHora.AsDateTime := Time();
+        tbEmailAuto.Post;
+        tbEmailAuto.Close;
+     Except
+        On E:Exception Do Begin
+           Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+                  + '<*> ERRO! e-Mail não gravado. MSG: '+ StringReplace(E.Message, #13#10, ' ', [rfReplaceAll]);
+           Writeln(arqLog, Linha);  Flush(arqLog);
+           reProcessa.Lines.Append(Linha);
+        End;
+     End;
+end;
+
+procedure TfrmAPen.acFinalizaExecute(Sender: TObject);
+begin
+     Linha := FormatDateTime(' dd/mm/yyyy | hh:nn:ss | ', Now)
+            + '>>> FINALIZANDO O PROCESSAMENTO DO APen';
+     Writeln(arqLog, Linha);  Flush(arqLog);
+     reProcessa.Lines.Append(Linha);
+     acFinaliza.Checked := True;
+     CloseFile(arqLog);
+     Close;
+end;
+
+procedure TfrmAPen.reProcessaChange(Sender: TObject);
+begin
+     pnlTop.Refresh;
+     pnlLog.Refresh;
+end;
+
+procedure TfrmAPen.FormShow(Sender: TObject);
+begin
+     tmIniciar.Enabled := True;
+end;
+
+procedure TfrmAPen.tmIniciarTimer(Sender: TObject);
+begin
+     tmIniciar.Enabled := False;
+
+     acInicializa.Execute;
+end;
+
+procedure TfrmAPen.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+begin
+     If acFinaliza.Checked Then
+        CanClose := True
+     Else Begin
+        CanClose := False;
+        acFinaliza.Execute;
+     End;
+end;
+
+procedure TfrmAPen.VerificaDoc(Sender: TObject);
+var vMsg: String;
+
+begin
+///    vPRO := vPRO +'<BR><B>->passou aqui '+ vNum +' » </B>'+ vProcesso +'<BR>';
+{     With qrListaDoc Do Begin
+         Params[0].AsString := vProcesso;
+         Params[1].AsString :=
+         Open;
+         }
+         qrListaDoc.first;
+         If Not qrListaDoc.Locate('Numero_doc', vNum, []) Then Begin
+         //If RecordCount = 0 Then begin
+            vMsg := 'Documento não Cadastrado/Digitalizado no MSDoc!';
+            vPRO := vPRO +'<BR><B>'+ vetST[vST,1] +': '+ vNum +' » </B>'+ vMsg ;
+            vProcOk := False;
+         end
+         Else begin
+            With qrListaDoc Do Begin
+            If vST = 10 Then Begin // DI/DSI
+               While Not Eof Do Begin
+                    If qrListaDocSub_Tipo_Doc.AsString = vetST[5,2] Then vST := 5; // DSI
+                    If qrListaDocSub_Tipo_Doc.AsString = vetST[3,2] Then vST := 3; // DI
+                    If qrListaDocSub_Tipo_Doc.AsString = vetST[4,2] Then vST := 4; // DI CONSUMO
+                    If (vST <> 10) And (vST <> 0) Then Begin
+                       If qrListaDocData_inclusao.AsString <> '' Then
+                          Inc(vCont[vST,vOK])
+                       Else Begin
+                          vMsg := 'Documento não Digitalizado!';
+                          Inc(vCont[vST,vERRO]);
+                          vPRO := vPRO +'<BR><B>'+ vetST[vST,1] +': '+ vNum +' » </B>'+ vMsg ;
+                          vProcOk := False;
+                       End;
+                       vST := 0;
+                    End;
+                    Next;
+               End;
+               If vST = 0 Then Begin
+         //         Close;
+                  Exit;
+               End
+               Else Begin
+                  First;
+                  vMsg := 'Documento não Cadastrado/Digitalizado no MSDoc! Foi(ram) encontrado(s) o(s) Subtipo(s): <I>';
+                  While Not Eof Do Begin
+                       vMsg := vMsg + qrListaDocDescricao.AsString +', ';
+                       vProcOk := False;
+                       Next;
+                  End;
+                  vMsg := vMsg + '</I>com este número de documento. Verifique se o Subtipo do Documentos está trocado.';
+                  vPRO := vPRO +'<BR><B>'+ vetST[vST,1] +': '+ vNum +' » </B>'+ vMsg ;
+                  vProcOk := False;
+               End;
+            End
+            Else Begin
+               If Locate('Sub_Tipo_Doc', vetST[vST,2],[]) Then begin
+                  If qrListaDocData_inclusao.AsString <> '' Then Begin
+                     Inc(vCont[vST,vOK]);
+                     //Close;
+                     Exit;
+                  End
+                  Else begin
+                     vMsg := 'Documento não Digitalizado!';
+                     vPRO := vPRO +'<BR><B>'+ vetST[vST,1] +': '+ vNum +' » </B>'+ vMsg ;
+                  end;
+               end
+               Else Begin
+                  First;
+                  vMsg := 'Documento não Cadastrado/Digitalizado no MSDoc! Foi(ram) encontrado(s) o(s) Subtipo(s): <I>';
+                  While Not Eof Do Begin
+                       vMsg := vMsg + qrListaDocDescricao.AsString +', ';
+                       vProcOk := False;
+                       Next;
+                  End;
+                  vMsg := vMsg + '</I>com este número de documento. Verifique se o Subtipo do Documentos está trocado.';
+                  vPRO := vPRO +'<BR><B>'+ vetST[vST,1] +': '+ vNum +' » </B>'+ vMsg ;
+                  vProcOk := False;
+               End;
+            End;
+         end;
+         //Close;
+         end;
+
+         Inc(vCont[vST,vERRO]);
+//     End;
+end;
+
+function TfrmAPen.Log_Aplicativo(Aplicativo : String; Chave: String) : boolean;
+Var DataHoje : TDateTime;
+begin
+        DataHoje := Date;
+
+        q_log_aplicativo.Params[0].AsString := Aplicativo;
+        q_log_aplicativo.Params[1].AsString := Chave;
+        q_log_aplicativo.open;
+
+        if q_log_aplicativo.RecordCount > 0 then begin
+                if q_log_aplicativoData_Processamento.AsString <> '' then begin
+                        if q_log_aplicativoData_Processamento.AsDateTime <> DataHoje then
+                                Log_Aplicativo := true
+                        else
+                                Log_Aplicativo := false;
+                end else begin
+                                Log_Aplicativo := true;
+                end;
+        end else begin
+                q_log_aplicativo_adicionar.Params[0].AsString := Aplicativo;
+                q_log_aplicativo_adicionar.Params[1].AsString := Chave;
+                q_log_aplicativo_adicionar.ExecSQL;
+                Log_Aplicativo := true;
+        end;
+        q_log_aplicativo.close;
+end;
+
+procedure TfrmAPen.Log_Aplicativo_Atualizar_Data(Aplicativo : String; Chave: String);
+Var DataHoje : TDateTime;
+begin
+        DataHoje := Date;
+        q_log_aplicativo_atualizar_data.Params[0].AsString := DateToStr(DataHoje);
+        q_log_aplicativo_atualizar_data.Params[1].AsString := Aplicativo;
+        q_log_aplicativo_atualizar_data.Params[2].AsString := Chave;
+        q_log_aplicativo_atualizar_data.ExecSQL;
+end;
+
+procedure TfrmAPen.Log_Aplicativo_finalizar(Aplicativo : String);
+begin
+        q_log_aplicativo_atualizar_finalizar.Params[0].AsString := '';
+        q_log_aplicativo_atualizar_finalizar.Params[1].AsString := Aplicativo;
+        q_log_aplicativo_atualizar_finalizar.ExecSQL;
+        // Envio de e-mail informando que o processamento foi ok.
+
+          vAssunto := 'APEN - Informe de processamento.';
+          vPara := 'mssistemas@mslogistica.com.br';
+          vCC := 'msinfohelp@mslogistica.com.br';
+          vCCO := '';
+          vBody := '<BR>'
+                 + 'Prezados,<BR><BR>'
+                 + 'Informamos que o aplicativo APEN finalizou o processamento com êxito! </B>.<BR><BR>'
+                 + 'Este e-mail é automático e não necessita de resposta.'
+                 + '<BR><BR>';
+          vHTML := True;
+          acEnviaEmail.Execute;
+end;
+
+
+
+
+end.

@@ -1,0 +1,8 @@
+@model MS2000WEB.Models.AcessoGrupos
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+    @Html.LabelFor(model => model.Descricao)
+    @Html.EditorFor(model => model.Descricao)
+    @*@Html.ValidationMessageFor(model => model.Descricao)*@
+

@@ -1,0 +1,75 @@
+﻿@model Bytescout.Spreadsheet.Worksheet
+
+@{
+    ViewBag.Title = "Classificação confirmação";
+}
+
+<script type="text/javascript">
+    $(function () {
+        $("table tr:odd").addClass("alt");
+        //$("table tr:even").removeClass("alt");
+    });
+</script>
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Pré-Processo</a> <span class="divider">></span></li>
+    <li><a href="#">Classificação</a> <span class="divider">></span></li>
+    <li class="active">Confirmação</li>
+</ul>
+
+<h4>Confirmar dados importados</h4>
+
+@using (Html.BeginForm("GravarDadosImportados", "PreClassificacao",
+                    FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-stacked" }))
+{   
+    @Html.ValidationSummary(true)
+    @Html.Hidden("pk_preprocesso", (int)ViewBag.id_preprocessos)
+    @Html.Hidden("fk_importador", (string)ViewBag.fk_importador)
+    @Html.Hidden("statusclassificacao", (int)ViewBag.status_classificacao)
+    <div>
+        <label>Selecione o layout do cliente</label>
+        @Html.DropDownList("Layout", string.Empty)
+        @Html.ValidationMessage("Layout")
+    </div>
+    <br />
+    <div style="overflow-y: auto; height: 250px;">
+        <table id="grid" class="grade">
+            @if (Model != null)
+            {
+                for (int i = 0; i <= Model.UsedRangeRowMax; i++)
+                {
+                    if (i == 0)
+                    {    
+                <thead>
+                    <tr class="header">
+                        @for (int j = 0; j <= Model.UsedRangeColumnMax; j++)
+                        {
+                            <th scope="col" style="white-space: nowrap !important;">
+                                @Model.Cell(i, j)
+                            </th>
+                        }
+                    </tr>
+                </thead>
+                    }
+                    else
+                    {
+                <tr>
+                    @for (int j = 0; j <= Model.UsedRangeColumnMax; j++)
+                    {
+                        <td style="white-space: nowrap !important;">
+                            @Model.Cell(i, j)
+                        </td>
+                    }
+                </tr>
+                    }
+                }
+            }
+        </table>
+    </div>            
+    <div class="form-actions">
+        @Html.ActionLink("< Voltar", "Index", "PreClassificacao", new { fk_importador = (string)ViewBag.fk_importador, statusclassificacao = (int)ViewBag.status_classificacao }, new { @class = "btn" })
+        <input type="submit" name="confirmar" id="confirmar" value="Confirmar" class="btn  btn-inverse" />
+    </div>   
+}

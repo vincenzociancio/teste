@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Sistema Gerencial Aduaneiro - Módulo Repetro</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script language="javaScript" type="text/javascript">
+        function addZero(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+        var getHour = function () {
+            var date = new Date;
+            var seconds = addZero(date.getSeconds());
+            var minutes = addZero(date.getMinutes());
+            var hour = addZero(date.getHours());
+            var x = document.getElementById("hour");
+            x.innerHTML = hour + ":" + minutes + ":" + seconds;
+        }
+        window.onload = function () { setInterval(getHour, 1000) };
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="container" style="/*height: 65px;*/">
+                <a class="brand" href="#">
+                    <img alt=" brand" src="~/Content/images/logotipo_white_01.png" style="margin-top: 5px; height: 55px;" />
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-fluid" style="color:white; background-color:#022c55;">
+                <h3>Sistema Gerencial Aduaneiro - Módulo Repetro</h3>
+                <div style="font-size:12px;">
+                    <text id=""> @DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy")</text> às <text id="hour">@DateTime.Now.ToString("HH:mm:ss")</text>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <hr />
+        <footer>
+            <!--<p>&copy; @DateTime.Now.Year - MSLogística LTDA.</p>-->
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

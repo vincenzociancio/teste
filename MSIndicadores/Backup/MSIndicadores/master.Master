@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="MSIndicadores.master"
+    ViewStateMode="Disabled" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 316px;
+            height: 64px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <img alt="MS Logística" class="style1" longdesc="MS Logística" src="imagem/logo_mssil.png" />
+        <asp:Menu ID="Menu1" runat="server" BackColor="#F7F6F3" DynamicHorizontalOffset="2"
+            Font-Names="Verdana" Font-Size="0.8em" ForeColor="#7C6F57" Orientation="Horizontal"
+            StaticSubMenuIndent="10px">
+            <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicMenuStyle BackColor="#F7F6F3" />
+            <DynamicSelectedStyle BackColor="#5D7B9D" ForeColor="White" />
+            <Items>
+                <asp:MenuItem Text="Check-in" Value="New Item" NavigateUrl="~/frmIndicadorCheckIn.aspx"
+                    Selected="True"></asp:MenuItem>
+                <asp:MenuItem Text="|" Value="|" Enabled="False" Selectable="False"></asp:MenuItem>
+                <asp:MenuItem Text="Abertura de Processos" Value="New Item" NavigateUrl="~/frmIndicadorAbertura.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="|" Value="|" Enabled="False" Selectable="False"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmIndicadorSatisfacao.aspx" Text="Pesquisa de Satisfação"
+                    Value="Pesquisa de Satisfação"></asp:MenuItem>
+                <asp:MenuItem Text="|" Value="|" Enabled="False" Selectable="False"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmIndicadorHoraExtra.aspx" Text="Horas Extras" Value="Horas Extras">
+                </asp:MenuItem>
+                <asp:MenuItem Text="|" Value="|" Enabled="False" Selectable="False"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmIndicadorConsumoEnergia.aspx" Text="Consumo de Energia"
+                    Value="Consumo de Energia"></asp:MenuItem>
+                <asp:MenuItem Enabled="False" Selectable="False" Text="|" Value="|"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmIndicadorSAC.aspx" Text="SAC" Value="SAC"></asp:MenuItem>
+                <asp:MenuItem Text="|" Value="|" Enabled="False" Selectable="False"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmIndicadorFollow.aspx" Text="Follow-Up" Value="Follow-Up">
+                </asp:MenuItem>
+                <asp:MenuItem Enabled="False" Text="|" Value="|" Selectable="False"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmIndicadorAdesaoLaboral.aspx" 
+                    Text="Adesão Laboral" Value="Adesão Laboral"></asp:MenuItem>
+                <asp:MenuItem Enabled="False" Selectable="False" Text="|" Value="|">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmIndicadorApenc.aspx" Text="ApenC" Value="ApenC">
+                </asp:MenuItem>
+                <asp:MenuItem Enabled="False" Selectable="False" Text="|" Value="|">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmIndicadorArmazenagem.aspx" 
+                    Text="Armazenagem" Value="Primeira Armazenagem"></asp:MenuItem>
+                <asp:MenuItem Enabled="False" Selectable="False" Text="|" Value="|">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/frmIndicadorAcidentes.aspx" 
+                    Text="Taxa de Acidentes" Value="Taxa de Acidentes"></asp:MenuItem>
+            </Items>
+            <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticSelectedStyle BackColor="#5D7B9D" ForeColor="White" />
+        </asp:Menu>
+        &nbsp;
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <asp:Panel ID="pnlBotom" runat="server" Height="16px" Width="100%">
+        <div align="center" style="color: #C0C0C0; font-size: small; bottom: 0">
+            <br />
+            <em>Copyright</em> © 2000-2011 MS Logística Ltda. - Todos os direitos reservados
+            <br />
+        </div>
+    </asp:Panel>
+    <br />
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick">
+    </asp:Timer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 02/12/2010 | 20:37:53 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 02/12/2010 | 20:37:53 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 02/12/2010 | 20:37:53 | CLIENTE: (155) PGS SUPORTE LOGISTICO E SERVIÇOS LTDA
+ 02/12/2010 | 20:37:53 | Verificando Processo: 10380/10
+ 02/12/2010 | 20:37:53 | CONTATO: Bruna Gomes
+ 02/12/2010 | 20:37:53 | Gravando e-Mail automático...
+ 02/12/2010 | 20:37:54 | Gravando e-Mail automático...
+ 02/12/2010 | 20:37:54 | Gravando e-Mail automático...
+ 02/12/2010 | 20:37:54 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 02/12/2010 | 20:37:54 | Verificando Processo: 11580/10
+ 02/12/2010 | 20:37:54 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 02/12/2010 | 20:37:54 | Gravando e-Mail automático...
+ 02/12/2010 | 20:37:54 | >>> FINALIZANDO O PROCESSAMENTO DO ALC
+ 02/12/2010 | 20:50:23 | >>> INICIANDO O PROCESSAMENTO DO ALC
+ 02/12/2010 | 20:50:23 | GERANDO RELAÇÃO DAS LIBERAÇÕES DE CARGAS
+ 02/12/2010 | 20:50:23 | CLIENTE: (126) C & C TECHNOLOGIES DO BRASIL LTDA
+ 02/12/2010 | 20:50:23 | Verificando Processo: 11580/10
+ 02/12/2010 | 20:50:23 | Erro ao informar a Liberação da Carga. Transportador e/ou descrição não informados
+ 02/12/2010 | 20:50:23 | Gravando e-Mail automático...
+ 02/12/2010 | 20:50:23 | >>> FINALIZANDO O PROCESSAMENTO DO ALC

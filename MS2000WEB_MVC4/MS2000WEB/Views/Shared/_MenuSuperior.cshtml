@@ -1,0 +1,426 @@
+﻿@*<div class="navbar navbar-inverse navbar-static-top">*@
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            @*@Html.ActionLink(" ", "Index", "Home", null, htmlAttributes: new { @class = "brand" })*@
+
+            <a href="@Url.Action("Index", "Home")" class="brand">
+                <img src="~/Content/images/logotipo_white_01.png" /></a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="divider-vertical"></li>
+                    @*<li class="active">@Html.ActionLink("Página Inicial", "Index", "Home")</li>*@
+                    <li class="active"><a href="@Url.Action("Index", "Home")"><i class="icon-home icon-white"></i>&nbsp;Home&nbsp;&nbsp;</a></li>
+                </ul>
+                <ul class="nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Cadastro<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class=""></i>Procuradores</a></li>
+                            <li><a href="#"><i class=""></i>Importadores</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Contratos de Admissão Temporária</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Contratos</a></li>
+                                    <li><a href="#"><i class=""></i>Tipos de Locais de Inventário</a></li>
+                                    <li><a href="#"><i class=""></i>Contrato de habilitação ao Repetro</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class=""></i>Exportadores</a></li>
+                            <li><a href="#"><i class=""></i>Fabricantes / Produtores</a></li>
+                            <li><a href="#"><i class=""></i>Transportadores</a></li>
+                            <li><a href="#"><i class=""></i>Fiadores</a></li>
+                            <li><a href="#"><i class=""></i>Produtos</a></li>
+                            <li><a href="#"><i class=""></i>Armazens</a></li>
+                            <li><a href="#"><i class=""></i>Atos Legais</a></li>
+                            <li><a href="#"><i class=""></i>Fundamentação RCR</a></li>
+                            <li><a href="#"><i class=""></i>Eventos / Observações - Follow up</a></li>
+                            <li><a href="#"><i class=""></i>Tipos de Cargas</a></li>
+                            <li><a href="#"><i class=""></i>Atos Concessórios</a></li>
+                            <li><a href="#"><i class=""></i>Unidade de Medida</a></li>
+                            <li><a href="#"><i class=""></i>Tratamento Tributário ICMS</a></li>
+                            <li><a href="#"><i class=""></i>Fundamento Legal ICMS</a></li>
+                            <li><a href="#"><i class=""></i>CAE</a></li>
+                            <li><a href="#"><i class=""></i>Feriados / Greves</a></li>
+                            <li><a href="#"><i class=""></i>Observações Específicas</a></li>
+                            <li><a href="#"><i class=""></i>Plataformas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown">Processos<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Pré-Processo", "Index", "PreProcesso")</li>
+                            @*    <li>@Html.ActionLink("Distribuição Operacional", "Index", "DistribuicaoOperacional")</li>*@
+                            @*<li><a href="#"><i class=""></i>Abertura</a></li>
+                            <li><a href="#"><i class=""></i>Distribuição</a></li>
+                            <li><a href="#"><i class=""></i>Faturas</a></li>
+                            <li><a href="#"><i class=""></i>Conhecimentos</a></li>
+                            <li><a href="#"><i class=""></i>Informações da Carga</a></li>
+                            <li><a href="#"><i class=""></i>Tributação</a></li>
+                            <li><a href="#"><i class=""></i>RCR</a></li>
+                            <li><a href="#"><i class=""></i>RPR</a></li>
+                            <li><a href="#"><i class=""></i>DTR</a></li>
+                            <li><a href="#"><i class=""></i>Numerários</a></li>
+                            <li><a href="#"><i class=""></i>Registro de Chegada</a></li>
+                            <li><a href="#"><i class=""></i>Documentos de Instrução</a></li>
+                            <li><a href="#"><i class=""></i>DI / DSI</a></li>
+                            <li><a href="#"><i class=""></i>TR</a></li>
+                            <li><a href="#"><i class=""></i>Follow Up</a></li>
+                            <li><a href="#"><i class=""></i>Desembaraço</a></li>
+                            <li><a href="#"><i class=""></i>DARJ / ICMS</a></li>
+                            <li><a href="#"><i class=""></i>Guia de Exoneração - ICMS</a></li>
+                            <li><a href="#"><i class=""></i>Custos</a></li>
+                            <li><a href="#"><i class=""></i>Fechamento</a></li>
+                            <li><a href="#"><i class=""></i>Upload de Arquivos(.PDF)</a></li>
+                            <li><a href="#"><i class=""></i>Tradução</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Solicitação de Numerário</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Solicitação</a></li>
+                                    <li><a href="#"><i class=""></i>Autorização</a></li>
+                                    <li><a href="#"><i class=""></i>Consulta</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Formulários</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Requerimento de Agricultura</a></li>
+                                    <li><a href="#"><i class=""></i>Requerimento de Agricultura(a partir de 18/12/2006)</a></li>
+                                    <li><a href="#"><i class=""></i>Requerimento de Agricultura(Antigo)</a></li>
+                                    <li><a href="#"><i class=""></i>Capa DI Niterói</a></li>
+                                    <li><a href="#"><i class=""></i>Capa DI Sepetiba</a></li>
+                                    <li><a href="#"><i class=""></i>Termo Sunamann Drawback</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class=""></i>Extração NCM com LI</a></li>
+                            <li><a href="#"><i class=""></i>Taxa de Conversão para Amanhã</a></li>
+                            <li>@Html.ActionLink("KPI Ensco", "Index", "KPIEnsco")</li>*@
+
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Emissão de RAT</a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Solicitação", "Index", "Rat")</li>
+                                    <li>@Html.ActionLink("Prorrogação", "Index", "RatProrrogacao")</li>
+                                    <li>@Html.ActionLink("Repetro", "Index", "RatRepetro")</li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Exportação</a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Seadrill", "Index", "ExportacaoSeadrill")</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Formulários</a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Formulário de Desunitização", "Index", "formulariodesunitizacao")</li>
+                                    <li>@Html.ActionLink("Carta Garantidor", "Index", "CartaGarantidor")</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Consultas<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class=""></i>Termos de Responsabilidade</a></li>
+                            <li><a href="#"><i class=""></i>Documentos Vencidos/a Vencer</a></li>
+                            <li><a href="#"><i class=""></i>Movimentação de Pastas</a></li>
+                            <li><a href="#"><i class=""></i>Taxas de Conversão - Siscomex</a></li>
+                            <li><a href="#"><i class=""></i>Extrato de Processos</a></li>
+                            <li><a href="#"><i class=""></i>Processos por Tipo</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Planilhas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Valores por Item</a></li>
+                                    <li><a href="#"><i class=""></i>Prestação de Contas Consolidada</a></li>
+                                    <li><a href="#"><i class=""></i>Cálculo Lubrizol</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class=""></i>Traduções e Classificações</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Histórico de Check de Follow -Up</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Por Processo</a></li>
+                                    <li><a href="#"><i class=""></i>Por Usuário</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Exportações</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>NF-e</a></li>
+                                    <li><a href="#"><i class=""></i>Modec - NF-e</a></li>
+                                    <li><a href="#"><i class=""></i>Odfjell - Di</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown">Controles<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            @*   <li><a href="#"><i class=""></i>Controle de Pastas</a></li>
+                            <li><a href="#"><i class=""></i>Controle de Documentos</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Controle de Transmital</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Trasmittal</a></li>
+                                    <li><a href="#"><i class=""></i>Cadasatro de Destinatários</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Controles de Solicitações</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Cheques</a></li>
+                                    <li><a href="#"><i class=""></i>Autorização de Registros</a></li>
+                                    <li><a href="#"><i class=""></i>Tradução e Classificação</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Controle de Planilhas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Transocean</a></li>
+                                    <li><a href="#"><i class=""></i>Brasdril</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Controle ADE</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Andamento</a></li>
+                                    <li><a href="#"><i class=""></i>Deferido</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class=""></i>Controle de Chegada de Navios</a></li>
+                            <li><a href="#"><i class=""></i>Controle BL</a></li>
+                            <li><a href="#"><i class=""></i>Controle TR</a></li>*@
+                            <li>@Html.ActionLink("Controle Documentos Parametrizado", "Index", "DocumentoParametrizado")</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Financeiro<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Cadastros</a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Contrato de Fornecedores", "Index", "ContratosFornecedoresFinanceiro")</li>
+                                    @*<li><a href="#"><i class=""></i>Clientes / Contas Correntes</a></li>
+                                    <li><a href="#"><i class=""></i>Fornecedores</a></li>
+                                    <li><a href="#"><i class=""></i>Tipos de Créditos</a></li>
+                                    <li><a href="#"><i class=""></i>Plano de Contas</a></li>
+                                    <li><a href="#"><i class=""></i>Salários Mínimos</a></li>
+                                    <li><a href="#"><i class=""></i>Agrupamento de Clientes</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Cadastro de Conta Corrente</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class=""></i>Registro MS</a></li>
+                                            <li><a href="#"><i class=""></i>Registro Cliente</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class=""></i>Propostas</a></li>
+                                    <li><a href="#"><i class=""></i>Tipos de Numerários</a></li>
+                                    <li><a href="#"><i class=""></i>Tipos de Custos</a></li>
+                                    <li><a href="#"><i class=""></i>Associação Numerários = Documentos</a></li>*@
+                                </ul>
+                            </li>
+                            @*<li><a href="#"><i class=""></i>Contas a Receber</a></li>
+                            <li><a href="#"><i class=""></i>Contas a Pagar</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Faturamento</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Parâmetros</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class=""></i>Faturamento</a></li>
+                                            <li><a href="#"><i class=""></i>Contabilização</a></li>
+                                            <li><a href="#"><i class=""></i>Solicitação de Numeários</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class=""></i>Processos</a></li>
+                                    <li><a href="#"><i class=""></i>Voucher Transocean</a></li>
+                                    <li><a href="#"><i class=""></i>Recibos</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Notas</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class=""></i>Débito</a></li>
+                                            <li><a href="#"><i class=""></i>Crédito</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class=""></i>Declarações de Origem</a></li>
+                                    <li><a href="#"><i class=""></i>Check List Documentação</a></li>
+                                    <li><a href="#"><i class=""></i>Controle de Medições</a></li>
+                                </ul>
+                            </li>*@
+                            @*<li><a href="#"><i class=""></i>NF Serviços / RPS</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Contas Correntes</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Cadastro</a></li>
+                                    <li><a href="#"><i class=""></i>Movimentações</a></li>
+                                    <li><a href="#"><i class=""></i>Upload de Documentos</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Relatório / Planilhas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Despesas Mensais</a></li>
+                                    <li><a href="#"><i class=""></i>Débitos/Créditos por Processo</a></li>
+                                    <li><a href="#"><i class=""></i>Notas Fiscais de Serviços</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Custos</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class=""></i>Período</a></li>
+                                            <li><a href="#"><i class=""></i>Processo</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class=""></i>Parâmetros de Faturamento</a></li>
+                                    <li><a href="#"><i class=""></i>Extrato Conta Corrente Clientes</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Planilha Excel</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class=""></i>Débitos/Créditos por Processo</a></li>
+                                            <li><a href="#"><i class=""></i>Prestação de Contas</a></li>
+                                            <li><a href="#"><i class=""></i>Relatório de Prestação de Contas</a></li>
+                                            <li><a href="#"><i class=""></i>Relatório Quinzenal Brasdril</a></li>
+                                            <li><a href="#"><i class=""></i>Prestação de Despesas e Prestação de Contas - Pan Marine / Maré Alta</a></li>
+                                            <li><a href="#"><i class=""></i>Planilha de Medição de Honorários</a></li>
+                                        </ul>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Consultas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Valores sem Desmembramento</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class=""></i>Controle de Numerário</a></li>
+                            <li><a href="#"><i class=""></i>Controle de Patrimônio</a></li>
+                            <li><a href="#"><i class=""></i>Controle de Numerários Obrigatório</a></li>*@
+
+                            <li>@Html.ActionLink("Controle de Tributos", "Index", "ControleDeTributos")</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown">RH<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            @*<li><a href="#"><i class=""></i>Controle Hierárquico</a></li>
+                            <li><a href="#"><i class=""></i>Ramais</a></li>
+                            <li><a href="#"><i class=""></i>Lançamento de Horas Extra</a></li>
+                            <li><a href="#"><i class=""></i>Turnover</a></li>
+                            <li><a href="#"><i class=""></i>Consumo de Energia</a></li>
+                            <li><a href="#"><i class=""></i>Adesão Laboral</a></li>
+                            <li><a href="#"><i class=""></i>Lançamento de Acidentes</a></li>  *@
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Formulário</a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Cadastro", "Index", "RHFormulario")</li>
+                                    <li>@Html.ActionLink("Download", "MostraFormulario", "RHFormulario")</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ISO<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            @*<li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Controle de Análise de Desempenho</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Análise de Desempenho Individual</a></li>
+                                    <li><a href="#"><i class=""></i>Análise de Colaboradores Supervisionados</a></li>
+                                    <li><a href="#"><i class=""></i>Controle de Hierarquia</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Cadastro</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class=""></i>Análises</a></li>
+                                            <li><a href="#"><i class=""></i>Competências</a></li>
+                                            <li><a href="#"><i class=""></i>Perguntas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Resultados</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class=""></i>Resultado Individual das Análises</a></li>
+                                            <li><a href="#"><i class=""></i>Resultado Supervisionados</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Controle Normas da ISO</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Gerenciamento de Procedimento</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Procedimentos</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class=""></i>Operacional</a></li>
+                                            <li><a href="#"><i class=""></i>Financeiro</a></li>
+                                            <li><a href="#"><i class=""></i>RH</a></li>
+                                            <li><a href="#"><i class=""></i>TI</a></li>
+                                            <li><a href="#"><i class=""></i>SGI</a></li>
+                                            <li><a href="#"><i class=""></i>SMS</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class=""></i>Formulários</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class=""></i>Controle de Não Conformidade</a></li>
+                            <li><a href="#"><i class=""></i>Abertura de Não Conformidade</a></li>
+                            <li><a href="#"><i class=""></i>Visualizar Indicadores</a></li>*@
+                            <li>@Html.ActionLink("Controle de Atas de Reunião", "Index", "ControleDeAtasDeReuniao")</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Sistema<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class=""></i>Usuário</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Avisos Automáticos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Tipos</a></li>
+                                    <li><a href="#"><i class=""></i>Avisos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class=""></i>Atualização Siscomex</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">Controles Informática</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class=""></i>Controle de Ip's</a></li>
+                                    <li><a href="#"><i class=""></i>Controle de Pontos de Lógica</a></li>
+                                    <li><a href="#"><i class=""></i>Controle de Pontos de Telefonia</a></li>
+                                    <li><a href="#"><i class=""></i>Controle de Senhas de Usuários</a></li>
+                                    <li><a href="#"><i class=""></i>Controle Tv's</a></li>
+                                    <li><a href="#"><i class=""></i>Controle de Softwares</a></li>
+                                    <li><a href="#"><i class=""></i>Controle de Listas de Emails Avisos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class=""></i>Extrator de Documentos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="pull-right">
+                    <ul class="nav pull-right">
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Olá, <span>@User.Identity.Name</span><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="icon-cog"></i>&nbsp;Preferencias</a></li>
+                                <li><a href="#"><i class="icon-envelope"></i>&nbsp;Contato e suporte</a></li>
+                                <li class="divider"></li>
+                                <li><a href="@Url.Action("LogOff", "Login")"><i class="icon-user"></i>&nbsp;Sair da conta</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

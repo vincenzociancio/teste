@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MS2000WEB.Models.Controle_Atas>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">ISO</a> <span class="divider">></span></li>
+    <li><a href="#">Controle de Atas de Reunião</a> <span class="divider">></span></li>
+    <li class="active">Index</li>
+</ul>
+
+<h4>Controle de Atas de Reunião</h4>
+<hr />
+
+<div class="row">
+    <div class="span3">@Html.ActionLink("Novo", "Create", null, new { @class = "btn btn-inverse" })</div>
+    <div class="span6 offset*">
+        <form class="form-search">
+            <label>Pesquisar por tema:</label>
+            @Html.TextBox("txtTema", null, new { @class = "span3 search-query" })
+            <button type="submit" class="btn btn-inverse">Pesquisar</button>
+        </form>
+    </div>
+</div>
+<div style="overflow-y: auto;">
+    @{
+        if (Model.Count() > 0)
+        {
+            WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10, canSort: false, ajaxUpdateContainerId: "grid");
+        @grid.GetHtml(htmlAttributes: new { id = "grid" },
+                                tableStyle: "grade",
+                                headerStyle: "header",
+                                alternatingRowStyle: "alt",
+                                selectedRowStyle: "selected",
+                                columns: grid.Columns(
+                                grid.Column("Data", header: "Data", format: (item) => item.data != null ? item.data.ToString("dd/MM/yyyy") : "", canSort: true),
+                                grid.Column("tema", header: "Tema"),
+            //   grid.Column(format: (item) => @Html.ActionLink("Delete", "", new { Id = item.pk_atas })),
+                                grid.Column("", "Ações", style: "gridacao", format: @<text>
+        @Html.ActionLink("Editar", "Edit", new { Id = item.pk_atas })&nbsp; &nbsp;|&nbsp;&nbsp; 
+                                @Html.ActionLink("Participantes", "Index", "ControleDeAtasDeReuniaoParticipantes", new { Id = item.pk_atas }, null)&nbsp; &nbsp;|&nbsp;&nbsp;
+                                @Html.ActionLink("Arquivos", "Index", "ControleDeAtasDeReuniaoArquivo", new { Id = item.pk_atas }, null)</text>
+                                                            )));
+        }
+        else
+        {    
+        <div class="alert">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            @* <h4>Aviso!</h4>*@
+            Não existe registro para o parametro especificado!
+        </div>    
+        }
+    }
+</div>

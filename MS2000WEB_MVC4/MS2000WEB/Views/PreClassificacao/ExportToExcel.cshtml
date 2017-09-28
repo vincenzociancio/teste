@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "ExportToExcel";
+}
+
+<h2>ExportToExcel</h2>
+
+@using (Html.BeginForm("ExportToExcel", "PreClassificacao",
+                    FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input id="file" type="file" name="file" />
+
+    <div>
+        <button type="submit" class="btn btn-inverse">Exportar</button>        
+    </div> 
+}

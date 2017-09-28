@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Classificação";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    $(function () {
+        $('#avancar').prop({ disabled: true });
+        $('a#btnAvulsa').prop({ disabled: false });
+
+        $('#file').change(function () {
+            if ($(this).val() == '') {
+                $('#avancar').prop({ disabled: true });
+                $('a#btnAvulsa').prop({ disabled: false });
+            }
+            else {
+                $('#avancar').prop({ disabled: false });
+                $('a#btnAvulsa').prop({ disabled: true });
+            }
+        });
+    });
+</script>
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Processos</a> <span class="divider">></span></li>
+    <li><a href="#">Pré-Processo</a> <span class="divider">></span></li>
+    <li class="active">Classificação</li>
+</ul>
+
+<h4>Cadastro de Classificação</h4>
+
+@using (Html.BeginForm("ConfirmarImportacao", "PreClassificacao",
+                    FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-stacked" }))
+{
+    @Html.Hidden("pk_preprocesso", (int)ViewBag.id_preprocessos)
+    @Html.Hidden("fk_importador", (string)ViewBag.fk_importador)
+    @Html.Hidden("statusclassificacao", (int)ViewBag.status_classificacao)
+    <input type="file" name="file" id="file" class="span4" />    
+    <div class="form-actions">
+        @Html.ActionLink("< Voltar", "Index", "PreProcesso", null, new { @class = "btn" })
+        <input type="submit" name="avancar" id="avancar" value="Avançar >" class="btn" />
+       @* @Html.ActionLink("Criar classificação avulsa", "IndexItens", "PreClassificacao", new { id = (int)ViewBag.id_preprocessos }, new { @id = "btnAvulsa", @class = "btn btn-inverse" })*@
+    </div>   
+}
+
+@*@Html.ActionLink("Confirmar", "GravarDadosImportados", "PreClassificacao", new { @class = "btn btn-inverse" })*@
+
+
+@*@Ajax.ActionLink("(Export to Excel)", "GravarDadosImportados", "PreClassificacao", new {  
+model = Model }, new AjaxOptions {HttpMethod = "POST"})*@
+
+@*<table id="grid" class="grade">
+    @if (Model != null)
+    {
+        foreach (var line in Model)
+        {
+        <tr>
+            @foreach (var cel in line)
+            {
+                <td>
+                    @cel.ToString()
+                </td>
+            }
+        </tr>
+        }
+    }
+</table>*@
+
+
+@*<table id="grid" class="grade">
+    @if (Model != null)
+    {
+        foreach (var line in Model)
+        {
+        <tr>
+            @foreach (var cel in line.ItemArray)
+            {
+                <td>
+                    @cel.ToString()
+                </td>
+            }
+        </tr>
+        }
+    }
+</table>*@
+

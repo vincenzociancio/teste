@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="a" xml:space="preserve">
+    <value>a</value>
+  </data>
+  <data name="acertos" xml:space="preserve">
+    <value>Acertos</value>
+  </data>
+  <data name="admissao" xml:space="preserve">
+    <value>Admissão</value>
+  </data>
+  <data name="alteracao_cargo" xml:space="preserve">
+    <value>Alterações de Cargo</value>
+  </data>
+  <data name="alteracoes_salariais" xml:space="preserve">
+    <value>Alterações Salariais</value>
+  </data>
+  <data name="aquisitivo_final" xml:space="preserve">
+    <value>Aquisitivo Final</value>
+  </data>
+  <data name="aquisitivo_inicial" xml:space="preserve">
+    <value>Aquisitivo Inicial</value>
+  </data>
+  <data name="bairro" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="beneficiarios" xml:space="preserve">
+    <value>Beneficiários</value>
+  </data>
+  <data name="cancelar" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="cargo" xml:space="preserve">
+    <value>Cargo</value>
+  </data>
+  <data name="cart_trabalho" xml:space="preserve">
+    <value>Cart. Trabalho</value>
+  </data>
+  <data name="cbo" xml:space="preserve">
+    <value>CBO</value>
+  </data>
+  <data name="cep" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="cert_reservista" xml:space="preserve">
+    <value>Cert. Reservista</value>
+  </data>
+  <data name="cidade" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="complemento" xml:space="preserve">
+    <value>Complemento</value>
+  </data>
+  <data name="contribuicao_sindical" xml:space="preserve">
+    <value>Contribuição Sindical</value>
+  </data>
+  <data name="cpf" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="data" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="data_avaliacao" xml:space="preserve">
+    <value>Data de Avaliação</value>
+  </data>
+  <data name="data_emissao" xml:space="preserve">
+    <value>Data de Emissão</value>
+  </data>
+  <data name="data_nascimento" xml:space="preserve">
+    <value>Data de Nascimento</value>
+  </data>
+  <data name="data_realizacao" xml:space="preserve">
+    <value>Data de Realização</value>
+  </data>
+  <data name="deletar" xml:space="preserve">
+    <value>Deletar</value>
+  </data>
+  <data name="dependente" xml:space="preserve">
+    <value>Dependente</value>
+  </data>
+  <data name="descricao" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="digite_para_localizar" xml:space="preserve">
+    <value>Digite o Nome para Localizar</value>
+  </data>
+  <data name="documentos" xml:space="preserve">
+    <value>Documentos</value>
+  </data>
+  <data name="editar" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="empregados" xml:space="preserve">
+    <value>Empregados</value>
+  </data>
+  <data name="endereco" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="escolaridade" xml:space="preserve">
+    <value>Escolaridade</value>
+  </data>
+  <data name="estado_civil" xml:space="preserve">
+    <value>Estado Civil</value>
+  </data>
+  <data name="fechar" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="foto" xml:space="preserve">
+    <value>Foto</value>
+  </data>
+  <data name="funcionario_publico" xml:space="preserve">
+    <value>Funcionário Público</value>
+  </data>
+  <data name="gozo_final" xml:space="preserve">
+    <value>Gozo Final</value>
+  </data>
+  <data name="gozo_inicial" xml:space="preserve">
+    <value>Gozo Inicial</value>
+  </data>
+  <data name="historico_cargos" xml:space="preserve">
+    <value>Histórico de Cargos</value>
+  </data>
+  <data name="historico_ferias" xml:space="preserve">
+    <value>Histórico de Férias</value>
+  </data>
+  <data name="historico_questionario" xml:space="preserve">
+    <value>Histórico do Questionário</value>
+  </data>
+  <data name="historico_salarios" xml:space="preserve">
+    <value>Histórico de Salários</value>
+  </data>
+  <data name="identidade" xml:space="preserve">
+    <value>Identidade</value>
+  </data>
+  <data name="irrf" xml:space="preserve">
+    <value>IRRF</value>
+  </data>
+  <data name="localizar_colaboradores" xml:space="preserve">
+    <value>Localizar Colaboradores</value>
+  </data>
+  <data name="logradouro" xml:space="preserve">
+    <value>Logradouro</value>
+  </data>
+  <data name="matricula" xml:space="preserve">
+    <value>Matrícula</value>
+  </data>
+  <data name="media_acertos" xml:space="preserve">
+    <value>Média de Acertos</value>
+  </data>
+  <data name="motivo" xml:space="preserve">
+    <value>Motivo</value>
+  </data>
+  <data name="nacionalidade" xml:space="preserve">
+    <value>Nacionalidade</value>
+  </data>
+  <data name="naturalidade" xml:space="preserve">
+    <value>Naturalidade</value>
+  </data>
+  <data name="nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="nome_mae" xml:space="preserve">
+    <value>Nome da Mãe</value>
+  </data>
+  <data name="nome_pai" xml:space="preserve">
+    <value>Nome do Pai</value>
+  </data>
+  <data name="novo" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="numero" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="orgao" xml:space="preserve">
+    <value>Orgão</value>
+  </data>
+  <data name="parentesco" xml:space="preserve">
+    <value>Parentesco</value>
+  </data>
+  <data name="periodo_aquisitivo" xml:space="preserve">
+    <value>Período Aquisitivo</value>
+  </data>
+  <data name="periodo_gozo" xml:space="preserve">
+    <value>Período de Gozo</value>
+  </data>
+  <data name="pis" xml:space="preserve">
+    <value>PIS</value>
+  </data>
+  <data name="porcentagem" xml:space="preserve">
+    <value>Porcentagem</value>
+  </data>
+  <data name="quantidade_pergunta" xml:space="preserve">
+    <value>Quantidade de Pergunta</value>
+  </data>
+  <data name="raca_cor" xml:space="preserve">
+    <value>Raça/Cor</value>
+  </data>
+  <data name="registro_de_empregados" xml:space="preserve">
+    <value>Registro de Empregados</value>
+  </data>
+  <data name="relatorio" xml:space="preserve">
+    <value>Relatório</value>
+  </data>
+  <data name="relatorios" xml:space="preserve">
+    <value>Relatórios</value>
+  </data>
+  <data name="relatorio_questionario" xml:space="preserve">
+    <value>Relatório Questionário</value>
+  </data>
+  <data name="rh_alteracoes_cargo" xml:space="preserve">
+    <value>RH - Alterações de Cargo</value>
+  </data>
+  <data name="rh_alteracoes_salariais" xml:space="preserve">
+    <value>RH - Alterações Salariais</value>
+  </data>
+  <data name="rh_beneficiario" xml:space="preserve">
+    <value>RH - Beneficiários</value>
+  </data>
+  <data name="rh_contribuicao_sindical" xml:space="preserve">
+    <value>RH - Contribuição Sindical</value>
+  </data>
+  <data name="rh_funcionario_publico" xml:space="preserve">
+    <value>RH - Funcionário Público</value>
+  </data>
+  <data name="rh_historico_ferias" xml:space="preserve">
+    <value>RH - Histórico de Férias</value>
+  </data>
+  <data name="rh_registro_de_empregados" xml:space="preserve">
+    <value>RH - Registro de Empregados</value>
+  </data>
+  <data name="rh_relatorio_questionario" xml:space="preserve">
+    <value>RH -  Relatório Questionário</value>
+  </data>
+  <data name="salario" xml:space="preserve">
+    <value>Salario</value>
+  </data>
+  <data name="salario_familia" xml:space="preserve">
+    <value>Sal. Família</value>
+  </data>
+  <data name="salvar" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="secao" xml:space="preserve">
+    <value>Seção</value>
+  </data>
+  <data name="selecionar" xml:space="preserve">
+    <value>Selecionar</value>
+  </data>
+  <data name="serie" xml:space="preserve">
+    <value>Série</value>
+  </data>
+  <data name="setor" xml:space="preserve">
+    <value>Setor</value>
+  </data>
+  <data name="sexo" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="sindicato" xml:space="preserve">
+    <value>Sindicato</value>
+  </data>
+  <data name="situacao" xml:space="preserve">
+    <value>Situação</value>
+  </data>
+  <data name="titulo_eleitor" xml:space="preserve">
+    <value>Titulo de Eleitor</value>
+  </data>
+  <data name="uf" xml:space="preserve">
+    <value>UF</value>
+  </data>
+  <data name="valor" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="vinculacao_usuario_sistema" xml:space="preserve">
+    <value>Vinculação do Usuário do Sistema</value>
+  </data>
+  <data name="zona" xml:space="preserve">
+    <value>Zona</value>
+  </data>
+</root>

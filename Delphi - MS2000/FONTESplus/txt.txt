@@ -1,0 +1,11 @@
+
+update  Controle_ADE_Deferido set
+ FK_Importador =:FK_Importador,
+ Embarcacao =:Embarcacao,
+ DT_VECTO_ADE=Cast(:DT_VECTO_ADE as Date),
+ DT_Publicacao =Cast(:DT_Publicacao as Date),
+ Num_ADE_Executivo=:Num_ADE_Executivo,
+ Path_PDF=:Path_PDF,
+ Vencido=:Vencido, Num_Contrato=:Contrato, Num_Processo=:Processo
+where
+ PK_ADED=:PK_ADED

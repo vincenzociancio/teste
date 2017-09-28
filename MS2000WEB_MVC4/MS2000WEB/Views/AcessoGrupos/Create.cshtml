@@ -1,0 +1,30 @@
+@model MS2000WEB.Models.AcessoGrupos
+
+@{
+    ViewBag.Title = "Novo";
+}
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Sistema</a> <span class="divider">></span></li>
+    <li><a href="#">Grupos de Acesso</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+
+<h4>Grupos de Acesso do Sistema</h4>
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "form-stacked" }))
+{
+    @Html.ValidationSummary(false
+    )
+
+		@Html.Partial("_CreateOrEdit", Model)
+
+    <div class="form-actions">        
+        <input type="submit" class="btn btn-inverse" name="Create" value="Salvar" />
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div> 
+}
+
+

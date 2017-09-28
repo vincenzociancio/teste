@@ -1,0 +1,140 @@
+﻿@model MS2000WEB.Models.Controle_de_Tributos
+
+@{
+    ViewBag.Title = "Novo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    if (navigator.appName == 'Microsoft Internet Explorer') {
+        $(document).ready(function () {
+            $("#Data_Pgto").mask("99/99/9999");
+        });
+    }
+    $(document).ready(function () {
+        $("#Valor").maskMoney({ showSymbol: true, symbol: "R$", decimal: ",", thousands: "." });
+    });
+</script>
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Financeiro</a> <span class="divider">></span></li>
+    <li><a href="#">Controle de Tributos</a> <span class="divider">></span></li>
+    <li class="active">Novo</li>
+</ul>
+
+<h4>Controle de Tributos</h4>
+
+@using (Html.BeginForm("Create", "ControleDeTributos", FormMethod.Post, new { @class = "form-stacked" }))
+{
+    <div class="row">
+        <div class="span6">
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(false, "Campos Obrigatórios:")
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <div class="clearfix">
+                @Html.LabelFor(model => model.Natureza)
+                <div class="input">
+                    @Html.DropDownList("Natureza",
+            new[] { 
+                new SelectListItem{Text= "DARF", Value = "1"},
+                new SelectListItem{Text= "DARJ", Value = "2"},
+                new SelectListItem{Text= "DARM", Value = "3"},
+                new SelectListItem{Text= "GCSU", Value = "4"},
+                new SelectListItem{Text= "GFIP", Value = "5"},
+                new SelectListItem{Text= "GPS", Value = "6"},
+                new SelectListItem{Text= "GRDE", Value = "10"},
+                new SelectListItem{Text= "GRF", Value = "7"},
+                new SelectListItem{Text= "GRRF", Value = "8"},
+                new SelectListItem{Text= "ICMS", Value = "9"},                
+            }, string.Empty, new { @class = "span3" })
+                </div>
+            </div>
+            <div class="clearfix">
+                @Html.LabelFor(model => model.Codigo_Tributo)
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Codigo_Tributo, new { @class = "span3" })
+                </div>
+            </div>
+            <div class="clearfix">
+                @Html.LabelFor(model => model.Competencia)
+                <div class="input">
+                    @Html.DropDownList("Competencia",
+            new[] { 
+                new SelectListItem{Text= "Janeiro", Value = "1"},
+                new SelectListItem{Text= "Fevereiro", Value = "2"},
+                new SelectListItem{Text= "Março", Value = "3"},
+                new SelectListItem{Text= "Abril", Value = "4"},
+                new SelectListItem{Text= "Maio", Value = "5"},
+                new SelectListItem{Text= "Junho", Value = "6"},
+                new SelectListItem{Text= "Julho", Value = "7"},
+                new SelectListItem{Text= "Agosto", Value = "8"},
+                new SelectListItem{Text= "Setembro", Value = "9"},
+                new SelectListItem{Text= "Outubro", Value = "10"},
+                new SelectListItem{Text= "Novembro", Value = "11"},
+                new SelectListItem{Text= "Dezembro", Value = "12"},
+                new SelectListItem{Text= "Décimo Terceiro", Value = "13"}
+            }, string.Empty, new { @class = "span3" })
+                </div>
+            </div>
+            <div class="clearfix">
+                @Html.LabelFor(model => model.Ano)
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Ano, new { @class = "span1", maxlength = "4" })
+                </div>
+            </div>
+        </div>
+        <div class="span3">
+            <div class="clearfix">
+                @Html.LabelFor(model => model.Periodicidade)
+                <div class="input">
+                    @Html.DropDownList("Periodicidade",
+            new[] { 
+                new SelectListItem{Text= "Diário", Value = "1"},
+                new SelectListItem{Text= "Semanal", Value = "2"},
+                new SelectListItem{Text= "Quinzenal", Value = "3"},
+                new SelectListItem{Text= "Mensal", Value = "4"},
+                new SelectListItem{Text= "Bimestral", Value = "5"},
+                new SelectListItem{Text= "Trimestral", Value = "6"},
+                new SelectListItem{Text= "Semestral", Value = "7"},
+                new SelectListItem{Text= "Anual", Value = "8"}                
+            }, string.Empty, new { @class = "span3" })
+                </div>
+            </div>
+            <div class="clearfix">
+                @Html.LabelFor(model => model.Data_Pgto)
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Data_Pgto, new { @class = "span3", type = "date" })
+                </div>
+            </div>
+
+            <div class="clearfix">
+                @Html.LabelFor(model => model.Valor)
+                <div class="input">
+                    @Html.TextBoxFor(model => model.Valor, new { @class = "span3" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span6">
+            <div class="clearfix">
+                @Html.LabelFor(model => model.Referencia)
+                <div class="input">
+                    @Html.TextAreaFor(model => model.Referencia, new { @class = "span6" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="form-actions">
+        <button type="submit" class="btn btn-inverse">Salvar</button>
+        @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn" })
+    </div>    
+}
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

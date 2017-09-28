@@ -1,0 +1,74 @@
+@model IEnumerable<MS2000WEB.Models.AcessoGrupos>
+
+@{
+    ViewBag.Title = "Index";    
+}
+<style>
+    /*.acao.acao {
+        /* width: 250px;*/
+    /*text-align: center !important;
+    }*/
+</style>
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a> <span class="divider">></span></li>
+    <li><a href="#">Sistema</a> <span class="divider">></span></li>
+    <li><a href="#">Grupos de Acesso</a> <span class="divider">></span></li>
+    <li class="active">Index</li>
+</ul>
+
+<h4>Grupos de Acesso do Sistema</h4>
+<hr />
+<div class="row">
+    <div class="span*">@Html.ActionLink("Incluir Novo", "Create", null, new { @class = "btn btn-inverse" })</div>
+    <div class="span* offset*">
+        <form class="form-search">
+            <label>Pesquisar por grupo:</label>
+            @Html.TextBox("nome", null, new { @class = "span2 search-query" })
+            <button type="submit" class="btn btn-inverse">Pesquisar</button>
+        </form>
+    </div>
+</div>
+
+@{
+    if (Model.Count() > 0)
+    {
+@*
+        WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10, canSort: false, ajaxUpdateContainerId: "grid");
+    @grid.GetHtml(htmlAttributes: new { id = "grid" },
+                                tableStyle: "grade",
+                                headerStyle: "header",
+                                alternatingRowStyle: "alt",
+                                selectedRowStyle: "selected",
+                                columns: grid.Columns(
+                                grid.Column("Descricao", header: "Nome do Grupo"),
+                                grid.Column(format: (item) => @Html.ActionLink("Permissões de acesso", "EditPermisaoDeAcesso", new { Id = item.PK_AcessoGrupo })),
+                                grid.Column(format: (item) => @Html.ActionLink("Editar", "Edit", new { Id = item.PK_AcessoGrupo })),
+                                grid.Column(format: (item) => @Html.ActionLink("Deletar", "Delete", new { Id = item.PK_AcessoGrupo }))
+                                                          ));*@
+    
+    
+    
+        WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10, canSort: false, ajaxUpdateContainerId: "grid");
+    @grid.GetHtml(htmlAttributes: new { id = "grid" },
+                                    tableStyle: "grade",
+                                    headerStyle: "header",
+                                    alternatingRowStyle: "alt",
+                                    selectedRowStyle: "selected",
+                                    columns: grid.Columns(
+                                    grid.Column("Descricao", header: "Nome do Grupo"),
+                                    grid.Column("", "Ações", style: "gridacao", format: @<text>
+    @Html.ActionLink("Permissões de acesso", "EditPermisaoDeAcesso", new { Id = item.PK_AcessoGrupo, descricao = item.Descricao }) &nbsp; &nbsp;|&nbsp;&nbsp;
+                                        @Html.ActionLink("Editar", "Edit", new { Id = item.PK_AcessoGrupo })&nbsp;&nbsp;|&nbsp;&nbsp;
+                                        @Html.ActionLink("Deletar", "Delete", new { Id = item.PK_AcessoGrupo })</text>
+                                    )));
+    }
+    else
+    {    
+    <div class="alert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        @* <h4>Aviso!</h4>*@
+        Não existe registro para o parametro especificado!
+    </div>    
+    }
+}

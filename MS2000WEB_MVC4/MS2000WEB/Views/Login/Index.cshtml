@@ -1,0 +1,143 @@
+﻿@model MS2000WEB.Models.Usuario
+@{
+    Layout = null;   
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+@*    <meta name="Eduardo Souza" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">*@
+    <title>MS2000Web - Tela de Acesso</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Styles.Render("~/Content/bootstrap")
+    @*@Styles.Render("~/Content/modernizr")*@
+    @Scripts.Render("~/bundles/bootstrap")
+    @Styles.Render("~/Content/Acesso.css")
+
+    <!--[if lt IE 9]>
+        <script src="~/Scripts/respond.js"></script>
+	<![endif]-->
+    <script src="~/Scripts/jquery.blockUI.min.js"></script>
+    @*<script src="~/Scripts/msscript.js"></script>*@
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#btnEntrar').click(function (e) {
+                $.blockUI({
+                    message: $("#displayBox"),
+                    overlayCSS: {
+                        backgroundColor: '#fff',
+                        opacity: .7,
+                        color: '#fff'
+                    },
+                    css: {
+                        width: '180px',
+                        height: '70px',
+                        left: '',
+                        border: 'none',
+                        padding: '5px',
+                        backgroundColor: '#fff',
+                        '-webkit-border-radius': '10px',
+                        '-moz-border-radius': '10px',
+                        opacity: .8,
+                        color: '#fff',
+                        top: ($(window).height() - 70) / 2 + 'px',
+                        left: ($(window).width() - 180) / 2 + 'px',
+                    },
+                    centerY: true,
+                    centerX: true
+                });
+            }).ajaxComplete(function () {
+                $.unblockUI();
+            });
+        });
+
+        //function ajaxStop() {
+        //    $.unblockUI();
+        //}
+
+
+
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>
+
+</head>
+<body onload="noBack();">
+    @using (Html.BeginForm())
+    {          
+        <img id="displayBox" src="~/Content/images/carregando.gif" style="display: none; width: 70px; height: 70px;" />
+       @*@Html.AntiForgeryToken()*@
+        <div class="logo">
+            <table>
+                <tr>
+                    <td>
+                        <img src="./Content/images/logotipo.png" height="47" width="203" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="form_acesso">
+            <table class="tb_acesso">
+                <tr>
+                    <td colspan="2">&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="titulo_acesso">Tela de acesso                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lb1">
+                        <div class="clearfix" style="height: 15px!important;">
+                            @Html.LabelFor(m => m.Usuario1)
+                        </div>
+                    </td>
+                    <td class="usuario1">
+                        <div class="clearfix" style="height: 15px!important;">
+                            @Html.TextBoxFor(m => m.Usuario1, new { @style = "width:227px; text-transform: uppercase" })
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lb1">
+                        <div class="clearfix">
+                            @Html.LabelFor(m => m.Senha)
+                        </div>
+                    </td>
+                    <td class="">
+                        <div class="clearfix" style="height: 15px!important;">
+                            @Html.PasswordFor(m => m.Senha, new { @style = "width:227px" })
+                        </div>
+                    </td>
+                </tr>
+                <tr class="">
+                    <td colspan="2" class="botao_acesso">
+                        <input type="submit" id="btnEntrar" name="btnEntrar" value="Entrar" class="btn" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="msg_erro">
+                        @Html.ValidationSummary(true)
+                    </td>
+                </tr>
+            </table>
+        </div>           
+    }
+
+    @section Scripts {
+        @*@Scripts.Render("~/bundles/jqueryval")*@
+        @*@Scripts.Render("~/bundles/bootstrap")*@
+    }
+</body>
+</html>

@@ -1,0 +1,23 @@
+    DATA    |   HORA   | DESCRIÇÃO 
+ 01/07/2013 | 15:43:02 | >>> INICIANDO O PROCESSAMENTO DO AAP
+ 01/07/2013 | 15:43:02 | Gerando relação dos últimos Follows dos processos
+ 01/07/2013 | 15:43:03 | RESPONSÁVEL: Adriana Guimarães de Mello
+ 01/07/2013 | 15:43:03 | Total de processos: 6
+ 01/07/2013 | 15:43:03 | Gravando e-Mail automático...
+ 01/07/2013 | 15:43:03 | RESPONSÁVEL: Adriana Monteiro
+ 01/07/2013 | 15:43:03 | Total de processos: 13
+ 01/07/2013 | 15:43:03 | Gravando e-Mail automático...
+ 01/07/2013 | 15:43:03 | RESPONSÁVEL: Alessandro Felix
+ 01/07/2013 | 15:43:03 | Total de processos: 30
+ 01/07/2013 | 15:43:03 | Gravando e-Mail automático...
+ 01/07/2013 | 15:43:03 | RESPONSÁVEL: Alex Carvalho
+ 01/07/2013 | 15:51:06 | >>> INICIANDO O PROCESSAMENTO DO AAP
+ 01/07/2013 | 15:51:06 | Gerando relação dos últimos Follows dos processos
+ 01/07/2013 | 15:51:06 | RESPONSÁVEL: Adriana Guimarães de Mello
+ 01/07/2013 | 15:51:06 | Total de processos: 6
+ 01/07/2013 | 15:51:06 | Gravando e-Mail automático...
+ 01/07/2013 | 15:52:25 | >>> INICIANDO O PROCESSAMENTO DO AAP
+ 01/07/2013 | 15:52:25 | Gerando relação dos últimos Follows dos processos
+ 01/07/2013 | 15:52:25 | RESPONSÁVEL: Adriana Guimarães de Mello
+ 01/07/2013 | 15:52:25 | Total de processos: 6
+ 01/07/2013 | 15:52:25 | Gravando e-Mail automático...
